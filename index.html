@@ -1,25 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Orchard Pups - Coming Soon</title>
-    <meta name="description" content="Orchard Pups is preparing something exciting. Join our pack to be the first to know when we launch!">
+    <meta name="description"
+        content="Orchard Pups is preparing something exciting. Join our pack to be the first to know when we launch!">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
 </head>
-<body>
-    <div class="background-container"></div>
-    <div class="glass-card">
-        <div class="logo">🐾 Orchard Pups</div>
-        <h1>Something exciting is fetching...</h1>
-        <p>We are preparing our orchard for the newest arrivals. Check back soon!</p>
-        
 
+<body>
+    <div class="custom-cursor">
+        <span class="paw-emoji">🐾</span>
+        <span class="dog-emoji">🐶</span>
     </div>
-    
+    <!-- Playful North Country Spring Background -->
+    <div class="north-country-bg">
+        <div class="sky-gradient"></div>
+        <div class="sun-glow"></div>
+
+        <div class="clouds-layer">
+            <!-- Background clouds — pre-positioned on screen, ultra slow -->
+            <div class="cloud cbg1" data-speed="0.02"></div>
+            <div class="cloud cbg2" data-speed="0.01"></div>
+            <!-- FAST tier (~22-28s): 3 clouds evenly spaced → always ~2 on screen -->
+            <div class="cloud c1" data-speed="0.07"></div>
+            <div class="cloud c2" data-speed="0.08"></div>
+            <div class="cloud c3" data-speed="0.06"></div>
+            <!-- MEDIUM tier (~48-55s): 4 clouds evenly spaced → always ~2 on screen -->
+            <div class="cloud c4" data-speed="0.14"></div>
+            <div class="cloud c5" data-speed="0.15"></div>
+            <div class="cloud c6" data-speed="0.13"></div>
+            <div class="cloud c7" data-speed="0.16"></div>
+            <!-- SLOW tier (~75-85s): 3 clouds evenly spaced → always ~1 on screen -->
+            <div class="cloud c8" data-speed="0.22"></div>
+            <div class="cloud c9" data-speed="0.20"></div>
+            <div class="cloud c10" data-speed="0.23"></div>
+        </div>
+
+        <div class="hills-layer">
+            <!-- Back Hill -->
+            <svg class="hill hill-back" viewBox="0 0 1440 320" preserveAspectRatio="none">
+                <path fill="#E0F2E9" d="M0,160 C320,300,420,0,740,120 C1060,240,1380,80,1440,160 L1440,320 L0,320 Z">
+                </path>
+            </svg>
+            <!-- Mid Hill -->
+            <svg class="hill hill-mid" viewBox="0 0 1440 320" preserveAspectRatio="none">
+                <path fill="#C1E1C1" d="M0,220 C280,100,500,280,840,180 C1180,80,1380,240,1440,200 L1440,320 L0,320 Z">
+                </path>
+            </svg>
+
+            <!-- SCENERY LAYER 1: House sits BEHIND front hill -->
+            <svg class="hill-scenery house-layer" viewBox="0 0 1440 320" preserveAspectRatio="none"
+                xmlns="http://www.w3.org/2000/svg">
+
+                <!-- ===== LARGER FARMHOUSE (scaled up ~25%) ===== -->
+                <rect x="818" y="158" width="160" height="115" rx="3" fill="#FDF6E3" />
+                <!-- Roof (two-tone depth) -->
+                <polygon points="800,162 996,162 898,105" fill="#E8A598" />
+                <polygon points="800,162 996,162 898,105" fill="#D4897A" opacity="0.4" />
+                <!-- Chimney -->
+                <rect x="924" y="106" width="26" height="50" rx="3" fill="#C4956A" />
+                <rect x="918" y="103" width="38" height="8" rx="2" fill="#A07850" />
+                <!-- Left window -->
+                <rect x="832" y="183" width="34" height="26" rx="3" fill="#B5D8EB" />
+                <line x1="849" y1="183" x2="849" y2="209" stroke="rgba(255,255,255,0.85)" stroke-width="2.5" />
+                <line x1="832" y1="196" x2="866" y2="196" stroke="rgba(255,255,255,0.85)" stroke-width="2.5" />
+                <!-- Right window -->
+                <rect x="920" y="183" width="34" height="26" rx="3" fill="#B5D8EB" />
+                <line x1="937" y1="183" x2="937" y2="209" stroke="rgba(255,255,255,0.85)" stroke-width="2.5" />
+                <line x1="920" y1="196" x2="954" y2="196" stroke="rgba(255,255,255,0.85)" stroke-width="2.5" />
+                <!-- Door -->
+                <rect x="872" y="220" width="36" height="53" rx="5" fill="#C4956A" />
+                <circle cx="903" cy="248" r="3.5" fill="#A07850" />
+                <!-- Door step -->
+                <rect x="864" y="271" width="52" height="6" rx="2" fill="#D4A57A" />
+
+                <!-- ===== SMOKE ===== -->
+                <circle class="smoke s1" cx="937" cy="102" r="9" fill="rgba(210,210,210,0.8)" />
+                <circle class="smoke s2" cx="934" cy="102" r="7" fill="rgba(220,220,220,0.7)" />
+                <circle class="smoke s3" cx="940" cy="102" r="6" fill="rgba(230,230,230,0.7)" />
+                <circle class="smoke s4" cx="937" cy="102" r="11" fill="rgba(200,200,200,0.5)" />
+
+                <!-- ===== BACK TREES — Spring Blossom + Pine style ===== -->
+
+                <!-- LEFT CLUSTER -->
+                <!-- Pine tree 1 (dark, triangular) -->
+                <rect x="153" y="203" width="8" height="28" rx="2" fill="#6B4F2A" />
+                <polygon points="157,145 135,206 179,206" fill="#2D6A4F" />
+                <polygon points="157,160 139,210 175,210" fill="#3A8C63" />
+                <polygon points="157,175 142,212 172,212" fill="#52B788" />
+
+                <!-- Blossom tree 2 (pink, fluffy) -->
+                <rect x="246" y="193" width="10" height="40" rx="3" fill="#6B4F2A" />
+                <circle cx="251" cy="170" r="30" fill="#FFB7C5" />
+                <circle cx="236" cy="180" r="20" fill="#FFC9D5" />
+                <circle cx="266" cy="178" r="22" fill="#FFB7C5" />
+                <circle cx="251" cy="158" r="18" fill="#FFD1DC" />
+
+                <!-- Pine tree 3 (smaller) -->
+                <rect x="328" y="208" width="7" height="24" rx="2" fill="#6B4F2A" />
+                <polygon points="331,155 313,212 349,212" fill="#2D6A4F" />
+                <polygon points="331,172 317,214 345,214" fill="#3A8C63" />
+
+                <!-- NEW: Blossom tree (mid-left) -->
+                <rect x="446" y="225" width="8" height="30" rx="2" fill="#6B4F2A" />
+                <circle cx="451" cy="208" r="22" fill="#FFB7C5" />
+                <circle cx="438" cy="214" r="14" fill="#FFC9D5" />
+                <circle cx="462" cy="212" r="15" fill="#FFB7C5" />
+
+                <!-- NEW: Pine tree (mid-left) -->
+                <rect x="596" y="212" width="8" height="28" rx="2" fill="#6B4F2A" />
+                <polygon points="600,165 582,218 618,218" fill="#2D6A4F" />
+                <polygon points="600,180 586,220 614,220" fill="#3A8C63" />
+
+                <!-- RIGHT CLUSTER -->
+                <!-- Blossom tree (white/cream blooms) -->
+                <rect x="1196" y="126" width="10" height="46" rx="3" fill="#6B4F2A" />
+                <circle cx="1201" cy="102" r="32" fill="#FDFBF7" />
+                <circle cx="1185" cy="114" r="20" fill="#FFE4E8" />
+                <circle cx="1216" cy="112" r="22" fill="#FFF0F3" />
+                <circle cx="1201" cy="90" r="18" fill="#FDFBF7" />
+
+                <!-- NEW: Blossom tree (pink, mid-right) -->
+                <rect x="1096" y="156" width="10" height="36" rx="3" fill="#6B4F2A" />
+                <circle cx="1101" cy="132" r="28" fill="#FFB7C5" />
+                <circle cx="1088" cy="142" r="18" fill="#FFC9D5" />
+                <circle cx="1114" cy="140" r="20" fill="#FFB7C5" />
+
+                <!-- Pine tree right -->
+                <rect x="1317" y="154" width="8" height="32" rx="2" fill="#6B4F2A" />
+                <polygon points="1321,100 1299,158 1343,158" fill="#2D6A4F" />
+                <polygon points="1321,118 1302,160 1340,160" fill="#3A8C63" />
+                <polygon points="1321,136 1305,162 1337,162" fill="#52B788" />
+
+            </svg>
+
+            <!-- Front Hill (above the house) -->
+            <svg class="hill hill-front" viewBox="0 0 1440 320" preserveAspectRatio="none">
+                <path fill="#A3D1A3"
+                    d="M0,280 C400,160,600,320,1000,240 C1200,200,1380,280,1440,260 L1440,320 L0,320 Z"></path>
+            </svg>
+
+            <!-- SCENERY LAYER 2: Trees ON the front hill -->
+            <svg class="hill-scenery front-trees" viewBox="0 0 1440 320" preserveAspectRatio="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <!-- NEW: Small Pine (Far Left) -->
+                <rect x="46" y="278" width="7" height="24" rx="2" fill="#6B4F2A" />
+                <polygon points="50,235 32,282 68,282" fill="#2D6A4F" />
+                <polygon points="50,250 36,284 64,284" fill="#3A8C63" />
+
+                <!-- NEW: White Blossom (Mid Left) -->
+                <rect x="396" y="240" width="8" height="32" rx="2" fill="#6B4F2A" />
+                <circle cx="401" cy="218" r="24" fill="#FDFBF7" />
+                <circle cx="388" cy="226" r="15" fill="#FFE4E8" />
+                <circle cx="414" cy="224" r="16" fill="#FFF0F3" />
+
+                <!-- Blossom tree left of house (pink, stands out on green hill) -->
+                <rect x="748" y="210" width="10" height="38" rx="3" fill="#6B4F2A" />
+                <circle cx="753" cy="188" r="28" fill="#FFB7C5" />
+                <circle cx="740" cy="198" r="18" fill="#FFC9D5" />
+                <circle cx="766" cy="196" r="20" fill="#FFB7C5" />
+                <circle cx="753" cy="177" r="16" fill="#FFD1DC" />
+
+                <!-- Pine tree right of house (dark green, visible on light hill) -->
+                <rect x="1068" y="213" width="8" height="36" rx="2" fill="#6B4F2A" />
+                <polygon points="1072,155 1050,218 1094,218" fill="#2D6A4F" />
+                <polygon points="1072,172 1054,220 1090,220" fill="#3A8C63" />
+                <polygon points="1072,190 1057,222 1087,222" fill="#52B788" />
+
+                <!-- NEW: Pine Tree (Far Right) -->
+                <rect x="1346" y="260" width="8" height="30" rx="2" fill="#6B4F2A" />
+                <polygon points="1350,210 1332,264 1368,264" fill="#2D6A4F" />
+            </svg>
+        </div>
+
+        <div id="blossom-container"></div>
+    </div>
+
+    <!-- Scrollable Content -->
+    <div class="content-wrapper">
+        <div class="glass-card">
+            <div class="logo">🐾 Orchard Pups</div>
+            <h1>Something exciting is fetching...</h1>
+            <p>We are preparing our orchard for the newest arrivals. Check back soon!</p>
+        </div>
+    </div>
+
     <script src="script.js"></script>
 </body>
+
 </html>
