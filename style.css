@@ -679,12 +679,17 @@ p {
 
     /* Taller hills on mobile so we can see the house clearly */
     .hills-layer {
-        height: 30vh;
+        height: 38vh;
+    }
+
+    /* Lower the front hill slightly on mobile so it doesn't bury the house/trees */
+    .hill-front {
+        height: 50% !important;
     }
 
     .glass-card {
         padding: 2rem 1.2rem;
-        margin-top: 12vh;
+        margin-top: 10vh;
         width: 88%;
     }
 
@@ -694,7 +699,7 @@ p {
     }
 
     p {
-        font-size: 1rem;
+        font-size: 0.95rem;
     }
 
     /* Fine-tune clouds for mobile */
