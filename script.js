@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }, { passive: true });
 
     const blossomContainer = document.getElementById('blossom-container');
-    const LEAF_COUNT = 80; // Increased for 300vh coverage
+    const LEAF_COUNT = 150; // Increased for full coverage
 
     const leafSVG = `
         <svg viewBox="0 0 512 512" fill="currentColor" xmlns="http://www.w3.org/2000/svg" style="width: 100%; height: 100%;">
@@ -83,8 +83,8 @@ document.addEventListener('DOMContentLoaded', () => {
         leaf.innerHTML = leafSVG;
 
         const size = Math.random() * 20 + 15; // 15px to 35px
-        const left = Math.random() * 100; // 0% to 100vw
-        const top = Math.random() * 280; // Scatter up to the horizon line
+        const left = Math.random() * 100; // 0% to 100%
+        const top = Math.random() * 95; // Scatter up to near the bottom
         const animDuration = Math.random() * 8 + 10; // 10s to 18s
         const animDelay = Math.random() * -20;
         const color = colors[Math.floor(Math.random() * colors.length)];
@@ -93,8 +93,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
         leaf.style.width = `${size}px`;
         leaf.style.height = `${size}px`;
-        leaf.style.left = `${left}vw`;
-        leaf.style.top = `${top}vh`;
+        leaf.style.left = `${left}%`;
+        leaf.style.top = `${top}%`;
         leaf.style.setProperty('--drift', `${drift}px`);
         leaf.style.animationDuration = `${animDuration}s`;
         leaf.style.animationDelay = `${animDelay}s`;
@@ -114,7 +114,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // CUSTOM CURSOR - Paw tracking and hover detection
     // ============================================================
     const cursor = document.querySelector('.custom-cursor');
-    const interactiveElements = document.querySelectorAll('a, button, .glass-card, .logo, .house-layer, .front-trees');
+    const interactiveElements = document.querySelectorAll('a, button, .glass-card, .header-logo, .house-layer, .front-trees');
 
     document.addEventListener('mousemove', (e) => {
         // Skip cursor movement if hidden (mobile)
