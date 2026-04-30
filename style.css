@@ -677,19 +677,20 @@ p {
         opacity: 0.55;
     }
 
-    /* Taller hills on mobile so we can see the house clearly */
+    /* Taller hills on mobile so we can see the landscape clearly */
     .hills-layer {
-        height: 38vh;
+        height: 25vh; /* Reverted to a more standard height */
     }
 
-    /* Lower the front hill slightly on mobile so it doesn't bury the house/trees */
-    .hill-front {
-        height: 50% !important;
+    /* Hide complex scenery on mobile to prevent overlapping and messiness */
+    .house-layer,
+    .front-trees {
+        display: none !important;
     }
 
     .glass-card {
         padding: 2rem 1.2rem;
-        margin-top: 10vh;
+        margin-top: 15vh;
         width: 88%;
     }
 
