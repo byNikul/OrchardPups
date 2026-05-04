@@ -111,22 +111,229 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // ============================================================
-    // CUSTOM CURSOR - Paw tracking and hover detection
+    // CUSTOM CURSOR - Puppy Theme Status Cursor
     // ============================================================
-    const cursor = document.querySelector('.custom-cursor');
-    const interactiveElements = document.querySelectorAll('a, button, .glass-card, .header-logo, .house-layer, .front-trees');
+    const cursor = document.getElementById('custom-cursor');
+    const cursorText = cursor ? cursor.querySelector('.cursor-text') : null;
+    let moveTimeout;
 
-    document.addEventListener('mousemove', (e) => {
-        // Skip cursor movement if hidden (mobile)
-        if (window.innerWidth <= 768) return;
-        
-        // Smoothly position the paw cursor
-        cursor.style.left = `${e.clientX}px`;
-        cursor.style.top = `${e.clientY}px`;
-    });
+    const puppyStatuses = [
+        "Sniffing around...",
+        "Exploring the orchard...",
+        "Wagging tail...",
+        "Looking for treats...",
+        "Spring is here!",
+        "Happy paws...",
+        "Searching for a home..."
+    ];
 
-    interactiveElements.forEach(el => {
-        el.addEventListener('mouseenter', () => cursor.classList.add('hover'));
-        el.addEventListener('mouseleave', () => cursor.classList.remove('hover'));
-    });
+    const hoverStatuses = [
+        "Take me home?",
+        "Look here! 🐾",
+        "Found a puppy!",
+        "Woof! Click me!",
+        "So much love here!"
+    ];
+
+    function getRandomStatus(isHover) {
+        const list = isHover ? hoverStatuses : puppyStatuses;
+        return list[Math.floor(Math.random() * list.length)];
+    }
+
+    // Check if device supports hover before attaching mouse events
+    if (window.matchMedia('(hover: hover) and (pointer: fine)').matches && cursor) {
+        document.addEventListener('mousemove', (e) => {
+            const isHover = cursor.classList.contains('is-hover');
+            const offset = isHover ? 24 : 5; 
+            cursor.style.transform = `translate3d(${e.clientX - offset}px, ${e.clientY - offset}px, 0)`;
+            
+            // Update status text if not already showing one or occasionally change
+            if (cursorText && !cursor.classList.contains('is-moving')) {
+                cursorText.textContent = getRandomStatus(isHover);
+            }
+            
+            cursor.classList.add('is-moving');
+            
+            clearTimeout(moveTimeout);
+            moveTimeout = setTimeout(() => {
+                cursor.classList.remove('is-moving');
+            }, 1500); // Keep text visible for a bit after stopping
+        });
+
+        const addHover = () => {
+            cursor.classList.add('is-hover');
+            if (cursorText) cursorText.textContent = getRandomStatus(true);
+        };
+        const removeHover = () => {
+            cursor.classList.remove('is-hover');
+            if (cursorText) cursorText.textContent = getRandomStatus(false);
+        };
+
+        document.addEventListener('mouseover', (e) => {
+            const target = e.target;
+            if (target.tagName.toLowerCase() === 'a' || 
+                target.tagName.toLowerCase() === 'button' || 
+                target.closest('a') || 
+                target.closest('button') ||
+                target.classList.contains('interactive') ||
+                target.closest('.glass-card') ||
+                target.closest('.header-logo') ||
+                target.closest('.house-layer') ||
+                target.closest('.front-trees')) {
+                addHover();
+            } else {
+                removeHover();
+            }
+        });
+    }
+    // ============================================================
+    // DYNAMIC LITTER LISTINGS
+    // ============================================================
+    const littersGrid = document.getElementById('litters-grid');
+
+    function getStatusClass(status) {
+        if (status.includes("reserve")) return "tag-available";
+        if (status.includes("Ready")) return "tag-ready";
+        return "tag-found";
+    }
+
+    function renderLitters() {
+        if (!littersGrid || typeof LITTERS === 'undefined') return;
+
+        // Sorting Logic: Ready to go (0) > Available to reserve (1) > Found families (2)
+        const priority = {
+            "Ready to go": 0,
+            "Available to reserve": 1,
+            "Found families": 2
+        };
+
+        const sortedLitters = [...LITTERS].sort((a, b) => {
+            return (priority[a.status] ?? 99) - (priority[b.status] ?? 99);
+        });
+
+        littersGrid.innerHTML = sortedLitters.map(litter => `
+            <a href="litter.html?id=${litter.id}" class="litter-card">
+                <div class="litter-tag ${getStatusClass(litter.status)}">${litter.status}</div>
+                <div class="litter-thumb-wrapper">
+                    <img src="${litter.thumbnail}" alt="${litter.breed}" class="litter-thumb">
+                </div>
+                <div class="litter-content">
+                    <div class="litter-title">${litter.litterName}</div>
+                    
+                    <div class="litter-expandable">
+                        <div class="litter-parents"><strong>Parents:</strong> ${litter.parents}</div>
+                        <div class="litter-breed">${litter.breed}</div>
+                        <div class="litter-info-row">
+                            <div class="info-item">
+                                <label>DOB</label>
+                                <span>${litter.dob}</span>
+                            </div>
+                            <div class="info-item">
+                                <label>Availability</label>
+                                <span>${litter.availability}</span>
+                            </div>
+                        </div>
+
+                        <div class="litter-desc">
+                            ${litter.shortDescription}
+                        </div>
+
+                        <div class="litter-footer">
+                            View Litter Details <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        `).join('');
+    }
+
+    // Initialize Listings
+    renderLitters();
+
+    // Render Happy Tails
+    renderHappyTails();
 });
+
+// ==========================================
+// HAPPY TAILS SLIDER LOGIC
+// ==========================================
+
+let currentSlide = 0;
+let slideInterval;
+
+function renderHappyTails() {
+    const track = document.getElementById('tails-track');
+    const dotsContainer = document.getElementById('slider-dots');
+    
+    if (!track || !HAPPY_TAILS.length) return;
+
+    // Render Slides
+    track.innerHTML = HAPPY_TAILS.map(tail => `
+        <div class="tail-slide">
+            <div class="tail-image-side">
+                <img src="${tail.image}" alt="${tail.familyName}">
+            </div>
+            <div class="tail-text-side">
+                <div class="tail-quote-icon">
+                    <i class="fa-solid fa-quote-left"></i>
+                </div>
+                <div class="tail-message">"${tail.message}"</div>
+                <div class="tail-family">${tail.familyName}</div>
+                <div class="tail-puppy">Adopted ${tail.puppyName}</div>
+            </div>
+        </div>
+    `).join('');
+
+    // Render Dots
+    dotsContainer.innerHTML = HAPPY_TAILS.map((_, index) => `
+        <div class="dot ${index === 0 ? 'active' : ''}" onclick="goToSlide(${index})"></div>
+    `).join('');
+
+    // Slider Controls
+    const prevBtn = document.querySelector('.prev-arrow');
+    const nextBtn = document.querySelector('.next-arrow');
+
+    if (prevBtn) prevBtn.onclick = () => moveSlide(-1);
+    if (nextBtn) nextBtn.onclick = () => moveSlide(1);
+
+    // Auto Slide
+    startSlideShow();
+}
+
+function moveSlide(direction) {
+    stopSlideShow();
+    currentSlide = (currentSlide + direction + HAPPY_TAILS.length) % HAPPY_TAILS.length;
+    updateSlider();
+    startSlideShow();
+}
+
+function goToSlide(index) {
+    stopSlideShow();
+    currentSlide = index;
+    updateSlider();
+    startSlideShow();
+}
+
+function updateSlider() {
+    const track = document.getElementById('tails-track');
+    const dots = document.querySelectorAll('.dot');
+    
+    if (!track) return;
+
+    track.style.transform = `translateX(-${currentSlide * 100}%)`;
+    
+    dots.forEach((dot, index) => {
+        dot.classList.toggle('active', index === currentSlide);
+    });
+}
+
+function startSlideShow() {
+    slideInterval = setInterval(() => {
+        currentSlide = (currentSlide + 1) % HAPPY_TAILS.length;
+        updateSlider();
+    }, 6000); // 6 seconds per slide
+}
+
+function stopSlideShow() {
+    clearInterval(slideInterval);
+}

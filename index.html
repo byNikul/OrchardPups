@@ -10,38 +10,42 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
 <body>
     <header class="glass-header">
         <div class="header-main">
             <div class="header-left">
-                <div class="header-logo">🐾 Orchard Pups</div>
+                <div class="header-logo">
+                    <span class="logo-icon">🐾</span>
+                    <span class="brand-logo-text">Orchard Pups</span>
+                </div>
+                <nav class="nav-links">
+                    <a href="#listings">Listings</a>
+                    <a href="#about">About</a>
+                    <a href="#tails">Happy Tails</a>
+                    <a href="#faqs">FAQs</a>
+                </nav>
             </div>
             <div class="header-right">
-                <div class="header-contact">
-                    <a href="#" class="contact-item">Facebook</a>
-                    <span class="contact-divider"></span>
-                    <a href="tel:+1234567890" class="contact-item">+1 315-576-1245</a>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/groups/399324617574989/" class="social-icon" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
                 </div>
-                <button class="btn-schedule">Schedule a Call</button>
+                <div class="header-divider"></div>
+                <a href="tel:+13155761245" class="header-phone">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>315-576-1245</span>
+                </a>
             </div>
         </div>
-        <nav class="header-expanded">
-            <div class="nav-links">
-                <a href="#about">About Us</a>
-                <a href="#listings">Listings</a>
-                <a href="#tails">Happy Tails</a>
-                <a href="#licences">Licences & Disclosures</a>
-                <a href="#faqs">FAQs</a>
-            </div>
-        </nav>
+
     </header>
 
-    <div class="custom-cursor">
-        <span class="paw-emoji">🐾</span>
-        <span class="dog-emoji">🐶</span>
+    <div id="custom-cursor">
+        <div class="cursor-text"></div>
     </div>
 
     <!-- Playful North Country Spring Background -->
@@ -211,48 +215,73 @@
     <!-- Scrollable Content -->
     <div class="content-wrapper">
         <section class="hero-section">
-            <div class="glass-card">
-                <h1>Orchard Pups</h1>
-                <p>Website building in Progress... Check back soon!</p>
+            <div class="main-hero-logo">
+                <div class="logo-row">
+                    <span class="logo-icon">🐾</span>
+                    <h1 class="brand-logo-text">Orchard Pups</h1>
+                </div>
+                <div class="hero-subtitle">Hand-Raised Happiness from Our Family to Yours</div>
             </div>
-        </section>
 
-        <section id="about" class="page-section">
-            <div class="section-container">
-                <h2>About Us</h2>
-                <div class="placeholder-content">Coming Soon...</div>
+            <div class="scroll-indicator">
+                <span>Scroll to Meet the Puppies</span>
+                <div class="scroll-arrow">
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
             </div>
         </section>
 
         <section id="listings" class="page-section">
-            <div class="section-container">
-                <h2>Available Listings</h2>
-                <div class="placeholder-content">Coming Soon...</div>
+            <h2>Meet the Puppies</h2>
+            <div id="litters-grid" class="litters-grid">
+                <!-- Dynamic Tiles Injected via JS -->
+            </div>
+        </section>
+
+        <section id="about" class="page-section">
+            <h2>About Us</h2>
+            <div class="about-content">
+                <p>Welcome to Orchard Pups! We are a small, dedicated family-owned business nestled in the beautiful countryside of Rochester, NY. Our journey began with a simple love for dogs and a desire to provide families with healthy, well-socialized, and truly happy companions.</p>
+                <p>Every puppy at Orchard Pups is raised right in our home, surrounded by the laughter of our children and the quiet peace of the orchard. We don't just breed dogs; we nurture future family members. From the very first breath to the day they join your home, our puppies receive around-the-clock care, premium nutrition, and endless snuggles.</p>
+                <p>Whether you're looking for a playful Golden Retriever or a gentle Goldendoodle, we’re here to help you find your perfect match. Thank you for letting us be a small part of your family's story!</p>
             </div>
         </section>
 
         <section id="tails" class="page-section">
-            <div class="section-container">
-                <h2>Happy Tails</h2>
-                <div class="placeholder-content">Coming Soon...</div>
+            <h2>Happy Tails</h2>
+            <div class="tails-slider-container">
+                <button class="slider-arrow prev-arrow" aria-label="Previous Slide">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </button>
+                
+                <div class="tails-slider-viewport">
+                    <div id="tails-track" class="tails-track">
+                        <!-- Happy Tails Tiles Injected via JS -->
+                    </div>
+                </div>
+
+                <button class="slider-arrow next-arrow" aria-label="Next Slide">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </button>
+
+                <div class="slider-dots" id="slider-dots">
+                    <!-- Dots Injected via JS -->
+                </div>
             </div>
         </section>
 
         <section id="licences" class="page-section">
-            <div class="section-container">
-                <h2>Licences & Disclosures</h2>
-                <div class="placeholder-content">Coming Soon...</div>
-            </div>
+            <h2>Licences & Disclosures</h2>
+            <div class="placeholder-content">Coming Soon...</div>
         </section>
 
         <section id="faqs" class="page-section">
-            <div class="section-container">
-                <h2>FAQs</h2>
-                <div class="placeholder-content">Coming Soon...</div>
-            </div>
+            <h2>FAQs</h2>
+            <div class="placeholder-content">Coming Soon...</div>
         </section>
     </div>
 
+    <script src="data.js"></script>
     <script src="script.js"></script>
 </body>
 
