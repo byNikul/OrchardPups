@@ -309,13 +309,61 @@
     transform: translateX(-5px);
 }
 
-@media (max-width: 1024px) {
+/* Mobile Adjustments */
+@media (max-width: 900px) {
+    .header-main {
+        padding: 0 15px;
+        justify-content: space-between;
+    }
+
+    .back-btn {
+        padding: 8px 12px;
+        font-size: 0.8rem;
+    }
+
+    .litter-hero {
+        padding: 40px 20px;
+        min-height: auto;
+    }
+
+    .litter-hero h1 {
+        font-size: 2.2rem;
+        line-height: 1.4; /* Prevent Pacifico cutting off */
+        padding: 10px 0;
+        white-space: normal;
+        text-align: center;
+    }
+
+    .header-parents-info {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .breed-subtitle {
+        text-align: center;
+    }
+
+    .quick-stats {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .media-viewport {
+        height: 350px; /* Bigger gallery image */
+    }
+
     .litter-main-grid {
         grid-template-columns: 1fr;
     }
+}
+
+@media (max-width: 480px) {
+    .litter-hero h1 {
+        font-size: 1.8rem;
+    }
     
-    .updates-column {
-        position: static;
+    .media-viewport {
+        height: 280px;
     }
 }
 

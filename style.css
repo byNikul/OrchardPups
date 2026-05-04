@@ -533,6 +533,10 @@
     }
 }
 
+.mobile-jump-nav {
+    display: none;
+}
+
 /* Scroll Indicator */
 .scroll-indicator {
     margin-top: 60px;
@@ -1395,97 +1399,118 @@ p {
 
 /* =========================================
    MOBILE RESPONSIVENESS (FINAL PRODUCTION VERSION)
+   MOBILE RESPONSIVENESS (REFINED & FIXED)
    ========================================= */
 
 @media (max-width: 900px) {
-    /* Global Adjustments */
-    .custom-cursor { display: none; }
-    body { cursor: auto !important; }
-
+    /* Header Fix */
     .header-main {
         padding: 0 15px;
+        height: 60px;
     }
     
     .brand-logo-text {
-        font-size: 1.1rem;
+        font-size: 1rem;
+        white-space: nowrap;
     }
     
-    .header-right {
-        display: none; 
+    .header-nav {
+        display: none; /* Hide nav links to prevent clipping */
     }
 
-    /* Hero Scaling */
-    .hero-section {
-        min-height: 70vh;
+    .header-right {
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        gap: 10px;
+    }
+
+    .contact-btn {
+        padding: 8px 12px;
+        font-size: 0.8rem;
+    }
+
+    /* Hero & Logo Fix */
+    .hero-section {
+        min-height: 80vh;
         padding-top: 40px;
     }
 
     .main-hero-logo {
-        transform: scale(0.75);
+        transform: none;
+        width: 90%;
+        max-width: 400px;
         margin-top: 20px;
     }
 
+    .logo-row {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: nowrap;
+        gap: 10px;
+    }
+
+    .brand-logo-text {
+        font-size: 2rem !important; /* Smaller but one line */
+        white-space: nowrap;
+    }
+
+    .logo-icon {
+        font-size: 1.8rem !important;
+    }
+
     .hero-subtitle {
-        font-size: 1.1rem;
-        letter-spacing: 2px;
+        font-size: 0.9rem;
+        letter-spacing: 1px;
+        margin-top: 5px;
     }
 
-    .scroll-indicator {
+    /* Mobile Jump Nav */
+    .mobile-jump-nav {
+        display: flex;
+        gap: 15px;
         margin-top: 30px;
+        background: rgba(255, 255, 255, 0.4);
+        backdrop-filter: blur(10px);
+        padding: 10px 20px;
+        border-radius: 30px;
+        border: 1px solid rgba(255, 255, 255, 0.5);
     }
 
-    /* Page Sections */
-    .page-section {
-        padding: 60px 20px;
+    .mobile-jump-nav a {
+        font-size: 0.75rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #3A8C63;
+        text-decoration: none;
     }
 
-    .page-section h2 {
-        font-size: 2rem;
-        margin-bottom: 30px;
-        text-align: center;
-    }
-
-    /* SOCIAL MEDIA STYLE LISTINGS FEED */
+    /* Puppy Tiles Fixes */
     .litters-grid {
         grid-template-columns: 1fr;
-        gap: 30px;
-        width: 100%;
-        max-width: 480px; 
-        margin: 0 auto;
+        gap: 25px;
     }
 
     .litter-card {
         border-radius: 24px;
         transform: none !important;
-        box-shadow: 0 10px 30px rgba(0,0,0,0.08);
     }
 
+    /* REMOVE ALL DELAYS FOR INSTANT MOBILE EXPANSION */
     .litter-expandable {
         max-height: none !important;
         opacity: 1 !important;
         transform: none !important;
+        transition: none !important;
         margin-top: 15px;
+        display: block !important;
+    }
+
+    .litter-parents, .litter-breed, .litter-info-row, .litter-desc {
+        opacity: 1 !important;
+        transform: none !important;
+        transition: none !important;
     }
 
     .litter-thumb-wrapper {
-        height: 250px;
-    }
-
-    .litter-content {
-        padding: 20px;
-    }
-
-    /* HAPPY TAILS MOBILE POLISH */
-    .tails-slider-container {
-        padding: 0;
-    }
-
-    .tails-slider-viewport {
-        border-radius: 24px;
     }
 
     .tail-slide {
