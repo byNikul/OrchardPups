@@ -254,6 +254,36 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Render Happy Tails
     renderHappyTails();
+
+    // ============================================================
+    // FAQ ACCORDION LOGIC
+    // ============================================================
+    const faqItems = document.querySelectorAll('.faq-item');
+
+    faqItems.forEach(item => {
+        const question = item.querySelector('.faq-question');
+        question.addEventListener('click', () => {
+            const isActive = item.classList.contains('active');
+
+            // Close all other items
+            faqItems.forEach(otherItem => {
+                if (otherItem !== item) {
+                    otherItem.classList.remove('active');
+                    otherItem.querySelector('.faq-answer').style.maxHeight = '0';
+                }
+            });
+
+            // Toggle current item
+            item.classList.toggle('active');
+            const answer = item.querySelector('.faq-answer');
+            
+            if (!isActive) {
+                answer.style.maxHeight = answer.scrollHeight + 'px';
+            } else {
+                answer.style.maxHeight = '0';
+            }
+        });
+    });
 });
 
 // ==========================================
