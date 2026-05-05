@@ -25,13 +25,13 @@
     box-sizing: border-box;
 }
 
-@media (hover: hover) and (pointer: fine) {
-
-    *,
-    *::before,
-    *::after {
-        cursor: none !important;
-    }
+body.js-cursor-active, 
+body.js-cursor-active a, 
+body.js-cursor-active button, 
+body.js-cursor-active .interactive, 
+body.js-cursor-active .litter-card, 
+body.js-cursor-active .faq-question {
+    cursor: none !important;
 }
 
 /* Custom Cursor Styling */
@@ -1585,39 +1585,68 @@ body {
     color: #2D3748;
 }
 
-.expense-tags {
+.prep-card.theme-blue { border-top: 4px solid #B5D8EB; }
+.prep-card.theme-green { border-top: 4px solid #C1E1C1; }
+.prep-card.theme-gold { border-top: 4px solid #FFE5B4; }
+
+.prep-badge {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: white;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #3A8C63;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.prep-toolkit, .shopping-checklist {
     display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    margin-top: auto; /* Push to bottom for alignment */
+    flex-direction: column;
+    gap: 12px;
+    margin-top: auto;
     padding-top: 20px;
 }
 
-.expense-tags span {
-    background: rgba(58, 140, 99, 0.1);
+.toolkit-item, .check-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 0.9rem;
+    color: #4A5568;
+    font-weight: 500;
+}
+
+.toolkit-item i, .check-item i {
     color: #3A8C63;
-    padding: 4px 12px;
-    border-radius: 15px;
-    font-size: 0.8rem;
-    font-weight: 600;
+    font-size: 1rem;
+}
+
+.check-item i {
+    color: #3A8C63;
+    opacity: 0.8;
 }
 
 .therapy-pill {
-    margin-top: auto; /* Push to bottom for alignment */
+    margin-top: auto;
     padding: 15px;
-    background: rgba(255, 209, 220, 0.2);
+    background: rgba(255, 229, 180, 0.2);
     border-radius: 15px;
     display: flex;
     align-items: center;
     gap: 12px;
     color: #6B4F2A;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     font-weight: 500;
-    border: 1px solid rgba(255, 209, 220, 0.4);
+    border: 1px solid rgba(255, 229, 180, 0.4);
 }
 
 .therapy-pill i {
-    color: #FFD1DC;
+    color: #D4AF37;
     font-size: 1rem;
 }
 
@@ -1798,24 +1827,36 @@ body {
         flex-shrink: 0;
     }
 
-    .social-links { gap: 8px; }
-
-    .social-icon {
-        width: 30px;
-        height: 30px;
-        font-size: 0.8rem;
-    }
+    .social-links { display: none !important; }
 
     .header-divider { display: none; }
 
     .header-phone {
-        font-size: 0.78rem;
-        white-space: nowrap; /* Never wrap the phone number */
+        font-size: 0.8rem;
+        white-space: nowrap;
         gap: 5px;
+        color: #3A8C63; /* Make phone stand out more if socials are gone */
     }
 
     .header-usda {
-        display: none; /* Hide detailed badge on small mobile headers to save space */
+        display: flex !important;
+        flex-direction: column;
+        align-items: flex-end;
+        line-height: 1;
+        gap: 2px;
+    }
+
+    .usda-label {
+        font-size: 0.45rem;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        opacity: 0.6;
+    }
+
+    .usda-id {
+        font-size: 0.7rem;
+        font-weight: 700;
+        color: var(--text-primary);
     }
 
     /* ── 3. HERO SECTION ──
@@ -1848,31 +1889,38 @@ body {
         font-size: 2.6rem;
     }
 
-    /* Punchline: scale up and allow wrapping for readability */
+    /* Punchline: smaller to prevent awkward wrapping */
     .hero-subtitle {
-        font-size: 0.85rem;
+        font-size: 0.68rem;
         line-height: 1.4;
-        margin: 12px auto 0;
+        margin: 10px auto 0;
         white-space: normal;
         letter-spacing: 2px;
-        max-width: 90%;
+        max-width: 85%;
         text-align: center;
+        opacity: 0.8;
     }
 
     .hero-location {
-        font-size: 0.75rem;
-        margin-top: 8px;
+        font-size: 0.65rem;
+        margin-top: 6px;
         letter-spacing: 1px;
     }
 
     /* ── 4. PAGE SECTIONS ── */
     .page-section {
-        padding: 60px 20px 50px;
+        padding: 60px 24px 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        text-align: center;
     }
 
     .page-section h2 {
         font-size: 2.2rem;
         margin-bottom: 2rem;
+        width: 100%;
     }
 
     /* ── 5. ABOUT SECTION ── */
@@ -2044,10 +2092,32 @@ body {
 
     .prep-grid {
         grid-template-columns: 1fr;
+        width: 100%;
+        max-width: 450px; /* Slightly narrower for better balance */
+        margin: 0 auto;
+        gap: 24px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .prep-card {
-        padding: 2rem !important;
+        width: 100%;
+        padding: 2.5rem 1.5rem !important;
+        text-align: center !important;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .prep-toolkit, .shopping-checklist {
+        align-items: center;
+        width: 100%;
+    }
+
+    .toolkit-item, .check-item {
+        width: fit-content;
+        text-align: left;
     }
 
     /* ── 11. FAQ ACCORDION MOBILE ── */
@@ -2140,129 +2210,150 @@ body {
 }
 
 /* =========================================
-   SITE FOOTER
+   CONTACT SECTION (OPEN LAYOUT)
    ========================================= */
 
-.site-footer {
-    background: rgba(255, 255, 255, 0.8);
-    backdrop-filter: blur(20px);
-    border-top: 1px solid var(--glass-border);
-    padding: 80px 8% 40px;
-    margin-top: 50px;
+.contact-open-layout {
+    text-align: center;
+    padding: 100px 20px 80px;
+    background: transparent; /* Open layout, blends with BG */
 }
 
-.footer-content {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1.5fr 1fr 1.2fr;
-    gap: 60px;
-    margin-bottom: 60px;
+.contact-header {
+    margin-bottom: 50px;
 }
 
-.footer-brand .header-logo {
-    margin-bottom: 20px;
-}
-
-.footer-brand p {
-    font-size: 1rem;
-    line-height: 1.6;
-    color: #4A5568;
-    max-width: 300px;
-    opacity: 0.8;
-}
-
-.footer-links h3, .footer-contact h3 {
-    font-family: 'Outfit', sans-serif;
-    font-size: 1.2rem;
-    margin-bottom: 25px;
+.contact-header h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
     color: #2D3748;
 }
 
-.footer-links {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-}
-
-.footer-links a {
-    text-decoration: none;
+.contact-header p {
+    font-size: 1.1rem;
     color: #4A5568;
-    font-size: 0.95rem;
-    transition: color 0.3s ease;
+    opacity: 0.8;
 }
 
-.footer-links a:hover {
-    color: #3A8C63;
-}
-
-.footer-contact {
+.contact-nodes {
     display: flex;
-    flex-direction: column;
-    gap: 15px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 50px;
 }
 
-.footer-contact a, .footer-contact p {
-    text-decoration: none;
-    color: #4A5568;
-    font-size: 0.95rem;
+.contact-node {
     display: flex;
     align-items: center;
     gap: 12px;
 }
 
-.footer-contact a:hover {
+.contact-node a, .contact-node span {
+    text-decoration: none;
+    color: #2D3748;
+    font-size: 1.2rem;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.contact-node a:hover {
     color: #3A8C63;
 }
 
-.footer-contact i {
+.contact-node i {
     color: #3A8C63;
-    font-size: 1rem;
+    font-size: 1.1rem;
 }
 
-.footer-socials {
+.contact-node-divider {
+    width: 1px;
+    height: 25px;
+    background: rgba(0,0,0,0.1);
+}
+
+.contact-social-row {
     display: flex;
-    gap: 12px;
-    margin-top: 10px;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 60px;
 }
 
-.footer-bottom {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding-top: 40px;
-    border-top: 1px solid rgba(0,0,0,0.05);
-    text-align: center;
+.contact-social-row a {
+    text-decoration: none;
+    color: #4A5568;
+    font-size: 1.5rem;
+    transition: all 0.3s ease;
+    width: 50px;
+    height: 50px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
 }
 
-.footer-bottom p {
-    font-size: 0.85rem;
-    color: #718096;
+.contact-social-row a:hover {
+    color: #3A8C63;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(58, 140, 99, 0.1);
 }
 
-@media (max-width: 900px) {
-    .footer-content {
-        grid-template-columns: 1fr;
-        gap: 40px;
-        text-align: center;
+
+
+@media (max-width: 768px) {
+    .contact-open-layout {
+        padding: 80px 24px 60px;
     }
-
-    .footer-brand, .footer-contact {
-        align-items: center;
+    .contact-header h2 {
+        font-size: 2.2rem;
+        line-height: 1.2;
     }
-
-    .footer-brand p {
+    .contact-header p {
+        font-size: 1rem;
+        max-width: 280px;
         margin: 0 auto;
     }
-
-    .footer-contact a, .footer-contact p {
+    .contact-nodes {
+        flex-direction: column;
+        gap: 24px;
+        margin-top: 40px;
+    }
+    .contact-node-divider {
+        display: none;
+    }
+    .contact-node {
+        background: rgba(255, 255, 255, 0.4);
+        padding: 12px 20px;
+        border-radius: 30px;
+        width: 100%;
+        max-width: 320px;
         justify-content: center;
+        border: 1px solid rgba(0,0,0,0.03);
+    }
+    .contact-node a, .contact-node span {
+        font-size: 1.05rem;
+    }
+    .contact-social-row {
+        gap: 20px;
+        margin-bottom: 40px;
+    }
+    .contact-social-row a {
+        width: 48px;
+        height: 48px;
+        font-size: 1.4rem;
     }
 }
 
 @media (max-width: 400px) {
     .main-hero-logo .brand-logo-text { font-size: 2.4rem !important; }
     .main-hero-logo .logo-icon { font-size: 2rem; }
-    .hero-subtitle { font-size: 0.48rem; }
-    .hero-location { font-size: 0.45rem; margin-top: 4px; }
+    .hero-subtitle { font-size: 0.6rem; letter-spacing: 1px; }
+    .hero-location { font-size: 0.55rem; margin-top: 4px; }
     .page-section h2 { font-size: 1.9rem; }
+    .contact-header h2 { font-size: 1.7rem; }
+    .contact-node a, .contact-node span { font-size: 1rem; }
+    .contact-social-row a { width: 40px; height: 40px; font-size: 1.2rem; }
 }

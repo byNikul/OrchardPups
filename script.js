@@ -143,6 +143,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Check if device supports hover before attaching mouse events
     if (window.matchMedia('(hover: hover) and (pointer: fine)').matches && cursor) {
+        document.body.classList.add('js-cursor-active');
         document.addEventListener('mousemove', (e) => {
             const isHover = cursor.classList.contains('is-hover');
             const offset = isHover ? 24 : 5;
