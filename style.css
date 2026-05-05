@@ -8,7 +8,7 @@
     --hill-front: #A3D1A3;
     --blossom-pink: #FFD1DC;
     --blossom-white: #FFFFFF;
-    
+
     /* Portfolio Cursor Vars */
     --ease-cinematic: cubic-bezier(0.25, 1, 0.5, 1);
     --font-mono: "JetBrains Mono", monospace;
@@ -26,6 +26,7 @@
 }
 
 @media (hover: hover) and (pointer: fine) {
+
     *,
     *::before,
     *::after {
@@ -40,7 +41,8 @@
     left: 0;
     width: 10px;
     height: 10px;
-    background-color: #52B788; /* Sage Green */
+    background-color: #52B788;
+    /* Sage Green */
     border-radius: 50%;
     pointer-events: none;
     z-index: 99999;
@@ -58,7 +60,8 @@
 #custom-cursor.is-hover {
     width: 48px;
     height: 48px;
-    background-color: rgba(255, 209, 220, 0.15); /* Soft Blossom Pink */
+    background-color: rgba(255, 209, 220, 0.15);
+    /* Soft Blossom Pink */
     border: 1.5px solid #FFD1DC;
     box-shadow: 0 0 25px rgba(255, 209, 220, 0.7);
     backdrop-filter: blur(2px);
@@ -113,7 +116,7 @@
     white-space: nowrap;
     opacity: 0;
     transform: translateY(5px);
-    transition: 
+    transition:
         opacity 0.3s var(--ease-cinematic),
         transform 0.3s var(--ease-cinematic);
     pointer-events: none;
@@ -139,7 +142,8 @@
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     border-bottom: 1px solid var(--glass-border);
-    height: 46px; /* Reduced vertical length */
+    height: 46px;
+    /* Reduced vertical length */
     display: flex;
     align-items: center;
     padding: 0 40px;
@@ -168,7 +172,8 @@
 }
 
 .glass-header .brand-logo-text {
-    font-size: 1.25rem; /* Smaller header logo */
+    font-size: 1.25rem;
+    /* Smaller header logo */
 }
 
 .glass-header .logo-icon {
@@ -180,19 +185,21 @@
     font-size: 1.6rem;
     font-weight: 400;
     letter-spacing: 0;
-    display: inline-block; /* Essential for padding/transform to work */
-    padding-bottom: 0.15em; /* Room for descenders (p, g, y) */
-    margin-bottom: -0.15em; /* Compensation */
-    background: linear-gradient(
-        120deg, 
-        #2D6A4F 0%, 
-        #9F7AEA 25%, 
-        #F6AD55 50%, 
-        #9F7AEA 75%, 
-        #2D6A4F 100%
-    );
+    display: inline-block;
+    /* Essential for padding/transform to work */
+    padding-bottom: 0.15em;
+    /* Room for descenders (p, g, y) */
+    margin-bottom: -0.15em;
+    /* Compensation */
+    background: linear-gradient(120deg,
+            #2D6A4F 0%,
+            #9F7AEA 25%,
+            #F6AD55 50%,
+            #9F7AEA 75%,
+            #2D6A4F 100%);
     background-size: 200% auto;
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: gradientFlow 6s linear infinite;
 }
@@ -200,8 +207,9 @@
 .logo-icon {
     font-size: 1.4rem;
     display: inline-block;
-    animation: pawHeartbeat 4s ease-in-out infinite; /* Slow heartbeat effect */
-    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
+    animation: pawHeartbeat 4s ease-in-out infinite;
+    /* Slow heartbeat effect */
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
     transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
@@ -215,14 +223,29 @@
 }
 
 @keyframes gradientFlow {
-    0% { background-position: 0% center; }
-    50% { background-position: 100% center; }
-    100% { background-position: 0% center; }
+    0% {
+        background-position: 0% center;
+    }
+
+    50% {
+        background-position: 100% center;
+    }
+
+    100% {
+        background-position: 0% center;
+    }
 }
 
 @keyframes pawHeartbeat {
-    0%, 100% { transform: scale(1); }
-    50% { transform: scale(1.12); }
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.12);
+    }
 }
 
 .header-right {
@@ -323,7 +346,8 @@
    ========================================= */
 
 .hero-section {
-    min-height: 75vh; /* Balanced height */
+    min-height: 75vh;
+    /* Balanced height */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -332,7 +356,8 @@
 }
 
 .page-section {
-    padding: 100px 8% 80px; /* Increased top padding from 40px to 100px */
+    padding: 100px 8% 80px;
+    /* Increased top padding from 40px to 100px */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -349,22 +374,24 @@
     margin-bottom: 3.5rem;
     background: linear-gradient(135deg, #2D3748 0%, #3A8C63 100%);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     letter-spacing: -0.5px;
     text-align: center;
 }
 
 .about-content {
-    max-width: 1100px; /* Wider layout */
+    max-width: 1100px;
+    /* Wider layout */
     padding: 20px 0;
     text-align: center;
 }
 
 .about-content p {
-    font-size: 1.25rem; /* Slightly larger text for better readability on wider layout */
-    line-height: 1.8;
+    font-size: 1.1rem;
+    line-height: 1.7;
     color: #2D3748;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
     opacity: 0.9;
 }
 
@@ -372,7 +399,7 @@
     margin-bottom: 0;
     font-weight: 600;
     color: #3A8C63;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
 }
 
 .placeholder-content {
@@ -485,8 +512,13 @@
     transform: translateY(-50%) scale(1.1);
 }
 
-.prev-arrow { left: 0; }
-.next-arrow { right: 0; }
+.prev-arrow {
+    left: -15px; /* Slight negative offset so it sits outside the viewport */
+}
+
+.next-arrow {
+    right: -15px;
+}
 
 .slider-dots {
     display: flex;
@@ -510,32 +542,7 @@
     border-radius: 10px;
 }
 
-@media (max-width: 900px) {
-    .tail-slide {
-        grid-template-columns: 1fr;
-    }
-    
-    .tail-image-side {
-        height: 300px;
-    }
-    
-    .tail-text-side {
-        padding: 40px 30px;
-        text-align: center;
-    }
-    
-    .tails-slider-container {
-        padding: 0 10px;
-    }
-    
-    .slider-arrow {
-        display: none; /* Swipe on mobile */
-    }
-}
-
-.mobile-jump-nav {
-    display: none;
-}
+/* Removed redundant media query */
 
 /* Scroll Indicator */
 .scroll-indicator {
@@ -564,14 +571,34 @@
 }
 
 @keyframes bounce {
-    0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
-    40% { transform: translateY(-10px); }
-    60% { transform: translateY(-5px); }
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-10px);
+    }
+
+    60% {
+        transform: translateY(-5px);
+    }
 }
 
 @keyframes fadeInOut {
-    0%, 100% { opacity: 0.4; }
-    50% { opacity: 0.8; }
+
+    0%,
+    100% {
+        opacity: 0.4;
+    }
+
+    50% {
+        opacity: 0.8;
+    }
 }
 
 /* =========================================
@@ -580,8 +607,9 @@
 
 .litters-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); /* The "Best Fit" for detailed cards */
-    gap: 50px; 
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    /* The "Best Fit" for detailed cards */
+    gap: 50px;
     width: 100%;
     text-align: left;
 }
@@ -604,12 +632,16 @@
     content: "";
     position: absolute;
     inset: 0;
-    padding: 2.5px; /* border thickness */
+    padding: 2.5px;
+    /* border thickness */
     border-radius: 30px;
     background: linear-gradient(90deg, #A3D1A3, #FFD1DC, #A3D1A3, #FFD1DC);
     background-size: 300% 300%;
-    -webkit-mask: 
-        linear-gradient(#fff 0 0) content-box, 
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    mask:
+        linear-gradient(#fff 0 0) content-box,
         linear-gradient(#fff 0 0);
     -webkit-mask-composite: destination-out;
     mask-composite: exclude;
@@ -631,22 +663,51 @@
 }
 
 @keyframes gradientBorderFlow {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 .litter-thumb-wrapper {
     width: 100%;
     height: 220px;
     overflow: hidden;
-    position: relative;
+    position: relative; /* stacking context for the tag */
+    background: #000;
+}
+
+.litter-thumb-bg {
+    position: absolute;
+    top: -10%;
+    left: -10%;
+    width: 120%;
+    height: 120%;
+    background-size: cover;
+    background-position: center;
+    filter: blur(20px);
+    opacity: 0.6;
+    z-index: 1;
+    transition: transform 0.8s var(--ease-cinematic); /* Scale with image */
+}
+
+.litter-card:hover .litter-thumb-bg {
+    transform: scale(1.1); /* Match image zoom */
 }
 
 .litter-thumb {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
+    position: relative;
+    z-index: 2;
     transition: transform 0.8s var(--ease-cinematic);
 }
 
@@ -656,29 +717,45 @@
 
 .litter-tag {
     position: absolute;
-    top: 20px;
-    right: 20px;
-    padding: 6px 15px;
+    top: 14px;
+    right: 14px;
+    padding: 5px 13px;
     border-radius: 20px;
-    font-size: 0.75rem;
+    font-size: 0.72rem;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.5px;
-    z-index: 2;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 10; /* Above both blur layer and image */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18);
 }
 
 /* Status Colors */
-.tag-available { background: #FFD700; color: #744210; } /* Golden */
-.tag-ready { background: #48BB78; color: white; } /* Green */
-.tag-found { background: #A0AEC0; color: white; } /* Grey */
+.tag-available {
+    background: #FFD700;
+    color: #744210;
+}
+
+/* Golden */
+.tag-ready {
+    background: #48BB78;
+    color: white;
+}
+
+/* Green */
+.tag-found {
+    background: #A0AEC0;
+    color: white;
+}
+
+/* Grey */
 
 .litter-content {
     padding: 25px;
     flex-grow: 1;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end; /* Push title to bottom initially */
+    justify-content: flex-end;
+    /* Push title to bottom initially */
     transition: all 0.5s var(--ease-cinematic);
 }
 
@@ -700,7 +777,7 @@
     max-height: 0;
     opacity: 0;
     overflow: hidden;
-    transition: 
+    transition:
         max-height 1.2s cubic-bezier(0.4, 0, 0.2, 1),
         opacity 0.8s ease,
         transform 0.8s cubic-bezier(0.34, 1.56, 0.64, 1);
@@ -719,7 +796,7 @@
     opacity: 0.9;
     color: #2D3748;
     transition: opacity 0.6s ease 0.2s, transform 0.6s ease 0.2s;
-    transform: translateY(10px);
+    transform: translateY(0); /* No starting offset — prevents jump glitch */
 }
 
 .litter-card:hover .litter-parents {
@@ -735,7 +812,7 @@
     letter-spacing: 1px;
     margin-bottom: 12px;
     transition: opacity 0.6s ease 0.4s, transform 0.6s ease 0.4s;
-    transform: translateY(10px);
+    transform: translateY(0); /* No starting offset */
 }
 
 .litter-card:hover .litter-breed {
@@ -885,8 +962,9 @@ body {
 .cloud::after {
     content: '';
     position: absolute;
-    background: rgba(253, 251, 247, 0.8);
+    background: inherit; /* Inherit background from parent cloud */
     border-radius: 50%;
+    opacity: 1; /* Solid overlap to prevent 'circle' look */
 }
 
 /* ================================================
@@ -1315,7 +1393,7 @@ body {
     padding: 4rem 5rem;
     border-radius: 40px;
     text-align: center;
-    box-shadow: 
+    box-shadow:
         0 20px 50px -15px rgba(163, 209, 163, 0.4),
         inset 0 0 20px rgba(255, 255, 255, 0.3);
     max-width: 700px;
@@ -1332,32 +1410,37 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 0; /* Closer tagline */
+    gap: 0;
+    /* Closer tagline */
     overflow: visible;
 }
 
 .logo-row {
     display: flex;
     align-items: center;
-    gap: 8px; /* Closer paw */
+    gap: 8px;
+    /* Closer paw */
     overflow: visible;
 }
 
 .main-hero-logo .brand-logo-text {
     font-family: 'Pacifico', cursive;
     font-size: 5rem;
-    line-height: 1.6; /* Increased for Pacifico descenders */
+    line-height: 1.6;
+    /* Increased for Pacifico descenders */
     padding-bottom: 0.1em;
     margin-bottom: -0.1em;
     text-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
 .main-hero-logo .logo-icon {
-    font-size: 4.5rem; /* Bigger */
+    font-size: 4.5rem;
+    /* Bigger */
 }
 
 .hero-subtitle {
-    margin-top: 2px; /* Much closer to logo */
+    margin-top: 2px;
+    /* Much closer to logo */
     font-size: 0.85rem;
     font-weight: 600;
     color: var(--text-primary);
@@ -1376,150 +1459,201 @@ body {
     }
 }
 
-.logo {
-    font-size: 1.5rem;
-    font-weight: 800;
-    color: var(--hill-front);
-    margin-bottom: 1.5rem;
-    letter-spacing: -0.5px;
-}
-
-h1 {
-    font-size: 2.5rem;
-    font-weight: 800;
-    margin-bottom: 1rem;
-    line-height: 1.2;
-}
-
-p {
-    font-size: 1.1rem;
-    opacity: 0.8;
-    line-height: 1.6;
-}
+/* Removed generic selectors that broke desktop layout */
 
 /* =========================================
-   MOBILE RESPONSIVENESS (FINAL PRODUCTION VERSION)
-   MOBILE RESPONSIVENESS (REFINED & FIXED)
+   MOBILE RESPONSIVENESS
    ========================================= */
 
 @media (max-width: 900px) {
-    /* Header Fix */
+
+    /* ── 1. GLOBAL ── */
+    #custom-cursor { display: none !important; }
+    body { cursor: auto !important; }
+
+    /* ── 2. HEADER ──
+       Use direct font-size scaling (NOT transform) so flexbox
+       calculates correct widths and the phone number never wraps. */
+    .glass-header {
+        height: auto;
+        padding: 8px 14px;
+        background: rgba(255, 255, 255, 0.96);
+    }
+
     .header-main {
-        padding: 0 15px;
-        height: 60px;
-    }
-    
-    .brand-logo-text {
-        font-size: 1rem;
-        white-space: nowrap;
-    }
-    
-    .header-nav {
-        display: none; /* Hide nav links to prevent clipping */
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0;
     }
 
+    /* Shrink logo text directly — no transforms */
+    .glass-header .brand-logo-text {
+        font-size: 1.05rem !important;
+    }
+    .glass-header .logo-icon {
+        font-size: 0.9rem !important;
+    }
+    .header-logo {
+        gap: 4px;
+    }
+
+    /* Hide desktop nav links */
+    .nav-links {
+        display: none !important;
+    }
+
+    /* Keep right side compact */
     .header-right {
-        display: flex;
+        display: flex !important;
+        align-items: center;
         gap: 10px;
+        flex-shrink: 0;
     }
 
-    .contact-btn {
-        padding: 8px 12px;
+    .social-links { gap: 8px; }
+
+    .social-icon {
+        width: 30px;
+        height: 30px;
         font-size: 0.8rem;
     }
 
-    /* Hero & Logo Fix */
+    .header-divider { display: none; }
+
+    .header-phone {
+        font-size: 0.78rem;
+        white-space: nowrap; /* Never wrap the phone number */
+        gap: 5px;
+    }
+
+    /* ── 3. HERO SECTION ──
+       Logo MUST be the biggest element. Punchline is smaller. */
     .hero-section {
-        min-height: 80vh;
-        padding-top: 40px;
+        min-height: 75vh;
+        padding: 60px 20px 40px;
+        justify-content: center;
     }
 
     .main-hero-logo {
+        width: 100%;
+        padding: 0;
         transform: none;
-        width: 90%;
-        max-width: 400px;
-        margin-top: 20px;
     }
 
     .logo-row {
-        flex-direction: row;
         justify-content: center;
-        flex-wrap: nowrap;
         gap: 10px;
-    }
-
-    .brand-logo-text {
-        font-size: 2rem !important; /* Smaller but one line */
         white-space: nowrap;
     }
 
-    .logo-icon {
-        font-size: 1.8rem !important;
+    /* BIG logo on mobile */
+    .main-hero-logo .brand-logo-text {
+        font-size: 3rem !important;
+        letter-spacing: -0.5px;
     }
 
+    .main-hero-logo .logo-icon {
+        font-size: 2.6rem;
+    }
+
+    /* Punchline: single line, tiny, never wraps */
     .hero-subtitle {
-        font-size: 0.9rem;
-        letter-spacing: 1px;
-        margin-top: 5px;
+        font-size: 0.52rem;
+        line-height: 1.4;
+        margin: 8px auto 0;
+        white-space: nowrap;
+        letter-spacing: 3px;
     }
 
-    /* Mobile Jump Nav */
-    .mobile-jump-nav {
-        display: flex;
-        gap: 15px;
-        margin-top: 30px;
-        background: rgba(255, 255, 255, 0.4);
-        backdrop-filter: blur(10px);
-        padding: 10px 20px;
-        border-radius: 30px;
-        border: 1px solid rgba(255, 255, 255, 0.5);
+    /* ── 4. PAGE SECTIONS ── */
+    .page-section {
+        padding: 60px 20px 50px;
     }
 
-    .mobile-jump-nav a {
-        font-size: 0.75rem;
-        font-weight: 700;
-        text-transform: uppercase;
-        color: #3A8C63;
-        text-decoration: none;
+    .page-section h2 {
+        font-size: 2.2rem;
+        margin-bottom: 2rem;
     }
 
-    /* Puppy Tiles Fixes */
+    /* ── 5. ABOUT SECTION ── */
+    .about-content {
+        padding: 0;
+    }
+    .about-content p {
+        font-size: 1rem;
+        line-height: 1.7;
+        margin-bottom: 20px;
+    }
+    .about-content p:last-child {
+        font-size: 1.05rem;
+    }
+
+    /* ── 6. PUPPY TILES — always fully visible on mobile ── */
     .litters-grid {
         grid-template-columns: 1fr;
-        gap: 25px;
+        gap: 30px;
+        padding: 0;
+    }
+
+    /* Disable glow border animation on mobile — not needed, saves GPU */
+    .litter-card::before {
+        display: none;
     }
 
     .litter-card {
-        border-radius: 24px;
+        border-radius: 22px;
         transform: none !important;
     }
 
-    /* REMOVE ALL DELAYS FOR INSTANT MOBILE EXPANSION */
+    .litter-thumb-wrapper {
+        height: 240px;
+    }
+
+    .litter-content {
+        padding: 22px;
+    }
+
+    /* Force all expandable content visible — no hover needed */
     .litter-expandable {
         max-height: none !important;
         opacity: 1 !important;
         transform: none !important;
-        transition: none !important;
-        margin-top: 15px;
         display: block !important;
+        margin-top: 12px;
     }
 
-    .litter-parents, .litter-breed, .litter-info-row, .litter-desc {
+    .litter-parents,
+    .litter-breed,
+    .litter-info-row,
+    .litter-desc {
         opacity: 1 !important;
         transform: none !important;
         transition: none !important;
     }
 
-    .litter-thumb-wrapper {
+    .litter-title {
+        margin-bottom: 12px;
+        color: #3A8C63;
+    }
+
+    /* ── 7. HAPPY TAILS SLIDER ── */
+    .tails-slider-container {
+        padding: 0;
+        margin: 0 10px; /* Prevent slider bleeding to screen edges */
+    }
+
+    .slider-arrow {
+        display: none !important; /* Swipe + dots on mobile */
     }
 
     .tail-slide {
-        grid-template-columns: 1fr; /* Stack vertically */
+        grid-template-columns: 1fr;
         min-height: auto;
     }
 
     .tail-image-side {
-        height: 280px; /* Consistent height for photo */
+        height: 250px;
     }
 
     .tail-text-side {
@@ -1528,47 +1662,44 @@ p {
     }
 
     .tail-message {
-        font-size: 1.1rem;
+        font-size: 1rem;
         line-height: 1.6;
         margin-bottom: 20px;
     }
 
-    .slider-arrow {
-        display: none; /* Hide arrows on mobile for cleaner look */
-    }
-
     .slider-dots {
-        margin-top: 20px;
+        margin-top: 18px;
     }
 
-    /* About Us Mobile */
-    .about-content {
-        padding: 0;
-    }
-
-    .about-content p {
-        font-size: 1.1rem;
-        line-height: 1.7;
-    }
-
-    /* Scenery Optimizations */
+    /* ── 8. BACKGROUND ── */
     .cloud {
-        width: 80px !important;
-        height: 28px !important;
-        filter: blur(3px) !important;
+        opacity: 0.6 !important;
     }
-    .c1, .c3, .c5, .c7, .c9, .c10, .front-trees, .house-layer { display: none !important; } 
 
-    /* Detail Page Mobile */
-    .litter-hero h1 { font-size: 2.2rem; }
-    .litter-main-grid { grid-template-columns: 1fr; }
-    .description-box, .timeline-container, .media-viewport-container { 
-        padding: 20px;
-        border-radius: 20px;
+    /* Scale down scenery so it never overlaps content */
+    .house-layer {
+        transform: scale(0.5);
+        transform-origin: bottom right;
+        bottom: 2vh;
+        right: -60px;
+    }
+
+    .front-trees {
+        transform: scale(0.5);
+        transform-origin: bottom left;
+        bottom: 2vh;
+        left: -60px;
+    }
+
+    .hills-layer {
+        height: 22vh;
     }
 }
 
-@media (max-width: 480px) {
-    .main-hero-logo { transform: scale(0.65); }
-    .page-section h2 { font-size: 1.8rem; }
+/* Extra small screens (iPhone SE, etc.) */
+@media (max-width: 400px) {
+    .main-hero-logo .brand-logo-text { font-size: 2.4rem !important; }
+    .main-hero-logo .logo-icon { font-size: 2rem; }
+    .hero-subtitle { font-size: 0.48rem; }
+    .page-section h2 { font-size: 1.9rem; }
 }

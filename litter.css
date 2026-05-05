@@ -38,6 +38,7 @@
     margin-bottom: 5px;
     background: linear-gradient(135deg, #2D3748 0%, #3A8C63 100%);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
@@ -126,11 +127,26 @@
     position: relative;
 }
 
+.media-bg-blur {
+    position: absolute;
+    top: -10%;
+    left: -10%;
+    width: 120%;
+    height: 120%;
+    background-size: cover;
+    background-position: center;
+    filter: blur(30px);
+    opacity: 0.6;
+    z-index: 1;
+}
+
 .media-viewport img,
 .media-viewport video {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
+    position: relative;
+    z-index: 2;
 }
 
 .media-label {
@@ -151,6 +167,7 @@
     justify-content: space-between;
     padding: 0 10px;
     pointer-events: none;
+    z-index: 10; /* Must be above .media-viewport stacking context */
 }
 
 .media-nav button {
@@ -309,61 +326,87 @@
     transform: translateX(-5px);
 }
 
-/* Mobile Adjustments */
 @media (max-width: 900px) {
-    .header-main {
-        padding: 0 15px;
-        justify-content: space-between;
-    }
-
-    .back-btn {
-        padding: 8px 12px;
-        font-size: 0.8rem;
+    .litter-page-content {
+        padding: 100px 15px 40px;
     }
 
     .litter-hero {
-        padding: 40px 20px;
-        min-height: auto;
+        margin-bottom: 25px;
     }
 
     .litter-hero h1 {
         font-size: 2.2rem;
-        line-height: 1.4; /* Prevent Pacifico cutting off */
-        padding: 10px 0;
-        white-space: normal;
-        text-align: center;
+        line-height: 1.4;
+        padding: 8px 0; /* Extra room for Pacifico descenders */
+        overflow: visible; /* Never clip the font */
     }
 
     .header-parents-info {
-        font-size: 1rem;
-        text-align: center;
+        font-size: 0.95rem;
     }
 
     .breed-subtitle {
-        text-align: center;
+        font-size: 1rem;
     }
 
     .quick-stats {
-        flex-wrap: wrap;
+        gap: 15px;
+        flex-wrap: wrap; /* Wrap on very narrow screens */
         justify-content: center;
     }
 
-    .media-viewport {
-        height: 350px; /* Bigger gallery image */
+    .stat-item span {
+        font-size: 1rem;
     }
 
     .litter-main-grid {
         grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .media-viewport-container {
+        padding: 15px;
+        border-radius: 24px;
+    }
+
+    .media-nav button {
+        width: 38px;
+        height: 38px;
+    }
+
+    .description-box {
+        padding: 25px;
+        border-radius: 24px;
+    }
+
+    .description-box h2 {
+        font-size: 1.5rem;
+    }
+
+    .timeline-container {
+        padding: 25px;
+        border-radius: 24px;
+    }
+
+    /* Mobile Header on Detail Page */
+    .glass-header .header-main {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 10px;
+    }
+
+    .back-link {
+        font-size: 0.75rem;
+        background: rgba(58, 140, 99, 0.1);
+        padding: 6px 12px;
+        border-radius: 15px;
     }
 }
 
 @media (max-width: 480px) {
     .litter-hero h1 {
         font-size: 1.8rem;
-    }
-    
-    .media-viewport {
-        height: 280px;
     }
 }
 

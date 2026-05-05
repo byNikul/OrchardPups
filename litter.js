@@ -2,6 +2,7 @@
 // 🐶 LITTER PAGE LOADER
 // ==========================================
 
+/* global LITTERS */
 document.addEventListener('DOMContentLoaded', () => {
     // Get litter ID from URL
     const params = new URLSearchParams(window.location.search);
@@ -98,9 +99,11 @@ document.addEventListener('DOMContentLoaded', () => {
         const item = litter.media[currentMediaIndex];
         
         if (item.type === "image") {
-            mediaViewport.innerHTML = `<img src="${item.src}" alt="${item.label}" class="fade-in">`;
+            const blurBg = `<div class="media-bg-blur" style="background-image: url('${item.src}')"></div>`;
+            mediaViewport.innerHTML = `${blurBg}<img src="${item.src}" alt="${item.label}" class="fade-in">`;
         } else if (item.type === "video") {
-            mediaViewport.innerHTML = `<video src="${item.src}" controls class="fade-in"></video>`;
+            const videoBlurBg = `<div class="media-bg-blur" style="background-image: url('${litter.thumbnail}')"></div>`;
+            mediaViewport.innerHTML = `${videoBlurBg}<video src="${item.src}" controls class="fade-in"></video>`;
         }
 
         if (mediaLabel) mediaLabel.textContent = item.label || "";

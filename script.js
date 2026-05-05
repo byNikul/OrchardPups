@@ -1,3 +1,4 @@
+/* global LITTERS, HAPPY_TAILS */
 document.addEventListener('DOMContentLoaded', () => {
 
     // ============================================================
@@ -144,16 +145,16 @@ document.addEventListener('DOMContentLoaded', () => {
     if (window.matchMedia('(hover: hover) and (pointer: fine)').matches && cursor) {
         document.addEventListener('mousemove', (e) => {
             const isHover = cursor.classList.contains('is-hover');
-            const offset = isHover ? 24 : 5; 
+            const offset = isHover ? 24 : 5;
             cursor.style.transform = `translate3d(${e.clientX - offset}px, ${e.clientY - offset}px, 0)`;
-            
+
             // Update status text if not already showing one or occasionally change
             if (cursorText && !cursor.classList.contains('is-moving')) {
                 cursorText.textContent = getRandomStatus(isHover);
             }
-            
+
             cursor.classList.add('is-moving');
-            
+
             clearTimeout(moveTimeout);
             moveTimeout = setTimeout(() => {
                 cursor.classList.remove('is-moving');
@@ -171,9 +172,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
         document.addEventListener('mouseover', (e) => {
             const target = e.target;
-            if (target.tagName.toLowerCase() === 'a' || 
-                target.tagName.toLowerCase() === 'button' || 
-                target.closest('a') || 
+            if (target.tagName.toLowerCase() === 'a' ||
+                target.tagName.toLowerCase() === 'button' ||
+                target.closest('a') ||
                 target.closest('button') ||
                 target.classList.contains('interactive') ||
                 target.closest('.glass-card') ||
@@ -213,8 +214,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
         littersGrid.innerHTML = sortedLitters.map(litter => `
             <a href="litter.html?id=${litter.id}" class="litter-card">
-                <div class="litter-tag ${getStatusClass(litter.status)}">${litter.status}</div>
                 <div class="litter-thumb-wrapper">
+                    <span class="litter-tag ${getStatusClass(litter.status)}">${litter.status}</span>
+                    <div class="litter-thumb-bg" style="background-image: url('${litter.thumbnail}')"></div>
                     <img src="${litter.thumbnail}" alt="${litter.breed}" class="litter-thumb">
                 </div>
                 <div class="litter-content">
@@ -264,7 +266,7 @@ let slideInterval;
 function renderHappyTails() {
     const track = document.getElementById('tails-track');
     const dotsContainer = document.getElementById('slider-dots');
-    
+
     if (!track || !HAPPY_TAILS.length) return;
 
     // Render Slides
@@ -317,11 +319,11 @@ function goToSlide(index) {
 function updateSlider() {
     const track = document.getElementById('tails-track');
     const dots = document.querySelectorAll('.dot');
-    
+
     if (!track) return;
 
     track.style.transform = `translateX(-${currentSlide * 100}%)`;
-    
+
     dots.forEach((dot, index) => {
         dot.classList.toggle('active', index === currentSlide);
     });
