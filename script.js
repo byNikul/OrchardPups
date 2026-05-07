@@ -192,28 +192,20 @@ document.addEventListener('DOMContentLoaded', () => {
     // DYNAMIC LITTER LISTINGS
     // ============================================================
     const littersGrid = document.getElementById('litters-grid');
+    const archiveGrid = document.getElementById('archive-grid');
 
     function getStatusClass(status) {
-        if (status.includes("reserve")) return "tag-available";
+        if (status.includes("Reserve")) return "tag-available";
         if (status.includes("Ready")) return "tag-ready";
         return "tag-found";
     }
 
-    function renderLitters() {
-        if (!littersGrid || typeof LITTERS === 'undefined') return;
-
-        // Sorting Logic: Ready to go (0) > Available to reserve (1) > Found families (2)
-        const priority = {
-            "Ready to go": 0,
-            "Available to reserve": 1,
-            "Found families": 2
-        };
-
-        const sortedLitters = [...LITTERS].sort((a, b) => {
-            return (priority[a.status] ?? 99) - (priority[b.status] ?? 99);
-        });
-
-        littersGrid.innerHTML = sortedLitters.map(litter => `
+    function renderLitterCard(litter) {
+        const availableCount = litter.puppies ? litter.puppies.filter(p => p.status.toLowerCase() === 'available').length : 0;
+        const totalCount = litter.puppies ? litter.puppies.length : 0;
+        const availability = `${availableCount}/${totalCount}`;
+        
+        return `
             <a href="litter.html?id=${litter.id}" class="litter-card">
                 <div class="litter-thumb-wrapper">
                     <span class="litter-tag ${getStatusClass(litter.status)}">${litter.status}</span>
@@ -224,7 +216,10 @@ document.addEventListener('DOMContentLoaded', () => {
                     <div class="litter-title">${litter.litterName}</div>
                     
                     <div class="litter-expandable">
-                        <div class="litter-parents"><strong>Parents:</strong> ${litter.parents}</div>
+                        <div class="litter-parents">
+                            <div><strong>Mom:</strong> ${litter.mom ? `${litter.mom.name} (${litter.mom.breed} | ${litter.mom.weight})` : 'N/A'}</div>
+                            <div><strong>Dad:</strong> ${litter.dad ? `${litter.dad.name} (${litter.dad.breed} | ${litter.dad.weight})` : 'N/A'}</div>
+                        </div>
                         <div class="litter-breed">${litter.breed}</div>
                         <div class="litter-info-row">
                             <div class="info-item">
@@ -232,8 +227,12 @@ document.addEventListener('DOMContentLoaded', () => {
                                 <span>${litter.dob}</span>
                             </div>
                             <div class="info-item">
+                                <label>Ready Date</label>
+                                <span>${litter.readyToGoDate || 'TBD'}</span>
+                            </div>
+                            <div class="info-item">
                                 <label>Availability</label>
-                                <span>${litter.availability}</span>
+                                <span>${availability}</span>
                             </div>
                         </div>
 
@@ -247,11 +246,80 @@ document.addEventListener('DOMContentLoaded', () => {
                     </div>
                 </div>
             </a>
-        `).join('');
+        `;
+    }
+
+    function renderLitters() {
+        if (!littersGrid || typeof LITTERS === 'undefined') return;
+
+        const priority = {
+            "Ready to go Home": 0,
+            "Available to Reserve": 1,
+            "Found Families": 2
+        };
+
+        const sortedLitters = [...LITTERS].sort((a, b) => {
+            const pA = priority[a.status] ?? 99;
+            const pB = priority[b.status] ?? 99;
+            
+            if (pA !== pB) {
+                return pA - pB;
+            }
+
+            // Secondary sort: Earliest Ready To Go Date first
+            const isNowA = (a.readyToGoDate === "Now" || !a.readyToGoDate);
+            const isNowB = (b.readyToGoDate === "Now" || !b.readyToGoDate);
+            
+            if (isNowA && !isNowB) return -1;
+            if (!isNowA && isNowB) return 1;
+            if (isNowA && isNowB) return 0;
+
+            const dateA = new Date(a.readyToGoDate);
+            const dateB = new Date(b.readyToGoDate);
+            return dateA - dateB;
+        });
+
+        const activeLitters = sortedLitters.filter(l => l.status !== "Found Families");
+        const soldOutLitters = sortedLitters.filter(l => l.status === "Found Families");
+
+        littersGrid.innerHTML = activeLitters.map(renderLitterCard).join('');
+        if (archiveGrid) {
+            archiveGrid.innerHTML = soldOutLitters.map(renderLitterCard).join('');
+            
+            // Hide the accordion if there are no sold out litters
+            const accordion = document.querySelector('.archive-accordion');
+            if (soldOutLitters.length === 0 && accordion) {
+                accordion.style.display = 'none';
+            } else if (accordion) {
+                accordion.style.display = 'block';
+            }
+        }
     }
 
     // Initialize Listings
     renderLitters();
+
+    // Archive Accordion Toggle
+    const archiveToggle = document.getElementById('archive-toggle');
+    const archiveContent = document.getElementById('archive-content');
+    if (archiveToggle && archiveContent) {
+        archiveToggle.addEventListener('click', () => {
+            const isExpanded = archiveToggle.classList.contains('active');
+            archiveToggle.classList.toggle('active');
+            if (!isExpanded) {
+                archiveContent.style.maxHeight = archiveContent.scrollHeight + "px";
+            } else {
+                archiveContent.style.maxHeight = "0";
+            }
+        });
+        
+        // Recalculate max-height on resize if expanded
+        window.addEventListener('resize', () => {
+            if (archiveToggle.classList.contains('active')) {
+                archiveContent.style.maxHeight = archiveContent.scrollHeight + "px";
+            }
+        });
+    }
 
     // Render Happy Tails
     renderHappyTails();

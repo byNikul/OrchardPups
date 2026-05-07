@@ -26,9 +26,9 @@
                 <nav class="nav-links">
                     <a href="#listings">Listings</a>
                     <a href="#about">About</a>
-                    <a href="#licensing">Licensing</a>
                     <a href="#process">Journey</a>
-                    <a href="#preparation">Toolkit</a>
+                    <a href="#why-us">Why Us?</a>
+                    <a href="#licensing">Licensing</a>
                     <a href="#tails">Happy Tails</a>
                     <a href="#faqs">FAQs</a>
                 </nav>
@@ -252,6 +252,16 @@
             <div id="litters-grid" class="litters-grid">
                 <!-- Dynamic Tiles Injected via JS -->
             </div>
+
+            <div class="archive-accordion">
+                <button class="archive-toggle" id="archive-toggle">
+                    <span>Past Litters (Found Families)</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="archive-content" id="archive-content">
+                    <div id="archive-grid" class="litters-grid"></div>
+                </div>
+            </div>
         </section>
 
         <section id="about" class="page-section">
@@ -309,48 +319,39 @@
             </div>
         </section>
 
-        <section id="preparation" class="page-section">
-            <h2>New Owner Toolkit</h2>
-            <div class="prep-grid">
-                <!-- Health Card -->
-                <div class="prep-card glass-card theme-blue">
-                    <div class="prep-badge">Certified Healthy</div>
-                    <div class="prep-icon"><i class="fa-solid fa-stethoscope"></i></div>
+        <section id="why-us" class="page-section">
+            <h2>Why Choose Us?</h2>
+            <div class="why-us-grid">
+                <div class="why-us-tile glass-card theme-blue">
+                    <div class="tile-icon"><i class="fa-solid fa-stethoscope"></i></div>
                     <h3>Health & Wellness</h3>
-                    <p>Every pup joins your family with a clean bill of health. We provide the foundation, you provide
-                        the lifelong care.</p>
-                    <div class="prep-toolkit">
-                        <div class="toolkit-item"><i class="fa-solid fa-microchip"></i> 1st Shots & Deworming</div>
-                        <div class="toolkit-item"><i class="fa-solid fa-scissors"></i> Professional Grooming</div>
-                        <div class="toolkit-item"><i class="fa-solid fa-shield-dog"></i> Genetic Health Baseline</div>
-                    </div>
+                    <p>Includes 1st vaccinations, full deworming protocol, thorough vet exam, and NYS Health Guarantee.
+                    </p>
                 </div>
-
-                <!-- Checklist Card -->
-                <div class="prep-card glass-card theme-green">
-                    <div class="prep-icon"><i class="fa-solid fa-basket-shopping"></i></div>
-                    <h3>Shopping List</h3>
-                    <p>Be prepared for day one. These are the essentials our puppies love and need for a smooth
-                        transition.</p>
-                    <div class="shopping-checklist">
-                        <div class="check-item"><i class="fa-regular fa-square-check"></i> High-Protein Puppy Food</div>
-                        <div class="check-item"><i class="fa-regular fa-square-check"></i> Snuggle-Safe Crate</div>
-                        <div class="check-item"><i class="fa-regular fa-square-check"></i> Non-Slip Training Mats</div>
-                        <div class="check-item"><i class="fa-regular fa-square-check"></i> Soft Bristle Brush</div>
-                    </div>
+                <div class="why-us-tile glass-card theme-green">
+                    <div class="tile-icon"><i class="fa-solid fa-brain"></i></div>
+                    <h3>ENS Training</h3>
+                    <p>Early Neurological Stimulation helps develop smarter, healthier, and more resilient puppies.</p>
                 </div>
-
-                <!-- Support Card -->
-                <div class="prep-card glass-card theme-gold">
-                    <div class="prep-badge">24/7 Support</div>
-                    <div class="prep-icon"><i class="fa-solid fa-hand-holding-heart"></i></div>
-                    <h3>Pro Tips & Support</h3>
-                    <p>Transitioning to a new home takes patience. We are here to guide you through the first week and
-                        beyond.</p>
-                    <div class="therapy-pill">
-                        <i class="fa-solid fa-lightbulb"></i>
-                        <span>Smart, social, and perfect for therapy work.</span>
-                    </div>
+                <div class="why-us-tile glass-card theme-gold">
+                    <div class="tile-icon"><i class="fa-solid fa-microchip"></i></div>
+                    <h3>Microchipped</h3>
+                    <p>Every puppy comes safely microchipped for your peace of mind before they go home.</p>
+                </div>
+                <div class="why-us-tile glass-card theme-blue">
+                    <div class="tile-icon"><i class="fa-solid fa-camera-retro"></i></div>
+                    <h3>Weekly Updates</h3>
+                    <p>Watch your puppy grow! We provide weekly photos and updates while they are in our care.</p>
+                </div>
+                <div class="why-us-tile glass-card theme-green">
+                    <div class="tile-icon"><i class="fa-solid fa-users"></i></div>
+                    <h3>Exclusive Community</h3>
+                    <p>Gain access to our private Orchard Pups Social Facebook group to connect with other families.</p>
+                </div>
+                <div class="why-us-tile glass-card theme-gold">
+                    <div class="tile-icon"><i class="fa-solid fa-hand-holding-heart"></i></div>
+                    <h3>Lifetime Support</h3>
+                    <p>Our commitment doesn't end at adoption. We provide dedicated after-placement support.</p>
                 </div>
             </div>
         </section>

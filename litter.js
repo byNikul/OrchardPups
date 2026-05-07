@@ -24,19 +24,31 @@ document.addEventListener('DOMContentLoaded', () => {
     // ==========================================
     // 🎨 RENDER LAYOUT
     // ==========================================
+    // Sort updates by date (newest first)
+    const sortedUpdates = [...(litter.updates || [])].sort((a, b) => new Date(b.date) - new Date(a.date));
+
     container.innerHTML = `
         <div class="litter-hero">
             <div class="litter-header-info">
                 <span class="status-badge ${getStatusClass(litter.status)}">${litter.status}</span>
                 <h1>${litter.litterName}</h1>
-                <div class="header-parents-info"><strong>Parents:</strong> ${litter.parents}</div>
+                <div class="header-parents-info">
+                    <span><strong>Mom:</strong> ${litter.mom ? `${litter.mom.name} (${litter.mom.breed} | ${litter.mom.weight})` : 'N/A'}</span>
+                    <span class="parents-separator">|</span>
+                    <span><strong>Dad:</strong> ${litter.dad ? `${litter.dad.name} (${litter.dad.breed} | ${litter.dad.weight})` : 'N/A'}</span>
+                </div>
                 <h3 class="breed-subtitle">${litter.breed}</h3>
                 
                 <div class="quick-stats">
                     <div class="stat-item">
-                        <i class="fa-solid fa-calendar-heart"></i>
+                        <i class="fa-solid fa-calendar-days"></i>
                         <label>DOB</label>
                         <span>${litter.dob}</span>
+                    </div>
+                    <div class="stat-item">
+                        <i class="fa-solid fa-clock"></i>
+                        <label>Ready Date</label>
+                        <span>${litter.readyToGoDate || 'TBD'}</span>
                     </div>
                 </div>
             </div>
@@ -65,7 +77,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 <div class="description-box">
                     <h2>Meet the Litter</h2>
-                    ${litter.fullDescription}
+                    <p>${litter.description}</p>
+                    <p><strong>Price:</strong> ${litter.price ? litter.price : "Contact us for pricing"}</p>
+                    
+                    <h3>The Puppies</h3>
+                    <ul>
+                        ${litter.puppies ? litter.puppies.map(p => `<li><strong>${p.name}</strong> (${p.gender}) - <em>${p.status}</em></li>`).join('') : '<li>Information coming soon</li>'}
+                    </ul>
+
                 </div>
             </section>
 
@@ -74,7 +93,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <div class="timeline-container">
                     <h2>Puppy Updates</h2>
                     <div class="timeline">
-                        ${litter.updates.map(update => `
+                        ${sortedUpdates.map(update => `
                             <div class="timeline-item">
                                 <div class="timeline-date">${update.date}</div>
                                 <div class="timeline-content">${update.text}</div>
@@ -133,7 +152,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function getStatusClass(status) {
-        if (status.includes("reserve")) return "tag-available";
+        if (status.includes("Reserve")) return "tag-available";
         if (status.includes("Ready")) return "tag-ready";
         return "tag-found";
     }

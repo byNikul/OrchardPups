@@ -674,7 +674,7 @@ body.js-cursor-active .faq-question {
     opacity: 0;
     transition: opacity 0.5s ease;
     animation: gradientBorderFlow 4s linear infinite;
-    z-index: 2;
+    z-index: 20;
 }
 
 .litter-card:hover {
@@ -1565,109 +1565,60 @@ body {
     font-weight: 600;
 }
 
-/* ── PREPARATION SECTION ── */
-.prep-grid {
+/* ── WHY CHOOSE US SECTION ── */
+.why-us-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 30px;
     width: 100%;
     max-width: 1200px;
 }
 
-.prep-card {
-    text-align: left !important;
-    padding: 2.5rem !important;
-    justify-content: flex-start !important;
+.why-us-tile {
+    text-align: left;
+    padding: 2rem !important;
     animation: none !important;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.prep-icon {
-    font-size: 2.5rem;
+.why-us-tile:hover {
+    transform: translateY(-5px) !important;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.08);
+}
+
+.tile-icon {
+    font-size: 2.2rem;
     color: #3A8C63;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
-.prep-card h3 {
-    font-size: 1.5rem;
-    margin-bottom: 15px;
+.why-us-tile h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
     color: #2D3748;
 }
 
-.prep-card.theme-blue {
+.why-us-tile p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #4A5568;
+    opacity: 0.9;
+    margin: 0;
+}
+
+.why-us-tile.theme-blue {
     border-top: 4px solid #B5D8EB;
 }
 
-.prep-card.theme-green {
+.why-us-tile.theme-green {
     border-top: 4px solid #C1E1C1;
 }
 
-.prep-card.theme-gold {
+.why-us-tile.theme-gold {
     border-top: 4px solid #FFE5B4;
-}
-
-.prep-badge {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    background: white;
-    padding: 4px 12px;
-    border-radius: 20px;
-    font-size: 0.7rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    color: #3A8C63;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-}
-
-.prep-toolkit,
-.shopping-checklist {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    margin-top: auto;
-    padding-top: 20px;
-}
-
-.toolkit-item,
-.check-item {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    font-size: 0.9rem;
-    color: #4A5568;
-    font-weight: 500;
-}
-
-.toolkit-item i,
-.check-item i {
-    color: #3A8C63;
-    font-size: 1rem;
-}
-
-.check-item i {
-    color: #3A8C63;
-    opacity: 0.8;
-}
-
-.therapy-pill {
-    margin-top: auto;
-    padding: 15px;
-    background: rgba(255, 229, 180, 0.2);
-    border-radius: 15px;
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    color: #6B4F2A;
-    font-size: 0.85rem;
-    font-weight: 500;
-    border: 1px solid rgba(255, 229, 180, 0.4);
-}
-
-.therapy-pill i {
-    color: #D4AF37;
-    font-size: 1rem;
 }
 
 /* Licensing Section Styles */
@@ -1796,7 +1747,51 @@ body {
     }
 }
 
-/* Removed generic selectors that broke desktop layout */
+/* Archive Accordion */
+.archive-accordion {
+    width: 100%;
+    margin-top: 40px;
+    border-top: 1px solid rgba(0,0,0,0.05);
+    padding-top: 20px;
+}
+
+.archive-toggle {
+    background: none;
+    border: none;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 15px;
+    font-size: 1.1rem;
+    font-family: 'Outfit', sans-serif;
+    color: #4A5568;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.archive-toggle:hover {
+    color: #3A8C63;
+}
+
+.archive-toggle i {
+    transition: transform 0.3s ease;
+}
+
+.archive-toggle.active i {
+    transform: rotate(180deg);
+}
+
+.archive-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-out;
+}
+
+#archive-grid {
+    margin-top: 20px;
+}
 
 /* =========================================
    MOBILE RESPONSIVENESS
@@ -1942,7 +1937,7 @@ body {
 
     /* ── 4. PAGE SECTIONS ── */
     .page-section {
-        padding: 60px 24px 50px;
+        padding: 40px 16px 40px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -1983,9 +1978,10 @@ body {
         padding: 0;
     }
 
-    /* Disable glow border animation on mobile — not needed, saves GPU */
+    /* Keep glow border always on for mobile — no hover available */
     .litter-card::before {
-        display: none;
+        opacity: 1;
+        border-radius: 22px;
     }
 
     .litter-card {
@@ -2022,6 +2018,64 @@ body {
     .litter-title {
         margin-bottom: 12px;
         color: #3A8C63;
+    }
+
+    /* Fix text wrapping on mobile for litter cards */
+    .litter-parents {
+        font-size: 0.8rem !important;
+        line-height: 1.4;
+    }
+
+    .litter-breed {
+        font-size: 0.75rem !important;
+        margin-bottom: 15px;
+    }
+
+    .litter-info-row {
+        gap: 8px;
+        justify-content: space-between;
+    }
+
+    .info-item label {
+        font-size: 0.6rem !important;
+    }
+
+    .info-item span {
+        font-size: 0.8rem !important;
+        white-space: nowrap; /* Prevent dates from wrapping onto 2 lines */
+    }
+
+    .litter-desc {
+        font-size: 0.85rem !important;
+    }
+
+    /* Why Choose Us Mobile Optimization */
+    .why-us-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        width: 100%;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .why-us-tile {
+        padding: 1.8rem 1.5rem !important;
+        text-align: center;
+        align-items: center;
+        border-radius: 20px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .why-us-tile h3,
+    .why-us-tile p {
+        text-align: center;
+    }
+
+    .tile-icon {
+        margin-bottom: 12px;
+        width: 100%;
+        text-align: center;
     }
 
     /* ── 7. HAPPY TAILS SLIDER ── */

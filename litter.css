@@ -43,11 +43,21 @@
 }
 
 .header-parents-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
     font-size: 1.1rem;
     font-weight: 600;
     color: #2D3748;
     margin-bottom: 10px;
     opacity: 0.9;
+}
+
+.parents-separator {
+    opacity: 0.4;
+    font-weight: 300;
 }
 
 .breed-subtitle {
@@ -60,6 +70,7 @@
 .quick-stats {
     display: flex;
     justify-content: center;
+    align-items: flex-end;
     gap: 40px;
     margin-top: 20px;
 }
@@ -344,6 +355,12 @@
 
     .header-parents-info {
         font-size: 0.95rem;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .parents-separator {
+        display: none;
     }
 
     .breed-subtitle {
