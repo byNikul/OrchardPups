@@ -4,107 +4,69 @@
 
 const LITTERS = [
     {
-        id: "spring-blossom-goldens-2026",
-        litterName: "Spring Blossom Goldens",
+        id: "toy-story-2026",
+        litterName: "Toy Story",
         status: "Available to reserve",
-        availability: "3/8",
-        dob: "March 12, 2026",
-        parents: "Daisy (English Cream) & Cooper (European Golden)",
-        breed: "English Cream Golden Retriever",
-        shortDescription: "A stunning litter of 8 English Cream Goldens, known for their calm temperament and beautiful light coats.",
+        availability: "5/5",
+        dob: "March 24, 2026",
+        parents: "Star (Mom | F1B | 27lbs) & Willie (Dad | Mini Poodle | 16lbs)",
+        breed: "F1BB Mini Goldendoodle",
+        shortDescription: "A sweet, smart litter of 5 Mini Goldendoodles, a perfect size for snuggling on the couch or short walks in the park.",
         fullDescription: `
-            <p>Daisy and Cooper have welcomed a beautiful litter of eight English Cream Golden Retriever puppies. This pairing was carefully selected for health, temperament, and the iconic "English Cream" look.</p>
-            <h3>Temperament & Health</h3>
-            <p>Daisy is our sweetest girl, known for her gentle nature around children. Cooper is a champion-line male with a blocky head and a heart of gold. Both parents have undergone full health screenings (OFA Hips, Elbows, Heart, and Eyes).</p>
+            <p>The Toy Story litter has arrived! This is one of the sweetest litters we've had in a while. 5 perfect little fluff balls with the sweetest dispositions. Ready to meet their forever families soon!</p>
+            <p> Price: $1700 + tax ($300 due at reservation)</p>
+            <h3>Meet the Puppies</h3>
+            <p>The F1BB generation is the results of the most hypoallergenic, non-shedding coats possible—perfect for families with allergies! These litter tends to be little calmer because of the larger size.</p>
+            <p><strong>Ready to go home after May 19th</strong></p>
+            <ul>
+                <li>Woody (Male)</li>
+                <li>Annie (Female)</li>
+                <li>Bo-Peep (Female)</li>
+                <li>Jessie (Female)</li>
+            </ul>
             <h3>What's Included</h3>
             <ul>
-                <li>AKC Registration (Limited)</li>
+                <li>Early Neurological Stimulation (ENS)</li>
                 <li>First round of vaccinations</li>
                 <li>Deworming at 2, 4, 6, and 8 weeks</li>
                 <li>Microchip included</li>
-                <li>Puppy starter kit (food, toy with mom's scent, records)</li>
+                <li>Vet Examination before going home</li>
+                <li>NYS Health Guarantee</li>
+                <li>Weekly updates of puppy while in our care</li>
+                <li>Exclusive access Orchard Pups Social FB groups</li>
+                <li>After Placement Support</li>
             </ul>
         `,
-        thumbnail: "https://images.unsplash.com/photo-1552053831-71594a27632d?auto=format&fit=crop&q=80&w=800",
+        thumbnail: "assets/Listings/ToyStory/toystory-thumbnail.jpeg",
         media: [
-            { type: "image", src: "https://images.unsplash.com/photo-1552053831-71594a27632d?auto=format&fit=crop&q=80&w=1200", label: "Litter at 3 weeks old" },
-            { type: "image", src: "https://images.unsplash.com/photo-1591160690555-5debfba289f0?auto=format&fit=crop&q=80&w=1200", label: "Daisy (Dam) with her puppies" },
-            { type: "image", src: "https://images.unsplash.com/photo-1537151608828-ea2b11777ee8?auto=format&fit=crop&q=80&w=1200", label: "The curious one of the bunch" }
+            { type: "video", src: "assets/Listings/ToyStory/toystory1.mp4", label: "Toy Story Litter" },
+            { type: "video", src: "assets/Listings/ToyStory/toystory2.mp4", label: "Toy Story Litter" },
+            { type: "image", src: "assets/Listings/ToyStory/woody1.jpeg", label: "Woody (Male)" },
+            { type: "image", src: "assets/Listings/ToyStory/woody2.jpeg", label: "Woody (Male)" },
+            { type: "image", src: "assets/Listings/ToyStory/woody3.jpeg", label: "Woody (Male)" },
+            { type: "image", src: "assets/Listings/ToyStory/woody4.jpeg", label: "Woody (Male)" },
+            { type: "image", src: "assets/Listings/ToyStory/woody5.jpeg", label: "Woody (Male)" },
+            { type: "image", src: "assets/Listings/ToyStory/annie1.jpeg", label: "Annie (Female)" },
+            { type: "image", src: "assets/Listings/ToyStory/annie2.jpeg", label: "Annie (Female)" },
+            { type: "image", src: "assets/Listings/ToyStory/annie3.jpeg", label: "Annie (Female)" },
+            { type: "image", src: "assets/Listings/ToyStory/annie4.jpeg", label: "Annie (Female)" },
+            { type: "image", src: "assets/Listings/ToyStory/annie5.jpeg", label: "Annie (Female)" },
+            { type: "image", src: "assets/Listings/ToyStory/annie6.jpeg", label: "Annie (Female)" },
+            { type: "image", src: "assets/Listings/ToyStory/bo-peep1.jpeg", label: "Bo Peep (Female)" },
+            { type: "image", src: "assets/Listings/ToyStory/bo-peep2.jpeg", label: "Bo Peep (Female)" },
+            { type: "image", src: "assets/Listings/ToyStory/bo-peep3.jpeg", label: "Bo Peep (Female)" },
+            { type: "image", src: "assets/Listings/ToyStory/bo-peep4.jpeg", label: "Bo Peep (Female)" },
+            { type: "image", src: "assets/Listings/ToyStory/bo-peep5.jpeg", label: "Bo Peep (Female)" },
+            { type: "image", src: "assets/Listings/ToyStory/bo-peep6.jpeg", label: "Bo Peep (Female)" },
+            { type: "image", src: "assets/Listings/ToyStory/jessie1.jpeg", label: "Jessie (Female)" },
+            { type: "image", src: "assets/Listings/ToyStory/jessie2.jpeg", label: "Jessie (Female)" },
+            { type: "image", src: "assets/Listings/ToyStory/jessie3.jpeg", label: "Jessie (Female)" },
+            { type: "image", src: "assets/Listings/ToyStory/jessie4.jpeg", label: "Jessie (Female)" },
+            { type: "image", src: "assets/Listings/ToyStory/jessie5.jpeg", label: "Jessie (Female)" },
+            { type: "image", src: "assets/Listings/ToyStory/jessie6.jpeg", label: "Jessie (Female)" }
         ],
         updates: [
-            { date: "April 20, 2026", text: "The puppies had their first outdoor exploration today! They loved the spring grass." },
-            { date: "April 12, 2026", text: "First solid meals are being introduced. They are growing so fast!" },
-            { date: "March 26, 2026", text: "Eyes are starting to open. Such a magical milestone." },
-            { date: "March 12, 2026", text: "Daisy successfully delivered 8 healthy puppies (5 females, 3 males)!" }
-        ]
-    },
-    {
-        id: "may-mini-goldendoodles",
-        litterName: "May Mini Goldendoodles",
-        status: "Ready to go",
-        availability: "2/6",
-        dob: "January 15, 2026",
-        parents: "Bella (F1 Goldendoodle) & Teddy (Mini Poodle)",
-        breed: "Miniature Goldendoodle (F1b)",
-        shortDescription: "Non-shedding, highly intelligent, and perfectly sized for families of all kinds.",
-        fullDescription: `
-            <p>Our Mini Goldendoodles are bred for intelligence and hypoallergenic qualities. This litter is F1b, meaning they are 75% Poodle and 25% Golden Retriever, which is the best generation for non-shedding coats.</p>
-            <h3>Size & Expectations</h3>
-            <p>We expect these puppies to mature between 20-30 lbs. They are currently being socialized using the Puppy Culture method to ensure they are well-adjusted to household noises and environments.</p>
-        `,
-        thumbnail: "https://images.unsplash.com/photo-1583337130417-3346a1be7dee?auto=format&fit=crop&q=80&w=800",
-        media: [
-            { type: "image", src: "https://images.unsplash.com/photo-1583337130417-3346a1be7dee?auto=format&fit=crop&q=80&w=1200", label: "Group photo in the garden" },
-            { type: "image", src: "https://images.unsplash.com/photo-1598133894008-61f7fdb8cc3a?auto=format&fit=crop&q=80&w=1200", label: "One of the males ready for his home" }
-        ],
-        updates: [
-            { date: "May 1, 2026", text: "Only 2 puppies left in this litter! They are fully vaccinated and ready to meet their families." },
-            { date: "April 15, 2026", text: "Puppies passed their vet checks with flying colors." }
-        ]
-    },
-    {
-        id: "winter-huskies-archive",
-        litterName: "Winter Huskies",
-        status: "Found families",
-        availability: "0/6",
-        dob: "November 30, 2025",
-        parents: "Sky (Siberian) & Storm (Siberian)",
-        breed: "Siberian Husky",
-        shortDescription: "Our beautiful winter litter. All of these puppies have now found their forever homes.",
-        fullDescription: `
-            <p>This was a stunning litter of purebred Siberian Huskies. We are so happy to see them thriving with their new families across the North Country.</p>
-        `,
-        thumbnail: "https://images.unsplash.com/photo-1534361960057-19889db9621e?auto=format&fit=crop&q=80&w=800",
-        media: [
-            { type: "image", src: "https://images.unsplash.com/photo-1534361960057-19889db9621e?auto=format&fit=crop&q=80&w=1200", label: "First snow day" }
-        ],
-        updates: [
-            { date: "February 10, 2026", text: "The last puppy has been picked up. Happy Tails to everyone!" }
-        ]
-    },
-    {
-        id: "summer-chocolate-labs",
-        litterName: "Summer Chocolate Labs",
-        status: "Available to reserve",
-        availability: "8/8",
-        dob: "Expecting June 2026",
-        parents: "Coco (Chocolate Lab) & Bear (Chocolate Lab)",
-        breed: "Chocolate Labrador Retriever",
-        shortDescription: "Our highly anticipated summer litter of Chocolate Labs. Purebred, athletic, and loyal companions.",
-        fullDescription: `
-            <p>We are thrilled to announce that Coco and Bear are expecting! This litter will be perfect for active families who love the outdoors. Both parents are classic Chocolate Labradors with excellent temperaments.</p>
-            <h3>Parent Highlights</h3>
-            <p><strong>Coco (Dam):</strong> A medium-sized Chocolate Lab who loves swimming and fetching. She is incredibly intuitive and gentle.</p>
-            <p><strong>Bear (Sire):</strong> A large, athletic male with a deep chocolate coat. He comes from a line of decorated field trial champions.</p>
-        `,
-        thumbnail: "https://images.unsplash.com/photo-1558788353-f76d92427f16?auto=format&fit=crop&q=80&w=800",
-        media: [
-            { type: "image", src: "https://images.unsplash.com/photo-1558788353-f76d92427f16?auto=format&fit=crop&q=80&w=1200", label: "Coco, the beautiful expectant mother" },
-            { type: "video", src: "https://www.w3schools.com/html/mov_bbb.mp4", label: "Training session with Bear (Sire)" }
-        ],
-        updates: [
-            { date: "May 4, 2026", text: "Ultrasound confirmed! Coco is expecting a large litter. We can't wait for June!" },
-            { date: "April 1, 2026", text: "Coco and Bear have successfully paired. Spring is in the air!" }
+            { date: "May 6, 2026", text: "Litter Available to Reserve! " }
         ]
     }
 ];
