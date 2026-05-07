@@ -7,14 +7,14 @@ const LITTERS = [
         id: "toy-story-2026",
         litterName: "Toy Story",
         status: "Available to reserve",
-        availability: "5/5",
+        availability: "4/4",
         dob: "March 24, 2026",
         parents: "Star (Mom | F1B | 27lbs) & Willie (Dad | Mini Poodle | 16lbs)",
         breed: "F1BB Mini Goldendoodle",
-        shortDescription: "A sweet, smart litter of 5 Mini Goldendoodles, a perfect size for snuggling on the couch or short walks in the park.",
+        shortDescription: "A sweet, smart litter of 4 Mini Goldendoodles, a perfect size for snuggling on the couch or short walks in the park.",
+        price: "$1700 + tax ($300 due at reservation)",
         fullDescription: `
             <p>The Toy Story litter has arrived! This is one of the sweetest litters we've had in a while. 5 perfect little fluff balls with the sweetest dispositions. Ready to meet their forever families soon!</p>
-            <p> Price: $1700 + tax ($300 due at reservation)</p>
             <h3>Meet the Puppies</h3>
             <p>The F1BB generation is the results of the most hypoallergenic, non-shedding coats possible—perfect for families with allergies! These litter tends to be little calmer because of the larger size.</p>
             <p><strong>Ready to go home after May 19th</strong></p>
@@ -64,6 +64,57 @@ const LITTERS = [
             { type: "image", src: "assets/Listings/ToyStory/jessie4.jpeg", label: "Jessie (Female)" },
             { type: "image", src: "assets/Listings/ToyStory/jessie5.jpeg", label: "Jessie (Female)" },
             { type: "image", src: "assets/Listings/ToyStory/jessie6.jpeg", label: "Jessie (Female)" }
+        ],
+        updates: [
+            { date: "May 6, 2026", text: "Litter Available to Reserve! " }
+        ]
+    },
+
+    {
+        id: "spring-blooms-2026",
+        litterName: "Spring Blooms",
+        status: "Ready to go home",
+        availability: "4/4",
+        dob: "March 11, 2026",
+        parents: "Jingles (Mom | F1B Mini Goldendoodle | 15lbs) & Blazer (Dad | Mini Poodle | 12lbs)",
+        breed: "F1BB Mini Goldendoodle",
+        shortDescription: "Check out our Spring Blooms litter! We're super excited about these F1BB Mini Goldendoodles. They're total Teddybear pups with wavy, hypoallergenic coats and the sweetest personalities you can imagine.",
+        price: "$1600 + tax ($300 due at reservation)",
+        fullDescription: `
+            <p>Check out our Spring Blooms litter! We're super excited about these F1BB Mini Goldendoodles. They're total Teddybear pups with wavy, hypoallergenic coats and the sweetest personalities you can imagine.</p>
+            <h3>Meet the Puppies</h3>
+            <p>The F1BB generation is the results of the most hypoallergenic, non-shedding coats possible—perfect for families with allergies! These litter tends to be little calmer because of the larger size.</p>
+            <p><strong>Ready to go home Now</strong></p>
+            <ul>
+                <li>Mr Dandy Lion (Male)</li>
+                <li>Mamma Rose Bella (Female)</li>
+                <li>Lady Fern Ella (Female)</li>
+                <li>Queen Callie Ann (Female)</li>
+            </ul>
+            <h3>What's Included</h3>
+            <ul>
+                <li>Early Neurological Stimulation (ENS)</li>
+                <li>First round of vaccinations</li>
+                <li>Deworming at 2, 4, 6, and 8 weeks</li>
+                <li>Microchip included</li>
+                <li>Vet Examination before going home</li>
+                <li>NYS Health Guarantee</li>
+                <li>Weekly updates of puppy while in our care</li>
+                <li>Exclusive access Orchard Pups Social FB groups</li>
+                <li>After Placement Support</li>
+            </ul>
+        `,
+        thumbnail: "assets/Listings/SpringBlooms/springblooms-thumbnail.jpeg",
+        media: [
+            { type: "video", src: "assets/Listings/SpringBlooms/springblooms1.mp4", label: "Spring Blooms Litter" },
+            { type: "video", src: "assets/Listings/SpringBlooms/springblooms2.mp4", label: "Spring Blooms Litter" },
+            { type: "image", src: "assets/Listings/SpringBlooms/ladyfernella.jpeg", label: "Lady Fern Ella (Female)" },
+            { type: "image", src: "assets/Listings/SpringBlooms/mommarosebella1.jpeg", label: "Mamma Rose Bella (Female)" },
+            { type: "image", src: "assets/Listings/SpringBlooms/mommarosebella2.jpeg", label: "Mamma Rose Bella (Female)" },
+            { type: "image", src: "assets/Listings/SpringBlooms/mrrandylion1.jpeg", label: "Mr Randy Lion (Male)" },
+            { type: "image", src: "assets/Listings/SpringBlooms/mrrandylion2.jpeg", label: "Mr Randy Lion (Male)" },
+            { type: "image", src: "assets/Listings/SpringBlooms/queencallieann1.jpeg", label: "Queen Callie Ann (Female)" },
+            { type: "image", src: "assets/Listings/SpringBlooms/queencallieann2.jpeg", label: "Queen Callie Ann (Female)" }
         ],
         updates: [
             { date: "May 6, 2026", text: "Litter Available to Reserve! " }

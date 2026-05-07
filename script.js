@@ -238,7 +238,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         </div>
 
                         <div class="litter-desc">
-                            ${litter.shortDescription}
+                            <strong>Price:</strong> ${litter.price ? litter.price : "Contact us for pricing"}
                         </div>
 
                         <div class="litter-footer">
