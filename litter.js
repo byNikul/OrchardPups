@@ -14,12 +14,43 @@ document.addEventListener('DOMContentLoaded', () => {
         return;
     }
 
-    const litter = LITTERS.find(l => l.id === litterId);
+    const litterData = LITTERS.find(l => l.id === litterId);
 
-    if (!litter) {
+    if (!litterData) {
         container.innerHTML = "<div class='error-msg'>Invalid Litter ID.</div>";
         return;
     }
+
+    // ==========================================
+    // ⚙️ DYNAMIC STATUS LOGIC
+    // ==========================================
+    function calculateLitterStatus(l) {
+        const today = new Date();
+        today.setHours(0, 0, 0, 0);
+
+        const allSold = l.puppies && l.puppies.length > 0 && 
+                        l.puppies.every(p => p.status.toLowerCase() !== 'available');
+        
+        if (allSold) return "Found Families";
+        if (!l.readyToGoDate || l.readyToGoDate === "Now") return "Ready to go Home";
+
+        const readyDate = new Date(l.readyToGoDate);
+        if (isNaN(readyDate.getTime()) || readyDate <= today) return "Ready to go Home";
+
+        return "Available to Reserve";
+    }
+
+    function formatReadyDate(dateStr) {
+        if (!dateStr || dateStr === "Now") return "Now";
+        const today = new Date();
+        today.setHours(0, 0, 0, 0);
+        const readyDate = new Date(dateStr);
+        if (isNaN(readyDate.getTime()) || readyDate <= today) return "Now";
+        return dateStr;
+    }
+
+    const currentStatus = calculateLitterStatus(litterData);
+    const litter = { ...litterData, status: currentStatus };
 
     // ==========================================
     // 🎨 RENDER LAYOUT
@@ -48,7 +79,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     <div class="stat-item">
                         <i class="fa-solid fa-clock"></i>
                         <label>Ready Date</label>
-                        <span>${litter.readyToGoDate || 'TBD'}</span>
+                        <span>${formatReadyDate(litter.readyToGoDate)}</span>
                     </div>
                 </div>
             </div>
@@ -113,16 +144,80 @@ document.addEventListener('DOMContentLoaded', () => {
     const mediaLabel = document.getElementById("media-label");
     const mediaCount = document.getElementById("media-count");
 
+    // 🎵 Playful background music - Using your local file
+    const bgMusic = new Audio('assets/playful-puppies.mp3');
+    bgMusic.loop = true;
+    bgMusic.volume = 0.45;
+
+    function startMusic() {
+        bgMusic.play().catch(e => console.log("Music play blocked until interaction."));
+    }
+
+    function stopMusic() {
+        bgMusic.pause();
+    }
+
+    function createVideoElement(src) {
+        const video = document.createElement('video');
+        // Set muted BEFORE setting src — this is critical
+        video.muted = true;
+        video.defaultMuted = true;
+        video.volume = 0;
+        video.controls = true;
+        video.className = 'fade-in';
+        video.playsInline = true;
+
+        // Prevent user from unmuting via the built-in controls
+        video.addEventListener('volumechange', () => {
+            if (!video.muted) {
+                video.muted = true;
+                video.volume = 0;
+            }
+        });
+
+        // Sync background music to video play/pause
+        video.addEventListener('play', () => {
+            startMusic();
+        });
+        video.addEventListener('pause', () => {
+            stopMusic();
+        });
+        video.addEventListener('ended', () => {
+            stopMusic();
+        });
+
+        // Set src AFTER all event listeners and muting are in place
+        video.src = src;
+        return video;
+    }
+
     function updateMedia() {
         if (!mediaViewport) return;
         const item = litter.media[currentMediaIndex];
+
+        // Stop music when navigating away from a video
+        stopMusic();
+
+        // Clear viewport
+        mediaViewport.innerHTML = '';
         
         if (item.type === "image") {
-            const blurBg = `<div class="media-bg-blur" style="background-image: url('${item.src}')"></div>`;
-            mediaViewport.innerHTML = `${blurBg}<img src="${item.src}" alt="${item.label}" class="fade-in">`;
+            const blurBg = document.createElement('div');
+            blurBg.className = 'media-bg-blur';
+            blurBg.style.backgroundImage = `url('${item.src}')`;
+            const img = document.createElement('img');
+            img.src = item.src;
+            img.alt = item.label;
+            img.className = 'fade-in';
+            mediaViewport.appendChild(blurBg);
+            mediaViewport.appendChild(img);
         } else if (item.type === "video") {
-            const videoBlurBg = `<div class="media-bg-blur" style="background-image: url('${litter.thumbnail}')"></div>`;
-            mediaViewport.innerHTML = `${videoBlurBg}<video src="${item.src}" controls class="fade-in"></video>`;
+            const blurBg = document.createElement('div');
+            blurBg.className = 'media-bg-blur';
+            blurBg.style.backgroundImage = `url('${litter.thumbnail}')`;
+            const video = createVideoElement(item.src);
+            mediaViewport.appendChild(blurBg);
+            mediaViewport.appendChild(video);
         }
 
         if (mediaLabel) mediaLabel.textContent = item.label || "";
@@ -152,8 +247,8 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function getStatusClass(status) {
-        if (status.includes("Reserve")) return "tag-available";
-        if (status.includes("Ready")) return "tag-ready";
+        if (status === "Available to Reserve") return "tag-available";
+        if (status === "Ready to go Home") return "tag-ready";
         return "tag-found";
     }
 
@@ -207,3 +302,4 @@ function initCursor() {
         });
     }
 }
+

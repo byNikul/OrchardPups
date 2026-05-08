@@ -6,7 +6,6 @@ const LITTERS = [
     {
         id: "toy-story-2026",
         litterName: "Toy Story",
-        status: "Available to Reserve",
         dob: "March 24, 2026",
         readyToGoDate: "May 19, 2026",
         mom: { name: "Star", breed: "F1B", weight: "27lbs" },
@@ -56,7 +55,6 @@ const LITTERS = [
     {
         id: "spring-blooms-2026",
         litterName: "Spring Blooms",
-        status: "Ready to go Home",
         dob: "March 11, 2026",
         readyToGoDate: "Now",
         mom: { name: "Jingles", breed: "F1B Mini Goldendoodle", weight: "15lbs" },
@@ -67,7 +65,7 @@ const LITTERS = [
         puppies: [
             { name: "Mr Dandy Lion", gender: "Male", status: "Available" },
             { name: "Mamma Rose Bella", gender: "Female", status: "Available" },
-            { name: "Lady Fern Ella", gender: "Female", status: "Available" },
+            { name: "Lady Fern Ella", gender: "Female", status: "Found her forever family" },
             { name: "Queen Callie Ann", gender: "Female", status: "Available" }
         ],
         thumbnail: "assets/Listings/SpringBlooms/springblooms-thumbnail.jpeg",
@@ -83,14 +81,14 @@ const LITTERS = [
             { type: "image", src: "assets/Listings/SpringBlooms/queencallieann2.jpeg", label: "Queen Callie Ann (Female)" }
         ],
         updates: [
-            { date: "May 6, 2026", text: "Litter Available to Reserve!" }
+            { date: "May 6, 2026", text: "Litter Available to Reserve!" },
+            { date: "May 7, 2026", text: "Lady Fern Ella found her forever family with Melanie!" }
         ]
     },
 
     {
         id: "here-comes-the-sun-2026",
         litterName: "Here Comes The Sun",
-        status: "Available to Reserve",
         dob: "April 21, 2026",
         readyToGoDate: "June 16, 2026",
         mom: { name: "Patience", breed: "King Charles Cavalier", weight: "15lbs" },
@@ -126,7 +124,6 @@ const LITTERS = [
     {
         id: "best-friends-2026",
         litterName: "Best Friends",
-        status: "Available to Reserve",
         dob: "March 24, 2026",
         readyToGoDate: "May 20, 2026",
         mom: { name: "Jewels", breed: "Mini Phantom Poodle", weight: "12lbs" },
@@ -169,7 +166,6 @@ const LITTERS = [
     {
         id: "ruby-reds-2026",
         litterName: "Ruby Reds",
-        status: "Available to Reserve",
         dob: "March 28, 2026",
         readyToGoDate: "May 23, 2026",
         mom: { name: "Patience", breed: "Mini Poodle", weight: "12lbs" },
@@ -195,6 +191,114 @@ const LITTERS = [
             { type: "video", src: "assets/Listings/RubyReds/belle2.mp4", label: "Belle (Female)" },
             { type: "image", src: "assets/Listings/RubyReds/belle1.jpeg", label: "Belle (Female)" },
             { type: "image", src: "assets/Listings/RubyReds/belle2.jpeg", label: "Belle (Female)" }
+        ],
+        updates: [
+            { date: "May 6, 2026", text: "Litter Available to Reserve!" }
+        ]
+    },
+
+    {
+        id: "schnoodle-love-2026",
+        litterName: "Schnoodle Love",
+        dob: "December 12, 2025",
+        readyToGoDate: "February 6, 2026",
+        mom: { name: "NA", breed: "Mini Poodle", weight: "13lbs" },
+        dad: { name: "NA", breed: "Mini Schnauzer", weight: "17lbs" },
+        breed: "F1 Schnoodle",
+        description: "Beautiful, loving, and waiting for a family to love her, she has a 'Happy-Go-Lucky' vibe! The Schnoodle tends to inherit the Poodle's playful energy and the Schnauzer's spunky, stout-hearted nature. This results in a dog that loves to please and is highly trainable because they genuinely care about your approval. They are great with kids, sturdy enough for play but gentle enough to be reliable family companions. With their intelligence and a hint of wit, they are quick learners who might even try to 'negotiate' with you for a better treat!",
+        price: "$550 + tax ($300 due at reservation)",
+        puppies: [
+            { name: "Maggie", gender: "Female", status: "Available" }
+        ],
+        thumbnail: "assets/Listings/SchnoodleLove/maggie1.jpeg",
+        media: [
+            { type: "video", src: "assets/Listings/SchnoodleLove/maggie.mp4", label: "Maggie (Female)" },
+            { type: "image", src: "assets/Listings/SchnoodleLove/maggie1.jpeg", label: "Maggie (Female)" },
+            { type: "image", src: "assets/Listings/SchnoodleLove/maggie2.jpeg", label: "Maggie (Female)" }
+        ],
+        updates: [
+            { date: "May 6, 2026", text: "Litter Available to Reserve!" }
+        ]
+    },
+
+    {
+        id: "teddybear-schnoodles-2026",
+        litterName: "Teddybear Schnoodles",
+        dob: "February 8, 2026",
+        readyToGoDate: "May 2, 2026",
+        mom: { name: "NA", breed: "Poodle", weight: "8lbs" },
+        dad: { name: "NA", breed: "Mini Schnauzer", weight: "13lbs" },
+        breed: "F1 Schnoodle",
+        description: "Check out our Teddybear Schnoodles! This litter is truly special, featuring charming round faces with that classic 'button-nose' look that stays puppy-like forever. These brothers boast unique, one-of-a-kind colors and rare coat patterns that make them stand out in any crowd. Personalities are built for companionship, as the Schnoodle is known as the 'Forever Happy' dog. They inherit the intelligence of the Poodle and the unwavering loyalty of the Schnauzer. Whether you are looking for a gardening partner who is nimble enough to stay by your side or a snuggle buddy for TV time and belly rubs, these boys are a perfect fit. They are currently growing, playing, and getting ready to meet their new families soon!",
+        price: "$1400 + tax ($300 due at reservation)",
+        puppies: [
+            { name: "Baxter", gender: "Male", status: "Available" },
+            { name: "Willie", gender: "Male", status: "Available" }
+        ],
+        thumbnail: "assets/Listings/TeddybearSchnoodles/teddybear-schnoodles-thumbnail.jpeg",
+        media: [
+            { type: "video", src: "assets/Listings/TeddybearSchnoodles/teddybear-schnoodles.mp4", label: "Litter Video" },
+            { type: "image", src: "assets/Listings/TeddybearSchnoodles/baxter1.jpeg", label: "Baxter (Male)" },
+            { type: "image", src: "assets/Listings/TeddybearSchnoodles/baxter2.jpeg", label: "Baxter (Male)" },
+            { type: "image", src: "assets/Listings/TeddybearSchnoodles/willie1.jpeg", label: "Willie (Male)" },
+            { type: "image", src: "assets/Listings/TeddybearSchnoodles/willie2.jpeg", label: "Willie (Male)" }
+        ],
+        updates: [
+            { date: "May 6, 2026", text: "Litter Available to Reserve!" }
+        ]
+    },
+
+    {
+        id: "i-m-yours-2026",
+        litterName: "I'm Yours!",
+        dob: "February 23, 2026",
+        readyToGoDate: "May 2, 2026",
+        mom: { name: "Maria", breed: "Cavapoo", weight: "15lbs" },
+        dad: { name: "Max", breed: "Mini Poodle", weight: "10lbs" },
+        breed: "F1B Cavapoo",
+        description: "Julia is ready to be the ultimate companion. If you need an extra shadow she is up for the job. She would be a wonderful addition to your chair for watching TV. She enjoys running around the house, then crashing for a long nap. She has two speeds, silly or snuggling.",
+        price: "$1500 + tax ($300 due at reservation)",
+        puppies: [
+            { name: "Julia", gender: "Female", status: "Available" }
+        ],
+        thumbnail: "assets/Listings/IMYours/julia5.jpeg",
+        media: [
+            { type: "video", src: "assets/Listings/IMYours/julia.mp4", label: "Julia (Female)" },
+            { type: "image", src: "assets/Listings/IMYours/julia1.jpeg", label: "Julia (Female)" },
+            { type: "image", src: "assets/Listings/IMYours/julia2.jpeg", label: "Julia (Female)" },
+            { type: "image", src: "assets/Listings/IMYours/julia3.jpeg", label: "Julia (Female)" },
+            { type: "image", src: "assets/Listings/IMYours/julia4.jpeg", label: "Julia (Female)" },
+            { type: "image", src: "assets/Listings/IMYours/julia5.jpeg", label: "Julia (Female)" },
+            { type: "image", src: "assets/Listings/IMYours/julia6.jpeg", label: "Julia (Female)" }
+        ],
+        updates: [
+            { date: "May 6, 2026", text: "Litter Available to Reserve!" }
+        ]
+    },
+
+    {
+        id: "mammas-boys-2026",
+        litterName: "Mamma's Boys",
+        dob: "April 26, 2026",
+        readyToGoDate: "June 22, 2026",
+        mom: { name: "Jenny", breed: "F1 Mini Goldendoodle", weight: "17lbs" },
+        dad: { name: "Willie", breed: "Mini Poodle", weight: "14lbs" },
+        breed: "F1B Mini Goldendoodle",
+        description: "Sweet babies just born. They are thriving, gaining weight and have a peaceful nature. The boys are showing a loose wavy coat and in time will develop into a Teddybear look.",
+        price: "$1500 + tax ($300 due at reservation)",
+        puppies: [
+            { name: "Texas", gender: "Male", status: "Available" },
+            { name: "Tucker", gender: "Male", status: "Available" }
+
+        ],
+        thumbnail: "assets/Listings/MammasBoys/mammas-boys-thumbnail.png",
+        media: [
+            { type: "video", src: "assets/Listings/MammasBoys/mammas-boys.mp4", label: "Litter Video" },
+            { type: "image", src: "assets/Listings/MammasBoys/texas1.jpeg", label: "Texas (Male)" },
+            { type: "image", src: "assets/Listings/MammasBoys/tucker1.jpeg", label: "Tucker (Male)" },
+            { type: "image", src: "assets/Listings/MammasBoys/tucker2.jpeg", label: "Tucker (Male)" },
+            { type: "image", src: "assets/Listings/MammasBoys/tucker3.jpeg", label: "Tucker (Male)" },
+            { type: "image", src: "assets/Listings/MammasBoys/tucker4.jpeg", label: "Tucker (Male)" }
         ],
         updates: [
             { date: "May 6, 2026", text: "Litter Available to Reserve!" }

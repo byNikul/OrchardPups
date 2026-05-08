@@ -195,9 +195,19 @@ document.addEventListener('DOMContentLoaded', () => {
     const archiveGrid = document.getElementById('archive-grid');
 
     function getStatusClass(status) {
-        if (status.includes("Reserve")) return "tag-available";
-        if (status.includes("Ready")) return "tag-ready";
-        return "tag-found";
+        if (status === "Found Families") return "tag-found";
+        if (status === "Ready to go Home") return "tag-ready";
+        // Default to available (yellow) for future dates like "Ready May 23, 2026"
+        return "tag-available";
+    }
+
+    function formatReadyDate(dateStr) {
+        if (!dateStr || dateStr === "Now") return "Now";
+        const today = new Date();
+        today.setHours(0, 0, 0, 0);
+        const readyDate = new Date(dateStr);
+        if (isNaN(readyDate.getTime()) || readyDate <= today) return "Now";
+        return dateStr;
     }
 
     function renderLitterCard(litter) {
@@ -228,7 +238,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             </div>
                             <div class="info-item">
                                 <label>Ready Date</label>
-                                <span>${litter.readyToGoDate || 'TBD'}</span>
+                                <span>${formatReadyDate(litter.readyToGoDate)}</span>
                             </div>
                             <div class="info-item">
                                 <label>Availability</label>
@@ -252,41 +262,66 @@ document.addEventListener('DOMContentLoaded', () => {
     function renderLitters() {
         if (!littersGrid || typeof LITTERS === 'undefined') return;
 
-        const priority = {
-            "Ready to go Home": 0,
-            "Available to Reserve": 1,
-            "Found Families": 2
-        };
+        const today = new Date();
+        today.setHours(0, 0, 0, 0);
 
-        const sortedLitters = [...LITTERS].sort((a, b) => {
-            const pA = priority[a.status] ?? 99;
-            const pB = priority[b.status] ?? 99;
+        // Map litters with dynamic status
+        const processedLitters = LITTERS.map(litter => {
+            let status = "";
             
-            if (pA !== pB) {
-                return pA - pB;
+            // 1. Check if all puppies are sold out
+            const allSold = litter.puppies && litter.puppies.length > 0 && 
+                            litter.puppies.every(p => p.status.toLowerCase() !== 'available');
+            
+            if (allSold) {
+                status = "Found Families";
+            } else {
+                // 2. Check Ready Date
+                if (!litter.readyToGoDate || litter.readyToGoDate === "Now") {
+                    status = "Ready to go Home";
+                } else {
+                    const readyDate = new Date(litter.readyToGoDate);
+                    if (isNaN(readyDate.getTime())) {
+                        status = "Ready to go Home"; // Fallback
+                    } else if (readyDate <= today) {
+                        status = "Ready to go Home";
+                    } else {
+                        // Future date
+                        status = "Available to Reserve";
+                    }
+                }
             }
 
-            // Secondary sort: Earliest Ready To Go Date first
-            const isNowA = (a.readyToGoDate === "Now" || !a.readyToGoDate);
-            const isNowB = (b.readyToGoDate === "Now" || !b.readyToGoDate);
-            
-            if (isNowA && !isNowB) return -1;
-            if (!isNowA && isNowB) return 1;
-            if (isNowA && isNowB) return 0;
+            return { ...litter, dynamicStatus: status };
+        });
 
-            const dateA = new Date(a.readyToGoDate);
-            const dateB = new Date(b.readyToGoDate);
+        const priority = (status) => {
+            if (status === "Ready to go Home") return 0;
+            if (status === "Available to Reserve") return 1;
+            return 2; // Found Families
+        };
+
+        const sortedLitters = processedLitters.sort((a, b) => {
+            const pA = priority(a.dynamicStatus);
+            const pB = priority(b.dynamicStatus);
+            
+            if (pA !== pB) return pA - pB;
+
+            // Secondary sort: Earliest Ready To Go Date first
+            const dateA = a.readyToGoDate === "Now" ? new Date(0) : new Date(a.readyToGoDate);
+            const dateB = b.readyToGoDate === "Now" ? new Date(0) : new Date(b.readyToGoDate);
             return dateA - dateB;
         });
 
-        const activeLitters = sortedLitters.filter(l => l.status !== "Found Families");
-        const soldOutLitters = sortedLitters.filter(l => l.status === "Found Families");
+        const activeLitters = sortedLitters.filter(l => l.dynamicStatus !== "Found Families");
+        const soldOutLitters = sortedLitters.filter(l => l.dynamicStatus === "Found Families");
 
-        littersGrid.innerHTML = activeLitters.map(renderLitterCard).join('');
+        // Pass the dynamicStatus to renderLitterCard
+        littersGrid.innerHTML = activeLitters.map(l => renderLitterCard({ ...l, status: l.dynamicStatus })).join('');
+        
         if (archiveGrid) {
-            archiveGrid.innerHTML = soldOutLitters.map(renderLitterCard).join('');
+            archiveGrid.innerHTML = soldOutLitters.map(l => renderLitterCard({ ...l, status: l.dynamicStatus })).join('');
             
-            // Hide the accordion if there are no sold out litters
             const accordion = document.querySelector('.archive-accordion');
             if (soldOutLitters.length === 0 && accordion) {
                 accordion.style.display = 'none';
@@ -354,6 +389,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
 
 // ==========================================
 // HAPPY TAILS SLIDER LOGIC

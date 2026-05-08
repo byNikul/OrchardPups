@@ -304,6 +304,27 @@ body.js-cursor-active .faq-question {
     transform: translateY(-2px);
 }
 
+.music-toggle {
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.music-toggle.playing {
+    color: #3A8C63;
+    background: white;
+    box-shadow: 0 0 15px rgba(58, 140, 99, 0.3);
+}
+
+.music-toggle.playing i {
+    animation: musicPulse 1.5s ease-in-out infinite;
+}
+
+@keyframes musicPulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.15); }
+}
+
 .header-divider {
     width: 1px;
     height: 20px;
@@ -1725,6 +1746,16 @@ body {
     line-height: 1.5;
     color: #4A5568;
     opacity: 0.8;
+}
+
+.mini-text {
+    display: block;
+    font-size: 0.8rem;
+    line-height: 1.6;
+    opacity: 0.7;
+    margin-top: 1.2rem;
+    padding-top: 1.2rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 .license-footer {
