@@ -1950,12 +1950,12 @@ body {
 
     /* Punchline: smaller to prevent awkward wrapping */
     .hero-subtitle {
-        font-size: 0.68rem;
-        line-height: 1.4;
-        margin: 10px auto 0;
-        white-space: normal;
-        letter-spacing: 2px;
-        max-width: 85%;
+        font-size: 0.65rem;
+        line-height: 1.2;
+        margin: 8px auto 0;
+        white-space: nowrap;
+        letter-spacing: 1.5px;
+        max-width: 100%;
         text-align: center;
         opacity: 0.8;
     }
@@ -2499,8 +2499,9 @@ body {
     }
 
     .hero-subtitle {
-        font-size: 0.6rem;
-        letter-spacing: 1px;
+        font-size: 0.58rem;
+        letter-spacing: 0.5px;
+        white-space: nowrap;
     }
 
     .hero-location {
