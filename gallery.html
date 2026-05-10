@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery — Orchard Pups</title>
+    <meta name="description" content="Browse our photo gallery of happy, healthy Orchard Pups puppies and the families who love them.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="gallery.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body class="gallery-page">
+
+    <!-- Header (same as main) -->
+    <header class="glass-header">
+        <div class="header-main">
+            <div class="header-left">
+                <a href="index.html" class="header-logo">
+                    <span class="logo-icon">🐾</span>
+                    <span class="brand-logo-text">Orchard Pups</span>
+                </a>
+                <nav class="nav-links">
+                    <a href="index.html#listings">Listings</a>
+                    <a href="index.html#about">About</a>
+                    <a href="index.html#process">Journey</a>
+                    <a href="index.html#why-us">Why Us?</a>
+                    <a href="index.html#licensing">Licensing</a>
+                    <a href="index.html#tails">Happy Tails</a>
+                    <a href="gallery.html" class="nav-active">Gallery</a>
+                    <a href="index.html#faqs">FAQs</a>
+                </nav>
+            </div>
+            <div class="header-right">
+                <div class="header-usda">
+                    <span class="usda-label">USDA Licensed</span>
+                    <span class="usda-id">21-B-0214</span>
+                </div>
+                <div class="header-divider"></div>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/groups/399324617574989/" class="social-icon" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/kimberlyortiz2002" class="social-icon" title="Instagram" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://youtube.com/@opgdmdens2320?si=Lie9v-Tlb9Fj3I-D" class="social-icon" title="YouTube" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="mailto:Kmortiz2001@yahoo.com" class="social-icon" title="Email"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+                <a href="tel:+13155761245" class="header-phone">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>315-576-1245</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Floating background petals -->
+    <div class="gallery-bg-orbs">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+    </div>
+
+    <!-- Page Hero -->
+    <div class="gallery-hero">
+        <div class="gallery-hero-inner">
+            <div class="gallery-hero-icon">🐾</div>
+            <h1 class="gallery-title">Our Gallery</h1>
+            <p class="gallery-subtitle">Every tail has a story — browse our collection of happy, healthy pups and the families who love them.</p>
+        </div>
+
+        <!-- Stats bar -->
+        <div class="gallery-stats">
+            <div class="gallery-stat">
+                <span class="stat-num" id="stat-count">—</span>
+                <span class="stat-label">Photos</span>
+            </div>
+            <div class="gallery-stat-divider"></div>
+            <div class="gallery-stat">
+                <span class="stat-num">18+</span>
+                <span class="stat-label">Years of Love</span>
+            </div>
+            <div class="gallery-stat-divider"></div>
+            <div class="gallery-stat">
+                <span class="stat-num">100%</span>
+                <span class="stat-label">Happy Families</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Gallery Grid -->
+    <main class="gallery-main">
+        <div id="gallery-grid" class="gallery-masonry">
+            <!-- Injected by gallery.js -->
+        </div>
+
+        <!-- Load More -->
+        <div class="gallery-load-more" id="load-more-area">
+            <button class="gallery-load-btn" id="load-more-btn">
+                <i class="fa-solid fa-paw"></i>
+                Load More Photos
+            </button>
+            <p class="gallery-all-loaded" id="all-loaded-msg" style="display:none;">
+                🐾 You've seen them all — aren't they adorable?
+            </p>
+        </div>
+    </main>
+
+    <!-- Lightbox -->
+    <div class="gallery-lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer">
+        <button class="lightbox-close" id="lightbox-close" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+        <button class="lightbox-arrow lightbox-prev" id="lightbox-prev" aria-label="Previous"><i class="fa-solid fa-chevron-left"></i></button>
+        <button class="lightbox-arrow lightbox-next" id="lightbox-next" aria-label="Next"><i class="fa-solid fa-chevron-right"></i></button>
+
+        <div class="lightbox-inner">
+            <div class="lightbox-img-wrap">
+                <div class="lightbox-blur-bg" id="lightbox-blur"></div>
+                <img class="lightbox-img" id="lightbox-img" src="" alt="Gallery photo">
+            </div>
+            <div class="lightbox-counter" id="lightbox-counter">1 / 259</div>
+        </div>
+    </div>
+
+    <!-- Floating Back Button -->
+    <a href="index.html#tails" class="gallery-back-link">
+        <i class="fa-solid fa-arrow-left"></i> Back to Happy Tails
+    </a>
+
+    <script src="gallery.js"></script>
+</body>
+</html>
