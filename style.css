@@ -1836,6 +1836,49 @@ body {
     line-height: 1.6;
 }
 
+/* Legal Notice Box */
+.legal-notice-box {
+    margin-top: 2.5rem;
+    background: rgba(197, 48, 48, 0.05);
+    border-left: 4px solid #C53030;
+    border-radius: 4px 12px 12px 4px;
+    padding: 20px 25px;
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    text-align: left;
+}
+
+.legal-notice-icon {
+    font-size: 1.4rem;
+    color: #C53030;
+    margin-top: 2px;
+}
+
+.legal-notice-text {
+    font-size: 0.95rem;
+    color: #4A5568;
+    line-height: 1.6;
+}
+
+.legal-notice-text strong {
+    color: #C53030;
+    font-weight: 700;
+}
+
+.legal-link {
+    color: #C53030;
+    font-weight: 600;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+    transition: color 0.3s ease;
+}
+
+.legal-link:hover {
+    color: #9B2C2C;
+}
+
 @keyframes cardFloat {
     0% {
         transform: translateY(0);
@@ -2282,6 +2325,23 @@ body {
 
     .license-footer {
         text-align: center;
+    }
+
+    .legal-notice-box {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        border-left: none;
+        border-top: 4px solid #C53030;
+        border-radius: 12px 12px 8px 8px;
+        padding: 24px 16px;
+        gap: 12px;
+    }
+
+    .legal-notice-icon {
+        margin-top: 0;
+        margin-bottom: 5px;
+        font-size: 1.6rem;
     }
 
     /* ── 10. PROCESS & PREP MOBILE ── */
