@@ -404,11 +404,18 @@ function renderHappyTails() {
 
     if (!track || !HAPPY_TAILS.length) return;
 
+    // Shuffle Happy Tails for a fresh experience every visit
+    for (let i = HAPPY_TAILS.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [HAPPY_TAILS[i], HAPPY_TAILS[j]] = [HAPPY_TAILS[j], HAPPY_TAILS[i]];
+    }
+
     // Render Slides
     track.innerHTML = HAPPY_TAILS.map(tail => `
         <div class="tail-slide">
             <div class="tail-image-side">
-                <img src="${tail.image}" alt="${tail.familyName}">
+                <div class="tail-image-bg" style="background-image: url('${tail.image}')"></div>
+                <img src="${tail.image}" alt="${tail.familyName}" class="tail-main-img">
             </div>
             <div class="tail-text-side">
                 <div class="tail-quote-icon">

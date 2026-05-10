@@ -315,23 +315,98 @@ const LITTERS = [
 const HAPPY_TAILS = [
     {
         id: "tail-1",
-        familyName: "The Henderson Family",
-        puppyName: "Oliver",
-        image: "https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?auto=format&fit=crop&q=80&w=1200",
-        message: "Oliver has been the perfect addition to our home. He's so gentle with the kids and was already so well-socialized when we brought him home. Thank you Orchard Pups for our best friend!"
+        familyName: "A Happy Customer",
+        puppyName: "Chloe",
+        image: "assets/HappyTails/chloe.jpeg",
+        message: "I just wanted to tell you that she is the best, sweetest, smartest, most affectionate dog. We lover her so much!"
     },
+
     {
         id: "tail-2",
-        familyName: "Sarah & Mike",
-        puppyName: "Luna",
-        image: "https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?auto=format&fit=crop&q=80&w=1200",
-        message: "We couldn't be happier with Luna. She's incredibly smart and has such a sweet temperament. You can really tell how much love and care goes into every puppy here."
+        familyName: "A Happy Customer",
+        puppyName: "Maisy",
+        image: "assets/HappyTails/maisy.jpeg",
+        message: "Maisy passed her CGC and Therapy Dog tests....She is so amazing and has so much love to give to community!"
     },
+
     {
         id: "tail-3",
-        familyName: "The Robertsons",
-        puppyName: "Cooper",
-        image: "https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&q=80&w=1200",
-        message: "Finding Orchard Pups was a blessing! Cooper is healthy, happy, and the light of our lives. The Rochester team was so helpful throughout the entire adoption process."
+        familyName: "A Happy Customer",
+        puppyName: "Tater",
+        image: "assets/HappyTails/tater.jpeg",
+        message: "Here's picture of both of our Orchard Pups (the best doodles!!). You really do have the best pups! My sister has an orchard pup as well 🥰"
+    },
+
+    {
+        id: "tail-4",
+        familyName: "A Happy Customer",
+        puppyName: "--",
+        image: "assets/HappyTails/1.jpeg",
+        message: "She barely barks :) she is amazing! We really have the best dog in the world"
+    },
+
+    {
+        id: "tail-5",
+        familyName: "A Happy Customer",
+        puppyName: "Daisy",
+        image: "assets/HappyTails/daisy.jpeg",
+        message: "Daisy got spayed today.... She is 6 months and 42 lb. The vet asked us where we got her from. They said she is one of the calmest doodles they have ever seen. They could not stop talking about how sweet she is and such a good listener. ❤️"
+    },
+
+    {
+        id: "tail-6",
+        familyName: "A Happy Customer",
+        puppyName: "Buster",
+        image: "assets/HappyTails/buster.png",
+        message: "First day of School! Buster misses his buddies 🚌"
+    },
+
+    {
+        id: "tail-7",
+        familyName: "A Happy Customer",
+        puppyName: "Scooter (aka Bugs)",
+        image: "assets/HappyTails/scooter-aka-bugs.png",
+        message: "I've been meaning to write to tell you how grateful we all are that you matched us up with our sweet boy... We are in love and we thank you!"
+    },
+
+    {
+        id: "tail-8",
+        familyName: "A Happy Customer",
+        puppyName: "Bella",
+        image: "assets/HappyTails/bella.png",
+        message: "So pleased with our new bundle of joy! Bella has brought many smiles to our faces! Thank You...!"
+    },
+
+    {
+        id: "tail-9",
+        familyName: "A Happy Customer",
+        puppyName: "Hazel (aka Jewel)",
+        image: "assets/HappyTails/hazel-aka-jewel.png",
+        message: "She is now 8 months old and weighs 20 pounds. She is such a good dog and very well behaved... She has made my family's life so much better! She's a local celebrity in my neighborhood as well 😊"
+    },
+
+    {
+        id: "tail-10",
+        familyName: "A Happy Customer",
+        puppyName: "Bailey",
+        image: "assets/HappyTails/bailey.png",
+        message: "I don't know why we waited 21 years to get a dog. Thanks Orchard Pups for finding a great dog for us."
+    },
+
+    {
+        id: "tail-11",
+        familyName: "A Happy Customer",
+        puppyName: "Luis",
+        image: "assets/HappyTails/luis.png",
+        message: "I can't say enough great things about your pups. Everyone wants a Luis because he's soo happy and friendly."
+    },
+
+    {
+        id: "tail-12",
+        familyName: "A Happy Customer",
+        puppyName: "Luna (aka Frenchie)",
+        image: "assets/HappyTails/luna-aka-frenchie.jpeg",
+        message: "Our minds are blown! She is so smart! Loves being outside and watching birds. We are so thankful! The timing was perfect! I'm so glad we found Orchard Pups!!"
     }
+
 ];
