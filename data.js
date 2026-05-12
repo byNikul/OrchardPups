@@ -64,7 +64,7 @@ const LITTERS = [
         price: "$1600 + tax ($300 due at reservation)",
         puppies: [
             { name: "Mr Dandy Lion", gender: "Male", status: "Available" },
-            { name: "Mamma Rose Bella", gender: "Female", status: "Found her forever family with Jacob" },
+            { name: "Mamma Rose Bella", gender: "Female", status: "Found her forever family" },
             { name: "Lady Fern Ella", gender: "Female", status: "Found her forever family" },
             { name: "Queen Callie Ann", gender: "Female", status: "Available" }
         ],
@@ -82,7 +82,8 @@ const LITTERS = [
         ],
         updates: [
             { date: "May 6, 2026", text: "Litter Available to Reserve!" },
-            { date: "May 7, 2026", text: "Lady Fern Ella found her forever family with Melanie!" }
+            { date: "May 7, 2026", text: "Lady Fern Ella found her forever family with Melanie!" },
+            { date: "May 10, 2026", text: "Mamma Rose Bella found her forever family with Jacob!" }
         ]
     },
 
