@@ -64,7 +64,7 @@ const LITTERS = [
         price: "$1600 + tax ($300 due at reservation)",
         puppies: [
             { name: "Mr Dandy Lion", gender: "Male", status: "Available" },
-            { name: "Mamma Rose Bella", gender: "Female", status: "Available" },
+            { name: "Mamma Rose Bella", gender: "Female", status: "Found her forever family with Jacob" },
             { name: "Lady Fern Ella", gender: "Female", status: "Found her forever family" },
             { name: "Queen Callie Ann", gender: "Female", status: "Available" }
         ],
@@ -407,6 +407,13 @@ const HAPPY_TAILS = [
         puppyName: "Luna (aka Frenchie)",
         image: "assets/HappyTails/luna-aka-frenchie.jpeg",
         message: "Our minds are blown! She is so smart! Loves being outside and watching birds. We are so thankful! The timing was perfect! I'm so glad we found Orchard Pups!!"
-    }
+    },
 
+    {
+        id: "tail-13",
+        familyName: "Sarah",
+        puppyName: "Marcy",
+        image: "assets/HappyTails/marcy.jpeg",
+        message: "She makes is easy!! She really is the best girl."
+    }
 ];
