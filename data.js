@@ -333,6 +333,35 @@ const LITTERS = [
         updates: [
             { date: "May 6, 2026", text: "Litter Available to Reserve!" }
         ]
+    },
+
+    {
+        id: "early-birds-2026",
+        litterName: "Early Birds",
+        dob: "May 4, 2026",
+        readyToGoDate: "June 29, 2026",
+        mom: { name: "Biscuit", breed: "F1 Mini Goldendoodle", weight: "16lbs" },
+        dad: { name: "Blazer", breed: "Mini Poodle", weight: "12lbs" },
+        breed: "F1BB Mini Goldendoodle",
+        description: "These aren’t your typical doodles—they are the definition of extra fancy. As an F1BB generation, these puppies carry a higher percentage of Poodle lineage, ensuring those coveted, ultra-plush, loose Teddybear coats.They are currently in their earliest days, and we invite you to join us for the journey. Secure your newest family member now and enjoy beautiful, frequent updates as you watch your puppy grow from a tiny wonder into a stunning mini companion. Expect a soulful, endearing personality that melts into your arms the moment you hold them.",
+        price: "$1800 + tax ($300 due at reservation)",
+        puppies: [
+            { name: "Mavis", gender: "Girl", status: "Available" },
+            { name: "Dove", gender: "Girl", status: "Available" },
+            { name: "Jay", gender: "Boy", status: "Available" }
+
+        ],
+        thumbnail: "assets/Listings/EarlyBirds/earlybirds-thumbnail.png",
+        media: [
+            { type: "video", src: "assets/Listings/EarlyBirds/earlybirds.mp4", label: "Litter Video" },
+            { type: "image", src: "assets/Listings/EarlyBirds/earlybirds1.jpeg", label: "Litter" },
+            { type: "image", src: "assets/Listings/EarlyBirds/mavis1.png", label: "Mavis (Girl)" },
+            { type: "image", src: "assets/Listings/EarlyBirds/dove1.png", label: "Dove (Girl)" },
+            { type: "image", src: "assets/Listings/EarlyBirds/jay1.png", label: "Jay (Boy)" }
+        ],
+        updates: [
+            { date: "May 15, 2026", text: "Litter Available to Reserve!" }
+        ]
     }
 ];
 
