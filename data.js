@@ -23,29 +23,36 @@ const LITTERS = [
         media: [
             { type: "video", src: "assets/Listings/ToyStory/toystory1.mp4", label: "Toy Story Litter" },
             { type: "video", src: "assets/Listings/ToyStory/toystory2.mp4", label: "Toy Story Litter" },
+            { type: "video", src: "assets/Listings/ToyStory/toystory3.mp4", label: "Toy Story Litter" },
+            { type: "video", src: "assets/Listings/ToyStory/toystory4.mp4", label: "Toy Story Litter" },
+            { type: "video", src: "assets/Listings/ToyStory/toystory5.mp4", label: "Toy Story Litter" },
             { type: "image", src: "assets/Listings/ToyStory/woody1.jpeg", label: "Woody (Male)" },
             { type: "image", src: "assets/Listings/ToyStory/woody2.jpeg", label: "Woody (Male)" },
             { type: "image", src: "assets/Listings/ToyStory/woody3.jpeg", label: "Woody (Male)" },
             { type: "image", src: "assets/Listings/ToyStory/woody4.jpeg", label: "Woody (Male)" },
             { type: "image", src: "assets/Listings/ToyStory/woody5.jpeg", label: "Woody (Male)" },
+            { type: "image", src: "assets/Listings/ToyStory/woody6.png", label: "Woody (Male)" },
             { type: "image", src: "assets/Listings/ToyStory/annie1.jpeg", label: "Annie (Female)" },
             { type: "image", src: "assets/Listings/ToyStory/annie2.jpeg", label: "Annie (Female)" },
             { type: "image", src: "assets/Listings/ToyStory/annie3.jpeg", label: "Annie (Female)" },
             { type: "image", src: "assets/Listings/ToyStory/annie4.jpeg", label: "Annie (Female)" },
             { type: "image", src: "assets/Listings/ToyStory/annie5.jpeg", label: "Annie (Female)" },
             { type: "image", src: "assets/Listings/ToyStory/annie6.jpeg", label: "Annie (Female)" },
+            { type: "image", src: "assets/Listings/ToyStory/annie7.png", label: "Annie (Female)" },
             { type: "image", src: "assets/Listings/ToyStory/bo-peep1.jpeg", label: "Bo Peep (Female)" },
             { type: "image", src: "assets/Listings/ToyStory/bo-peep2.jpeg", label: "Bo Peep (Female)" },
             { type: "image", src: "assets/Listings/ToyStory/bo-peep3.jpeg", label: "Bo Peep (Female)" },
             { type: "image", src: "assets/Listings/ToyStory/bo-peep4.jpeg", label: "Bo Peep (Female)" },
             { type: "image", src: "assets/Listings/ToyStory/bo-peep5.jpeg", label: "Bo Peep (Female)" },
             { type: "image", src: "assets/Listings/ToyStory/bo-peep6.jpeg", label: "Bo Peep (Female)" },
+            { type: "image", src: "assets/Listings/ToyStory/bo-peep7.png", label: "Bo Peep (Female)" },
             { type: "image", src: "assets/Listings/ToyStory/jessie1.jpeg", label: "Jessie (Female)" },
             { type: "image", src: "assets/Listings/ToyStory/jessie2.jpeg", label: "Jessie (Female)" },
             { type: "image", src: "assets/Listings/ToyStory/jessie3.jpeg", label: "Jessie (Female)" },
             { type: "image", src: "assets/Listings/ToyStory/jessie4.jpeg", label: "Jessie (Female)" },
             { type: "image", src: "assets/Listings/ToyStory/jessie5.jpeg", label: "Jessie (Female)" },
-            { type: "image", src: "assets/Listings/ToyStory/jessie6.jpeg", label: "Jessie (Female)" }
+            { type: "image", src: "assets/Listings/ToyStory/jessie6.jpeg", label: "Jessie (Female)" },
+            { type: "image", src: "assets/Listings/ToyStory/jessie7.png", label: "Jessie (Female)" }
         ],
         updates: [
             { date: "May 6, 2026", text: "Litter Available to Reserve!" }
@@ -64,7 +71,7 @@ const LITTERS = [
         price: "$1600 + tax ($300 due at reservation)",
         puppies: [
             { name: "Mr Dandy Lion", gender: "Male", status: "Available" },
-            { name: "Mamma Rose Bella", gender: "Female", status: "Found her forever family" },
+            { name: "Momma Rose Bella", gender: "Female", status: "Found her forever family" },
             { name: "Lady Fern Ella", gender: "Female", status: "Found her forever family" },
             { name: "Queen Callie Ann", gender: "Female", status: "Available" }
         ],
@@ -72,18 +79,21 @@ const LITTERS = [
         media: [
             { type: "video", src: "assets/Listings/SpringBlooms/springblooms1.mp4", label: "Spring Blooms Litter" },
             { type: "video", src: "assets/Listings/SpringBlooms/springblooms2.mp4", label: "Spring Blooms Litter" },
+            { type: "video", src: "assets/Listings/SpringBlooms/springblooms3.mp4", label: "Spring Blooms Litter" },
             { type: "image", src: "assets/Listings/SpringBlooms/ladyfernella.jpeg", label: "Lady Fern Ella (Female)" },
-            { type: "image", src: "assets/Listings/SpringBlooms/mommarosebella1.jpeg", label: "Mamma Rose Bella (Female)" },
-            { type: "image", src: "assets/Listings/SpringBlooms/mommarosebella2.jpeg", label: "Mamma Rose Bella (Female)" },
-            { type: "image", src: "assets/Listings/SpringBlooms/mrrandylion1.jpeg", label: "Mr Randy Lion (Male)" },
-            { type: "image", src: "assets/Listings/SpringBlooms/mrrandylion2.jpeg", label: "Mr Randy Lion (Male)" },
+            { type: "image", src: "assets/Listings/SpringBlooms/mommarosebella1.jpeg", label: "Momma Rose Bella (Female)" },
+            { type: "image", src: "assets/Listings/SpringBlooms/mommarosebella2.jpeg", label: "Momma Rose Bella (Female)" },
+            { type: "image", src: "assets/Listings/SpringBlooms/mrdandylion1.jpeg", label: "Mr Dandy Lion (Male)" },
+            { type: "image", src: "assets/Listings/SpringBlooms/mrdandylion2.jpeg", label: "Mr Dandy Lion (Male)" },
+            { type: "image", src: "assets/Listings/SpringBlooms/mrdandylion3.png", label: "Mr Dandy Lion (Male)" },
             { type: "image", src: "assets/Listings/SpringBlooms/queencallieann1.jpeg", label: "Queen Callie Ann (Female)" },
-            { type: "image", src: "assets/Listings/SpringBlooms/queencallieann2.jpeg", label: "Queen Callie Ann (Female)" }
+            { type: "image", src: "assets/Listings/SpringBlooms/queencallieann2.jpeg", label: "Queen Callie Ann (Female)" },
+            { type: "image", src: "assets/Listings/SpringBlooms/queencallieann3.png", label: "Queen Callie Ann (Female)" }
         ],
         updates: [
             { date: "May 6, 2026", text: "Litter Available to Reserve!" },
             { date: "May 7, 2026", text: "Lady Fern Ella found her forever family with Melanie!" },
-            { date: "May 10, 2026", text: "Mamma Rose Bella found her forever family with Jacob!" }
+            { date: "May 10, 2026", text: "Momma Rose Bella found her forever family with Jacob!" }
         ]
     },
 
@@ -142,21 +152,34 @@ const LITTERS = [
         ],
         thumbnail: "assets/Listings/BestFriends/bestfriends-thumbnail.png",
         media: [
-            { type: "image", src: "assets/Listings/BestFriends/groupimage.png", label: "Best Friends Litter" },
+            { type: "image", src: "assets/Listings/BestFriends/bestfriends.png", label: "Best Friends Litter" },
+            { type: "video", src: "assets/Listings/BestFriends/bestfriends1.mp4", label: "Best Friends Litter" },
+            { type: "video", src: "assets/Listings/BestFriends/bestfriends2.mp4", label: "Best Friends Litter" },
             { type: "video", src: "assets/Listings/BestFriends/albert.mp4", label: "Albert (Male)" },
             { type: "image", src: "assets/Listings/BestFriends/albert1.jpeg", label: "Albert (Male)" },
             { type: "image", src: "assets/Listings/BestFriends/albert2.jpeg", label: "Albert (Male)" },
+            { type: "image", src: "assets/Listings/BestFriends/albert3.png", label: "Albert (Male)" },
+            { type: "image", src: "assets/Listings/BestFriends/albert4.png", label: "Albert (Male)" },
             { type: "video", src: "assets/Listings/BestFriends/chip.mp4", label: "Chip (Male)" },
             { type: "image", src: "assets/Listings/BestFriends/chip1.jpeg", label: "Chip (Male)" },
+            { type: "image", src: "assets/Listings/BestFriends/chip2.png", label: "Chip (Male)" },
+            { type: "image", src: "assets/Listings/BestFriends/chip3.png", label: "Chip (Male)" },
             { type: "video", src: "assets/Listings/BestFriends/danny.mp4", label: "Danny (Male)" },
             { type: "image", src: "assets/Listings/BestFriends/danny1.png", label: "Danny (Male)" },
+            { type: "image", src: "assets/Listings/BestFriends/danny2.png", label: "Danny (Male)" },
+            { type: "image", src: "assets/Listings/BestFriends/danny3.png", label: "Danny (Male)" },
             { type: "video", src: "assets/Listings/BestFriends/patch.mp4", label: "Patch (Male)" },
             { type: "image", src: "assets/Listings/BestFriends/patch1.jpeg", label: "Patch (Male)" },
+            { type: "image", src: "assets/Listings/BestFriends/patch2.png", label: "Patch (Male)" },
+            { type: "image", src: "assets/Listings/BestFriends/patch3.png", label: "Patch (Male)" },
             { type: "video", src: "assets/Listings/BestFriends/pebbles.mp4", label: "Pebbles (Female)" },
             { type: "image", src: "assets/Listings/BestFriends/pebbles1.jpeg", label: "Pebbles (Female)" },
             { type: "image", src: "assets/Listings/BestFriends/pebbles2.jpeg", label: "Pebbles (Female)" },
+            { type: "image", src: "assets/Listings/BestFriends/pebbles3.png", label: "Pebbles (Female)" },
             { type: "video", src: "assets/Listings/BestFriends/rose.mp4", label: "Rosemary (Female)" },
-            { type: "image", src: "assets/Listings/BestFriends/rose1.jpeg", label: "Rosemary (Female)" }
+            { type: "image", src: "assets/Listings/BestFriends/rose1.jpeg", label: "Rosemary (Female)" },
+            { type: "image", src: "assets/Listings/BestFriends/rose2.png", label: "Rosemary (Female)" },
+            { type: "image", src: "assets/Listings/BestFriends/rose3.png", label: "Rosemary (Female)" }
         ],
         updates: [
             { date: "May 6, 2026", text: "Litter Available to Reserve!" },
@@ -206,7 +229,7 @@ const LITTERS = [
         mom: { name: "NA", breed: "Mini Poodle", weight: "13lbs" },
         dad: { name: "NA", breed: "Mini Schnauzer", weight: "17lbs" },
         breed: "F1 Schnoodle",
-        description: "Beautiful, loving, and waiting for a family to love her, she has a 'Happy-Go-Lucky' vibe! The Schnoodle tends to inherit the Poodle's playful energy and the Schnauzer's spunky, stout-hearted nature. This results in a dog that loves to please and is highly trainable because they genuinely care about your approval. They are great with kids, sturdy enough for play but gentle enough to be reliable family companions. With their intelligence and a hint of wit, they are quick learners who might even try to 'negotiate' with you for a better treat!",
+        description: "She is a very sweet gentle natured girl. Perfect as a first time pet and a great companion for a senior citizen. She is playful and enjoy snuggles. Beautiful, loving, and waiting for a family to love her, she has a 'Happy-Go-Lucky' vibe! The Schnoodle tends to inherit the Poodle's playful energy and the Schnauzer's spunky, stout-hearted nature. This results in a dog that loves to please and is highly trainable because they genuinely care about your approval. They are great with kids, sturdy enough for play but gentle enough to be reliable family companions. With their intelligence and a hint of wit, they are quick learners who might even try to 'negotiate' with you for a better treat!",
         price: "$550 + tax ($300 due at reservation)",
         puppies: [
             { name: "Maggie", gender: "Female", status: "Available" }
@@ -215,7 +238,8 @@ const LITTERS = [
         media: [
             { type: "video", src: "assets/Listings/SchnoodleLove/maggie.mp4", label: "Maggie (Female)" },
             { type: "image", src: "assets/Listings/SchnoodleLove/maggie1.jpeg", label: "Maggie (Female)" },
-            { type: "image", src: "assets/Listings/SchnoodleLove/maggie2.jpeg", label: "Maggie (Female)" }
+            { type: "image", src: "assets/Listings/SchnoodleLove/maggie2.jpeg", label: "Maggie (Female)" },
+            { type: "image", src: "assets/Listings/SchnoodleLove/maggie3.jpeg", label: "Maggie (Female)" }
         ],
         updates: [
             { date: "May 6, 2026", text: "Litter Available to Reserve!" }
@@ -270,7 +294,8 @@ const LITTERS = [
             { type: "image", src: "assets/Listings/IMYours/julia3.jpeg", label: "Julia (Female)" },
             { type: "image", src: "assets/Listings/IMYours/julia4.jpeg", label: "Julia (Female)" },
             { type: "image", src: "assets/Listings/IMYours/julia5.jpeg", label: "Julia (Female)" },
-            { type: "image", src: "assets/Listings/IMYours/julia6.jpeg", label: "Julia (Female)" }
+            { type: "image", src: "assets/Listings/IMYours/julia6.jpeg", label: "Julia (Female)" },
+            { type: "image", src: "assets/Listings/IMYours/julia7.png", label: "Julia (Female)" }
         ],
         updates: [
             { date: "May 6, 2026", text: "Litter Available to Reserve!" }
@@ -292,14 +317,18 @@ const LITTERS = [
             { name: "Tucker", gender: "Male", status: "Available" }
 
         ],
-        thumbnail: "assets/Listings/MammasBoys/mammas-boys-thumbnail.png",
+        thumbnail: "assets/Listings/MammasBoys/mammas-boys-thumbnail.jpeg",
         media: [
             { type: "video", src: "assets/Listings/MammasBoys/mammas-boys.mp4", label: "Litter Video" },
             { type: "image", src: "assets/Listings/MammasBoys/texas1.jpeg", label: "Texas (Male)" },
+            { type: "image", src: "assets/Listings/MammasBoys/texas2.png", label: "Texas (Male)" },
+            { type: "image", src: "assets/Listings/MammasBoys/texas3.png", label: "Texas (Male)" },
             { type: "image", src: "assets/Listings/MammasBoys/tucker1.jpeg", label: "Tucker (Male)" },
             { type: "image", src: "assets/Listings/MammasBoys/tucker2.jpeg", label: "Tucker (Male)" },
             { type: "image", src: "assets/Listings/MammasBoys/tucker3.jpeg", label: "Tucker (Male)" },
-            { type: "image", src: "assets/Listings/MammasBoys/tucker4.jpeg", label: "Tucker (Male)" }
+            { type: "image", src: "assets/Listings/MammasBoys/tucker4.jpeg", label: "Tucker (Male)" },
+            { type: "image", src: "assets/Listings/MammasBoys/tucker5.png", label: "Tucker (Male)" },
+            { type: "image", src: "assets/Listings/MammasBoys/tucker6.png", label: "Tucker (Male)" }
         ],
         updates: [
             { date: "May 6, 2026", text: "Litter Available to Reserve!" }
