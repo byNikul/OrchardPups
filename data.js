@@ -199,25 +199,31 @@ const LITTERS = [
         price: "$2500 + tax ($300 due at reservation)",
         puppies: [
             { name: "Markie", gender: "Male", status: "Available" },
-            { name: "Paddy", gender: "Female", status: "Available" },
-            { name: "Bella", gender: "Female", status: "Available" }
+            { name: "Paddy", gender: "Male", status: "Available" },
+            { name: "Bella", gender: "Female", status: "Found her family!" }
         ],
         thumbnail: "assets/Listings/RubyReds/rubyreds-thumbnail.png",
         media: [
-            { type: "video", src: "assets/Listings/RubyReds/groupvideo.mp4", label: "Ruby Reds Litter" },
+            { type: "video", src: "assets/Listings/RubyReds/rubyreds1.mp4", label: "Ruby Reds Litter" },
+            { type: "video", src: "assets/Listings/RubyReds/rubyreds2.mp4", label: "Ruby Reds Litter (Markie and Paddy)" },
             { type: "video", src: "assets/Listings/RubyReds/markie.mp4", label: "Markie (Male)" },
             { type: "image", src: "assets/Listings/RubyReds/markie1.jpeg", label: "Markie (Male)" },
             { type: "image", src: "assets/Listings/RubyReds/markie2.jpeg", label: "Markie (Male)" },
-            { type: "video", src: "assets/Listings/RubyReds/paddy.mp4", label: "Paddy (Female)" },
-            { type: "image", src: "assets/Listings/RubyReds/paddy1.jpeg", label: "Paddy (Female)" },
-            { type: "image", src: "assets/Listings/RubyReds/paddy2.jpeg", label: "Paddy (Female)" },
+            { type: "image", src: "assets/Listings/RubyReds/markie3.png", label: "Markie (Male)" },
+            { type: "image", src: "assets/Listings/RubyReds/markie4.png", label: "Markie (Male)" },
+            { type: "video", src: "assets/Listings/RubyReds/paddy.mp4", label: "Paddy (Male)" },
+            { type: "image", src: "assets/Listings/RubyReds/paddy1.jpeg", label: "Paddy (Male)" },
+            { type: "image", src: "assets/Listings/RubyReds/paddy2.jpeg", label: "Paddy (Male)" },
+            { type: "image", src: "assets/Listings/RubyReds/paddy3.png", label: "Paddy (Male)" },
+            { type: "image", src: "assets/Listings/RubyReds/paddy4.png", label: "Paddy (Male)" },
             { type: "video", src: "assets/Listings/RubyReds/belle1.mp4", label: "Belle (Female)" },
             { type: "video", src: "assets/Listings/RubyReds/belle2.mp4", label: "Belle (Female)" },
             { type: "image", src: "assets/Listings/RubyReds/belle1.jpeg", label: "Belle (Female)" },
             { type: "image", src: "assets/Listings/RubyReds/belle2.jpeg", label: "Belle (Female)" }
         ],
         updates: [
-            { date: "May 6, 2026", text: "Litter Available to Reserve!" }
+            { date: "May 6, 2026", text: "Litter Available to Reserve!" },
+            { date: "May 16, 2026", text: "Bella found her family!" }
         ]
     },
 
