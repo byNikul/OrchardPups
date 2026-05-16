@@ -15,7 +15,7 @@ const LITTERS = [
         price: "$1700 + tax ($300 due at reservation)",
         puppies: [
             { name: "Woody", gender: "Male", status: "Available" },
-            { name: "Annie", gender: "Female", status: "Available" },
+            { name: "Annie", gender: "Female", status: "Found her forever family with Kimberly" },
             { name: "Bo-Peep", gender: "Female", status: "Available" },
             { name: "Jessie", gender: "Female", status: "Available" }
         ],
@@ -55,7 +55,8 @@ const LITTERS = [
             { type: "image", src: "assets/Listings/ToyStory/jessie7.png", label: "Jessie (Female)" }
         ],
         updates: [
-            { date: "May 6, 2026", text: "Litter Available to Reserve!" }
+            { date: "May 6, 2026", text: "Litter Available to Reserve!" },
+            { date: "May 16, 2026", text: "Annie has found her forever home with Kimberly" }
         ]
     },
 
@@ -72,7 +73,6 @@ const LITTERS = [
         puppies: [
             { name: "Mr Dandy Lion", gender: "Male", status: "Available" },
             { name: "Momma Rose Bella", gender: "Female", status: "Found her forever family" },
-            { name: "Lady Fern Ella", gender: "Female", status: "Found her forever family" },
             { name: "Queen Callie Ann", gender: "Female", status: "Available" }
         ],
         thumbnail: "assets/Listings/SpringBlooms/springblooms-thumbnail.jpeg",
@@ -80,7 +80,6 @@ const LITTERS = [
             { type: "video", src: "assets/Listings/SpringBlooms/springblooms1.mp4", label: "Spring Blooms Litter" },
             { type: "video", src: "assets/Listings/SpringBlooms/springblooms2.mp4", label: "Spring Blooms Litter" },
             { type: "video", src: "assets/Listings/SpringBlooms/springblooms3.mp4", label: "Spring Blooms Litter" },
-            { type: "image", src: "assets/Listings/SpringBlooms/ladyfernella.jpeg", label: "Lady Fern Ella (Female)" },
             { type: "image", src: "assets/Listings/SpringBlooms/mommarosebella1.jpeg", label: "Momma Rose Bella (Female)" },
             { type: "image", src: "assets/Listings/SpringBlooms/mommarosebella2.jpeg", label: "Momma Rose Bella (Female)" },
             { type: "image", src: "assets/Listings/SpringBlooms/mrdandylion1.jpeg", label: "Mr Dandy Lion (Male)" },
@@ -92,7 +91,6 @@ const LITTERS = [
         ],
         updates: [
             { date: "May 6, 2026", text: "Litter Available to Reserve!" },
-            { date: "May 7, 2026", text: "Lady Fern Ella found her forever family with Melanie!" },
             { date: "May 10, 2026", text: "Momma Rose Bella found her forever family with Jacob!" }
         ]
     },
@@ -116,16 +114,29 @@ const LITTERS = [
         ],
         thumbnail: "assets/Listings/HereComesTheSun/herecomesthesun-thumbnail.jpeg",
         media: [
+            { type: "video", src: "assets/Listings/HereComesTheSun/herecomesthesun1.mp4", label: "Here Comes The Sun Litter" },
+            { type: "video", src: "assets/Listings/HereComesTheSun/herecomesthesun2.mp4", label: "Here Comes The Sun Litter" },
+            { type: "video", src: "assets/Listings/HereComesTheSun/herecomesthesun3.mp4", label: "Here Comes The Sun Litter" },
             { type: "video", src: "assets/Listings/HereComesTheSun/george.mp4", label: "George (Male)" },
             { type: "image", src: "assets/Listings/HereComesTheSun/george1.jpeg", label: "George (Male)" },
             { type: "image", src: "assets/Listings/HereComesTheSun/george2.jpeg", label: "George (Male)" },
+            { type: "image", src: "assets/Listings/HereComesTheSun/george3.png", label: "George (Male)" },
+            { type: "image", src: "assets/Listings/HereComesTheSun/george4.png", label: "George (Male)" },
+            { type: "image", src: "assets/Listings/HereComesTheSun/john1.png", label: "John (Male)" },
+            { type: "image", src: "assets/Listings/HereComesTheSun/john2.png", label: "John (Male)" },
             { type: "video", src: "assets/Listings/HereComesTheSun/michele.mp4", label: "Michele (Female)" },
             { type: "image", src: "assets/Listings/HereComesTheSun/michele1.jpeg", label: "Michele (Female)" },
             { type: "image", src: "assets/Listings/HereComesTheSun/michele2.jpeg", label: "Michele (Female)" },
+            { type: "image", src: "assets/Listings/HereComesTheSun/michele3.png", label: "Michele (Female)" },
+            { type: "image", src: "assets/Listings/HereComesTheSun/michele4.png", label: "Michele (Female)" },
             { type: "image", src: "assets/Listings/HereComesTheSun/yoko1.jpeg", label: "Yoko (Female)" },
             { type: "image", src: "assets/Listings/HereComesTheSun/yoko2.jpeg", label: "Yoko (Female)" },
+            { type: "image", src: "assets/Listings/HereComesTheSun/yoko3.png", label: "Yoko (Female)" },
+            { type: "image", src: "assets/Listings/HereComesTheSun/yoko4.png", label: "Yoko (Female)" },
             { type: "image", src: "assets/Listings/HereComesTheSun/penny1.jpeg", label: "Penny (Female)" },
-            { type: "image", src: "assets/Listings/HereComesTheSun/penny2.jpeg", label: "Penny (Female)" }
+            { type: "image", src: "assets/Listings/HereComesTheSun/penny2.jpeg", label: "Penny (Female)" },
+            { type: "image", src: "assets/Listings/HereComesTheSun/penny3.png", label: "Penny (Female)" },
+            { type: "image", src: "assets/Listings/HereComesTheSun/penny4.png", label: "Penny (Female)" }
         ],
         updates: [
             { date: "May 6, 2026", text: "Litter Available to Reserve!" }
