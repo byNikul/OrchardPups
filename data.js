@@ -275,7 +275,7 @@ const LITTERS = [
         price: "$1400 + tax ($300 due at reservation)",
         puppies: [
             { name: "Baxter", gender: "Male", status: "Available" },
-            { name: "Willie", gender: "Male", status: "Available" }
+            { name: "Willie", gender: "Male", status: "Found home with Jenna" }
         ],
         thumbnail: "assets/Listings/TeddybearSchnoodles/teddybear-schnoodles-thumbnail.jpeg",
         media: [
@@ -286,7 +286,8 @@ const LITTERS = [
             { type: "image", src: "assets/Listings/TeddybearSchnoodles/willie2.jpeg", label: "Willie (Male)" }
         ],
         updates: [
-            { date: "May 6, 2026", text: "Litter Available to Reserve!" }
+            { date: "May 6, 2026", text: "Litter Available to Reserve!" },
+            { date: "May 16, 2026", text: "Willie found his forever home with Jenna!" }
         ]
     },
 
@@ -378,6 +379,47 @@ const LITTERS = [
         ],
         updates: [
             { date: "May 15, 2026", text: "Litter Available to Reserve!" }
+        ]
+    },
+
+    {
+        id: "summer-brezzy-2026",
+        litterName: "Summer Brezzy",
+        dob: "May 10, 2026",
+        readyToGoDate: "July 7, 2026",
+        mom: { name: "April Showers", breed: "F1 Standard Goldendoodle", weight: "60lbs" },
+        dad: { name: "Milo", breed: "Standard Poodle", weight: "50lbs" },
+        breed: "F1B Standard Goldendoodles",
+        description: "F1B Standard Goldendoodles make absolutely phenomenal family pets, effortlessly blending the goofy, affectionate heart of a Golden Retriever with the stellar intelligence and low-shedding qualities of a Poodle. Because they are a backcross (75% Poodle and 25% Golden Retriever), they are an excellent, allergy-friendly option for households sensitive to pet dander. These puppies grow into gentle giants that are famously patient with children, eager to please, and highly trainable, making them a seamless addition to a busy household. Whether they are joining you for an outdoor weekend adventure or happily curling up for a movie night, their adaptable, loving nature ensures they will quickly become the loyal, furry centerpiece of your family.",
+        price: "$2100 + tax ($300 due at reservation)",
+        puppies: [
+            { name: "Daisy", gender: "Girl", status: "Available" },
+            { name: "Belle", gender: "Girl", status: "Available" },
+            { name: "Willow", gender: "Girl", status: "Available" },
+            { name: "Sam", gender: "Boy", status: "Available" },
+            { name: "Fonzie", gender: "Boy", status: "Available" },
+            { name: "Georgie", gender: "Boy", status: "Available" }
+
+        ],
+        thumbnail: "assets/Listings/SummerBrezzy/summerbrezzy-thumbnail.png",
+        media: [
+            { type: "image", src: "assets/Listings/SummerBrezzy/summerbrezzy1.png", label: "Girls (Daisy, Belle, Willow)" },
+            { type: "image", src: "assets/Listings/SummerBrezzy/summerbrezzy2.png", label: "Boys (Sam, Fonzie, Georgie)" },
+            { type: "image", src: "assets/Listings/SummerBrezzy/belle1.png", label: "Belle (Girl)" },
+            { type: "image", src: "assets/Listings/SummerBrezzy/belle2.png", label: "Belle (Girl)" },
+            { type: "image", src: "assets/Listings/SummerBrezzy/sam1.png", label: "Sam (Boy)" },
+            { type: "image", src: "assets/Listings/SummerBrezzy/georgie1.png", label: "Georgie (Boy)" },
+            { type: "image", src: "assets/Listings/SummerBrezzy/georgie2.png", label: "Georgie (Boy)" },
+            { type: "image", src: "assets/Listings/SummerBrezzy/fonzie1.png", label: "Fonzie (Boy)" },
+            { type: "image", src: "assets/Listings/SummerBrezzy/fonzie2.png", label: "Fonzie (Boy)" },
+            { type: "image", src: "assets/Listings/SummerBrezzy/willow1.png", label: "Willow (Girl)" },
+            { type: "image", src: "assets/Listings/SummerBrezzy/willow2.png", label: "Willow (Girl)" },
+            { type: "image", src: "assets/Listings/SummerBrezzy/daisy1.png", label: "Daisy (Girl)" },
+            { type: "image", src: "assets/Listings/SummerBrezzy/daisy2.png", label: "Daisy (Girl)" },
+
+        ],
+        updates: [
+            { date: "May 16, 2026", text: "Litter Available to Reserve!" }
         ]
     }
 ];
