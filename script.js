@@ -418,12 +418,16 @@ function renderHappyTails() {
                 <img src="${tail.image}" alt="${tail.familyName}" class="tail-main-img">
             </div>
             <div class="tail-text-side">
-                <div class="tail-quote-icon">
-                    <i class="fa-solid fa-quote-left"></i>
+                <div class="tail-text-inner">
+                    <div class="tail-quote-icon">
+                        <i class="fa-solid fa-quote-left"></i>
+                    </div>
+                    <div class="tail-message">"${tail.message}"</div>
                 </div>
-                <div class="tail-message">"${tail.message}"</div>
-                <div class="tail-family">${tail.familyName}</div>
-                <div class="tail-puppy">Adopted ${tail.puppyName}</div>
+                <div class="tail-author">
+                    <div class="tail-family">${tail.familyName}</div>
+                    <div class="tail-puppy">Adopted ${tail.puppyName}</div>
+                </div>
             </div>
         </div>
     `).join('');
@@ -439,6 +443,12 @@ function renderHappyTails() {
 
     if (prevBtn) prevBtn.onclick = () => moveSlide(-1);
     if (nextBtn) nextBtn.onclick = () => moveSlide(1);
+
+    // Auto-fit text to avoid overflow in any slide
+    // Small delay to ensure layout is computed before measuring
+    requestAnimationFrame(() => {
+        requestAnimationFrame(fitAllTailText);
+    });
 
     // Auto Slide
     startSlideShow();
@@ -481,3 +491,44 @@ function startSlideShow() {
 function stopSlideShow() {
     clearInterval(slideInterval);
 }
+
+// ==========================================
+// FIT TEXT — auto-shrink message font to fill panel
+// ==========================================
+function fitAllTailText() {
+    const MIN_FONT_SIZE = 0.70; // rem — never go smaller than this
+    const STEP = 0.03;          // rem — decrement per iteration
+
+    // Convert px to rem using root font-size
+    const rootFontSize = parseFloat(getComputedStyle(document.documentElement).fontSize);
+
+    const slides = document.querySelectorAll('.tail-slide');
+
+    slides.forEach(slide => {
+        const inner   = slide.querySelector('.tail-text-inner');
+        const message = slide.querySelector('.tail-message');
+        if (!inner || !message) return;
+
+        // Reset any inline override first so we can read the CSS-defined size
+        message.style.fontSize = '';
+
+        // Read the default font size set by CSS (respects desktop vs mobile breakpoint)
+        const computedPx  = parseFloat(getComputedStyle(message).fontSize);
+        const defaultSize = computedPx / rootFontSize; // convert to rem
+
+        // If it already fits at the CSS default, nothing to do
+        if (inner.scrollHeight <= inner.clientHeight) return;
+
+        // Shrink until it fits or we hit the minimum
+        let size = defaultSize;
+        while (inner.scrollHeight > inner.clientHeight && size > MIN_FONT_SIZE) {
+            size = Math.max(size - STEP, MIN_FONT_SIZE);
+            message.style.fontSize = size + 'rem';
+        }
+    });
+}
+
+// Re-fit text whenever the window is resized
+window.addEventListener('resize', () => {
+    requestAnimationFrame(fitAllTailText);
+});

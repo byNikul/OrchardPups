@@ -540,6 +540,6 @@ const HAPPY_TAILS = [
         familyName: "A Happy Family",
         puppyName: "Luffy",
         image: "assets/HappyTails/luffy.png",
-        message: "My son is a diabetic. He had a severe seizure and our standard Goldendoodle Luffy from Orchard Pups signaled. He has had no training, prior to this event. Kim suggested Luffy to us as an underdog that got overlooked. Kim had been working with him and suggested him as a good option for our needs. He has now had alert training and is a certified seizure alert dog. The picture shows us in NYCity. Unfortunately my son had a large seizure and Luffy alerted and we were able to get him to the hospital. Luffy stayed by his side in the hospital and alerted before the machines did. The doctors were very impressed. Luffy is our perfect pup , we love him so much ."
+        message: "My son is a diabetic. He had a severe seizure and our standard Goldendoodle Luffy...signaled. He has had no training, prior to this event...He has now had alert training and is a certified seizure alert dog...Unfortunately my son had a large seizure and Luffy alerted and we were able to get him to the hospital. Luffy stayed by his side...and alerted before the machines did...Luffy is our perfect pup , we love him so much ."
     }
 ];
