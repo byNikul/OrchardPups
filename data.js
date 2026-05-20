@@ -80,6 +80,7 @@ const LITTERS = [
             { type: "video", src: "assets/Listings/SpringBlooms/springblooms1.mp4", label: "Spring Blooms Litter" },
             { type: "video", src: "assets/Listings/SpringBlooms/springblooms2.mp4", label: "Spring Blooms Litter" },
             { type: "video", src: "assets/Listings/SpringBlooms/springblooms3.mp4", label: "Spring Blooms Litter" },
+            { type: "image", src: "assets/Listings/SpringBlooms/springblooms1.jpeg", label: "Spring Blooms Litter" },
             { type: "image", src: "assets/Listings/SpringBlooms/mommarosebella1.jpeg", label: "Momma Rose Bella (Female)" },
             { type: "image", src: "assets/Listings/SpringBlooms/mommarosebella2.jpeg", label: "Momma Rose Bella (Female)" },
             { type: "image", src: "assets/Listings/SpringBlooms/mrdandylion1.jpeg", label: "Mr Dandy Lion (Male)" },
@@ -247,7 +248,7 @@ const LITTERS = [
         dad: { name: "NA", breed: "Mini Schnauzer", weight: "17lbs" },
         breed: "F1 Schnoodle",
         description: "She is a very sweet gentle natured girl. Perfect as a first time pet and a great companion for a senior citizen. She is playful and enjoy snuggles. Beautiful, loving, and waiting for a family to love her, she has a 'Happy-Go-Lucky' vibe! The Schnoodle tends to inherit the Poodle's playful energy and the Schnauzer's spunky, stout-hearted nature. This results in a dog that loves to please and is highly trainable because they genuinely care about your approval. They are great with kids, sturdy enough for play but gentle enough to be reliable family companions. With their intelligence and a hint of wit, they are quick learners who might even try to 'negotiate' with you for a better treat!",
-        price: "$550 + tax ($300 due at reservation)",
+        price: "$500 + tax ($300 due at reservation)",
         puppies: [
             { name: "Maggie", gender: "Female", status: "Available" }
         ],
@@ -256,7 +257,8 @@ const LITTERS = [
             { type: "video", src: "assets/Listings/SchnoodleLove/maggie.mp4", label: "Maggie (Female)" },
             { type: "image", src: "assets/Listings/SchnoodleLove/maggie1.jpeg", label: "Maggie (Female)" },
             { type: "image", src: "assets/Listings/SchnoodleLove/maggie2.jpeg", label: "Maggie (Female)" },
-            { type: "image", src: "assets/Listings/SchnoodleLove/maggie3.jpeg", label: "Maggie (Female)" }
+            { type: "image", src: "assets/Listings/SchnoodleLove/maggie3.jpeg", label: "Maggie (Female)" },
+            { type: "image", src: "assets/Listings/SchnoodleLove/maggie4.jpeg", label: "Maggie (Female)" }
         ],
         updates: [
             { date: "May 6, 2026", text: "Litter Available to Reserve!" }
@@ -282,6 +284,7 @@ const LITTERS = [
             { type: "video", src: "assets/Listings/TeddybearSchnoodles/teddybear-schnoodles.mp4", label: "Litter Video" },
             { type: "image", src: "assets/Listings/TeddybearSchnoodles/baxter1.jpeg", label: "Baxter (Male)" },
             { type: "image", src: "assets/Listings/TeddybearSchnoodles/baxter2.jpeg", label: "Baxter (Male)" },
+            { type: "image", src: "assets/Listings/TeddybearSchnoodles/baxter3.jpeg", label: "Baxter (Male)" },
             { type: "image", src: "assets/Listings/TeddybearSchnoodles/willie1.jpeg", label: "Willie (Male)" },
             { type: "image", src: "assets/Listings/TeddybearSchnoodles/willie2.jpeg", label: "Willie (Male)" }
         ],
