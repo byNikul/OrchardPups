@@ -351,7 +351,7 @@ const LITTERS = [
             { type: "image", src: "assets/Listings/MammasBoys/texas1.jpeg", label: "Texas (Male)" },
             { type: "image", src: "assets/Listings/MammasBoys/texas2.png", label: "Texas (Male)" },
             { type: "image", src: "assets/Listings/MammasBoys/texas3.png", label: "Texas (Male)" },
-            { type: "image", src: "assets/Listings/MammasBoys/texas4.png", label: "Texas (Male)" },
+            { type: "image", src: "assets/Listings/MammasBoys/texas4.jpeg", label: "Texas (Male)" },
             { type: "video", src: "assets/Listings/MammasBoys/tucker1.mp4", label: "Tucker (Male)" },
             { type: "image", src: "assets/Listings/MammasBoys/tucker1.jpeg", label: "Tucker (Male)" },
             { type: "image", src: "assets/Listings/MammasBoys/tucker2.jpeg", label: "Tucker (Male)" },
@@ -359,7 +359,7 @@ const LITTERS = [
             { type: "image", src: "assets/Listings/MammasBoys/tucker4.jpeg", label: "Tucker (Male)" },
             { type: "image", src: "assets/Listings/MammasBoys/tucker5.png", label: "Tucker (Male)" },
             { type: "image", src: "assets/Listings/MammasBoys/tucker6.png", label: "Tucker (Male)" },
-            { type: "image", src: "assets/Listings/MammasBoys/tucker7.png", label: "Tucker (Male)" }
+            { type: "image", src: "assets/Listings/MammasBoys/tucker7.jpeg", label: "Tucker (Male)" }
         ],
         updates: [
             { date: "May 6, 2026", text: "Litter Available to Reserve!" }
@@ -389,10 +389,10 @@ const LITTERS = [
             { type: "image", src: "assets/Listings/EarlyBirds/mavis1.png", label: "Mavis (Girl)" },
             { type: "video", src: "assets/Listings/EarlyBirds/dove1.mp4", label: "Dove (Girl)" },
             { type: "image", src: "assets/Listings/EarlyBirds/dove1.png", label: "Dove (Girl)" },
-            { type: "image", src: "assets/Listings/EarlyBirds/dove2.png", label: "Dove (Girl)" },
+            { type: "image", src: "assets/Listings/EarlyBirds/dove2.jpeg", label: "Dove (Girl)" },
             { type: "video", src: "assets/Listings/EarlyBirds/jay1.mp4", label: "Jay (Boy)" },
             { type: "image", src: "assets/Listings/EarlyBirds/jay1.png", label: "Jay (Boy)" },
-            { type: "image", src: "assets/Listings/EarlyBirds/jay2.png", label: "Jay (Boy)" }
+            { type: "image", src: "assets/Listings/EarlyBirds/jay2.jpeg", label: "Jay (Boy)" }
         ],
         updates: [
             { date: "May 15, 2026", text: "Litter Available to Reserve!" }
