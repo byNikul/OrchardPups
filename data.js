@@ -26,12 +26,14 @@ const LITTERS = [
             { type: "video", src: "assets/Listings/ToyStory/toystory3.mp4", label: "Toy Story Litter" },
             { type: "video", src: "assets/Listings/ToyStory/toystory4.mp4", label: "Toy Story Litter" },
             { type: "video", src: "assets/Listings/ToyStory/toystory5.mp4", label: "Toy Story Litter" },
+            { type: "video", src: "assets/Listings/ToyStory/woody1.mp4", label: "Woody (Male)" },
             { type: "image", src: "assets/Listings/ToyStory/woody1.jpeg", label: "Woody (Male)" },
             { type: "image", src: "assets/Listings/ToyStory/woody2.jpeg", label: "Woody (Male)" },
             { type: "image", src: "assets/Listings/ToyStory/woody3.jpeg", label: "Woody (Male)" },
             { type: "image", src: "assets/Listings/ToyStory/woody4.jpeg", label: "Woody (Male)" },
             { type: "image", src: "assets/Listings/ToyStory/woody5.jpeg", label: "Woody (Male)" },
             { type: "image", src: "assets/Listings/ToyStory/woody6.png", label: "Woody (Male)" },
+            { type: "image", src: "assets/Listings/ToyStory/woody7.png", label: "Woody (Male)" },
             { type: "image", src: "assets/Listings/ToyStory/annie1.jpeg", label: "Annie (Female)" },
             { type: "image", src: "assets/Listings/ToyStory/annie2.jpeg", label: "Annie (Female)" },
             { type: "image", src: "assets/Listings/ToyStory/annie3.jpeg", label: "Annie (Female)" },
@@ -39,6 +41,7 @@ const LITTERS = [
             { type: "image", src: "assets/Listings/ToyStory/annie5.jpeg", label: "Annie (Female)" },
             { type: "image", src: "assets/Listings/ToyStory/annie6.jpeg", label: "Annie (Female)" },
             { type: "image", src: "assets/Listings/ToyStory/annie7.png", label: "Annie (Female)" },
+            { type: "video", src: "assets/Listings/ToyStory/bo-peep1.mp4", label: "Bo Peep (Female)" },
             { type: "image", src: "assets/Listings/ToyStory/bo-peep1.jpeg", label: "Bo Peep (Female)" },
             { type: "image", src: "assets/Listings/ToyStory/bo-peep2.jpeg", label: "Bo Peep (Female)" },
             { type: "image", src: "assets/Listings/ToyStory/bo-peep3.jpeg", label: "Bo Peep (Female)" },
@@ -46,13 +49,16 @@ const LITTERS = [
             { type: "image", src: "assets/Listings/ToyStory/bo-peep5.jpeg", label: "Bo Peep (Female)" },
             { type: "image", src: "assets/Listings/ToyStory/bo-peep6.jpeg", label: "Bo Peep (Female)" },
             { type: "image", src: "assets/Listings/ToyStory/bo-peep7.png", label: "Bo Peep (Female)" },
+            { type: "image", src: "assets/Listings/ToyStory/bo-peep8.png", label: "Bo Peep (Female)" },
+            { type: "video", src: "assets/Listings/ToyStory/jessie1.mp4", label: "Jessie (Female)" },
             { type: "image", src: "assets/Listings/ToyStory/jessie1.jpeg", label: "Jessie (Female)" },
             { type: "image", src: "assets/Listings/ToyStory/jessie2.jpeg", label: "Jessie (Female)" },
             { type: "image", src: "assets/Listings/ToyStory/jessie3.jpeg", label: "Jessie (Female)" },
             { type: "image", src: "assets/Listings/ToyStory/jessie4.jpeg", label: "Jessie (Female)" },
             { type: "image", src: "assets/Listings/ToyStory/jessie5.jpeg", label: "Jessie (Female)" },
             { type: "image", src: "assets/Listings/ToyStory/jessie6.jpeg", label: "Jessie (Female)" },
-            { type: "image", src: "assets/Listings/ToyStory/jessie7.png", label: "Jessie (Female)" }
+            { type: "image", src: "assets/Listings/ToyStory/jessie7.png", label: "Jessie (Female)" },
+            { type: "image", src: "assets/Listings/ToyStory/jessie8.png", label: "Jessie (Female)" },
         ],
         updates: [
             { date: "May 6, 2026", text: "Litter Available to Reserve!" },
@@ -341,15 +347,19 @@ const LITTERS = [
         thumbnail: "assets/Listings/MammasBoys/mammas-boys-thumbnail.jpeg",
         media: [
             { type: "video", src: "assets/Listings/MammasBoys/mammas-boys.mp4", label: "Litter Video" },
+            { type: "video", src: "assets/Listings/MammasBoys/tucker1.mp4", label: "Tucker (Male)" },
             { type: "image", src: "assets/Listings/MammasBoys/texas1.jpeg", label: "Texas (Male)" },
             { type: "image", src: "assets/Listings/MammasBoys/texas2.png", label: "Texas (Male)" },
             { type: "image", src: "assets/Listings/MammasBoys/texas3.png", label: "Texas (Male)" },
+            { type: "image", src: "assets/Listings/MammasBoys/texas4.png", label: "Texas (Male)" },
+            { type: "video", src: "assets/Listings/MammasBoys/tucker1.mp4", label: "Tucker (Male)" },
             { type: "image", src: "assets/Listings/MammasBoys/tucker1.jpeg", label: "Tucker (Male)" },
             { type: "image", src: "assets/Listings/MammasBoys/tucker2.jpeg", label: "Tucker (Male)" },
             { type: "image", src: "assets/Listings/MammasBoys/tucker3.jpeg", label: "Tucker (Male)" },
             { type: "image", src: "assets/Listings/MammasBoys/tucker4.jpeg", label: "Tucker (Male)" },
             { type: "image", src: "assets/Listings/MammasBoys/tucker5.png", label: "Tucker (Male)" },
-            { type: "image", src: "assets/Listings/MammasBoys/tucker6.png", label: "Tucker (Male)" }
+            { type: "image", src: "assets/Listings/MammasBoys/tucker6.png", label: "Tucker (Male)" },
+            { type: "image", src: "assets/Listings/MammasBoys/tucker7.png", label: "Tucker (Male)" }
         ],
         updates: [
             { date: "May 6, 2026", text: "Litter Available to Reserve!" }
@@ -377,8 +387,12 @@ const LITTERS = [
             { type: "video", src: "assets/Listings/EarlyBirds/earlybirds.mp4", label: "Litter Video" },
             { type: "image", src: "assets/Listings/EarlyBirds/earlybirds1.jpeg", label: "Litter" },
             { type: "image", src: "assets/Listings/EarlyBirds/mavis1.png", label: "Mavis (Girl)" },
+            { type: "video", src: "assets/Listings/EarlyBirds/dove1.mp4", label: "Dove (Girl)" },
             { type: "image", src: "assets/Listings/EarlyBirds/dove1.png", label: "Dove (Girl)" },
-            { type: "image", src: "assets/Listings/EarlyBirds/jay1.png", label: "Jay (Boy)" }
+            { type: "image", src: "assets/Listings/EarlyBirds/dove2.png", label: "Dove (Girl)" },
+            { type: "video", src: "assets/Listings/EarlyBirds/jay1.mp4", label: "Jay (Boy)" },
+            { type: "image", src: "assets/Listings/EarlyBirds/jay1.png", label: "Jay (Boy)" },
+            { type: "image", src: "assets/Listings/EarlyBirds/jay2.png", label: "Jay (Boy)" }
         ],
         updates: [
             { date: "May 15, 2026", text: "Litter Available to Reserve!" }
