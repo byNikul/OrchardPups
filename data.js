@@ -418,7 +418,7 @@ const LITTERS = [
         description: "F1B Standard Goldendoodles make absolutely phenomenal family pets, effortlessly blending the goofy, affectionate heart of a Golden Retriever with the stellar intelligence and low-shedding qualities of a Poodle. Because they are a backcross (75% Poodle and 25% Golden Retriever), they are an excellent, allergy-friendly option for households sensitive to pet dander. These puppies grow into gentle giants that are famously patient with children, eager to please, and highly trainable, making them a seamless addition to a busy household. Whether they are joining you for an outdoor weekend adventure or happily curling up for a movie night, their adaptable, loving nature ensures they will quickly become the loyal, furry centerpiece of your family.",
         price: "$2100 + tax ($300 due at reservation)",
         puppies: [
-            { name: "Daisy", gender: "Girl", status: "Available" },
+            { name: "Daisy", gender: "Girl", status: "Reserved by Jamie" },
             { name: "Belle", gender: "Girl", status: "Available" },
             { name: "Willow", gender: "Girl", status: "Available" },
             { name: "Sam", gender: "Boy", status: "Available" },
@@ -445,6 +445,7 @@ const LITTERS = [
         ],
         updates: [
             { date: "May 16, 2026", text: "Litter Available to Reserve!" }
+            { date: "May 23, 2026", text: "Daisy Found forever home with Jamie" }
         ]
     }
 ];
