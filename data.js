@@ -444,7 +444,7 @@ const LITTERS = [
 
         ],
         updates: [
-            { date: "May 16, 2026", text: "Litter Available to Reserve!" }
+            { date: "May 16, 2026", text: "Litter Available to Reserve!" },
             { date: "May 23, 2026", text: "Daisy Found forever home with Jamie" }
         ]
     }
