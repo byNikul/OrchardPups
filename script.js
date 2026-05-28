@@ -340,18 +340,33 @@ document.addEventListener('DOMContentLoaded', () => {
     if (archiveToggle && archiveContent) {
         archiveToggle.addEventListener('click', () => {
             const isExpanded = archiveToggle.classList.contains('active');
-            archiveToggle.classList.toggle('active');
+            
             if (!isExpanded) {
+                archiveToggle.classList.add('active');
                 archiveContent.style.maxHeight = archiveContent.scrollHeight + "px";
             } else {
+                // Set overflow back to hidden immediately to ensure clean clipping during collapse
+                archiveContent.style.overflow = "hidden";
+                
+                // If it is 'none', first restore it to the actual scrollHeight so it transitions smoothly
+                if (archiveContent.style.maxHeight === 'none') {
+                    archiveContent.style.maxHeight = archiveContent.scrollHeight + "px";
+                    // Force a reflow to apply the scrollHeight before setting to 0
+                    archiveContent.offsetHeight;
+                }
+                archiveToggle.classList.remove('active');
                 archiveContent.style.maxHeight = "0";
             }
         });
-        
-        // Recalculate max-height on resize if expanded
-        window.addEventListener('resize', () => {
-            if (archiveToggle.classList.contains('active')) {
-                archiveContent.style.maxHeight = archiveContent.scrollHeight + "px";
+
+        // Once the opening transition finishes, set max-height to 'none' and overflow to 'visible' 
+        // so cards can expand and scale (scale(1.02) on hover) without any clipping
+        archiveContent.addEventListener('transitionend', (e) => {
+            if (e.propertyName === 'max-height') {
+                if (archiveToggle.classList.contains('active')) {
+                    archiveContent.style.maxHeight = 'none';
+                    archiveContent.style.overflow = 'visible';
+                }
             }
         });
     }
