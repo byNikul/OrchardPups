@@ -214,7 +214,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const availableCount = litter.puppies ? litter.puppies.filter(p => p.status.toLowerCase() === 'available').length : 0;
         const totalCount = litter.puppies ? litter.puppies.length : 0;
         const availability = `${availableCount}/${totalCount}`;
-        
+
         return `
             <a href="litter.html?id=${litter.id}" class="litter-card">
                 <div class="litter-thumb-wrapper">
@@ -268,11 +268,11 @@ document.addEventListener('DOMContentLoaded', () => {
         // Map litters with dynamic status
         const processedLitters = LITTERS.map(litter => {
             let status = "";
-            
+
             // 1. Check if all puppies are sold out
-            const allSold = litter.puppies && litter.puppies.length > 0 && 
-                            litter.puppies.every(p => p.status.toLowerCase() !== 'available');
-            
+            const allSold = litter.puppies && litter.puppies.length > 0 &&
+                litter.puppies.every(p => p.status.toLowerCase() !== 'available');
+
             if (allSold) {
                 status = "Found Families";
             } else {
@@ -304,7 +304,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const sortedLitters = processedLitters.sort((a, b) => {
             const pA = priority(a.dynamicStatus);
             const pB = priority(b.dynamicStatus);
-            
+
             if (pA !== pB) return pA - pB;
 
             // Secondary sort: Earliest Ready To Go Date first
@@ -318,10 +318,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Pass the dynamicStatus to renderLitterCard
         littersGrid.innerHTML = activeLitters.map(l => renderLitterCard({ ...l, status: l.dynamicStatus })).join('');
-        
+
         if (archiveGrid) {
             archiveGrid.innerHTML = soldOutLitters.map(l => renderLitterCard({ ...l, status: l.dynamicStatus })).join('');
-            
+
             const accordion = document.querySelector('.archive-accordion');
             if (soldOutLitters.length === 0 && accordion) {
                 accordion.style.display = 'none';
@@ -340,14 +340,14 @@ document.addEventListener('DOMContentLoaded', () => {
     if (archiveToggle && archiveContent) {
         archiveToggle.addEventListener('click', () => {
             const isExpanded = archiveToggle.classList.contains('active');
-            
+
             if (!isExpanded) {
                 archiveToggle.classList.add('active');
                 archiveContent.style.maxHeight = archiveContent.scrollHeight + "px";
             } else {
                 // Set overflow back to hidden immediately to ensure clean clipping during collapse
                 archiveContent.style.overflow = "hidden";
-                
+
                 // If it is 'none', first restore it to the actual scrollHeight so it transitions smoothly
                 if (archiveContent.style.maxHeight === 'none') {
                     archiveContent.style.maxHeight = archiveContent.scrollHeight + "px";
@@ -395,7 +395,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // Toggle current item
             item.classList.toggle('active');
             const answer = item.querySelector('.faq-answer');
-            
+
             if (!isActive) {
                 answer.style.maxHeight = answer.scrollHeight + 'px';
             } else {
@@ -520,7 +520,7 @@ function fitAllTailText() {
     const slides = document.querySelectorAll('.tail-slide');
 
     slides.forEach(slide => {
-        const inner   = slide.querySelector('.tail-text-inner');
+        const inner = slide.querySelector('.tail-text-inner');
         const message = slide.querySelector('.tail-message');
         if (!inner || !message) return;
 
@@ -528,7 +528,7 @@ function fitAllTailText() {
         message.style.fontSize = '';
 
         // Read the default font size set by CSS (respects desktop vs mobile breakpoint)
-        const computedPx  = parseFloat(getComputedStyle(message).fontSize);
+        const computedPx = parseFloat(getComputedStyle(message).fontSize);
         const defaultSize = computedPx / rootFontSize; // convert to rem
 
         // If it already fits at the CSS default, nothing to do

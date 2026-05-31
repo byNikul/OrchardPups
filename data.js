@@ -320,7 +320,7 @@ const LITTERS = [
         description: "Julia is ready to be the ultimate companion. If you need an extra shadow she is up for the job. She would be a wonderful addition to your chair for watching TV. She enjoys running around the house, then crashing for a long nap. She has two speeds, silly or snuggling.",
         price: "$1500 + tax ($300 due at reservation)",
         puppies: [
-            { name: "Julia", gender: "Female", status: "Available" }
+            { name: "Julia", gender: "Female", status: "Found her forever home!" }
         ],
         thumbnail: "assets/Listings/IMYours/julia5.jpeg",
         media: [
