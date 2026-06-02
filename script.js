@@ -114,6 +114,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // ============================================================
     // CUSTOM CURSOR - Puppy Theme Status Cursor
     // ============================================================
+
     const cursor = document.getElementById('custom-cursor');
     const cursorText = cursor ? cursor.querySelector('.cursor-text') : null;
     let moveTimeout;
@@ -191,6 +192,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // ============================================================
     // DYNAMIC LITTER LISTINGS
     // ============================================================
+
     const littersGrid = document.getElementById('litters-grid');
     const archiveGrid = document.getElementById('archive-grid');
 
@@ -377,6 +379,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // ============================================================
     // FAQ ACCORDION LOGIC
     // ============================================================
+
     const faqItems = document.querySelectorAll('.faq-item');
 
     faqItems.forEach(item => {

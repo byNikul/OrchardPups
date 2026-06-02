@@ -77,7 +77,7 @@ const LITTERS = [
         description: "Check out our Spring Blooms litter! We're super excited about these F1BB Mini Goldendoodles. They're total Teddybear pups with wavy, hypoallergenic coats and the sweetest personalities you can imagine. The F1BB generation is the results of the most hypoallergenic, non-shedding coats possible—perfect for families with allergies! These litter tends to be little calmer because of the larger size.",
         price: "$1600 + tax ($300 due at reservation)",
         puppies: [
-            { name: "Mr Dandy Lion", gender: "Male", status: "Available" },
+            { name: "Mr Dandy Lion", gender: "Male", status: "Found his forever family" },
             { name: "Momma Rose Bella", gender: "Female", status: "Found her forever family" },
             { name: "Queen Callie Ann", gender: "Female", status: "Available" }
         ],
@@ -163,7 +163,7 @@ const LITTERS = [
         puppies: [
             { name: "Albert", gender: "Male", status: "Available" },
             { name: "Patch", gender: "Male", status: "Available" },
-            { name: "Rosemary", gender: "Female", status: "Available" },
+            { name: "Rosemary", gender: "Female", status: "Found her forever family" },
             { name: "Pebbles", gender: "Female", status: "Reserved by Kathleen" },
             { name: "Chip", gender: "Male", status: "Available" },
             { name: "Danny", gender: "Male", status: "Available" }
