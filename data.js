@@ -98,7 +98,8 @@ const LITTERS = [
         ],
         updates: [
             { date: "May 6, 2026", text: "Litter Available to Reserve!" },
-            { date: "May 10, 2026", text: "Momma Rose Bella found her forever family with Jacob!" }
+            { date: "May 10, 2026", text: "Momma Rose Bella found her forever family with Jacob!" },
+            { date: "June 1, 2026", text: "Mr Dandy Lion found his forever family!" }
         ]
     },
 
@@ -209,7 +210,8 @@ const LITTERS = [
         ],
         updates: [
             { date: "May 6, 2026", text: "Litter Available to Reserve!" },
-            { date: "May 7, 2026", text: "Pebbles found her family with Kathleen!" }
+            { date: "May 7, 2026", text: "Pebbles found her family with Kathleen!" },
+            { date: "June 1, 2026", text: "Rosemary found her family!" }
         ]
     },
 
