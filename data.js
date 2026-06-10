@@ -14,7 +14,7 @@ const LITTERS = [
         description: "A sweet, smart litter of 4 Mini Goldendoodles, a perfect size for snuggling on the couch or short walks in the park. The Toy Story litter has arrived! This is one of the sweetest litters we've had in a while. 5 perfect little fluff balls with the sweetest dispositions. The F1BB generation is the results of the most hypoallergenic, non-shedding coats possible—perfect for families with allergies! These litter tends to be little calmer because of the larger size.",
         price: "$1700 + tax ($300 due at reservation)",
         puppies: [
-            { name: "Woody", gender: "Male", status: "Available" },
+            { name: "Woody", gender: "Male", status: "Found Family" },
             { name: "Annie", gender: "Female", status: "Found her forever family with Kimberly" },
             { name: "Bo-Peep", gender: "Female", status: "Available" },
             { name: "Jessie", gender: "Female", status: "Available" }
@@ -65,7 +65,8 @@ const LITTERS = [
         ],
         updates: [
             { date: "May 6, 2026", text: "Litter Available to Reserve!" },
-            { date: "May 16, 2026", text: "Annie has found her forever home with Kimberly" }
+            { date: "May 16, 2026", text: "Annie has found her forever home with Kimberly" },
+            { date: "June 10, 2026", text: "Woody has found his forever home" }
         ]
     },
 
@@ -156,7 +157,7 @@ const LITTERS = [
             { type: "image", src: "assets/Listings/HereComesTheSun/penny2.jpeg", label: "Penny (Female)" },
             { type: "image", src: "assets/Listings/HereComesTheSun/penny3.png", label: "Penny (Female)" },
             { type: "image", src: "assets/Listings/HereComesTheSun/penny4.png", label: "Penny (Female)" },
-            { type: "image", src: "assets/Listings/HereComesTheSun/penny5.png", label: "Penny (Female)" }
+            { type: "image", src: "assets/Listings/HereComesTheSun/penny5.jpeg", label: "Penny (Female)" }
         ],
         updates: [
             { date: "May 6, 2026", text: "Litter Available to Reserve!" },
@@ -378,7 +379,7 @@ const LITTERS = [
             { type: "video", src: "assets/Listings/MammasBoys/mammas-boys1.mp4", label: "Litter Video" },
             { type: "video", src: "assets/Listings/MammasBoys/mammas-boys2.mp4", label: "Litter Video" },
             { type: "video", src: "assets/Listings/MammasBoys/mammas-boys3.mp4", label: "Litter Video" },
-            { type: "video", src: "assets/Listings/MammasBoys/tucker1.mp4", label: "Tucker (Male)" },
+            { type: "video", src: "assets/Listings/MammasBoys/texas1.mp4", label: "Texas (Male)" },
             { type: "image", src: "assets/Listings/MammasBoys/texas1.jpeg", label: "Texas (Male)" },
             { type: "image", src: "assets/Listings/MammasBoys/texas2.png", label: "Texas (Male)" },
             { type: "image", src: "assets/Listings/MammasBoys/texas3.png", label: "Texas (Male)" },
@@ -464,22 +465,86 @@ const LITTERS = [
         media: [
             { type: "image", src: "assets/Listings/SummerBrezzy/summerbrezzy1.png", label: "Girls (Daisy, Belle, Willow)" },
             { type: "image", src: "assets/Listings/SummerBrezzy/summerbrezzy2.png", label: "Boys (Sam, Fonzie, Georgie)" },
+            { type: "video", src: "assets/Listings/SummerBrezzy/summerbrezzy1.mp4", label: "Summer Brezzy Litter Boys" },
+            { type: "image", src: "assets/Listings/SummerBrezzy/summerbrezzy3.png", label: "Summer Brezzy Litter" },
+            { type: "video", src: "assets/Listings/SummerBrezzy/belle1.mp4", label: "Belle (Girl)" },
             { type: "image", src: "assets/Listings/SummerBrezzy/belle1.png", label: "Belle (Girl)" },
             { type: "image", src: "assets/Listings/SummerBrezzy/belle2.png", label: "Belle (Girl)" },
+            { type: "image", src: "assets/Listings/SummerBrezzy/belle3.png", label: "Belle (Girl)" },
+            { type: "video", src: "assets/Listings/SummerBrezzy/sam1.mp4", label: "Sam (Boy)" },
             { type: "image", src: "assets/Listings/SummerBrezzy/sam1.png", label: "Sam (Boy)" },
+            { type: "image", src: "assets/Listings/SummerBrezzy/sam2.png", label: "Sam (Boy)" },
+            { type: "image", src: "assets/Listings/SummerBrezzy/sam3.png", label: "Sam (Boy)" },
+            { type: "video", src: "assets/Listings/SummerBrezzy/georgie1.mp4", label: "Georgie (Boy)" },
             { type: "image", src: "assets/Listings/SummerBrezzy/georgie1.png", label: "Georgie (Boy)" },
             { type: "image", src: "assets/Listings/SummerBrezzy/georgie2.png", label: "Georgie (Boy)" },
+            { type: "image", src: "assets/Listings/SummerBrezzy/georgie3.png", label: "Georgie (Boy)" },
+            { type: "image", src: "assets/Listings/SummerBrezzy/georgie4.png", label: "Georgie (Boy)" },
+            { type: "video", src: "assets/Listings/SummerBrezzy/fonzie1.mp4", label: "Fonzie (Boy)" },
             { type: "image", src: "assets/Listings/SummerBrezzy/fonzie1.png", label: "Fonzie (Boy)" },
             { type: "image", src: "assets/Listings/SummerBrezzy/fonzie2.png", label: "Fonzie (Boy)" },
+            { type: "image", src: "assets/Listings/SummerBrezzy/fonzie3.png", label: "Fonzie (Boy)" },
+            { type: "image", src: "assets/Listings/SummerBrezzy/fonzie4.png", label: "Fonzie (Boy)" },
             { type: "image", src: "assets/Listings/SummerBrezzy/willow1.png", label: "Willow (Girl)" },
             { type: "image", src: "assets/Listings/SummerBrezzy/willow2.png", label: "Willow (Girl)" },
+            { type: "image", src: "assets/Listings/SummerBrezzy/willow3.png", label: "Willow (Girl)" },
+            { type: "image", src: "assets/Listings/SummerBrezzy/willow4.png", label: "Willow (Girl)" },
+            { type: "video", src: "assets/Listings/SummerBrezzy/daisy1.mp4", label: "Daisy (Girl)" },
             { type: "image", src: "assets/Listings/SummerBrezzy/daisy1.png", label: "Daisy (Girl)" },
             { type: "image", src: "assets/Listings/SummerBrezzy/daisy2.png", label: "Daisy (Girl)" },
-
+            { type: "image", src: "assets/Listings/SummerBrezzy/daisy3.png", label: "Daisy (Girl)" }
         ],
         updates: [
             { date: "May 16, 2026", text: "Litter Available to Reserve!" },
             { date: "May 23, 2026", text: "Daisy Found forever home with Jamie" }
+        ]
+    },
+
+    {
+        id: "play-ball-2026",
+        litterName: "Play Ball",
+        dob: "May 23, 2026",
+        readyToGoDate: "July 18, 2026",
+        mom: { name: "Violet", breed: "F1 Mini Goldendoodle", weight: "45lbs" },
+        dad: { name: "Kandu", breed: "Mini Poodle", weight: "25lbs" },
+        breed: "F1B Mini Goldendoodles",
+        description: "Are you looking for the ideal first pet? Look no further. Our Large Mini Goldendoodles are the perfect blend of intelligence, affection, and gentle energy, making them the ultimate addition to any family.<br><br><strong>Why Choose a Large Mini Goldendoodle?</strong><br>These sweet babies are known for their easy-going and happy-go-lucky temperaments. If you are looking for a companion that is just as happy curling up for a relaxing evening as they are joining you for a brisk walk or a game of fetch in the yard, these pups are for you.<br><br>• <strong>Exceptional Temperament:</strong> Bred to mirror the calm, patient nature of the Golden Retriever, these puppies are naturally mellow and well-balanced.<br>• <strong>Ideal for First-Time Owners:</strong> Their eager-to-please attitude and gentle disposition make them incredibly rewarding and manageable for first-time dog owners.<br>• <strong>Stunning Coats:</strong> Each puppy boasts a beautiful, low-maintenance loose-wavy coat that is as soft to the touch as it is charming.<br>• <strong>Perfect Size:</strong> With an estimated adult weight of 40–45 lbs, they are the perfect \"medium\" size—sturdy enough for outdoor adventures, yet perfectly suited for indoor living.<br><br><strong>Your Next Best Friend</strong><br>We aren’t just offering a puppy; we are offering a lasting companion who will be by your side for years to come. Whether it’s playing ball in the park or providing quiet companionship at home, these Goldendoodles are ready to fill your life with happy memories.<br><br><strong>Ready to meet your new best friend?</strong><br>These puppies are looking for their forever homes. Please reach out to learn more about our current litter and how you can welcome one of these sweet souls into your family today!",
+        price: "$1600 + tax ($300 due at reservation)",
+        puppies: [
+            { name: "Flinch", gender: "Boy", status: "Available" },
+            { name: "Fiddles", gender: "Boy", status: "Available" },
+            { name: "Fozzie", gender: "Boy", status: "Available" },
+            { name: "Felix", gender: "Boy", status: "Available" },
+            { name: "Frisky", gender: "Boy", status: "Available" },
+            { name: "Frosty", gender: "Boy", status: "Available" }
+
+        ],
+        thumbnail: "assets/Listings/PlayBall/playball-thumbnail.png",
+        media: [
+            { type: "video", src: "assets/Listings/PlayBall/finch1.mp4", label: "Flinch (Boy)" },
+            { type: "image", src: "assets/Listings/PlayBall/finch1.png", label: "Flinch (Boy)" },
+            { type: "image", src: "assets/Listings/PlayBall/finch2.png", label: "Flinch (Boy)" },
+            { type: "image", src: "assets/Listings/PlayBall/finch3.png", label: "Flinch (Boy)" },
+            { type: "video", src: "assets/Listings/PlayBall/fiddles1.mp4", label: "Fiddles (Boy)" },
+            { type: "image", src: "assets/Listings/PlayBall/fiddles1.png", label: "Fiddles (Boy)" },
+            { type: "image", src: "assets/Listings/PlayBall/fiddles2.png", label: "Fiddles (Boy)" },
+            { type: "video", src: "assets/Listings/PlayBall/fozzie1.mp4", label: "Fozzie (Boy)" },
+            { type: "image", src: "assets/Listings/PlayBall/fozzie1.png", label: "Fozzie (Boy)" },
+            { type: "image", src: "assets/Listings/PlayBall/fozzie2.png", label: "Fozzie (Boy)" },
+            { type: "image", src: "assets/Listings/PlayBall/fozzie3.png", label: "Fozzie (Boy)" },
+            { type: "video", src: "assets/Listings/PlayBall/felix1.mp4", label: "Felix (Boy)" },
+            { type: "image", src: "assets/Listings/PlayBall/felix1.png", label: "Felix (Boy)" },
+            { type: "image", src: "assets/Listings/PlayBall/felix2.png", label: "Felix (Boy)" },
+            { type: "image", src: "assets/Listings/PlayBall/felix3.png", label: "Felix (Boy)" },
+            { type: "video", src: "assets/Listings/PlayBall/frisky1.mp4", label: "Frisky (Boy)" },
+            { type: "image", src: "assets/Listings/PlayBall/frisky1.png", label: "Frisky (Boy)" },
+            { type: "image", src: "assets/Listings/PlayBall/frisky2.png", label: "Frisky (Boy)" },
+            { type: "image", src: "assets/Listings/PlayBall/frosty1.png", label: "Frosty (Boy)" },
+            { type: "image", src: "assets/Listings/PlayBall/frosty2.png", label: "Frosty (Boy)" },
+            { type: "image", src: "assets/Listings/PlayBall/frosty3.png", label: "Frosty (Boy)" }
+        ],
+        updates: [
+            { date: "June 10, 2026", text: "Litter Available to Reserve!" }
         ]
     }
 ];
