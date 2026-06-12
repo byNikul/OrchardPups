@@ -243,7 +243,7 @@ const LITTERS = [
         dad: { name: "Max", breed: "Mini Poodle", weight: "12`lbs" },
         breed: "Mini Poodles",
         description: "Beautiful genetic tested parents show off these amazing ruby red babies! Extremely hard to find - negative fade gene. This bloodline has wonderful personalities, smart and loving. Your poodle will look at you with very endearing eyes. You will be the center of their world.<br><br><strong>⚠️ Rare Breed Notice: Inquire about breeding rights, selection is not guaranteed. Additional fee applies if approved.</strong>",
-        price: "$2500 + tax ($300 due at reservation)",
+        price: "$1500 + tax ($300 due at reservation)",
         puppies: [
             { name: "Markie", gender: "Male", status: "Available" },
             { name: "Paddy", gender: "Male", status: "Available" },
