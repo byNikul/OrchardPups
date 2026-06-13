@@ -522,7 +522,7 @@ const LITTERS = [
             { name: "Fozzie", gender: "Boy", status: "Available" },
             { name: "Felix", gender: "Boy", status: "Available" },
             { name: "Frisky", gender: "Boy", status: "Available" },
-            { name: "Frosty", gender: "Boy", status: "Available" }
+            { name: "Frosty", gender: "Boy", status: "Reserved by Lee" }
 
         ],
         thumbnail: "assets/Listings/PlayBall/playball-thumbnail.png",
