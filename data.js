@@ -180,7 +180,7 @@ const LITTERS = [
             { name: "Patch", gender: "Male", status: "Available" },
             { name: "Rosemary", gender: "Female", status: "Found her forever family" },
             { name: "Pebbles", gender: "Female", status: "Reserved by Kathleen" },
-            { name: "Chip", gender: "Male", status: "Available" },
+            { name: "Chip", gender: "Male", status: "Found his forever family" },
             { name: "Danny", gender: "Male", status: "Available" }
         ],
         thumbnail: "assets/Listings/BestFriends/bestfriends-thumbnail.png",
@@ -231,7 +231,8 @@ const LITTERS = [
             { date: "May 6, 2026", text: "Litter Available to Reserve!" },
             { date: "May 7, 2026", text: "Pebbles found her family with Kathleen!" },
             { date: "June 1, 2026", text: "Rosemary found her family!" },
-            { date: "June 17, 2026", text: "Albert found his forever family!" }
+            { date: "June 17, 2026", text: "Albert found his forever family!" },
+            { date: "June 17, 2026", text: "Chip found his forever family!" }
         ]
     },
 
