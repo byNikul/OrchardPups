@@ -42,6 +42,7 @@ const LITTERS = [
             { type: "image", src: "assets/Listings/ToyStory/annie5.jpeg", label: "Annie (Female)" },
             { type: "image", src: "assets/Listings/ToyStory/annie6.jpeg", label: "Annie (Female)" },
             { type: "image", src: "assets/Listings/ToyStory/annie7.png", label: "Annie (Female)" },
+            { type: "video", src: "assets/Listings/ToyStory/bo-peepandjessie1.mp4", label: "Bo Peep and Jessie" },
             { type: "video", src: "assets/Listings/ToyStory/bo-peep1.mp4", label: "Bo Peep (Female)" },
             { type: "image", src: "assets/Listings/ToyStory/bo-peep1.jpeg", label: "Bo Peep (Female)" },
             { type: "image", src: "assets/Listings/ToyStory/bo-peep2.jpeg", label: "Bo Peep (Female)" },
@@ -52,6 +53,8 @@ const LITTERS = [
             { type: "image", src: "assets/Listings/ToyStory/bo-peep7.png", label: "Bo Peep (Female)" },
             { type: "image", src: "assets/Listings/ToyStory/bo-peep8.png", label: "Bo Peep (Female)" },
             { type: "image", src: "assets/Listings/ToyStory/bo-peep9.jpeg", label: "Bo Peep (Female)" },
+            { type: "image", src: "assets/Listings/ToyStory/bo-peep10.png", label: "Bo Peep (Female)" },
+            { type: "image", src: "assets/Listings/ToyStory/bo-peep11.png", label: "Bo Peep (Female)" },
             { type: "video", src: "assets/Listings/ToyStory/jessie1.mp4", label: "Jessie (Female)" },
             { type: "image", src: "assets/Listings/ToyStory/jessie1.jpeg", label: "Jessie (Female)" },
             { type: "image", src: "assets/Listings/ToyStory/jessie2.jpeg", label: "Jessie (Female)" },
@@ -62,6 +65,7 @@ const LITTERS = [
             { type: "image", src: "assets/Listings/ToyStory/jessie7.png", label: "Jessie (Female)" },
             { type: "image", src: "assets/Listings/ToyStory/jessie8.png", label: "Jessie (Female)" },
             { type: "image", src: "assets/Listings/ToyStory/jessie9.jpeg", label: "Jessie (Female)" },
+            { type: "image", src: "assets/Listings/ToyStory/jessie10.png", label: "Jessie (Female)" },
         ],
         updates: [
             { date: "May 6, 2026", text: "Litter Available to Reserve!" },
@@ -181,7 +185,7 @@ const LITTERS = [
             { name: "Rosemary", gender: "Female", status: "Found her forever family" },
             { name: "Pebbles", gender: "Female", status: "Reserved by Kathleen" },
             { name: "Chip", gender: "Male", status: "Found his forever family" },
-            { name: "Danny", gender: "Male", status: "Available" }
+            { name: "Danny", gender: "Male", status: "Found his forever family" }
         ],
         thumbnail: "assets/Listings/BestFriends/bestfriends-thumbnail.png",
         media: [
@@ -232,7 +236,8 @@ const LITTERS = [
             { date: "May 7, 2026", text: "Pebbles found her family with Kathleen!" },
             { date: "June 1, 2026", text: "Rosemary found her family!" },
             { date: "June 17, 2026", text: "Albert found his forever family!" },
-            { date: "June 17, 2026", text: "Chip found his forever family!" }
+            { date: "June 17, 2026", text: "Chip found his forever family!" },
+            { date: "June 20, 2026", text: "Danny found his forever family!" }
         ]
     },
 
@@ -257,6 +262,7 @@ const LITTERS = [
             { type: "video", src: "assets/Listings/RubyReds/rubyreds2.mp4", label: "Ruby Reds Litter (Markie and Paddy)" },
             { type: "video", src: "assets/Listings/RubyReds/rubyreds3.mp4", label: "Ruby Reds Litter (Markie and Paddy)" },
             { type: "image", src: "assets/Listings/RubyReds/rubyreds1.png", label: "Ruby Reds Litter (Markie and Paddy)" },
+            { type: "image", src: "assets/Listings/RubyReds/markieandpaddy.png", label: "Ruby Reds Litter (Markie and Paddy)" },
             { type: "video", src: "assets/Listings/RubyReds/markie.mp4", label: "Markie (Male)" },
             { type: "image", src: "assets/Listings/RubyReds/markie1.jpeg", label: "Markie (Male)" },
             { type: "image", src: "assets/Listings/RubyReds/markie2.jpeg", label: "Markie (Male)" },
@@ -264,6 +270,9 @@ const LITTERS = [
             { type: "image", src: "assets/Listings/RubyReds/markie4.png", label: "Markie (Male)" },
             { type: "image", src: "assets/Listings/RubyReds/markie5.jpeg", label: "Markie (Male)" },
             { type: "image", src: "assets/Listings/RubyReds/markie6.jpeg", label: "Markie (Male)" },
+            { type: "image", src: "assets/Listings/RubyReds/markie7.png", label: "Markie (Male)" },
+            { type: "image", src: "assets/Listings/RubyReds/markie8.png", label: "Markie (Male)" },
+            { type: "image", src: "assets/Listings/RubyReds/markie9.png", label: "Markie (Male)" },
             { type: "video", src: "assets/Listings/RubyReds/paddy.mp4", label: "Paddy (Male)" },
             { type: "image", src: "assets/Listings/RubyReds/paddy1.jpeg", label: "Paddy (Male)" },
             { type: "image", src: "assets/Listings/RubyReds/paddy2.jpeg", label: "Paddy (Male)" },
@@ -271,6 +280,7 @@ const LITTERS = [
             { type: "image", src: "assets/Listings/RubyReds/paddy4.png", label: "Paddy (Male)" },
             { type: "image", src: "assets/Listings/RubyReds/paddy5.png", label: "Paddy (Male)" },
             { type: "image", src: "assets/Listings/RubyReds/paddy6.jpeg", label: "Paddy (Male)" },
+            { type: "image", src: "assets/Listings/RubyReds/paddy7.png", label: "Paddy (Male)" },
             { type: "video", src: "assets/Listings/RubyReds/belle1.mp4", label: "Belle (Female)" },
             { type: "video", src: "assets/Listings/RubyReds/belle2.mp4", label: "Belle (Female)" },
             { type: "image", src: "assets/Listings/RubyReds/belle1.jpeg", label: "Belle (Female)" },
@@ -575,6 +585,33 @@ const LITTERS = [
         ],
         updates: [
             { date: "June 10, 2026", text: "Litter Available to Reserve!" }
+        ]
+    },
+
+    {
+        id: "join-me-at-the-park-2026",
+        litterName: "Join Me At The Park",
+        dob: "May 18, 2026",
+        readyToGoDate: "July 13, 2026",
+        mom: { name: "Rose", breed: "Mini Poodle", weight: "10lbs" },
+        dad: { name: "Sampson", breed: "King Charles Cavalier", weight: "15lbs" },
+        breed: "Cavapoo",
+        description: "Meet Cookie!<br>Cookie is a sweet, female Cavapoo puppy born on May 18, 2026. She comes from a wonderful family, with Rose (a 10 lb Mini Poodle) as her mom and Sampson (a 15 lb King Charles Cavalier) as her dad.<br><br><strong>Why You’ll Love Her:</strong><br>• <strong>Breed:</strong> Cavapoo, known for their affectionate and playful nature.<br>• <strong>Ready for Her Forever Home:</strong> She will be ready to join your family on July 13, 2026.<br>• <strong>The Perfect Addition:</strong> Whether you're looking for a companion for walks in the park or cozy cuddles at home, Cookie is ready to be your perfect match.",
+        price: "$1550 + tax ($300 due at reservation)",
+        puppies: [
+            { name: "Cookie", gender: "Girl", status: "Available" }
+
+        ],
+        thumbnail: "assets/Listings/JoinMeAtThePark/cookie4.png",
+        media: [
+            { type: "video", src: "assets/Listings/JoinMeAtThePark/joinmeatthepark1.mp4", label: "Join Me At The Park Litter" },
+            { type: "image", src: "assets/Listings/JoinMeAtThePark/cookie1.png", label: "Cookie (Girl)" },
+            { type: "image", src: "assets/Listings/JoinMeAtThePark/cookie2.png", label: "Cookie (Girl)" },
+            { type: "image", src: "assets/Listings/JoinMeAtThePark/cookie3.png", label: "Cookie (Girl)" },
+            { type: "image", src: "assets/Listings/JoinMeAtThePark/cookie4.png", label: "Cookie (Girl)" }
+        ],
+        updates: [
+            { date: "June 20, 2026", text: "Cookie is Available to Reserve!" }
         ]
     }
 ];
