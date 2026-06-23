@@ -398,12 +398,16 @@ const LITTERS = [
             { type: "video", src: "assets/Listings/MammasBoys/mammas-boys1.mp4", label: "Litter Video" },
             { type: "video", src: "assets/Listings/MammasBoys/mammas-boys2.mp4", label: "Litter Video" },
             { type: "video", src: "assets/Listings/MammasBoys/mammas-boys3.mp4", label: "Litter Video" },
+            { type: "video", src: "assets/Listings/MammasBoys/mammas-boys4.mp4", label: "Litter Video" },
             { type: "video", src: "assets/Listings/MammasBoys/texas1.mp4", label: "Texas (Male)" },
+            { type: "video", src: "assets/Listings/MammasBoys/texas2.mp4", label: "Texas (Male)" },
             { type: "image", src: "assets/Listings/MammasBoys/texas1.jpeg", label: "Texas (Male)" },
             { type: "image", src: "assets/Listings/MammasBoys/texas2.png", label: "Texas (Male)" },
             { type: "image", src: "assets/Listings/MammasBoys/texas3.png", label: "Texas (Male)" },
             { type: "image", src: "assets/Listings/MammasBoys/texas4.jpeg", label: "Texas (Male)" },
             { type: "image", src: "assets/Listings/MammasBoys/texas5.jpeg", label: "Texas (Male)" },
+            { type: "image", src: "assets/Listings/MammasBoys/texas6.png", label: "Texas (Male)" },
+            { type: "image", src: "assets/Listings/MammasBoys/texas7.png", label: "Texas (Male)" },
             { type: "video", src: "assets/Listings/MammasBoys/tucker1.mp4", label: "Tucker (Male)" },
             { type: "image", src: "assets/Listings/MammasBoys/tucker1.jpeg", label: "Tucker (Male)" },
             { type: "image", src: "assets/Listings/MammasBoys/tucker2.jpeg", label: "Tucker (Male)" },
@@ -412,7 +416,9 @@ const LITTERS = [
             { type: "image", src: "assets/Listings/MammasBoys/tucker5.png", label: "Tucker (Male)" },
             { type: "image", src: "assets/Listings/MammasBoys/tucker6.png", label: "Tucker (Male)" },
             { type: "image", src: "assets/Listings/MammasBoys/tucker7.jpeg", label: "Tucker (Male)" },
-            { type: "image", src: "assets/Listings/MammasBoys/tucker8.jpeg", label: "Tucker (Male)" }
+            { type: "image", src: "assets/Listings/MammasBoys/tucker8.jpeg", label: "Tucker (Male)" },
+            { type: "image", src: "assets/Listings/MammasBoys/tucker9.png", label: "Tucker (Male)" },
+            { type: "image", src: "assets/Listings/MammasBoys/tucker10.png", label: "Tucker (Male)" }
         ],
         updates: [
             { date: "May 6, 2026", text: "Litter Available to Reserve!" }
@@ -437,7 +443,6 @@ const LITTERS = [
         ],
         thumbnail: "assets/Listings/EarlyBirds/earlybirds-thumbnail.png",
         media: [
-            { type: "video", src: "assets/Listings/EarlyBirds/earlybirds.mp4", label: "Litter Video" },
             { type: "video", src: "assets/Listings/EarlyBirds/earlybirds1.mp4", label: "Litter Video" },
             { type: "video", src: "assets/Listings/EarlyBirds/earlybirds2.mp4", label: "Litter Video" },
             { type: "image", src: "assets/Listings/EarlyBirds/earlybirds1.jpeg", label: "Litter" },
@@ -551,38 +556,61 @@ const LITTERS = [
             { name: "Fozzie", gender: "Boy", status: "Available" },
             { name: "Felix", gender: "Boy", status: "Available" },
             { name: "Frisky", gender: "Boy", status: "Available" },
-            { name: "Frosty", gender: "Boy", status: "Reserved by Lee" }
+            { name: "Frosty", gender: "Boy", status: "Reserved by Lee" },
+            { name: "Fanny", gender: "Girl", status: "Available" }
 
         ],
         thumbnail: "assets/Listings/PlayBall/playball-thumbnail.png",
         media: [
             { type: "video", src: "assets/Listings/PlayBall/finch1.mp4", label: "Flinch (Boy)" },
+            { type: "video", src: "assets/Listings/PlayBall/finch2.mp4", label: "Flinch (Boy)" },
             { type: "image", src: "assets/Listings/PlayBall/finch1.png", label: "Flinch (Boy)" },
             { type: "image", src: "assets/Listings/PlayBall/finch2.png", label: "Flinch (Boy)" },
             { type: "image", src: "assets/Listings/PlayBall/finch3.png", label: "Flinch (Boy)" },
             { type: "image", src: "assets/Listings/PlayBall/finch4.png", label: "Flinch (Boy)" },
+            { type: "image", src: "assets/Listings/PlayBall/finch5.png", label: "Flinch (Boy)" },
+            { type: "image", src: "assets/Listings/PlayBall/finch6.png", label: "Flinch (Boy)" },
             { type: "video", src: "assets/Listings/PlayBall/fiddles1.mp4", label: "Fiddles (Boy)" },
+            { type: "video", src: "assets/Listings/PlayBall/fiddles2.mp4", label: "Fiddles (Boy)" },
             { type: "image", src: "assets/Listings/PlayBall/fiddles1.png", label: "Fiddles (Boy)" },
             { type: "image", src: "assets/Listings/PlayBall/fiddles2.png", label: "Fiddles (Boy)" },
             { type: "image", src: "assets/Listings/PlayBall/fiddles3.png", label: "Fiddles (Boy)" },
+            { type: "image", src: "assets/Listings/PlayBall/fiddles4.png", label: "Fiddles (Boy)" },
+            { type: "image", src: "assets/Listings/PlayBall/fiddles5.png", label: "Fiddles (Boy)" },
             { type: "video", src: "assets/Listings/PlayBall/fozzie1.mp4", label: "Fozzie (Boy)" },
+            { type: "video", src: "assets/Listings/PlayBall/fozzie2.mp4", label: "Fozzie (Boy)" },
             { type: "image", src: "assets/Listings/PlayBall/fozzie1.png", label: "Fozzie (Boy)" },
             { type: "image", src: "assets/Listings/PlayBall/fozzie2.png", label: "Fozzie (Boy)" },
             { type: "image", src: "assets/Listings/PlayBall/fozzie3.png", label: "Fozzie (Boy)" },
             { type: "image", src: "assets/Listings/PlayBall/fozzie4.png", label: "Fozzie (Boy)" },
+            { type: "image", src: "assets/Listings/PlayBall/fozzie5.png", label: "Fozzie (Boy)" },
+            { type: "image", src: "assets/Listings/PlayBall/fozzie6.png", label: "Fozzie (Boy)" },
             { type: "video", src: "assets/Listings/PlayBall/felix1.mp4", label: "Felix (Boy)" },
+            { type: "video", src: "assets/Listings/PlayBall/felix2.mp4", label: "Felix (Boy)" },
             { type: "image", src: "assets/Listings/PlayBall/felix1.png", label: "Felix (Boy)" },
             { type: "image", src: "assets/Listings/PlayBall/felix2.png", label: "Felix (Boy)" },
             { type: "image", src: "assets/Listings/PlayBall/felix3.png", label: "Felix (Boy)" },
             { type: "image", src: "assets/Listings/PlayBall/felix4.png", label: "Felix (Boy)" },
+            { type: "image", src: "assets/Listings/PlayBall/felix5.png", label: "Felix (Boy)" },
+            { type: "image", src: "assets/Listings/PlayBall/felix6.png", label: "Felix (Boy)" },
             { type: "video", src: "assets/Listings/PlayBall/frisky1.mp4", label: "Frisky (Boy)" },
+            { type: "video", src: "assets/Listings/PlayBall/frisky2.mp4", label: "Frisky (Boy)" },
             { type: "image", src: "assets/Listings/PlayBall/frisky1.png", label: "Frisky (Boy)" },
             { type: "image", src: "assets/Listings/PlayBall/frisky2.png", label: "Frisky (Boy)" },
             { type: "image", src: "assets/Listings/PlayBall/frisky3.png", label: "Frisky (Boy)" },
+            { type: "image", src: "assets/Listings/PlayBall/frisky4.png", label: "Frisky (Boy)" },
+            { type: "image", src: "assets/Listings/PlayBall/frisky5.png", label: "Frisky (Boy)" },
+            { type: "video", src: "assets/Listings/PlayBall/frosty1.mp4", label: "Frosty (Boy)" },
             { type: "image", src: "assets/Listings/PlayBall/frosty1.png", label: "Frosty (Boy)" },
             { type: "image", src: "assets/Listings/PlayBall/frosty2.png", label: "Frosty (Boy)" },
             { type: "image", src: "assets/Listings/PlayBall/frosty3.png", label: "Frosty (Boy)" },
-            { type: "image", src: "assets/Listings/PlayBall/frosty4.png", label: "Frosty (Boy)" }
+            { type: "image", src: "assets/Listings/PlayBall/frosty4.png", label: "Frosty (Boy)" },
+            { type: "image", src: "assets/Listings/PlayBall/frosty5.png", label: "Frosty (Boy)" },
+            { type: "image", src: "assets/Listings/PlayBall/frosty6.png", label: "Frosty (Boy)" },
+            { type: "video", src: "assets/Listings/PlayBall/fanny1.mp4", label: "Fanny (Girl)" },
+            { type: "image", src: "assets/Listings/PlayBall/fanny1.png", label: "Fanny (Girl)" },
+            { type: "image", src: "assets/Listings/PlayBall/fanny2.png", label: "Fanny (Girl)" },
+            { type: "image", src: "assets/Listings/PlayBall/fanny3.png", label: "Fanny (Girl)" }
         ],
         updates: [
             { date: "June 10, 2026", text: "Litter Available to Reserve!" }
@@ -606,13 +634,91 @@ const LITTERS = [
         thumbnail: "assets/Listings/JoinMeAtThePark/cookie4.png",
         media: [
             { type: "video", src: "assets/Listings/JoinMeAtThePark/joinmeatthepark1.mp4", label: "Join Me At The Park Litter" },
+            { type: "video", src: "assets/Listings/JoinMeAtThePark/cookie1.mp4", label: "Cookie (Girl)" },
             { type: "image", src: "assets/Listings/JoinMeAtThePark/cookie1.png", label: "Cookie (Girl)" },
             { type: "image", src: "assets/Listings/JoinMeAtThePark/cookie2.png", label: "Cookie (Girl)" },
             { type: "image", src: "assets/Listings/JoinMeAtThePark/cookie3.png", label: "Cookie (Girl)" },
-            { type: "image", src: "assets/Listings/JoinMeAtThePark/cookie4.png", label: "Cookie (Girl)" }
+            { type: "image", src: "assets/Listings/JoinMeAtThePark/cookie4.png", label: "Cookie (Girl)" },
+            { type: "image", src: "assets/Listings/JoinMeAtThePark/cookie5.png", label: "Cookie (Girl)" },
+            { type: "image", src: "assets/Listings/JoinMeAtThePark/cookie6.png", label: "Cookie (Girl)" }
         ],
         updates: [
             { date: "June 20, 2026", text: "Cookie is Available to Reserve!" }
+        ]
+    },
+
+    {
+        id: "the-black-pearl-2026",
+        litterName: "The Black Pearl",
+        dob: "June 11, 2026",
+        readyToGoDate: "August 6, 2026",
+        mom: { name: "Candice", breed: "Pomsky F1", weight: "27lbs" },
+        dad: { name: "Rambo", breed: "Pomsky F1", weight: "18lbs" },
+        breed: "F2 Pomsky",
+        description: "The sweet, little wolf-like Pomsky is one of the most loyal companions you can find! They love to 'talk' and sing to you, boast huge personalities, and are extremely intelligent.<br><br><strong>Why You’ll Love a Pomsky:</strong><br>• <strong>Incredibly Friendly:</strong> They generally love meeting new people, kids, and other dogs, making them fantastic icebreakers in the neighborhood.<br>• <strong>Striking Coat:</strong> The Pomsky has a beautiful coat that typically sheds twice a year. (Remember not to over-comb the undercoat!)<br>• <strong>Perfect Size:</strong> The estimated adult weight for this litter is 18–25 lbs.<br><br>Your new Pomsky will quickly steal your heart! You will enjoy many sweet updates as they grow until go-home day.",
+        price: "$2500 + tax ($300 due at reservation)",
+        puppies: [
+            { name: "Jack", gender: "Boy", status: "Available" },
+            { name: "Will", gender: "Boy", status: "Available" },
+            { name: "Elizabeth", gender: "Girl", status: "Available" },
+            { name: "Mr. Gibbs", gender: "Boy", status: "Available" }
+
+        ],
+        thumbnail: "assets/Listings/TheBlackPearl/theblackpearl-thumbnail.png",
+        media: [
+            { type: "video", src: "assets/Listings/TheBlackPearl/jack1.mp4", label: "Jack (Boy)" },
+            { type: "image", src: "assets/Listings/TheBlackPearl/jack1.png", label: "Jack (Boy)" },
+            { type: "image", src: "assets/Listings/TheBlackPearl/jack2.png", label: "Jack (Boy)" },
+            { type: "image", src: "assets/Listings/TheBlackPearl/jack3.png", label: "Jack (Boy)" },
+            { type: "image", src: "assets/Listings/TheBlackPearl/jack4.png", label: "Jack (Boy)" },
+            { type: "video", src: "assets/Listings/TheBlackPearl/will1.mp4", label: "Will (Boy)" },
+            { type: "image", src: "assets/Listings/TheBlackPearl/will1.png", label: "Will (Boy)" },
+            { type: "image", src: "assets/Listings/TheBlackPearl/will2.png", label: "Will (Boy)" },
+            { type: "image", src: "assets/Listings/TheBlackPearl/will3.png", label: "Will (Boy)" },
+            { type: "image", src: "assets/Listings/TheBlackPearl/will4.png", label: "Will (Boy)" },
+            { type: "video", src: "assets/Listings/TheBlackPearl/elizabeth1.mp4", label: "Elizabeth (Girl)" },
+            { type: "image", src: "assets/Listings/TheBlackPearl/elizabeth1.png", label: "Elizabeth (Girl)" },
+            { type: "image", src: "assets/Listings/TheBlackPearl/elizabeth2.png", label: "Elizabeth (Girl)" },
+            { type: "image", src: "assets/Listings/TheBlackPearl/elizabeth3.png", label: "Elizabeth (Girl)" },
+            { type: "video", src: "assets/Listings/TheBlackPearl/mrgibbs1.mp4", label: "Mr. Gibbs (Boy)" },
+            { type: "image", src: "assets/Listings/TheBlackPearl/mrgibbs1.png", label: "Mr. Gibbs (Boy)" },
+            { type: "image", src: "assets/Listings/TheBlackPearl/mrgibbs2.png", label: "Mr. Gibbs (Boy)" },
+            { type: "image", src: "assets/Listings/TheBlackPearl/mrgibbs3.png", label: "Mr. Gibbs (Boy)" }
+        ],
+        updates: [
+            { date: "June 23, 2026", text: "Litter Available to Reserve!" }
+        ]
+    },
+
+    {
+        id: "picnic-time-2026",
+        litterName: "Picnic Time",
+        dob: "April 23, 2026",
+        readyToGoDate: "June 18, 2026",
+        mom: { name: "Blue Belle", breed: "F1B Mini Goldendoodle", weight: "25lbs" },
+        dad: { name: "Butter Brickle", breed: "Mini Poodle", weight: "16lbs" },
+        breed: "F1BB Mini Goldendoodle",
+        description: "F1BB Mini Goldendoodles have a sweet, compact Teddybear body with a blocky face that will make you smile every day! Their coat types range from loose to curly, and this generation is the lowest-shedding you can possibly get—perfect for families with allergies.<br><br><strong>Why You'll Love a Picnic Time Pup:</strong><br>• <strong>Teddybear Looks:</strong> That sweet, blocky face and plush coat are everything you've been dreaming of.<br>• <strong>Lowest Shedding Generation:</strong> The F1BB is the most hypoallergenic generation available, with minimal to no shedding.<br>• <strong>Social &amp; Sweet:</strong> They love people and enjoy nice walks—equally happy snuggling on the couch or exploring the neighborhood.<br><br><strong>These babies are ready to go home now!</strong> Visits and FaceTime sessions are available—reach out today to meet your new best friend.",
+        price: "$2100 + tax ($300 due at reservation)",
+        puppies: [
+            { name: "Bingo", gender: "Boy", status: "Available" },
+            { name: "Bunny", gender: "Girl", status: "Available" }
+
+        ],
+        thumbnail: "assets/Listings/PicnicTime/picnictime-thumbnail.png",
+        media: [
+            { type: "video", src: "assets/Listings/PicnicTime/bingo1.mp4", label: "Bingo (Boy)" },
+            { type: "image", src: "assets/Listings/PicnicTime/bingo1.png", label: "Bingo (Boy)" },
+            { type: "image", src: "assets/Listings/PicnicTime/bingo2.png", label: "Bingo (Boy)" },
+            { type: "image", src: "assets/Listings/PicnicTime/bingo3.png", label: "Bingo (Boy)" },
+            { type: "video", src: "assets/Listings/PicnicTime/bunny1.mp4", label: "Bunny (Girl)" },
+            { type: "image", src: "assets/Listings/PicnicTime/bunny1.png", label: "Bunny (Girl)" },
+            { type: "image", src: "assets/Listings/PicnicTime/bunny2.png", label: "Bunny (Girl)" },
+            { type: "image", src: "assets/Listings/PicnicTime/bunny3.png", label: "Bunny (Girl)" },
+            { type: "image", src: "assets/Listings/PicnicTime/bunny4.png", label: "Bunny (Girl)" }
+        ],
+        updates: [
+            { date: "June 23, 2026", text: "Litter Available to Reserve!" }
         ]
     }
 ];
