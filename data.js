@@ -1,4 +1,4 @@
-// ==========================================
+﻿// ==========================================
 // 🐶 ORCHARD PUPS - LITTER DATA
 // ==========================================
 
@@ -705,7 +705,7 @@ const LITTERS = [
             { name: "Bunny", gender: "Girl", status: "Available" }
 
         ],
-        thumbnail: "assets/Listings/PicnicTime/picnictime-thumbnail.png",
+        thumbnail: "assets/Listings/PicnicTime/bunny1.png",
         media: [
             { type: "video", src: "assets/Listings/PicnicTime/bingo1.mp4", label: "Bingo (Boy)" },
             { type: "image", src: "assets/Listings/PicnicTime/bingo1.png", label: "Bingo (Boy)" },
