@@ -126,7 +126,7 @@ const LITTERS = [
             { name: "George", gender: "Male", status: "Available" },
             { name: "Yoko", gender: "Female", status: "Available" },
             { name: "John", gender: "Male", status: "Available" },
-            { name: "Penny", gender: "Female", status: "Available" },
+            { name: "Penny", gender: "Female", status: "Found Family" },
             { name: "Michele", gender: "Female", status: "Available" }
         ],
         thumbnail: "assets/Listings/HereComesTheSun/herecomesthesun-thumbnail.jpeg",
@@ -165,7 +165,8 @@ const LITTERS = [
         ],
         updates: [
             { date: "May 6, 2026", text: "Litter Available to Reserve!" },
-            { date: "June 10, 2026", text: "Penny has a small hernia, so we reduced the price of Penny. She's still be vet checked prior to going home!" }
+            { date: "June 10, 2026", text: "Penny has a small hernia, so we reduced the price of Penny. She's still be vet checked prior to going home!" },
+            { date: "June 23, 2026", text: "Penny found her forever family!" }
         ]
     },
 
@@ -701,8 +702,8 @@ const LITTERS = [
         description: "F1BB Mini Goldendoodles have a sweet, compact Teddybear body with a blocky face that will make you smile every day! Their coat types range from loose to curly, and this generation is the lowest-shedding you can possibly get—perfect for families with allergies.<br><br><strong>Why You'll Love a Picnic Time Pup:</strong><br>• <strong>Teddybear Looks:</strong> That sweet, blocky face and plush coat are everything you've been dreaming of.<br>• <strong>Lowest Shedding Generation:</strong> The F1BB is the most hypoallergenic generation available, with minimal to no shedding.<br>• <strong>Social &amp; Sweet:</strong> They love people and enjoy nice walks—equally happy snuggling on the couch or exploring the neighborhood.<br><br><strong>These babies are ready to go home now!</strong> Visits and FaceTime sessions are available—reach out today to meet your new best friend.",
         price: "$2100 + tax ($300 due at reservation)",
         puppies: [
-            { name: "Bingo", gender: "Boy", status: "Available" },
-            { name: "Bunny", gender: "Girl", status: "Available" }
+            { name: "Bingo", gender: "Boy", status: "Found family with Jada" },
+            { name: "Bunny", gender: "Girl", status: "Found family with Mike" }
 
         ],
         thumbnail: "assets/Listings/PicnicTime/bunny1.png",
@@ -718,7 +719,9 @@ const LITTERS = [
             { type: "image", src: "assets/Listings/PicnicTime/bunny4.png", label: "Bunny (Girl)" }
         ],
         updates: [
-            { date: "June 23, 2026", text: "Litter Available to Reserve!" }
+            { date: "June 23, 2026", text: "Litter Available to Reserve!" },
+            { date: "June 23, 2026", text: "Bingo has found his forever family with Jada!" },
+            { date: "June 23, 2026", text: "Bunny has found her forever family with Mike!" }
         ]
     }
 ];
