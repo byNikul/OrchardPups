@@ -567,7 +567,7 @@ const LITTERS = [
             { name: "Eric", gender: "Boy", status: "Available" },
             { name: "Stan", gender: "Boy", status: "Available" },
             { name: "Bebe", gender: "Girl", status: "Available" },
-            { name: "Sharon", gender: "Girl", status: "Available" },
+            { name: "Sharon", gender: "Girl", status: "Reserved by Zachary" },
             { name: "Wendy", gender: "Girl", status: "Available" }
         ],
         thumbnail: "assets/Listings/SouthBark/southbark-thumbnail.png",
