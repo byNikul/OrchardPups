@@ -1,0 +1,14 @@
+## HOW TO USE
+To run this cleanup script:
+
+1. Open PowerShell and navigate to your `OrchardPups` folder.
+2. Run this command to verify what will be deleted without actually deleting anything:
+   ```powershell
+   .\Cleanup-PastLitters.ps1 -DryRun
+   ```
+3. When you're ready to delete them for real:
+   ```powershell
+   .\Cleanup-PastLitters.ps1
+   ```
+   > [!NOTE]
+   > Depending on your computer's security settings, you might need to run: `powershell -ExecutionPolicy Bypass -File .\Cleanup-PastLitters.ps1`

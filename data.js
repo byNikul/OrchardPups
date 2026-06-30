@@ -1,5 +1,5 @@
-﻿// ==========================================
-// 🐶 ORCHARD PUPS - LITTER DATA
+// ==========================================
+// ?? ORCHARD PUPS - LITTER DATA
 // ==========================================
 
 const LITTERS = [
@@ -11,7 +11,7 @@ const LITTERS = [
         mom: { name: "Star", breed: "F1B", weight: "27lbs" },
         dad: { name: "Willie", breed: "Mini Poodle", weight: "16lbs" },
         breed: "F1BB Mini Goldendoodle",
-        description: "A sweet, smart litter of 4 Mini Goldendoodles, a perfect size for snuggling on the couch or short walks in the park. The Toy Story litter has arrived! This is one of the sweetest litters we've had in a while. 5 perfect little fluff balls with the sweetest dispositions. The F1BB generation is the results of the most hypoallergenic, non-shedding coats possible—perfect for families with allergies! These litter tends to be little calmer because of the larger size.",
+        description: "A sweet, smart litter of 4 Mini Goldendoodles, a perfect size for snuggling on the couch or short walks in the park. The Toy Story litter has arrived! This is one of the sweetest litters we've had in a while. 5 perfect little fluff balls with the sweetest dispositions. The F1BB generation is the results of the most hypoallergenic, non-shedding coats possible�perfect for families with allergies! These litter tends to be little calmer because of the larger size.",
         price: "$1700 + tax ($300 due at reservation)",
         puppies: [
             { name: "Woody", gender: "Male", status: "Found Family" },
@@ -66,6 +66,7 @@ const LITTERS = [
             { type: "image", src: "assets/Listings/ToyStory/jessie8.png", label: "Jessie (Female)" },
             { type: "image", src: "assets/Listings/ToyStory/jessie9.jpeg", label: "Jessie (Female)" },
             { type: "image", src: "assets/Listings/ToyStory/jessie10.png", label: "Jessie (Female)" },
+            { type: "image", src: "assets/Listings/ToyStory/toystory-thumbnail.jpeg", label: "Toy Story Litter" }
         ],
         updates: [
             { date: "May 6, 2026", text: "Litter Available to Reserve!" },
@@ -74,43 +75,7 @@ const LITTERS = [
         ]
     },
 
-    {
-        id: "spring-blooms-2026",
-        litterName: "Spring Blooms",
-        dob: "March 11, 2026",
-        readyToGoDate: "Now",
-        mom: { name: "Jingles", breed: "F1B Mini Goldendoodle", weight: "15lbs" },
-        dad: { name: "Blazer", breed: "Mini Poodle", weight: "12lbs" },
-        breed: "F1BB Mini Goldendoodle",
-        description: "Check out our Spring Blooms litter! We're super excited about these F1BB Mini Goldendoodles. They're total Teddybear pups with wavy, hypoallergenic coats and the sweetest personalities you can imagine. The F1BB generation is the results of the most hypoallergenic, non-shedding coats possible—perfect for families with allergies! These litter tends to be little calmer because of the larger size.",
-        price: "$1600 + tax ($300 due at reservation)",
-        puppies: [
-            { name: "Mr Dandy Lion", gender: "Male", status: "Found his forever family" },
-            { name: "Momma Rose Bella", gender: "Female", status: "Found her forever family" },
-            { name: "Queen Callie Ann", gender: "Female", status: "Found her forever family" }
-        ],
-        thumbnail: "assets/Listings/SpringBlooms/springblooms-thumbnail.jpeg",
-        media: [
-            { type: "video", src: "assets/Listings/SpringBlooms/springblooms1.mp4", label: "Spring Blooms Litter" },
-            { type: "video", src: "assets/Listings/SpringBlooms/springblooms2.mp4", label: "Spring Blooms Litter" },
-            { type: "video", src: "assets/Listings/SpringBlooms/springblooms3.mp4", label: "Spring Blooms Litter" },
-            { type: "image", src: "assets/Listings/SpringBlooms/springblooms1.jpeg", label: "Spring Blooms Litter" },
-            { type: "image", src: "assets/Listings/SpringBlooms/mommarosebella1.jpeg", label: "Momma Rose Bella (Female)" },
-            { type: "image", src: "assets/Listings/SpringBlooms/mommarosebella2.jpeg", label: "Momma Rose Bella (Female)" },
-            { type: "image", src: "assets/Listings/SpringBlooms/mrdandylion1.jpeg", label: "Mr Dandy Lion (Male)" },
-            { type: "image", src: "assets/Listings/SpringBlooms/mrdandylion2.jpeg", label: "Mr Dandy Lion (Male)" },
-            { type: "image", src: "assets/Listings/SpringBlooms/mrdandylion3.png", label: "Mr Dandy Lion (Male)" },
-            { type: "image", src: "assets/Listings/SpringBlooms/queencallieann1.jpeg", label: "Queen Callie Ann (Female)" },
-            { type: "image", src: "assets/Listings/SpringBlooms/queencallieann2.jpeg", label: "Queen Callie Ann (Female)" },
-            { type: "image", src: "assets/Listings/SpringBlooms/queencallieann3.png", label: "Queen Callie Ann (Female)" }
-        ],
-        updates: [
-            { date: "May 6, 2026", text: "Litter Available to Reserve!" },
-            { date: "May 10, 2026", text: "Momma Rose Bella found her forever family with Jacob!" },
-            { date: "June 1, 2026", text: "Mr Dandy Lion found his forever family!" },
-            { date: "June 7, 2026", text: "Queen Callie Ann found her forever family!" }
-        ]
-    },
+
 
     {
         id: "here-comes-the-sun-2026",
@@ -161,7 +126,8 @@ const LITTERS = [
             { type: "image", src: "assets/Listings/HereComesTheSun/penny2.jpeg", label: "Penny (Female)" },
             { type: "image", src: "assets/Listings/HereComesTheSun/penny3.png", label: "Penny (Female)" },
             { type: "image", src: "assets/Listings/HereComesTheSun/penny4.png", label: "Penny (Female)" },
-            { type: "image", src: "assets/Listings/HereComesTheSun/penny5.jpeg", label: "Penny (Female)" }
+            { type: "image", src: "assets/Listings/HereComesTheSun/penny5.jpeg", label: "Penny (Female)" },
+            { type: "image", src: "assets/Listings/HereComesTheSun/herecomesthesun-thumbnail.jpeg", label: "Here Comes The Sun Litter" }
         ],
         updates: [
             { date: "May 6, 2026", text: "Litter Available to Reserve!" },
@@ -170,78 +136,7 @@ const LITTERS = [
         ]
     },
 
-    {
-        id: "best-friends-2026",
-        litterName: "Best Friends",
-        dob: "March 24, 2026",
-        readyToGoDate: "May 20, 2026",
-        mom: { name: "Jewels", breed: "Mini Phantom Poodle", weight: "12lbs" },
-        dad: { name: "Sampson", breed: "King Charles Cavalier", weight: "16lbs" },
-        breed: "Cavapoos",
-        description: "Here is our second cavapoo litter! We're super excited about these Cavapoos. They have amazing personalities, with soft, wavy coats. Cavapoos are a mix of King Charles Cavalier and Poodle. They are known for their playful personalities and traditional teddy bear looks.",
-        price: "$1400 + tax ($300 due at reservation)",
-        puppies: [
-            { name: "Albert", gender: "Male", status: "Found his forever family" },
-            { name: "Patch", gender: "Male", status: "Found his forever family" },
-            { name: "Rosemary", gender: "Female", status: "Found her forever family" },
-            { name: "Pebbles", gender: "Female", status: "Reserved by Kathleen" },
-            { name: "Chip", gender: "Male", status: "Found his forever family" },
-            { name: "Danny", gender: "Male", status: "Found his forever family" }
-        ],
-        thumbnail: "assets/Listings/BestFriends/bestfriends-thumbnail.png",
-        media: [
-            { type: "image", src: "assets/Listings/BestFriends/bestfriends.png", label: "Best Friends Litter" },
-            { type: "video", src: "assets/Listings/BestFriends/bestfriends1.mp4", label: "Best Friends Litter" },
-            { type: "video", src: "assets/Listings/BestFriends/bestfriends2.mp4", label: "Best Friends Litter" },
-            { type: "video", src: "assets/Listings/BestFriends/bestfriends3.mp4", label: "Best Friends Litter" },
-            { type: "video", src: "assets/Listings/BestFriends/bestfriends4.mp4", label: "Best Friends Litter" },
-            { type: "video", src: "assets/Listings/BestFriends/bestfriends5.mp4", label: "Best Friends Litter" },
-            { type: "video", src: "assets/Listings/BestFriends/bestfriends6.mp4", label: "Best Friends Litter" },
-            { type: "video", src: "assets/Listings/BestFriends/bestfriends7.mp4", label: "Best Friends Litter" },
-            { type: "video", src: "assets/Listings/BestFriends/bestfriends8.mp4", label: "Best Friends Litter" },
-            { type: "video", src: "assets/Listings/BestFriends/albert.mp4", label: "Albert (Male)" },
-            { type: "image", src: "assets/Listings/BestFriends/albert1.jpeg", label: "Albert (Male)" },
-            { type: "image", src: "assets/Listings/BestFriends/albert2.jpeg", label: "Albert (Male)" },
-            { type: "image", src: "assets/Listings/BestFriends/albert3.png", label: "Albert (Male)" },
-            { type: "image", src: "assets/Listings/BestFriends/albert4.png", label: "Albert (Male)" },
-            { type: "image", src: "assets/Listings/BestFriends/albert5.png", label: "Albert (Male)" },
-            { type: "video", src: "assets/Listings/BestFriends/chip.mp4", label: "Chip (Male)" },
-            { type: "image", src: "assets/Listings/BestFriends/chip1.jpeg", label: "Chip (Male)" },
-            { type: "image", src: "assets/Listings/BestFriends/chip2.png", label: "Chip (Male)" },
-            { type: "image", src: "assets/Listings/BestFriends/chip3.png", label: "Chip (Male)" },
-            { type: "image", src: "assets/Listings/BestFriends/chip4.png", label: "Chip (Male)" },
-            { type: "image", src: "assets/Listings/BestFriends/chip5.jpeg", label: "Chip (Male)" },
-            { type: "video", src: "assets/Listings/BestFriends/danny.mp4", label: "Danny (Male)" },
-            { type: "image", src: "assets/Listings/BestFriends/danny1.png", label: "Danny (Male)" },
-            { type: "image", src: "assets/Listings/BestFriends/danny2.png", label: "Danny (Male)" },
-            { type: "image", src: "assets/Listings/BestFriends/danny3.png", label: "Danny (Male)" },
-            { type: "image", src: "assets/Listings/BestFriends/danny4.png", label: "Danny (Male)" },
-            { type: "image", src: "assets/Listings/BestFriends/danny5.jpeg", label: "Danny (Male)" },
-            { type: "video", src: "assets/Listings/BestFriends/patch.mp4", label: "Patch (Male)" },
-            { type: "image", src: "assets/Listings/BestFriends/patch1.jpeg", label: "Patch (Male)" },
-            { type: "image", src: "assets/Listings/BestFriends/patch2.png", label: "Patch (Male)" },
-            { type: "image", src: "assets/Listings/BestFriends/patch3.png", label: "Patch (Male)" },
-            { type: "image", src: "assets/Listings/BestFriends/patch4.png", label: "Patch (Male)" },
-            { type: "video", src: "assets/Listings/BestFriends/pebbles.mp4", label: "Pebbles (Female)" },
-            { type: "image", src: "assets/Listings/BestFriends/pebbles1.jpeg", label: "Pebbles (Female)" },
-            { type: "image", src: "assets/Listings/BestFriends/pebbles2.jpeg", label: "Pebbles (Female)" },
-            { type: "image", src: "assets/Listings/BestFriends/pebbles3.png", label: "Pebbles (Female)" },
-            { type: "video", src: "assets/Listings/BestFriends/rose.mp4", label: "Rosemary (Female)" },
-            { type: "image", src: "assets/Listings/BestFriends/rose1.jpeg", label: "Rosemary (Female)" },
-            { type: "image", src: "assets/Listings/BestFriends/rose2.png", label: "Rosemary (Female)" },
-            { type: "image", src: "assets/Listings/BestFriends/rose3.png", label: "Rosemary (Female)" },
-            { type: "image", src: "assets/Listings/BestFriends/rose4.png", label: "Rosemary (Female)" }
-        ],
-        updates: [
-            { date: "May 6, 2026", text: "Litter Available to Reserve!" },
-            { date: "May 7, 2026", text: "Pebbles found her family with Kathleen!" },
-            { date: "June 1, 2026", text: "Rosemary found her family!" },
-            { date: "June 17, 2026", text: "Albert found his forever family!" },
-            { date: "June 17, 2026", text: "Chip found his forever family!" },
-            { date: "June 20, 2026", text: "Danny found his forever family!" },
-            { date: "June 20, 2026", text: "Patch found his forever family!" }
-        ]
-    },
+
 
     {
         id: "ruby-reds-2026",
@@ -251,11 +146,11 @@ const LITTERS = [
         mom: { name: "Patience", breed: "Mini Poodle", weight: "12lbs" },
         dad: { name: "Max", breed: "Mini Poodle", weight: "12`lbs" },
         breed: "Mini Poodles",
-        description: "Beautiful genetic tested parents show off these amazing ruby red babies! Extremely hard to find - negative fade gene. This bloodline has wonderful personalities, smart and loving. Your poodle will look at you with very endearing eyes. You will be the center of their world.<br><br><strong>⚠️ Rare Breed Notice: Inquire about breeding rights, selection is not guaranteed. Additional fee applies if approved.</strong>",
+        description: "Beautiful genetic tested parents show off these amazing ruby red babies! Extremely hard to find - negative fade gene. This bloodline has wonderful personalities, smart and loving. Your poodle will look at you with very endearing eyes. You will be the center of their world.<br><br><strong>?? Rare Breed Notice: Inquire about breeding rights, selection is not guaranteed. Additional fee applies if approved.</strong>",
         price: "$1500 + tax ($300 due at reservation)",
         puppies: [
             { name: "Markie", gender: "Male", status: "Available" },
-            { name: "Paddy", gender: "Male", status: "Available" },
+            { name: "Paddy", gender: "Male", status: "Found his family!" },
             { name: "Bella", gender: "Female", status: "Found her family!" }
         ],
         thumbnail: "assets/Listings/RubyReds/rubyreds-thumbnail.png",
@@ -286,40 +181,17 @@ const LITTERS = [
             { type: "video", src: "assets/Listings/RubyReds/belle1.mp4", label: "Belle (Female)" },
             { type: "video", src: "assets/Listings/RubyReds/belle2.mp4", label: "Belle (Female)" },
             { type: "image", src: "assets/Listings/RubyReds/belle1.jpeg", label: "Belle (Female)" },
-            { type: "image", src: "assets/Listings/RubyReds/belle2.jpeg", label: "Belle (Female)" }
+            { type: "image", src: "assets/Listings/RubyReds/belle2.jpeg", label: "Belle (Female)" },
+            { type: "image", src: "assets/Listings/RubyReds/rubyreds-thumbnail.png", label: "Ruby Reds Litter" }
         ],
         updates: [
             { date: "May 6, 2026", text: "Litter Available to Reserve!" },
-            { date: "May 16, 2026", text: "Bella found her family!" }
+            { date: "May 16, 2026", text: "Bella found her family!" },
+            { date: "June 30, 2026", text: "Paddy found his family!" }
         ]
     },
 
-    {
-        id: "schnoodle-love-2026",
-        litterName: "Schnoodle Love",
-        dob: "December 12, 2025",
-        readyToGoDate: "February 6, 2026",
-        mom: { name: "NA", breed: "Mini Poodle", weight: "13lbs" },
-        dad: { name: "NA", breed: "Mini Schnauzer", weight: "17lbs" },
-        breed: "F1 Schnoodle",
-        description: "She is a very sweet gentle natured girl. Perfect as a first time pet and a great companion for a senior citizen. She is playful and enjoy snuggles. Beautiful, loving, and waiting for a family to love her, she has a 'Happy-Go-Lucky' vibe! The Schnoodle tends to inherit the Poodle's playful energy and the Schnauzer's spunky, stout-hearted nature. This results in a dog that loves to please and is highly trainable because they genuinely care about your approval. They are great with kids, sturdy enough for play but gentle enough to be reliable family companions. With their intelligence and a hint of wit, they are quick learners who might even try to 'negotiate' with you for a better treat!",
-        price: "$500 + tax ($300 due at reservation)",
-        puppies: [
-            { name: "Maggie", gender: "Female", status: "Found Family!" }
-        ],
-        thumbnail: "assets/Listings/SchnoodleLove/maggie1.jpeg",
-        media: [
-            { type: "video", src: "assets/Listings/SchnoodleLove/maggie.mp4", label: "Maggie (Female)" },
-            { type: "image", src: "assets/Listings/SchnoodleLove/maggie1.jpeg", label: "Maggie (Female)" },
-            { type: "image", src: "assets/Listings/SchnoodleLove/maggie2.jpeg", label: "Maggie (Female)" },
-            { type: "image", src: "assets/Listings/SchnoodleLove/maggie3.jpeg", label: "Maggie (Female)" },
-            { type: "image", src: "assets/Listings/SchnoodleLove/maggie4.jpeg", label: "Maggie (Female)" }
-        ],
-        updates: [
-            { date: "May 6, 2026", text: "Litter Available to Reserve!" },
-            { date: "May 13, 2026", text: "Maggie found her family!" }
-        ]
-    },
+
 
     {
         id: "teddybear-schnoodles-2026",
@@ -342,7 +214,8 @@ const LITTERS = [
             { type: "image", src: "assets/Listings/TeddybearSchnoodles/baxter2.jpeg", label: "Baxter (Male)" },
             { type: "image", src: "assets/Listings/TeddybearSchnoodles/baxter3.jpeg", label: "Baxter (Male)" },
             { type: "image", src: "assets/Listings/TeddybearSchnoodles/willie1.jpeg", label: "Willie (Male)" },
-            { type: "image", src: "assets/Listings/TeddybearSchnoodles/willie2.jpeg", label: "Willie (Male)" }
+            { type: "image", src: "assets/Listings/TeddybearSchnoodles/willie2.jpeg", label: "Willie (Male)" },
+            { type: "image", src: "assets/Listings/TeddybearSchnoodles/teddybear-schnoodles-thumbnail.jpeg", label: "Teddybear Schnoodles Litter" }
         ],
         updates: [
             { date: "May 6, 2026", text: "Litter Available to Reserve!" },
@@ -350,34 +223,7 @@ const LITTERS = [
         ]
     },
 
-    {
-        id: "i-m-yours-2026",
-        litterName: "I'm Yours!",
-        dob: "February 23, 2026",
-        readyToGoDate: "May 2, 2026",
-        mom: { name: "Maria", breed: "Cavapoo", weight: "15lbs" },
-        dad: { name: "Max", breed: "Mini Poodle", weight: "10lbs" },
-        breed: "F1B Cavapoo",
-        description: "Julia is ready to be the ultimate companion. If you need an extra shadow she is up for the job. She would be a wonderful addition to your chair for watching TV. She enjoys running around the house, then crashing for a long nap. She has two speeds, silly or snuggling.",
-        price: "$1500 + tax ($300 due at reservation)",
-        puppies: [
-            { name: "Julia", gender: "Female", status: "Found her forever home!" }
-        ],
-        thumbnail: "assets/Listings/IMYours/julia5.jpeg",
-        media: [
-            { type: "video", src: "assets/Listings/IMYours/julia.mp4", label: "Julia (Female)" },
-            { type: "image", src: "assets/Listings/IMYours/julia1.jpeg", label: "Julia (Female)" },
-            { type: "image", src: "assets/Listings/IMYours/julia2.jpeg", label: "Julia (Female)" },
-            { type: "image", src: "assets/Listings/IMYours/julia3.jpeg", label: "Julia (Female)" },
-            { type: "image", src: "assets/Listings/IMYours/julia4.jpeg", label: "Julia (Female)" },
-            { type: "image", src: "assets/Listings/IMYours/julia5.jpeg", label: "Julia (Female)" },
-            { type: "image", src: "assets/Listings/IMYours/julia6.jpeg", label: "Julia (Female)" },
-            { type: "image", src: "assets/Listings/IMYours/julia7.png", label: "Julia (Female)" }
-        ],
-        updates: [
-            { date: "May 6, 2026", text: "Litter Available to Reserve!" }
-        ]
-    },
+
 
     {
         id: "mammas-boys-2026",
@@ -390,7 +236,7 @@ const LITTERS = [
         description: "Sweet babies just born. They are thriving, gaining weight and have a peaceful nature. The boys are showing a loose wavy coat and in time will develop into a Teddybear look.",
         price: "$1500 + tax ($300 due at reservation)",
         puppies: [
-            { name: "Texas", gender: "Male", status: "Available" },
+            { name: "Texas", gender: "Male", status: "Found Family" },
             { name: "Tucker", gender: "Male", status: "Available" }
 
         ],
@@ -419,10 +265,12 @@ const LITTERS = [
             { type: "image", src: "assets/Listings/MammasBoys/tucker7.jpeg", label: "Tucker (Male)" },
             { type: "image", src: "assets/Listings/MammasBoys/tucker8.jpeg", label: "Tucker (Male)" },
             { type: "image", src: "assets/Listings/MammasBoys/tucker9.png", label: "Tucker (Male)" },
-            { type: "image", src: "assets/Listings/MammasBoys/tucker10.png", label: "Tucker (Male)" }
+            { type: "image", src: "assets/Listings/MammasBoys/tucker10.png", label: "Tucker (Male)" },
+            { type: "image", src: "assets/Listings/MammasBoys/mammas-boys-thumbnail.jpeg", label: "Mamma's Boys Litter" }
         ],
         updates: [
-            { date: "May 6, 2026", text: "Litter Available to Reserve!" }
+            { date: "May 6, 2026", text: "Litter Available to Reserve!" },
+            { date: "June 29, 2026", text: "Texas found his forever home!" }
         ]
     },
 
@@ -434,7 +282,7 @@ const LITTERS = [
         mom: { name: "Biscuit", breed: "F1 Mini Goldendoodle", weight: "16lbs" },
         dad: { name: "Blazer", breed: "Mini Poodle", weight: "12lbs" },
         breed: "F1BB Mini Goldendoodle",
-        description: "These aren’t your typical doodles—they are the definition of extra fancy. As an F1BB generation, these puppies carry a higher percentage of Poodle lineage, ensuring those coveted, ultra-plush, loose Teddybear coats.They are currently in their earliest days, and we invite you to join us for the journey. Secure your newest family member now and enjoy beautiful, frequent updates as you watch your puppy grow from a tiny wonder into a stunning mini companion. Expect a soulful, endearing personality that melts into your arms the moment you hold them.",
+        description: "These aren�t your typical doodles�they are the definition of extra fancy. As an F1BB generation, these puppies carry a higher percentage of Poodle lineage, ensuring those coveted, ultra-plush, loose Teddybear coats.They are currently in their earliest days, and we invite you to join us for the journey. Secure your newest family member now and enjoy beautiful, frequent updates as you watch your puppy grow from a tiny wonder into a stunning mini companion. Expect a soulful, endearing personality that melts into your arms the moment you hold them.",
         price: "$1800 + tax ($300 due at reservation)",
         puppies: [
             { name: "Mavis", gender: "Girl", status: "Available" },
@@ -453,6 +301,7 @@ const LITTERS = [
             { type: "image", src: "assets/Listings/EarlyBirds/mavis3.png", label: "Mavis (Girl)" },
             { type: "image", src: "assets/Listings/EarlyBirds/mavis4.png", label: "Mavis (Girl)" },
             { type: "image", src: "assets/Listings/EarlyBirds/mavis5.png", label: "Mavis (Girl)" },
+            { type: "image", src: "assets/Listings/EarlyBirds/mavis6.png", label: "Mavis (Girl)" },
             { type: "video", src: "assets/Listings/EarlyBirds/dove1.mp4", label: "Dove (Girl)" },
             { type: "video", src: "assets/Listings/EarlyBirds/dove2.mp4", label: "Dove (Girl)" },
             { type: "image", src: "assets/Listings/EarlyBirds/dove1.png", label: "Dove (Girl)" },
@@ -461,6 +310,7 @@ const LITTERS = [
             { type: "image", src: "assets/Listings/EarlyBirds/dove4.png", label: "Dove (Girl)" },
             { type: "image", src: "assets/Listings/EarlyBirds/dove5.png", label: "Dove (Girl)" },
             { type: "image", src: "assets/Listings/EarlyBirds/dove6.png", label: "Dove (Girl)" },
+            { type: "image", src: "assets/Listings/EarlyBirds/dove7.png", label: "Dove (Girl)" },
             { type: "video", src: "assets/Listings/EarlyBirds/jay1.mp4", label: "Jay (Boy)" },
             { type: "video", src: "assets/Listings/EarlyBirds/jay2.mp4", label: "Jay (Boy)" },
             { type: "image", src: "assets/Listings/EarlyBirds/jay1.png", label: "Jay (Boy)" },
@@ -468,7 +318,9 @@ const LITTERS = [
             { type: "image", src: "assets/Listings/EarlyBirds/jay3.png", label: "Jay (Boy)" },
             { type: "image", src: "assets/Listings/EarlyBirds/jay4.png", label: "Jay (Boy)" },
             { type: "image", src: "assets/Listings/EarlyBirds/jay5.png", label: "Jay (Boy)" },
-            { type: "image", src: "assets/Listings/EarlyBirds/jay6.png", label: "Jay (Boy)" }
+            { type: "image", src: "assets/Listings/EarlyBirds/jay6.png", label: "Jay (Boy)" },
+            { type: "image", src: "assets/Listings/EarlyBirds/jay7.png", label: "Jay (Boy)" },
+            { type: "image", src: "assets/Listings/EarlyBirds/earlybirds-thumbnail.png", label: "Early Birds Litter" }
         ],
         updates: [
             { date: "May 15, 2026", text: "Litter Available to Reserve!" }
@@ -533,7 +385,14 @@ const LITTERS = [
             { type: "image", src: "assets/Listings/SummerBrezzy/daisy1.png", label: "Daisy (Girl)" },
             { type: "image", src: "assets/Listings/SummerBrezzy/daisy2.png", label: "Daisy (Girl)" },
             { type: "image", src: "assets/Listings/SummerBrezzy/daisy3.png", label: "Daisy (Girl)" },
-            { type: "image", src: "assets/Listings/SummerBrezzy/daisy4.png", label: "Daisy (Girl)" }
+            { type: "image", src: "assets/Listings/SummerBrezzy/daisy4.png", label: "Daisy (Girl)" },
+            { type: "image", src: "assets/Listings/SummerBrezzy/belle5.png", label: "Belle (Girl)" },
+            { type: "image", src: "assets/Listings/SummerBrezzy/daisy5.png", label: "Daisy (Girl)" },
+            { type: "image", src: "assets/Listings/SummerBrezzy/fonzie6.png", label: "Fonzie (Boy)" },
+            { type: "image", src: "assets/Listings/SummerBrezzy/georgie6.png", label: "Georgie (Boy)" },
+            { type: "image", src: "assets/Listings/SummerBrezzy/sam5.png", label: "Sam (Boy)" },
+            { type: "image", src: "assets/Listings/SummerBrezzy/summerbrezzy-thumbnail.png", label: "Summer Brezzy Litter" },
+            { type: "image", src: "assets/Listings/SummerBrezzy/willow6.png", label: "Willow (Girl)" }
         ],
         updates: [
             { date: "May 16, 2026", text: "Litter Available to Reserve!" },
@@ -549,7 +408,7 @@ const LITTERS = [
         mom: { name: "Violet", breed: "F1 Mini Goldendoodle", weight: "45lbs" },
         dad: { name: "Kandu", breed: "Mini Poodle", weight: "25lbs" },
         breed: "F1B Mini Goldendoodles",
-        description: "Are you looking for the ideal first pet? Look no further. Our Large Mini Goldendoodles are the perfect blend of intelligence, affection, and gentle energy, making them the ultimate addition to any family.<br><br><strong>Why Choose a Large Mini Goldendoodle?</strong><br>These sweet babies are known for their easy-going and happy-go-lucky temperaments. If you are looking for a companion that is just as happy curling up for a relaxing evening as they are joining you for a brisk walk or a game of fetch in the yard, these pups are for you.<br><br>• <strong>Exceptional Temperament:</strong> Bred to mirror the calm, patient nature of the Golden Retriever, these puppies are naturally mellow and well-balanced.<br>• <strong>Ideal for First-Time Owners:</strong> Their eager-to-please attitude and gentle disposition make them incredibly rewarding and manageable for first-time dog owners.<br>• <strong>Stunning Coats:</strong> Each puppy boasts a beautiful, low-maintenance loose-wavy coat that is as soft to the touch as it is charming.<br>• <strong>Perfect Size:</strong> With an estimated adult weight of 40–45 lbs, they are the perfect \"medium\" size—sturdy enough for outdoor adventures, yet perfectly suited for indoor living.<br><br><strong>Your Next Best Friend</strong><br>We aren’t just offering a puppy; we are offering a lasting companion who will be by your side for years to come. Whether it’s playing ball in the park or providing quiet companionship at home, these Goldendoodles are ready to fill your life with happy memories.<br><br><strong>Ready to meet your new best friend?</strong><br>These puppies are looking for their forever homes. Please reach out to learn more about our current litter and how you can welcome one of these sweet souls into your family today!",
+        description: "Are you looking for the ideal first pet? Look no further. Our Large Mini Goldendoodles are the perfect blend of intelligence, affection, and gentle energy, making them the ultimate addition to any family.<br><br><strong>Why Choose a Large Mini Goldendoodle?</strong><br>These sweet babies are known for their easy-going and happy-go-lucky temperaments. If you are looking for a companion that is just as happy curling up for a relaxing evening as they are joining you for a brisk walk or a game of fetch in the yard, these pups are for you.<br><br>� <strong>Exceptional Temperament:</strong> Bred to mirror the calm, patient nature of the Golden Retriever, these puppies are naturally mellow and well-balanced.<br>� <strong>Ideal for First-Time Owners:</strong> Their eager-to-please attitude and gentle disposition make them incredibly rewarding and manageable for first-time dog owners.<br>� <strong>Stunning Coats:</strong> Each puppy boasts a beautiful, low-maintenance loose-wavy coat that is as soft to the touch as it is charming.<br>� <strong>Perfect Size:</strong> With an estimated adult weight of 40�45 lbs, they are the perfect \"medium\" size�sturdy enough for outdoor adventures, yet perfectly suited for indoor living.<br><br><strong>Your Next Best Friend</strong><br>We aren�t just offering a puppy; we are offering a lasting companion who will be by your side for years to come. Whether it�s playing ball in the park or providing quiet companionship at home, these Goldendoodles are ready to fill your life with happy memories.<br><br><strong>Ready to meet your new best friend?</strong><br>These puppies are looking for their forever homes. Please reach out to learn more about our current litter and how you can welcome one of these sweet souls into your family today!",
         price: "$1600 + tax ($300 due at reservation)",
         puppies: [
             { name: "Flinch", gender: "Boy", status: "Available" },
@@ -611,7 +470,8 @@ const LITTERS = [
             { type: "video", src: "assets/Listings/PlayBall/fanny1.mp4", label: "Fanny (Girl)" },
             { type: "image", src: "assets/Listings/PlayBall/fanny1.png", label: "Fanny (Girl)" },
             { type: "image", src: "assets/Listings/PlayBall/fanny2.png", label: "Fanny (Girl)" },
-            { type: "image", src: "assets/Listings/PlayBall/fanny3.png", label: "Fanny (Girl)" }
+            { type: "image", src: "assets/Listings/PlayBall/fanny3.png", label: "Fanny (Girl)" },
+            { type: "image", src: "assets/Listings/PlayBall/playball-thumbnail.png", label: "Play Ball Litter" }
         ],
         updates: [
             { date: "June 10, 2026", text: "Litter Available to Reserve!" }
@@ -626,7 +486,7 @@ const LITTERS = [
         mom: { name: "Rose", breed: "Mini Poodle", weight: "10lbs" },
         dad: { name: "Sampson", breed: "King Charles Cavalier", weight: "15lbs" },
         breed: "Cavapoo",
-        description: "Meet Cookie!<br>Cookie is a sweet, female Cavapoo puppy born on May 18, 2026. She comes from a wonderful family, with Rose (a 10 lb Mini Poodle) as her mom and Sampson (a 15 lb King Charles Cavalier) as her dad.<br><br><strong>Why You’ll Love Her:</strong><br>• <strong>Breed:</strong> Cavapoo, known for their affectionate and playful nature.<br>• <strong>Ready for Her Forever Home:</strong> She will be ready to join your family on July 13, 2026.<br>• <strong>The Perfect Addition:</strong> Whether you're looking for a companion for walks in the park or cozy cuddles at home, Cookie is ready to be your perfect match.",
+        description: "Meet Cookie!<br>Cookie is a sweet, female Cavapoo puppy born on May 18, 2026. She comes from a wonderful family, with Rose (a 10 lb Mini Poodle) as her mom and Sampson (a 15 lb King Charles Cavalier) as her dad.<br><br><strong>Why You�ll Love Her:</strong><br>� <strong>Breed:</strong> Cavapoo, known for their affectionate and playful nature.<br>� <strong>Ready for Her Forever Home:</strong> She will be ready to join your family on July 13, 2026.<br>� <strong>The Perfect Addition:</strong> Whether you're looking for a companion for walks in the park or cozy cuddles at home, Cookie is ready to be your perfect match.",
         price: "$1550 + tax ($300 due at reservation)",
         puppies: [
             { name: "Cookie", gender: "Girl", status: "Available" }
@@ -656,7 +516,7 @@ const LITTERS = [
         mom: { name: "Candice", breed: "Pomsky F1", weight: "27lbs" },
         dad: { name: "Rambo", breed: "Pomsky F1", weight: "18lbs" },
         breed: "F2 Pomsky",
-        description: "The sweet, little wolf-like Pomsky is one of the most loyal companions you can find! They love to 'talk' and sing to you, boast huge personalities, and are extremely intelligent.<br><br><strong>Why You’ll Love a Pomsky:</strong><br>• <strong>Incredibly Friendly:</strong> They generally love meeting new people, kids, and other dogs, making them fantastic icebreakers in the neighborhood.<br>• <strong>Striking Coat:</strong> The Pomsky has a beautiful coat that typically sheds twice a year. (Remember not to over-comb the undercoat!)<br>• <strong>Perfect Size:</strong> The estimated adult weight for this litter is 18–25 lbs.<br><br>Your new Pomsky will quickly steal your heart! You will enjoy many sweet updates as they grow until go-home day.",
+        description: "The sweet, little wolf-like Pomsky is one of the most loyal companions you can find! They love to 'talk' and sing to you, boast huge personalities, and are extremely intelligent.<br><br><strong>Why You�ll Love a Pomsky:</strong><br>� <strong>Incredibly Friendly:</strong> They generally love meeting new people, kids, and other dogs, making them fantastic icebreakers in the neighborhood.<br>� <strong>Striking Coat:</strong> The Pomsky has a beautiful coat that typically sheds twice a year. (Remember not to over-comb the undercoat!)<br>� <strong>Perfect Size:</strong> The estimated adult weight for this litter is 18�25 lbs.<br><br>Your new Pomsky will quickly steal your heart! You will enjoy many sweet updates as they grow until go-home day.",
         price: "$2500 + tax ($300 due at reservation)",
         puppies: [
             { name: "Jack", gender: "Boy", status: "Available" },
@@ -684,7 +544,8 @@ const LITTERS = [
             { type: "video", src: "assets/Listings/TheBlackPearl/mrgibbs1.mp4", label: "Mr. Gibbs (Boy)" },
             { type: "image", src: "assets/Listings/TheBlackPearl/mrgibbs1.png", label: "Mr. Gibbs (Boy)" },
             { type: "image", src: "assets/Listings/TheBlackPearl/mrgibbs2.png", label: "Mr. Gibbs (Boy)" },
-            { type: "image", src: "assets/Listings/TheBlackPearl/mrgibbs3.png", label: "Mr. Gibbs (Boy)" }
+            { type: "image", src: "assets/Listings/TheBlackPearl/mrgibbs3.png", label: "Mr. Gibbs (Boy)" },
+            { type: "image", src: "assets/Listings/TheBlackPearl/theblackpearl-thumbnail.png", label: "The Black Pearl Litter" }
         ],
         updates: [
             { date: "June 23, 2026", text: "Litter Available to Reserve!" }
@@ -692,36 +553,48 @@ const LITTERS = [
     },
 
     {
-        id: "picnic-time-2026",
-        litterName: "Picnic Time",
-        dob: "April 23, 2026",
-        readyToGoDate: "June 18, 2026",
-        mom: { name: "Blue Belle", breed: "F1B Mini Goldendoodle", weight: "25lbs" },
-        dad: { name: "Butter Brickle", breed: "Mini Poodle", weight: "16lbs" },
+        id: "south-bark-2026",
+        litterName: "South Bark",
+        dob: "June 22, 2026",
+        readyToGoDate: "August 19, 2026",
+        mom: { name: "Aster", breed: "F1 Mini Goldendoodle", weight: "18lbs" },
+        dad: { name: "Blazer", breed: "Mini Poodle", weight: "14lbs" },
         breed: "F1BB Mini Goldendoodle",
-        description: "F1BB Mini Goldendoodles have a sweet, compact Teddybear body with a blocky face that will make you smile every day! Their coat types range from loose to curly, and this generation is the lowest-shedding you can possibly get—perfect for families with allergies.<br><br><strong>Why You'll Love a Picnic Time Pup:</strong><br>• <strong>Teddybear Looks:</strong> That sweet, blocky face and plush coat are everything you've been dreaming of.<br>• <strong>Lowest Shedding Generation:</strong> The F1BB is the most hypoallergenic generation available, with minimal to no shedding.<br>• <strong>Social &amp; Sweet:</strong> They love people and enjoy nice walks—equally happy snuggling on the couch or exploring the neighborhood.<br><br><strong>These babies are ready to go home now!</strong> Visits and FaceTime sessions are available—reach out today to meet your new best friend.",
-        price: "$2100 + tax ($300 due at reservation)",
+        description: "Are you ready to find your new best friend? Our adorable F1BB mini goldendoodle puppies from the \"South Bark\" litter are officially looking for their forever homes!<br><br>These little bundles of joy are the perfect mix of sweet and playful.<br><br><strong>Why Choose an F1BB Goldendoodle?</strong><br>Because they are a backcross (a Goldendoodle bred back to a Poodle), they are known for having a higher percentage of Poodle genetics. This typically results in:<br>� <strong>Hypoallergenic Qualities:</strong> They are often the most allergy-friendly of the Goldendoodle generations.<br>� <strong>Low-Shedding Coats:</strong> Their curly or wavy coats are wonderful for keeping fur off your furniture.<br>� <strong>Intelligence & Trainability:</strong> They inherit the sharp, eager-to-please nature of the Poodle, making them a joy to train.<br><br>These precious pups are going to bring so much love to their new families. If you are interested in welcoming one of these sweet babies into your home, please contact us today to reserve yours!",
+        price: "$1600 + tax ($300 due at reservation)",
         puppies: [
-            { name: "Bingo", gender: "Boy", status: "Found family with Jada" },
-            { name: "Bunny", gender: "Girl", status: "Found family with Mike" }
-
+            { name: "Kenny", gender: "Boy", status: "Available" },
+            { name: "Eric", gender: "Boy", status: "Available" },
+            { name: "Stan", gender: "Boy", status: "Available" },
+            { name: "Bebe", gender: "Girl", status: "Available" },
+            { name: "Sharon", gender: "Girl", status: "Available" },
+            { name: "Wendy", gender: "Girl", status: "Available" }
         ],
-        thumbnail: "assets/Listings/PicnicTime/bunny1.png",
+        thumbnail: "assets/Listings/SouthBark/southbark-thumbnail.png",
         media: [
-            { type: "video", src: "assets/Listings/PicnicTime/bingo1.mp4", label: "Bingo (Boy)" },
-            { type: "image", src: "assets/Listings/PicnicTime/bingo1.png", label: "Bingo (Boy)" },
-            { type: "image", src: "assets/Listings/PicnicTime/bingo2.png", label: "Bingo (Boy)" },
-            { type: "image", src: "assets/Listings/PicnicTime/bingo3.png", label: "Bingo (Boy)" },
-            { type: "video", src: "assets/Listings/PicnicTime/bunny1.mp4", label: "Bunny (Girl)" },
-            { type: "image", src: "assets/Listings/PicnicTime/bunny1.png", label: "Bunny (Girl)" },
-            { type: "image", src: "assets/Listings/PicnicTime/bunny2.png", label: "Bunny (Girl)" },
-            { type: "image", src: "assets/Listings/PicnicTime/bunny3.png", label: "Bunny (Girl)" },
-            { type: "image", src: "assets/Listings/PicnicTime/bunny4.png", label: "Bunny (Girl)" }
+            { type: "image", src: "assets/Listings/SouthBark/bebe1.png", label: "Bebe (Girl)" },
+            { type: "image", src: "assets/Listings/SouthBark/bebe2.png", label: "Bebe (Girl)" },
+            { type: "image", src: "assets/Listings/SouthBark/bebe3.png", label: "Bebe (Girl)" },
+            { type: "image", src: "assets/Listings/SouthBark/eric1.png", label: "Eric (Boy)" },
+            { type: "image", src: "assets/Listings/SouthBark/eric2.png", label: "Eric (Boy)" },
+            { type: "image", src: "assets/Listings/SouthBark/eric3.png", label: "Eric (Boy)" },
+            { type: "image", src: "assets/Listings/SouthBark/kenny1.png", label: "Kenny (Boy)" },
+            { type: "image", src: "assets/Listings/SouthBark/kenny2.png", label: "Kenny (Boy)" },
+            { type: "image", src: "assets/Listings/SouthBark/kenny3.png", label: "Kenny (Boy)" },
+            { type: "image", src: "assets/Listings/SouthBark/sharon1.png", label: "Sharon (Girl)" },
+            { type: "image", src: "assets/Listings/SouthBark/sharon2.png", label: "Sharon (Girl)" },
+            { type: "image", src: "assets/Listings/SouthBark/sharon3.png", label: "Sharon (Girl)" },
+            { type: "image", src: "assets/Listings/SouthBark/southbark-thumbnail.png", label: "South Bark Litter" },
+            { type: "video", src: "assets/Listings/SouthBark/southbark1.mp4", label: "South Bark Litter" },
+            { type: "image", src: "assets/Listings/SouthBark/stan1.png", label: "Stan (Boy)" },
+            { type: "image", src: "assets/Listings/SouthBark/stan2.png", label: "Stan (Boy)" },
+            { type: "image", src: "assets/Listings/SouthBark/stan3.png", label: "Stan (Boy)" },
+            { type: "image", src: "assets/Listings/SouthBark/wendy1.png", label: "Wendy (Girl)" },
+            { type: "image", src: "assets/Listings/SouthBark/wendy2.png", label: "Wendy (Girl)" },
+            { type: "image", src: "assets/Listings/SouthBark/wendy3.png", label: "Wendy (Girl)" }
         ],
         updates: [
-            { date: "June 23, 2026", text: "Litter Available to Reserve!" },
-            { date: "June 23, 2026", text: "Bingo has found his forever family with Jada!" },
-            { date: "June 23, 2026", text: "Bunny has found her forever family with Mike!" }
+            { date: "June 30, 2026", text: "Litter Available to Reserve!" }
         ]
     }
 ];
@@ -729,7 +602,7 @@ const LITTERS = [
 
 
 // ==========================================
-// 🐶 ORCHARD PUPS - HAPPY TAILS
+// ?? ORCHARD PUPS - HAPPY TAILS
 // ==========================================
 
 const HAPPY_TAILS = [
@@ -754,7 +627,7 @@ const HAPPY_TAILS = [
         familyName: "A Happy Customer",
         puppyName: "Tater",
         image: "assets/HappyTails/tater.jpeg",
-        message: "Here's picture of both of our Orchard Pups (the best doodles!!). You really do have the best pups! My sister has an orchard pup as well 🥰"
+        message: "Here's picture of both of our Orchard Pups (the best doodles!!). You really do have the best pups! My sister has an orchard pup as well ??"
     },
 
     {
@@ -770,7 +643,7 @@ const HAPPY_TAILS = [
         familyName: "A Happy Customer",
         puppyName: "Daisy",
         image: "assets/HappyTails/daisy.jpeg",
-        message: "Daisy got spayed today.... She is 6 months and 42 lb. The vet asked us where we got her from. They said she is one of the calmest doodles they have ever seen. They could not stop talking about how sweet she is and such a good listener. ❤️"
+        message: "Daisy got spayed today.... She is 6 months and 42 lb. The vet asked us where we got her from. They said she is one of the calmest doodles they have ever seen. They could not stop talking about how sweet she is and such a good listener. ??"
     },
 
     {
@@ -778,7 +651,7 @@ const HAPPY_TAILS = [
         familyName: "A Happy Customer",
         puppyName: "Buster",
         image: "assets/HappyTails/buster.png",
-        message: "First day of School! Buster misses his buddies 🚌"
+        message: "First day of School! Buster misses his buddies ??"
     },
 
     {
@@ -802,7 +675,7 @@ const HAPPY_TAILS = [
         familyName: "A Happy Customer",
         puppyName: "Hazel (aka Jewel)",
         image: "assets/HappyTails/hazel-aka-jewel.png",
-        message: "She is now 8 months old and weighs 20 pounds. She is such a good dog and very well behaved... She has made my family's life so much better! She's a local celebrity in my neighborhood as well 😊"
+        message: "She is now 8 months old and weighs 20 pounds. She is such a good dog and very well behaved... She has made my family's life so much better! She's a local celebrity in my neighborhood as well ??"
     },
 
     {
@@ -845,3 +718,5 @@ const HAPPY_TAILS = [
         message: "My son is a diabetic. He had a severe seizure and our standard Goldendoodle Luffy...signaled. He has had no training, prior to this event...He has now had alert training and is a certified seizure alert dog...Unfortunately my son had a large seizure and Luffy alerted and we were able to get him to the hospital. Luffy stayed by his side...and alerted before the machines did...Luffy is our perfect pup , we love him so much ."
     }
 ];
+
+

@@ -1,0 +1,31 @@
+# How to Use: Update Media Script
+
+This script automatically scans your litter folders on your computer and safely adds any newly dropped photos or videos directly into `data.js`. 
+
+## What it does:
+* It checks all images and videos in your litter folders in `assets/Listings/`.
+* If it finds any files that are missing from `data.js`, it will:
+   * Figure out if it's an image or a video.
+   * Auto-generate the label by searching for a puppy name in the filename (e.g., `wendy1.png` becomes `Wendy (Girl)`).
+   * Safely append all the new files into `data.js`.
+
+---
+
+## Instructions
+
+1. Drop your new photos and videos into their respective litter folders inside `assets/Listings/`.
+2. Open **PowerShell** and navigate to your `OrchardPups` folder.
+
+3. **(Recommended) Test Run**: Run this command first. It will print out a list of all the files it plans to add without actually making any changes:
+   ```powershell
+   .\Automation_Scripts\Update-Media.ps1 -DryRun
+   ```
+
+4. **Real Run**: When everything looks correct in the test run, run this command to safely add them to the website:
+   ```powershell
+   .\Automation_Scripts\Update-Media.ps1
+   ```
+
+> [!NOTE]
+> Depending on your computer's security settings, you might get a red error saying scripts are disabled. If so, use this bypass command instead:
+> `powershell -ExecutionPolicy Bypass -File .\Automation_Scripts\Update-Media.ps1`
