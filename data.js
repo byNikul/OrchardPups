@@ -66,7 +66,8 @@ const LITTERS = [
             { type: "image", src: "assets/Listings/ToyStory/jessie8.png", label: "Jessie (Female)" },
             { type: "image", src: "assets/Listings/ToyStory/jessie9.jpeg", label: "Jessie (Female)" },
             { type: "image", src: "assets/Listings/ToyStory/jessie10.png", label: "Jessie (Female)" },
-            { type: "image", src: "assets/Listings/ToyStory/toystory-thumbnail.jpeg", label: "Toy Story Litter" }
+            { type: "image", src: "assets/Listings/ToyStory/toystory-thumbnail.jpeg", label: "Toy Story Litter" },
+            { type: "image", src: "assets/Listings/ToyStory/jessie11.png", label: "Jessie (Female)" }
         ],
         updates: [
             { date: "May 6, 2026", text: "Litter Available to Reserve!" },
@@ -182,7 +183,9 @@ const LITTERS = [
             { type: "video", src: "assets/Listings/RubyReds/belle2.mp4", label: "Belle (Female)" },
             { type: "image", src: "assets/Listings/RubyReds/belle1.jpeg", label: "Belle (Female)" },
             { type: "image", src: "assets/Listings/RubyReds/belle2.jpeg", label: "Belle (Female)" },
-            { type: "image", src: "assets/Listings/RubyReds/rubyreds-thumbnail.png", label: "Ruby Reds Litter" }
+            { type: "image", src: "assets/Listings/RubyReds/rubyreds-thumbnail.png", label: "Ruby Reds Litter" },
+            { type: "image", src: "assets/Listings/RubyReds/markie10.png", label: "Markie (Male)" },
+            { type: "image", src: "assets/Listings/RubyReds/markie11.png", label: "Markie (Male)" }
         ],
         updates: [
             { date: "May 6, 2026", text: "Litter Available to Reserve!" },
@@ -266,7 +269,10 @@ const LITTERS = [
             { type: "image", src: "assets/Listings/MammasBoys/tucker8.jpeg", label: "Tucker (Male)" },
             { type: "image", src: "assets/Listings/MammasBoys/tucker9.png", label: "Tucker (Male)" },
             { type: "image", src: "assets/Listings/MammasBoys/tucker10.png", label: "Tucker (Male)" },
-            { type: "image", src: "assets/Listings/MammasBoys/mammas-boys-thumbnail.jpeg", label: "Mamma's Boys Litter" }
+            { type: "image", src: "assets/Listings/MammasBoys/mammas-boys-thumbnail.jpeg", label: "Mamma's Boys Litter" },
+            { type: "image", src: "assets/Listings/MammasBoys/tucker11.png", label: "Tucker (Male)" },
+            { type: "image", src: "assets/Listings/MammasBoys/tucker12.png", label: "Tucker (Male)" },
+            { type: "video", src: "assets/Listings/MammasBoys/tucker2.mp4", label: "Tucker (Male)" }
         ],
         updates: [
             { date: "May 6, 2026", text: "Litter Available to Reserve!" },
@@ -412,7 +418,7 @@ const LITTERS = [
         price: "$1600 + tax ($300 due at reservation)",
         puppies: [
             { name: "Flinch", gender: "Boy", status: "Available" },
-            { name: "Fiddles", gender: "Boy", status: "Available" },
+            { name: "Fiddles", gender: "Boy", status: "Reserved by Bonnie" },
             { name: "Fozzie", gender: "Boy", status: "Available" },
             { name: "Felix", gender: "Boy", status: "Available" },
             { name: "Frisky", gender: "Boy", status: "Available" },
@@ -471,7 +477,16 @@ const LITTERS = [
             { type: "image", src: "assets/Listings/PlayBall/fanny1.png", label: "Fanny (Girl)" },
             { type: "image", src: "assets/Listings/PlayBall/fanny2.png", label: "Fanny (Girl)" },
             { type: "image", src: "assets/Listings/PlayBall/fanny3.png", label: "Fanny (Girl)" },
-            { type: "image", src: "assets/Listings/PlayBall/playball-thumbnail.png", label: "Play Ball Litter" }
+            { type: "image", src: "assets/Listings/PlayBall/playball-thumbnail.png", label: "Play Ball Litter" },
+            { type: "image", src: "assets/Listings/PlayBall/fanny4.png", label: "Fanny (Girl)" },
+            { type: "image", src: "assets/Listings/PlayBall/felix7.png", label: "Felix (Boy)" },
+            { type: "image", src: "assets/Listings/PlayBall/fiddles6.png", label: "Fiddles (Boy)" },
+            { type: "image", src: "assets/Listings/PlayBall/finch7.png", label: "Play Ball Litter" },
+            { type: "image", src: "assets/Listings/PlayBall/fozzie7.png", label: "Fozzie (Boy)" },
+            { type: "image", src: "assets/Listings/PlayBall/frisky6.png", label: "Frisky (Boy)" },
+            { type: "image", src: "assets/Listings/PlayBall/frosty7.png", label: "Frosty (Boy)" },
+            { type: "video", src: "assets/Listings/PlayBall/playball1.mp4", label: "Play Ball Litter" },
+            { type: "video", src: "assets/Listings/PlayBall/playball2.mp4", label: "Play Ball Litter" }
         ],
         updates: [
             { date: "June 10, 2026", text: "Litter Available to Reserve!" }
@@ -521,8 +536,7 @@ const LITTERS = [
         puppies: [
             { name: "Jack", gender: "Boy", status: "Available" },
             { name: "Will", gender: "Boy", status: "Available" },
-            { name: "Elizabeth", gender: "Girl", status: "Available" },
-            { name: "Mr. Gibbs", gender: "Boy", status: "Available" }
+            { name: "Elizabeth", gender: "Girl", status: "Available" }
 
         ],
         thumbnail: "assets/Listings/TheBlackPearl/theblackpearl-thumbnail.png",
@@ -541,11 +555,16 @@ const LITTERS = [
             { type: "image", src: "assets/Listings/TheBlackPearl/elizabeth1.png", label: "Elizabeth (Girl)" },
             { type: "image", src: "assets/Listings/TheBlackPearl/elizabeth2.png", label: "Elizabeth (Girl)" },
             { type: "image", src: "assets/Listings/TheBlackPearl/elizabeth3.png", label: "Elizabeth (Girl)" },
-            { type: "video", src: "assets/Listings/TheBlackPearl/mrgibbs1.mp4", label: "Mr. Gibbs (Boy)" },
-            { type: "image", src: "assets/Listings/TheBlackPearl/mrgibbs1.png", label: "Mr. Gibbs (Boy)" },
-            { type: "image", src: "assets/Listings/TheBlackPearl/mrgibbs2.png", label: "Mr. Gibbs (Boy)" },
-            { type: "image", src: "assets/Listings/TheBlackPearl/mrgibbs3.png", label: "Mr. Gibbs (Boy)" },
-            { type: "image", src: "assets/Listings/TheBlackPearl/theblackpearl-thumbnail.png", label: "The Black Pearl Litter" }
+            { type: "image", src: "assets/Listings/TheBlackPearl/theblackpearl-thumbnail.png", label: "The Black Pearl Litter" },
+            { type: "image", src: "assets/Listings/TheBlackPearl/elizabeth4.png", label: "Elizabeth (Girl)" },
+            { type: "image", src: "assets/Listings/TheBlackPearl/elizabeth5.png", label: "Elizabeth (Girl)" },
+            { type: "image", src: "assets/Listings/TheBlackPearl/elizabeth6.png", label: "Elizabeth (Girl)" },
+            { type: "image", src: "assets/Listings/TheBlackPearl/jack5.png", label: "Jack (Boy)" },
+            { type: "image", src: "assets/Listings/TheBlackPearl/jack6.png", label: "Jack (Boy)" },
+            { type: "video", src: "assets/Listings/TheBlackPearl/theblackpearl.mp4", label: "The Black Pearl Litter" },
+            { type: "image", src: "assets/Listings/TheBlackPearl/will5.png", label: "Will (Boy)" },
+            { type: "image", src: "assets/Listings/TheBlackPearl/will6.png", label: "Will (Boy)" },
+            { type: "image", src: "assets/Listings/TheBlackPearl/will7.png", label: "Will (Boy)" }
         ],
         updates: [
             { date: "June 23, 2026", text: "Litter Available to Reserve!" }
@@ -591,7 +610,15 @@ const LITTERS = [
             { type: "image", src: "assets/Listings/SouthBark/stan3.png", label: "Stan (Boy)" },
             { type: "image", src: "assets/Listings/SouthBark/wendy1.png", label: "Wendy (Girl)" },
             { type: "image", src: "assets/Listings/SouthBark/wendy2.png", label: "Wendy (Girl)" },
-            { type: "image", src: "assets/Listings/SouthBark/wendy3.png", label: "Wendy (Girl)" }
+            { type: "image", src: "assets/Listings/SouthBark/wendy3.png", label: "Wendy (Girl)" },
+            { type: "image", src: "assets/Listings/SouthBark/bebe4.png", label: "Bebe (Girl)" },
+            { type: "image", src: "assets/Listings/SouthBark/bebe5.png", label: "Bebe (Girl)" },
+            { type: "image", src: "assets/Listings/SouthBark/kenny4.png", label: "Kenny (Boy)" },
+            { type: "image", src: "assets/Listings/SouthBark/kenny5.png", label: "Kenny (Boy)" },
+            { type: "image", src: "assets/Listings/SouthBark/sharon4.png", label: "Sharon (Girl)" },
+            { type: "image", src: "assets/Listings/SouthBark/sharon5.png", label: "Sharon (Girl)" },
+            { type: "image", src: "assets/Listings/SouthBark/wendy5.png", label: "Wendy (Girl)" },
+            { type: "image", src: "assets/Listings/SouthBark/wendy6.png", label: "Wendy (Girl)" }
         ],
         updates: [
             { date: "June 30, 2026", text: "Litter Available to Reserve!" }
@@ -718,5 +745,6 @@ const HAPPY_TAILS = [
         message: "My son is a diabetic. He had a severe seizure and our standard Goldendoodle Luffy...signaled. He has had no training, prior to this event...He has now had alert training and is a certified seizure alert dog...Unfortunately my son had a large seizure and Luffy alerted and we were able to get him to the hospital. Luffy stayed by his side...and alerted before the machines did...Luffy is our perfect pup , we love him so much ."
     }
 ];
+
 
 
