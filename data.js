@@ -87,13 +87,13 @@ const LITTERS = [
         dad: { name: "Max", breed: "Mini Poodle", weight: "12lbs" },
         breed: "Cavapoos",
         description: "Check out our Here Comes the Sun litter! We're super excited about these Cavapoos. They have amazing personalities, traditional teddy bear blocky looks. They're total Teddybear pups with wavy, hypoallergenic coats and the sweetest personalities you can imagine. Cavapoos are a mix of King Charles Cavalier and Poodle. They are known for their playful personalities and traditional teddy bear looks.",
-        price: "$1600 + tax ($300 due at reservation)",
+        price: "$1400 + tax ($300 due at reservation)",
         puppies: [
             { name: "George", gender: "Male", status: "Available" },
             { name: "Yoko", gender: "Female", status: "Available" },
             { name: "John", gender: "Male", status: "Available" },
             { name: "Penny", gender: "Female", status: "Found Family" },
-            { name: "Michele", gender: "Female", status: "Available" }
+            { name: "Michele", gender: "Female", status: "Found Family" }
         ],
         thumbnail: "assets/Listings/HereComesTheSun/herecomesthesun-thumbnail.jpeg",
         media: [
@@ -128,71 +128,28 @@ const LITTERS = [
             { type: "image", src: "assets/Listings/HereComesTheSun/penny3.png", label: "Penny (Female)" },
             { type: "image", src: "assets/Listings/HereComesTheSun/penny4.png", label: "Penny (Female)" },
             { type: "image", src: "assets/Listings/HereComesTheSun/penny5.jpeg", label: "Penny (Female)" },
-            { type: "image", src: "assets/Listings/HereComesTheSun/herecomesthesun-thumbnail.jpeg", label: "Here Comes The Sun Litter" }
+            { type: "image", src: "assets/Listings/HereComesTheSun/herecomesthesun-thumbnail.jpeg", label: "Here Comes The Sun Litter" },
+            { type: "video", src: "assets/Listings/HereComesTheSun/george2.mp4", label: "George (Male)" },
+            { type: "image", src: "assets/Listings/HereComesTheSun/george7.png", label: "George (Male)" },
+            { type: "image", src: "assets/Listings/HereComesTheSun/george8.png", label: "George (Male)" },
+            { type: "video", src: "assets/Listings/HereComesTheSun/john1.mp4", label: "John (Male)" },
+            { type: "image", src: "assets/Listings/HereComesTheSun/john5.png", label: "John (Male)" },
+            { type: "video", src: "assets/Listings/HereComesTheSun/michele2.mp4", label: "Michele (Female)" },
+            { type: "image", src: "assets/Listings/HereComesTheSun/michele6.png", label: "Michele (Female)" },
+            { type: "video", src: "assets/Listings/HereComesTheSun/yoko2.mp4", label: "Yoko (Female)" },
+            { type: "image", src: "assets/Listings/HereComesTheSun/yoko6.png", label: "Yoko (Female)" }
         ],
         updates: [
             { date: "May 6, 2026", text: "Litter Available to Reserve!" },
             { date: "June 10, 2026", text: "Penny has a small hernia, so we reduced the price of Penny. She's still be vet checked prior to going home!" },
-            { date: "June 23, 2026", text: "Penny found her forever family!" }
+            { date: "June 23, 2026", text: "Penny found her forever family!" },
+            { date: "July 10, 2026", text: "Michele found her forever family!" }
         ]
     },
 
 
 
-    {
-        id: "ruby-reds-2026",
-        litterName: "Ruby Reds",
-        dob: "March 28, 2026",
-        readyToGoDate: "May 23, 2026",
-        mom: { name: "Patience", breed: "Mini Poodle", weight: "12lbs" },
-        dad: { name: "Max", breed: "Mini Poodle", weight: "12`lbs" },
-        breed: "Mini Poodles",
-        description: "Beautiful genetic tested parents show off these amazing ruby red babies! Extremely hard to find - negative fade gene. This bloodline has wonderful personalities, smart and loving. Your poodle will look at you with very endearing eyes. You will be the center of their world.<br><br><strong>?? Rare Breed Notice: Inquire about breeding rights, selection is not guaranteed. Additional fee applies if approved.</strong>",
-        price: "$1500 + tax ($300 due at reservation)",
-        puppies: [
-            { name: "Markie", gender: "Male", status: "Available" },
-            { name: "Paddy", gender: "Male", status: "Found his family!" },
-            { name: "Bella", gender: "Female", status: "Found her family!" }
-        ],
-        thumbnail: "assets/Listings/RubyReds/rubyreds-thumbnail.png",
-        media: [
-            { type: "video", src: "assets/Listings/RubyReds/rubyreds1.mp4", label: "Ruby Reds Litter" },
-            { type: "video", src: "assets/Listings/RubyReds/rubyreds2.mp4", label: "Ruby Reds Litter (Markie and Paddy)" },
-            { type: "video", src: "assets/Listings/RubyReds/rubyreds3.mp4", label: "Ruby Reds Litter (Markie and Paddy)" },
-            { type: "image", src: "assets/Listings/RubyReds/rubyreds1.png", label: "Ruby Reds Litter (Markie and Paddy)" },
-            { type: "image", src: "assets/Listings/RubyReds/markieandpaddy.png", label: "Ruby Reds Litter (Markie and Paddy)" },
-            { type: "video", src: "assets/Listings/RubyReds/markie.mp4", label: "Markie (Male)" },
-            { type: "image", src: "assets/Listings/RubyReds/markie1.jpeg", label: "Markie (Male)" },
-            { type: "image", src: "assets/Listings/RubyReds/markie2.jpeg", label: "Markie (Male)" },
-            { type: "image", src: "assets/Listings/RubyReds/markie3.png", label: "Markie (Male)" },
-            { type: "image", src: "assets/Listings/RubyReds/markie4.png", label: "Markie (Male)" },
-            { type: "image", src: "assets/Listings/RubyReds/markie5.jpeg", label: "Markie (Male)" },
-            { type: "image", src: "assets/Listings/RubyReds/markie6.jpeg", label: "Markie (Male)" },
-            { type: "image", src: "assets/Listings/RubyReds/markie7.png", label: "Markie (Male)" },
-            { type: "image", src: "assets/Listings/RubyReds/markie8.png", label: "Markie (Male)" },
-            { type: "image", src: "assets/Listings/RubyReds/markie9.png", label: "Markie (Male)" },
-            { type: "video", src: "assets/Listings/RubyReds/paddy.mp4", label: "Paddy (Male)" },
-            { type: "image", src: "assets/Listings/RubyReds/paddy1.jpeg", label: "Paddy (Male)" },
-            { type: "image", src: "assets/Listings/RubyReds/paddy2.jpeg", label: "Paddy (Male)" },
-            { type: "image", src: "assets/Listings/RubyReds/paddy3.png", label: "Paddy (Male)" },
-            { type: "image", src: "assets/Listings/RubyReds/paddy4.png", label: "Paddy (Male)" },
-            { type: "image", src: "assets/Listings/RubyReds/paddy5.png", label: "Paddy (Male)" },
-            { type: "image", src: "assets/Listings/RubyReds/paddy6.jpeg", label: "Paddy (Male)" },
-            { type: "image", src: "assets/Listings/RubyReds/paddy7.png", label: "Paddy (Male)" },
-            { type: "video", src: "assets/Listings/RubyReds/belle1.mp4", label: "Belle (Female)" },
-            { type: "video", src: "assets/Listings/RubyReds/belle2.mp4", label: "Belle (Female)" },
-            { type: "image", src: "assets/Listings/RubyReds/belle1.jpeg", label: "Belle (Female)" },
-            { type: "image", src: "assets/Listings/RubyReds/belle2.jpeg", label: "Belle (Female)" },
-            { type: "image", src: "assets/Listings/RubyReds/rubyreds-thumbnail.png", label: "Ruby Reds Litter" },
-            { type: "image", src: "assets/Listings/RubyReds/markie10.png", label: "Markie (Male)" },
-            { type: "image", src: "assets/Listings/RubyReds/markie11.png", label: "Markie (Male)" }
-        ],
-        updates: [
-            { date: "May 6, 2026", text: "Litter Available to Reserve!" },
-            { date: "May 16, 2026", text: "Bella found her family!" },
-            { date: "June 30, 2026", text: "Paddy found his family!" }
-        ]
-    },
+
 
 
 
@@ -288,12 +245,12 @@ const LITTERS = [
         mom: { name: "Biscuit", breed: "F1 Mini Goldendoodle", weight: "16lbs" },
         dad: { name: "Blazer", breed: "Mini Poodle", weight: "12lbs" },
         breed: "F1BB Mini Goldendoodle",
-        description: "These aren�t your typical doodles�they are the definition of extra fancy. As an F1BB generation, these puppies carry a higher percentage of Poodle lineage, ensuring those coveted, ultra-plush, loose Teddybear coats.They are currently in their earliest days, and we invite you to join us for the journey. Secure your newest family member now and enjoy beautiful, frequent updates as you watch your puppy grow from a tiny wonder into a stunning mini companion. Expect a soulful, endearing personality that melts into your arms the moment you hold them.",
+        description: "These aren't your typical doodles, they are the definition of extra fancy. As an F1BB generation, these puppies carry a higher percentage of Poodle lineage, ensuring those coveted, ultra-plush, loose Teddybear coats.They are currently in their earliest days, and we invite you to join us for the journey. Secure your newest family member now and enjoy beautiful, frequent updates as you watch your puppy grow from a tiny wonder into a stunning mini companion. Expect a soulful, endearing personality that melts into your arms the moment you hold them.",
         price: "$1800 + tax ($300 due at reservation)",
         puppies: [
             { name: "Mavis", gender: "Girl", status: "Available" },
             { name: "Dove", gender: "Girl", status: "Available" },
-            { name: "Jay", gender: "Boy", status: "Available" }
+            { name: "Jay", gender: "Boy", status: "Found Forever Home" }
 
         ],
         thumbnail: "assets/Listings/EarlyBirds/earlybirds-thumbnail.png",
@@ -326,10 +283,19 @@ const LITTERS = [
             { type: "image", src: "assets/Listings/EarlyBirds/jay5.png", label: "Jay (Boy)" },
             { type: "image", src: "assets/Listings/EarlyBirds/jay6.png", label: "Jay (Boy)" },
             { type: "image", src: "assets/Listings/EarlyBirds/jay7.png", label: "Jay (Boy)" },
-            { type: "image", src: "assets/Listings/EarlyBirds/earlybirds-thumbnail.png", label: "Early Birds Litter" }
+            { type: "image", src: "assets/Listings/EarlyBirds/earlybirds-thumbnail.png", label: "Early Birds Litter" },
+            { type: "video", src: "assets/Listings/EarlyBirds/dove3.mp4", label: "Dove (Girl)" },
+            { type: "image", src: "assets/Listings/EarlyBirds/dove8.png", label: "Dove (Girl)" },
+            { type: "image", src: "assets/Listings/EarlyBirds/dove9.png", label: "Dove (Girl)" },
+            { type: "video", src: "assets/Listings/EarlyBirds/earlybords3.mp4", label: "Early Birds Litter" },
+            { type: "video", src: "assets/Listings/EarlyBirds/mavis2.mp4", label: "Mavis (Girl)" },
+            { type: "video", src: "assets/Listings/EarlyBirds/mavis3.mp4", label: "Mavis (Girl)" },
+            { type: "image", src: "assets/Listings/EarlyBirds/mavis7.png", label: "Mavis (Girl)" },
+            { type: "image", src: "assets/Listings/EarlyBirds/mavis8.png", label: "Mavis (Girl)" }
         ],
         updates: [
-            { date: "May 15, 2026", text: "Litter Available to Reserve!" }
+            { date: "May 15, 2026", text: "Litter Available to Reserve!" },
+            { date: "July 8, 2026", text: "Jay found his forever home!" }
         ]
     },
 
@@ -398,7 +364,20 @@ const LITTERS = [
             { type: "image", src: "assets/Listings/SummerBrezzy/georgie6.png", label: "Georgie (Boy)" },
             { type: "image", src: "assets/Listings/SummerBrezzy/sam5.png", label: "Sam (Boy)" },
             { type: "image", src: "assets/Listings/SummerBrezzy/summerbrezzy-thumbnail.png", label: "Summer Brezzy Litter" },
-            { type: "image", src: "assets/Listings/SummerBrezzy/willow6.png", label: "Willow (Girl)" }
+            { type: "image", src: "assets/Listings/SummerBrezzy/willow6.png", label: "Willow (Girl)" },
+            { type: "video", src: "assets/Listings/SummerBrezzy/belle2.mp4", label: "Belle (Girl)" },
+            { type: "image", src: "assets/Listings/SummerBrezzy/belle6.png", label: "Belle (Girl)" },
+            { type: "image", src: "assets/Listings/SummerBrezzy/belle7.png", label: "Belle (Girl)" },
+            { type: "video", src: "assets/Listings/SummerBrezzy/daisy2.mp4", label: "Daisy (Girl)" },
+            { type: "image", src: "assets/Listings/SummerBrezzy/daisy6.png", label: "Daisy (Girl)" },
+            { type: "video", src: "assets/Listings/SummerBrezzy/fonzie2.mp4", label: "Fonzie (Boy)" },
+            { type: "image", src: "assets/Listings/SummerBrezzy/fonzie7.png", label: "Fonzie (Boy)" },
+            { type: "video", src: "assets/Listings/SummerBrezzy/georgie2.mp4", label: "Georgie (Boy)" },
+            { type: "image", src: "assets/Listings/SummerBrezzy/georgie7.png", label: "Georgie (Boy)" },
+            { type: "video", src: "assets/Listings/SummerBrezzy/sam2.mp4", label: "Sam (Boy)" },
+            { type: "image", src: "assets/Listings/SummerBrezzy/sam6.png", label: "Sam (Boy)" },
+            { type: "video", src: "assets/Listings/SummerBrezzy/willow1.mp4", label: "Willow (Girl)" },
+            { type: "image", src: "assets/Listings/SummerBrezzy/willow7.png", label: "Willow (Girl)" }
         ],
         updates: [
             { date: "May 16, 2026", text: "Litter Available to Reserve!" },
@@ -486,7 +465,25 @@ const LITTERS = [
             { type: "image", src: "assets/Listings/PlayBall/frisky6.png", label: "Frisky (Boy)" },
             { type: "image", src: "assets/Listings/PlayBall/frosty7.png", label: "Frosty (Boy)" },
             { type: "video", src: "assets/Listings/PlayBall/playball1.mp4", label: "Play Ball Litter" },
-            { type: "video", src: "assets/Listings/PlayBall/playball2.mp4", label: "Play Ball Litter" }
+            { type: "video", src: "assets/Listings/PlayBall/playball2.mp4", label: "Play Ball Litter" },
+            { type: "video", src: "assets/Listings/PlayBall/fanny2.mp4", label: "Fanny (Girl)" },
+            { type: "image", src: "assets/Listings/PlayBall/fanny5.png", label: "Fanny (Girl)" },
+            { type: "image", src: "assets/Listings/PlayBall/fanny6.png", label: "Fanny (Girl)" },
+            { type: "video", src: "assets/Listings/PlayBall/felix3.mp4", label: "Felix (Boy)" },
+            { type: "image", src: "assets/Listings/PlayBall/felix8.png", label: "Felix (Boy)" },
+            { type: "image", src: "assets/Listings/PlayBall/felix9.png", label: "Felix (Boy)" },
+            { type: "video", src: "assets/Listings/PlayBall/fiddles3.mp4", label: "Fiddles (Boy)" },
+            { type: "image", src: "assets/Listings/PlayBall/fiddles7.png", label: "Fiddles (Boy)" },
+            { type: "image", src: "assets/Listings/PlayBall/fiddles8.png", label: "Fiddles (Boy)" },
+            { type: "video", src: "assets/Listings/PlayBall/finch3.mp4", label: "Play Ball Litter" },
+            { type: "image", src: "assets/Listings/PlayBall/finch8.png", label: "Play Ball Litter" },
+            { type: "video", src: "assets/Listings/PlayBall/fozzie3.mp4", label: "Fozzie (Boy)" },
+            { type: "image", src: "assets/Listings/PlayBall/fozzie8.png", label: "Fozzie (Boy)" },
+            { type: "video", src: "assets/Listings/PlayBall/frisky3.mp4", label: "Frisky (Boy)" },
+            { type: "image", src: "assets/Listings/PlayBall/frisky7.png", label: "Frisky (Boy)" },
+            { type: "video", src: "assets/Listings/PlayBall/frosty2.mp4", label: "Frosty (Boy)" },
+            { type: "image", src: "assets/Listings/PlayBall/frosty8.png", label: "Frosty (Boy)" },
+            { type: "image", src: "assets/Listings/PlayBall/frosty9.png", label: "Frosty (Boy)" }
         ],
         updates: [
             { date: "June 10, 2026", text: "Litter Available to Reserve!" }
@@ -564,7 +561,13 @@ const LITTERS = [
             { type: "video", src: "assets/Listings/TheBlackPearl/theblackpearl.mp4", label: "The Black Pearl Litter" },
             { type: "image", src: "assets/Listings/TheBlackPearl/will5.png", label: "Will (Boy)" },
             { type: "image", src: "assets/Listings/TheBlackPearl/will6.png", label: "Will (Boy)" },
-            { type: "image", src: "assets/Listings/TheBlackPearl/will7.png", label: "Will (Boy)" }
+            { type: "image", src: "assets/Listings/TheBlackPearl/will7.png", label: "Will (Boy)" },
+            { type: "image", src: "assets/Listings/TheBlackPearl/elizabeth7.png", label: "Elizabeth (Girl)" },
+            { type: "image", src: "assets/Listings/TheBlackPearl/elizabeth8.png", label: "Elizabeth (Girl)" },
+            { type: "image", src: "assets/Listings/TheBlackPearl/jack7.png", label: "Jack (Boy)" },
+            { type: "image", src: "assets/Listings/TheBlackPearl/jack8.png", label: "Jack (Boy)" },
+            { type: "image", src: "assets/Listings/TheBlackPearl/will8.png", label: "Will (Boy)" },
+            { type: "image", src: "assets/Listings/TheBlackPearl/will9.png", label: "Will (Boy)" }
         ],
         updates: [
             { date: "June 23, 2026", text: "Litter Available to Reserve!" }
@@ -618,7 +621,19 @@ const LITTERS = [
             { type: "image", src: "assets/Listings/SouthBark/sharon4.png", label: "Sharon (Girl)" },
             { type: "image", src: "assets/Listings/SouthBark/sharon5.png", label: "Sharon (Girl)" },
             { type: "image", src: "assets/Listings/SouthBark/wendy5.png", label: "Wendy (Girl)" },
-            { type: "image", src: "assets/Listings/SouthBark/wendy6.png", label: "Wendy (Girl)" }
+            { type: "image", src: "assets/Listings/SouthBark/wendy6.png", label: "Wendy (Girl)" },
+            { type: "video", src: "assets/Listings/SouthBark/bebe1.mp4", label: "Bebe (Girl)" },
+            { type: "image", src: "assets/Listings/SouthBark/bebe6.png", label: "Bebe (Girl)" },
+            { type: "video", src: "assets/Listings/SouthBark/eric1.mp4", label: "Eric (Boy)" },
+            { type: "image", src: "assets/Listings/SouthBark/eric4.png", label: "Eric (Boy)" },
+            { type: "video", src: "assets/Listings/SouthBark/kenny1.mp4", label: "Kenny (Boy)" },
+            { type: "image", src: "assets/Listings/SouthBark/kenny6.png", label: "Kenny (Boy)" },
+            { type: "video", src: "assets/Listings/SouthBark/sharon1.mp4", label: "Sharon (Girl)" },
+            { type: "image", src: "assets/Listings/SouthBark/sharon6.png", label: "Sharon (Girl)" },
+            { type: "video", src: "assets/Listings/SouthBark/stan1.mp4", label: "Stan (Boy)" },
+            { type: "image", src: "assets/Listings/SouthBark/stan4.png", label: "Stan (Boy)" },
+            { type: "video", src: "assets/Listings/SouthBark/wendy1.mp4", label: "Wendy (Girl)" },
+            { type: "image", src: "assets/Listings/SouthBark/wendy7.png", label: "Wendy (Girl)" }
         ],
         updates: [
             { date: "June 30, 2026", text: "Litter Available to Reserve!" }
@@ -745,6 +760,8 @@ const HAPPY_TAILS = [
         message: "My son is a diabetic. He had a severe seizure and our standard Goldendoodle Luffy...signaled. He has had no training, prior to this event...He has now had alert training and is a certified seizure alert dog...Unfortunately my son had a large seizure and Luffy alerted and we were able to get him to the hospital. Luffy stayed by his side...and alerted before the machines did...Luffy is our perfect pup , we love him so much ."
     }
 ];
+
+
 
 
 
