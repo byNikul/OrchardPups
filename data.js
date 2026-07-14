@@ -14,10 +14,10 @@ const LITTERS = [
         description: "A sweet, smart litter of 4 Mini Goldendoodles, a perfect size for snuggling on the couch or short walks in the park. The Toy Story litter has arrived! This is one of the sweetest litters we've had in a while. 5 perfect little fluff balls with the sweetest dispositions. The F1BB generation is the results of the most hypoallergenic, non-shedding coats possible�perfect for families with allergies! These litter tends to be little calmer because of the larger size.",
         price: "$1700 + tax ($300 due at reservation)",
         puppies: [
-            { name: "Woody", gender: "Male", status: "Found Family" },
+            { name: "Woody", gender: "Male", status: "Found his Family" },
             { name: "Annie", gender: "Female", status: "Found her forever family with Kimberly" },
             { name: "Bo-Peep", gender: "Female", status: "Available" },
-            { name: "Jessie", gender: "Female", status: "Available" }
+            { name: "Jessie", gender: "Female", status: "Found her forever home" }
         ],
         thumbnail: "assets/Listings/ToyStory/toystory-thumbnail.jpeg",
         media: [
@@ -72,7 +72,8 @@ const LITTERS = [
         updates: [
             { date: "May 6, 2026", text: "Litter Available to Reserve!" },
             { date: "May 16, 2026", text: "Annie has found her forever home with Kimberly" },
-            { date: "June 10, 2026", text: "Woody has found his forever home" }
+            { date: "June 10, 2026", text: "Woody has found his forever home" },
+            { date: "July 8, 2026", text: "Jessie has found her forever home" }
         ]
     },
 
