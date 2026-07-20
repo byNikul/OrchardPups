@@ -400,7 +400,7 @@ const LITTERS = [
         ],
         updates: [
             { date: "June 10, 2026", text: "Litter Available to Reserve!" },
-            { date: "July 20, 2026", text: "Frosty found his family with Lee!" }
+            { date: "July 20, 2026", text: "Frosty found his family with Lee!" },
             { date: "July 20, 2026", text: "Fiddles found his family with Bonnie!" }
         ]
     },
