@@ -154,35 +154,7 @@ const LITTERS = [
 
 
 
-    {
-        id: "teddybear-schnoodles-2026",
-        litterName: "Teddybear Schnoodles",
-        dob: "February 8, 2026",
-        readyToGoDate: "May 2, 2026",
-        mom: { name: "NA", breed: "Poodle", weight: "8lbs" },
-        dad: { name: "NA", breed: "Mini Schnauzer", weight: "13lbs" },
-        breed: "F1 Schnoodle",
-        description: "Check out our Teddybear Schnoodles! This litter is truly special, featuring charming round faces with that classic 'button-nose' look that stays puppy-like forever. These brothers boast unique, one-of-a-kind colors and rare coat patterns that make them stand out in any crowd. Personalities are built for companionship, as the Schnoodle is known as the 'Forever Happy' dog. They inherit the intelligence of the Poodle and the unwavering loyalty of the Schnauzer. Whether you are looking for a gardening partner who is nimble enough to stay by your side or a snuggle buddy for TV time and belly rubs, these boys are a perfect fit. They are currently growing, playing, and getting ready to meet their new families soon!",
-        price: "$1400 + tax ($300 due at reservation)",
-        puppies: [
-            { name: "Baxter", gender: "Male", status: "Available" },
-            { name: "Willie", gender: "Male", status: "Found home with Jenna" }
-        ],
-        thumbnail: "assets/Listings/TeddybearSchnoodles/teddybear-schnoodles-thumbnail.jpeg",
-        media: [
-            { type: "video", src: "assets/Listings/TeddybearSchnoodles/teddybear-schnoodles.mp4", label: "Litter Video" },
-            { type: "image", src: "assets/Listings/TeddybearSchnoodles/baxter1.jpeg", label: "Baxter (Male)" },
-            { type: "image", src: "assets/Listings/TeddybearSchnoodles/baxter2.jpeg", label: "Baxter (Male)" },
-            { type: "image", src: "assets/Listings/TeddybearSchnoodles/baxter3.jpeg", label: "Baxter (Male)" },
-            { type: "image", src: "assets/Listings/TeddybearSchnoodles/willie1.jpeg", label: "Willie (Male)" },
-            { type: "image", src: "assets/Listings/TeddybearSchnoodles/willie2.jpeg", label: "Willie (Male)" },
-            { type: "image", src: "assets/Listings/TeddybearSchnoodles/teddybear-schnoodles-thumbnail.jpeg", label: "Teddybear Schnoodles Litter" }
-        ],
-        updates: [
-            { date: "May 6, 2026", text: "Litter Available to Reserve!" },
-            { date: "May 16, 2026", text: "Willie found his forever home with Jenna!" }
-        ]
-    },
+
 
 
 
@@ -238,67 +210,7 @@ const LITTERS = [
         ]
     },
 
-    {
-        id: "early-birds-2026",
-        litterName: "Early Birds",
-        dob: "May 4, 2026",
-        readyToGoDate: "June 29, 2026",
-        mom: { name: "Biscuit", breed: "F1 Mini Goldendoodle", weight: "16lbs" },
-        dad: { name: "Blazer", breed: "Mini Poodle", weight: "12lbs" },
-        breed: "F1BB Mini Goldendoodle",
-        description: "These aren't your typical doodles, they are the definition of extra fancy. As an F1BB generation, these puppies carry a higher percentage of Poodle lineage, ensuring those coveted, ultra-plush, loose Teddybear coats.They are currently in their earliest days, and we invite you to join us for the journey. Secure your newest family member now and enjoy beautiful, frequent updates as you watch your puppy grow from a tiny wonder into a stunning mini companion. Expect a soulful, endearing personality that melts into your arms the moment you hold them.",
-        price: "$1800 + tax ($300 due at reservation)",
-        puppies: [
-            { name: "Mavis", gender: "Girl", status: "Available" },
-            { name: "Dove", gender: "Girl", status: "Available" },
-            { name: "Jay", gender: "Boy", status: "Found Forever Home" }
 
-        ],
-        thumbnail: "assets/Listings/EarlyBirds/earlybirds-thumbnail.png",
-        media: [
-            { type: "video", src: "assets/Listings/EarlyBirds/earlybirds1.mp4", label: "Litter Video" },
-            { type: "video", src: "assets/Listings/EarlyBirds/earlybirds2.mp4", label: "Litter Video" },
-            { type: "image", src: "assets/Listings/EarlyBirds/earlybirds1.jpeg", label: "Litter" },
-            { type: "video", src: "assets/Listings/EarlyBirds/mavis1.mp4", label: "Mavis (Girl)" },
-            { type: "image", src: "assets/Listings/EarlyBirds/mavis1.png", label: "Mavis (Girl)" },
-            { type: "image", src: "assets/Listings/EarlyBirds/mavis2.png", label: "Mavis (Girl)" },
-            { type: "image", src: "assets/Listings/EarlyBirds/mavis3.png", label: "Mavis (Girl)" },
-            { type: "image", src: "assets/Listings/EarlyBirds/mavis4.png", label: "Mavis (Girl)" },
-            { type: "image", src: "assets/Listings/EarlyBirds/mavis5.png", label: "Mavis (Girl)" },
-            { type: "image", src: "assets/Listings/EarlyBirds/mavis6.png", label: "Mavis (Girl)" },
-            { type: "video", src: "assets/Listings/EarlyBirds/dove1.mp4", label: "Dove (Girl)" },
-            { type: "video", src: "assets/Listings/EarlyBirds/dove2.mp4", label: "Dove (Girl)" },
-            { type: "image", src: "assets/Listings/EarlyBirds/dove1.png", label: "Dove (Girl)" },
-            { type: "image", src: "assets/Listings/EarlyBirds/dove2.jpeg", label: "Dove (Girl)" },
-            { type: "image", src: "assets/Listings/EarlyBirds/dove3.png", label: "Dove (Girl)" },
-            { type: "image", src: "assets/Listings/EarlyBirds/dove4.png", label: "Dove (Girl)" },
-            { type: "image", src: "assets/Listings/EarlyBirds/dove5.png", label: "Dove (Girl)" },
-            { type: "image", src: "assets/Listings/EarlyBirds/dove6.png", label: "Dove (Girl)" },
-            { type: "image", src: "assets/Listings/EarlyBirds/dove7.png", label: "Dove (Girl)" },
-            { type: "video", src: "assets/Listings/EarlyBirds/jay1.mp4", label: "Jay (Boy)" },
-            { type: "video", src: "assets/Listings/EarlyBirds/jay2.mp4", label: "Jay (Boy)" },
-            { type: "image", src: "assets/Listings/EarlyBirds/jay1.png", label: "Jay (Boy)" },
-            { type: "image", src: "assets/Listings/EarlyBirds/jay2.jpeg", label: "Jay (Boy)" },
-            { type: "image", src: "assets/Listings/EarlyBirds/jay3.png", label: "Jay (Boy)" },
-            { type: "image", src: "assets/Listings/EarlyBirds/jay4.png", label: "Jay (Boy)" },
-            { type: "image", src: "assets/Listings/EarlyBirds/jay5.png", label: "Jay (Boy)" },
-            { type: "image", src: "assets/Listings/EarlyBirds/jay6.png", label: "Jay (Boy)" },
-            { type: "image", src: "assets/Listings/EarlyBirds/jay7.png", label: "Jay (Boy)" },
-            { type: "image", src: "assets/Listings/EarlyBirds/earlybirds-thumbnail.png", label: "Early Birds Litter" },
-            { type: "video", src: "assets/Listings/EarlyBirds/dove3.mp4", label: "Dove (Girl)" },
-            { type: "image", src: "assets/Listings/EarlyBirds/dove8.png", label: "Dove (Girl)" },
-            { type: "image", src: "assets/Listings/EarlyBirds/dove9.png", label: "Dove (Girl)" },
-            { type: "video", src: "assets/Listings/EarlyBirds/earlybords3.mp4", label: "Early Birds Litter" },
-            { type: "video", src: "assets/Listings/EarlyBirds/mavis2.mp4", label: "Mavis (Girl)" },
-            { type: "video", src: "assets/Listings/EarlyBirds/mavis3.mp4", label: "Mavis (Girl)" },
-            { type: "image", src: "assets/Listings/EarlyBirds/mavis7.png", label: "Mavis (Girl)" },
-            { type: "image", src: "assets/Listings/EarlyBirds/mavis8.png", label: "Mavis (Girl)" }
-        ],
-        updates: [
-            { date: "May 15, 2026", text: "Litter Available to Reserve!" },
-            { date: "July 8, 2026", text: "Jay found his forever home!" }
-        ]
-    },
 
     {
         id: "summer-brezzy-2026",
@@ -398,11 +310,11 @@ const LITTERS = [
         price: "$1600 + tax ($300 due at reservation)",
         puppies: [
             { name: "Flinch", gender: "Boy", status: "Available" },
-            { name: "Fiddles", gender: "Boy", status: "Reserved by Bonnie" },
+            { name: "Fiddles", gender: "Boy", status: "Found his family with Bonnie" },
             { name: "Fozzie", gender: "Boy", status: "Available" },
             { name: "Felix", gender: "Boy", status: "Available" },
             { name: "Frisky", gender: "Boy", status: "Available" },
-            { name: "Frosty", gender: "Boy", status: "Reserved by Lee" },
+            { name: "Frosty", gender: "Boy", status: "Found Family with Lee" },
             { name: "Fanny", gender: "Girl", status: "Available" }
 
         ],
@@ -487,7 +399,9 @@ const LITTERS = [
             { type: "image", src: "assets/Listings/PlayBall/frosty9.png", label: "Frosty (Boy)" }
         ],
         updates: [
-            { date: "June 10, 2026", text: "Litter Available to Reserve!" }
+            { date: "June 10, 2026", text: "Litter Available to Reserve!" },
+            { date: "July 20, 2026", text: "Frosty found his family with Lee!" }
+            { date: "July 20, 2026", text: "Fiddles found his family with Bonnie!" }
         ]
     },
 
@@ -761,6 +675,7 @@ const HAPPY_TAILS = [
         message: "My son is a diabetic. He had a severe seizure and our standard Goldendoodle Luffy...signaled. He has had no training, prior to this event...He has now had alert training and is a certified seizure alert dog...Unfortunately my son had a large seizure and Luffy alerted and we were able to get him to the hospital. Luffy stayed by his side...and alerted before the machines did...Luffy is our perfect pup , we love him so much ."
     }
 ];
+
 
 
 

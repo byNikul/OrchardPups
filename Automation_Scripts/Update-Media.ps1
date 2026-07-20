@@ -1,17 +1,17 @@
+param(
+    [switch]$DryRun
+)
+
 # Self-bypass: if execution policy blocks us, re-launch with Bypass
 if ($MyInvocation.MyCommand.Path) {
     $policy = Get-ExecutionPolicy -Scope Process
     if ($policy -eq 'Restricted' -or $policy -eq 'AllSigned') {
-        $args = @('-ExecutionPolicy', 'Bypass', '-File', $MyInvocation.MyCommand.Path)
-        if ($DryRun) { $args += '-DryRun' }
-        Start-Process powershell -ArgumentList $args -NoNewWindow -Wait
+        $bypassArgs = @('-ExecutionPolicy', 'Bypass', '-File', $MyInvocation.MyCommand.Path)
+        if ($DryRun) { $bypassArgs += '-DryRun' }
+        Start-Process powershell -ArgumentList $bypassArgs -NoNewWindow -Wait
         exit
     }
 }
-
-param(
-    [switch]$DryRun
-)
 
 $dataFile = Join-Path $PWD "data.js"
 $content = Get-Content $dataFile -Raw
