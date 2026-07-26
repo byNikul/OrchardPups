@@ -3,81 +3,6 @@
 // ==========================================
 
 const LITTERS = [
-    {
-        id: "toy-story-2026",
-        litterName: "Toy Story",
-        dob: "March 24, 2026",
-        readyToGoDate: "May 19, 2026",
-        mom: { name: "Star", breed: "F1B", weight: "27lbs" },
-        dad: { name: "Willie", breed: "Mini Poodle", weight: "16lbs" },
-        breed: "F1BB Mini Goldendoodle",
-        description: "A sweet, smart litter of 4 Mini Goldendoodles, a perfect size for snuggling on the couch or short walks in the park. The Toy Story litter has arrived! This is one of the sweetest litters we've had in a while. 5 perfect little fluff balls with the sweetest dispositions. The F1BB generation is the results of the most hypoallergenic, non-shedding coats possible�perfect for families with allergies! These litter tends to be little calmer because of the larger size.",
-        price: "$1700 + tax ($300 due at reservation)",
-        puppies: [
-            { name: "Woody", gender: "Male", status: "Found his Family" },
-            { name: "Annie", gender: "Female", status: "Found her forever family with Kimberly" },
-            { name: "Bo-Peep", gender: "Female", status: "Available" },
-            { name: "Jessie", gender: "Female", status: "Found her forever home" }
-        ],
-        thumbnail: "assets/Listings/ToyStory/toystory-thumbnail.jpeg",
-        media: [
-            { type: "video", src: "assets/Listings/ToyStory/toystory1.mp4", label: "Toy Story Litter" },
-            { type: "video", src: "assets/Listings/ToyStory/toystory2.mp4", label: "Toy Story Litter" },
-            { type: "video", src: "assets/Listings/ToyStory/toystory3.mp4", label: "Toy Story Litter" },
-            { type: "video", src: "assets/Listings/ToyStory/toystory4.mp4", label: "Toy Story Litter" },
-            { type: "video", src: "assets/Listings/ToyStory/toystory5.mp4", label: "Toy Story Litter" },
-            { type: "video", src: "assets/Listings/ToyStory/woody1.mp4", label: "Woody (Male)" },
-            { type: "image", src: "assets/Listings/ToyStory/woody1.jpeg", label: "Woody (Male)" },
-            { type: "image", src: "assets/Listings/ToyStory/woody2.jpeg", label: "Woody (Male)" },
-            { type: "image", src: "assets/Listings/ToyStory/woody3.jpeg", label: "Woody (Male)" },
-            { type: "image", src: "assets/Listings/ToyStory/woody4.jpeg", label: "Woody (Male)" },
-            { type: "image", src: "assets/Listings/ToyStory/woody5.jpeg", label: "Woody (Male)" },
-            { type: "image", src: "assets/Listings/ToyStory/woody6.png", label: "Woody (Male)" },
-            { type: "image", src: "assets/Listings/ToyStory/woody7.png", label: "Woody (Male)" },
-            { type: "image", src: "assets/Listings/ToyStory/woody8.jpeg", label: "Woody (Male)" },
-            { type: "image", src: "assets/Listings/ToyStory/annie1.jpeg", label: "Annie (Female)" },
-            { type: "image", src: "assets/Listings/ToyStory/annie2.jpeg", label: "Annie (Female)" },
-            { type: "image", src: "assets/Listings/ToyStory/annie3.jpeg", label: "Annie (Female)" },
-            { type: "image", src: "assets/Listings/ToyStory/annie4.jpeg", label: "Annie (Female)" },
-            { type: "image", src: "assets/Listings/ToyStory/annie5.jpeg", label: "Annie (Female)" },
-            { type: "image", src: "assets/Listings/ToyStory/annie6.jpeg", label: "Annie (Female)" },
-            { type: "image", src: "assets/Listings/ToyStory/annie7.png", label: "Annie (Female)" },
-            { type: "video", src: "assets/Listings/ToyStory/bo-peepandjessie1.mp4", label: "Bo Peep and Jessie" },
-            { type: "video", src: "assets/Listings/ToyStory/bo-peep1.mp4", label: "Bo Peep (Female)" },
-            { type: "image", src: "assets/Listings/ToyStory/bo-peep1.jpeg", label: "Bo Peep (Female)" },
-            { type: "image", src: "assets/Listings/ToyStory/bo-peep2.jpeg", label: "Bo Peep (Female)" },
-            { type: "image", src: "assets/Listings/ToyStory/bo-peep3.jpeg", label: "Bo Peep (Female)" },
-            { type: "image", src: "assets/Listings/ToyStory/bo-peep4.jpeg", label: "Bo Peep (Female)" },
-            { type: "image", src: "assets/Listings/ToyStory/bo-peep5.jpeg", label: "Bo Peep (Female)" },
-            { type: "image", src: "assets/Listings/ToyStory/bo-peep6.jpeg", label: "Bo Peep (Female)" },
-            { type: "image", src: "assets/Listings/ToyStory/bo-peep7.png", label: "Bo Peep (Female)" },
-            { type: "image", src: "assets/Listings/ToyStory/bo-peep8.png", label: "Bo Peep (Female)" },
-            { type: "image", src: "assets/Listings/ToyStory/bo-peep9.jpeg", label: "Bo Peep (Female)" },
-            { type: "image", src: "assets/Listings/ToyStory/bo-peep10.png", label: "Bo Peep (Female)" },
-            { type: "image", src: "assets/Listings/ToyStory/bo-peep11.png", label: "Bo Peep (Female)" },
-            { type: "video", src: "assets/Listings/ToyStory/jessie1.mp4", label: "Jessie (Female)" },
-            { type: "image", src: "assets/Listings/ToyStory/jessie1.jpeg", label: "Jessie (Female)" },
-            { type: "image", src: "assets/Listings/ToyStory/jessie2.jpeg", label: "Jessie (Female)" },
-            { type: "image", src: "assets/Listings/ToyStory/jessie3.jpeg", label: "Jessie (Female)" },
-            { type: "image", src: "assets/Listings/ToyStory/jessie4.jpeg", label: "Jessie (Female)" },
-            { type: "image", src: "assets/Listings/ToyStory/jessie5.jpeg", label: "Jessie (Female)" },
-            { type: "image", src: "assets/Listings/ToyStory/jessie6.jpeg", label: "Jessie (Female)" },
-            { type: "image", src: "assets/Listings/ToyStory/jessie7.png", label: "Jessie (Female)" },
-            { type: "image", src: "assets/Listings/ToyStory/jessie8.png", label: "Jessie (Female)" },
-            { type: "image", src: "assets/Listings/ToyStory/jessie9.jpeg", label: "Jessie (Female)" },
-            { type: "image", src: "assets/Listings/ToyStory/jessie10.png", label: "Jessie (Female)" },
-            { type: "image", src: "assets/Listings/ToyStory/toystory-thumbnail.jpeg", label: "Toy Story Litter" },
-            { type: "image", src: "assets/Listings/ToyStory/jessie11.png", label: "Jessie (Female)" }
-        ],
-        updates: [
-            { date: "May 6, 2026", text: "Litter Available to Reserve!" },
-            { date: "May 16, 2026", text: "Annie has found her forever home with Kimberly" },
-            { date: "June 10, 2026", text: "Woody has found his forever home" },
-            { date: "July 8, 2026", text: "Jessie has found her forever home" }
-        ]
-    },
-
-
 
     {
         id: "here-comes-the-sun-2026",
@@ -149,16 +74,6 @@ const LITTERS = [
         ]
     },
 
-
-
-
-
-
-
-
-
-
-
     {
         id: "mammas-boys-2026",
         litterName: "Mamma's Boys",
@@ -210,8 +125,6 @@ const LITTERS = [
             { date: "June 29, 2026", text: "Texas found his forever home!" }
         ]
     },
-
-
 
     {
         id: "summer-brezzy-2026",
@@ -559,8 +472,6 @@ const LITTERS = [
     }
 ];
 
-
-
 // ==========================================
 // ?? ORCHARD PUPS - HAPPY TAILS
 // ==========================================
@@ -678,10 +589,4 @@ const HAPPY_TAILS = [
         message: "My son is a diabetic. He had a severe seizure and our standard Goldendoodle Luffy...signaled. He has had no training, prior to this event...He has now had alert training and is a certified seizure alert dog...Unfortunately my son had a large seizure and Luffy alerted and we were able to get him to the hospital. Luffy stayed by his side...and alerted before the machines did...Luffy is our perfect pup , we love him so much ."
     }
 ];
-
-
-
-
-
-
 
