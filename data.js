@@ -90,7 +90,7 @@ const LITTERS = [
         description: "Check out our Here Comes the Sun litter! We're super excited about these Cavapoos. They have amazing personalities, traditional teddy bear blocky looks. They're total Teddybear pups with wavy, hypoallergenic coats and the sweetest personalities you can imagine. Cavapoos are a mix of King Charles Cavalier and Poodle. They are known for their playful personalities and traditional teddy bear looks.",
         price: "$1400 + tax ($300 due at reservation)",
         puppies: [
-            { name: "George", gender: "Male", status: "Available" },
+            { name: "George", gender: "Male", status: "Found Forever Home" },
             { name: "Yoko", gender: "Female", status: "Available" },
             { name: "John", gender: "Male", status: "Available" },
             { name: "Penny", gender: "Female", status: "Found Family" },
@@ -144,7 +144,8 @@ const LITTERS = [
             { date: "May 6, 2026", text: "Litter Available to Reserve!" },
             { date: "June 10, 2026", text: "Penny has a small hernia, so we reduced the price of Penny. She's still be vet checked prior to going home!" },
             { date: "June 23, 2026", text: "Penny found her forever family!" },
-            { date: "July 10, 2026", text: "Michele found her forever family!" }
+            { date: "July 10, 2026", text: "Michele found her forever family!" },
+            { date: "July 22, 2026", text: "George found his forever family!" }
         ]
     },
 
@@ -223,10 +224,10 @@ const LITTERS = [
         description: "F1B Standard Goldendoodles make absolutely phenomenal family pets, effortlessly blending the goofy, affectionate heart of a Golden Retriever with the stellar intelligence and low-shedding qualities of a Poodle. Because they are a backcross (75% Poodle and 25% Golden Retriever), they are an excellent, allergy-friendly option for households sensitive to pet dander. These puppies grow into gentle giants that are famously patient with children, eager to please, and highly trainable, making them a seamless addition to a busy household. Whether they are joining you for an outdoor weekend adventure or happily curling up for a movie night, their adaptable, loving nature ensures they will quickly become the loyal, furry centerpiece of your family.",
         price: "$1800 + tax ($300 due at reservation)",
         puppies: [
-            { name: "Daisy", gender: "Girl", status: "Reserved by Jamie" },
+            { name: "Daisy", gender: "Girl", status: "Found Forever Home" },
             { name: "Belle", gender: "Girl", status: "Available" },
             { name: "Willow", gender: "Girl", status: "Available" },
-            { name: "Sam", gender: "Boy", status: "Available" },
+            { name: "Sam", gender: "Boy", status: "Found Forever Home" },
             { name: "Fonzie", gender: "Boy", status: "Available" },
             { name: "Georgie", gender: "Boy", status: "Available" }
 
@@ -290,11 +291,13 @@ const LITTERS = [
             { type: "video", src: "assets/Listings/SummerBrezzy/sam2.mp4", label: "Sam (Boy)" },
             { type: "image", src: "assets/Listings/SummerBrezzy/sam6.png", label: "Sam (Boy)" },
             { type: "video", src: "assets/Listings/SummerBrezzy/willow1.mp4", label: "Willow (Girl)" },
-            { type: "image", src: "assets/Listings/SummerBrezzy/willow7.png", label: "Willow (Girl)" }
+            { type: "image", src: "assets/Listings/SummerBrezzy/willow7.png", label: "Willow (Girl)" },
+            { type: "image", src: "assets/Listings/SummerBrezzy/georgie8.png", label: "Georgie (Boy)" }
         ],
         updates: [
             { date: "May 16, 2026", text: "Litter Available to Reserve!" },
-            { date: "May 23, 2026", text: "Daisy Found forever home with Jamie" }
+            { date: "May 23, 2026", text: "Daisy Found forever home with Jamie" },
+            { date: "June 3, 2026", text: "Sam Found forever home" }
         ]
     },
 
@@ -675,6 +678,7 @@ const HAPPY_TAILS = [
         message: "My son is a diabetic. He had a severe seizure and our standard Goldendoodle Luffy...signaled. He has had no training, prior to this event...He has now had alert training and is a certified seizure alert dog...Unfortunately my son had a large seizure and Luffy alerted and we were able to get him to the hospital. Luffy stayed by his side...and alerted before the machines did...Luffy is our perfect pup , we love him so much ."
     }
 ];
+
 
 
 

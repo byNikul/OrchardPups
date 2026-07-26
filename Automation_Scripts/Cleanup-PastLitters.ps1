@@ -48,9 +48,9 @@ foreach ($m in $regexMatches) {
             $dirName = if ($dirResult.Success) { $dirResult.Groups[1].Value } else { $null }
 
             $pastLitters += @{
-                Block    = $block
-                Id       = $litterId
-                DirName  = $dirName
+                Block   = $block
+                Id      = $litterId
+                DirName = $dirName
             }
         }
     }
@@ -80,16 +80,19 @@ foreach ($litter in $pastLitters) {
         if (Test-Path $dirPath) {
             if ($DryRun) {
                 Write-Host "  [DRY RUN] Would delete folder: assets\Listings\$($litter.DirName)" -ForegroundColor Cyan
-            } else {
+            }
+            else {
                 Write-Host "  Will delete folder: assets\Listings\$($litter.DirName)" -ForegroundColor Red
             }
-        } else {
+        }
+        else {
             Write-Host "  Folder not found: assets\Listings\$($litter.DirName)" -ForegroundColor DarkGray
         }
         if ($DryRun) {
             Write-Host "  [DRY RUN] Would remove block from data.js" -ForegroundColor Cyan
         }
-    } else {
+    }
+    else {
         Write-Host "  Could not find media directory for $($litter.Id) in data.js!" -ForegroundColor Red
     }
 }
