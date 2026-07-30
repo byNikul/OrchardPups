@@ -205,7 +205,12 @@ const LITTERS = [
             { type: "image", src: "assets/Listings/SummerBrezzy/sam6.png", label: "Sam (Boy)" },
             { type: "video", src: "assets/Listings/SummerBrezzy/willow1.mp4", label: "Willow (Girl)" },
             { type: "image", src: "assets/Listings/SummerBrezzy/willow7.png", label: "Willow (Girl)" },
-            { type: "image", src: "assets/Listings/SummerBrezzy/georgie8.png", label: "Georgie (Boy)" }
+            { type: "image", src: "assets/Listings/SummerBrezzy/georgie8.png", label: "Georgie (Boy)" },
+            { type: "image", src: "assets/Listings/SummerBrezzy/belle8.png", label: "Belle (Girl)" },
+            { type: "image", src: "assets/Listings/SummerBrezzy/fonzie8.png", label: "Fonzie (Boy)" },
+            { type: "image", src: "assets/Listings/SummerBrezzy/georgie9.png", label: "Georgie (Boy)" },
+            { type: "video", src: "assets/Listings/SummerBrezzy/summerbrezzy4.mp4", label: "Summer Brezzy Litter" },
+            { type: "image", src: "assets/Listings/SummerBrezzy/willow8.png", label: "Willow (Girl)" }
         ],
         updates: [
             { date: "May 16, 2026", text: "Litter Available to Reserve!" },
@@ -589,4 +594,5 @@ const HAPPY_TAILS = [
         message: "My son is a diabetic. He had a severe seizure and our standard Goldendoodle Luffy...signaled. He has had no training, prior to this event...He has now had alert training and is a certified seizure alert dog...Unfortunately my son had a large seizure and Luffy alerted and we were able to get him to the hospital. Luffy stayed by his side...and alerted before the machines did...Luffy is our perfect pup , we love him so much ."
     }
 ];
+
 
