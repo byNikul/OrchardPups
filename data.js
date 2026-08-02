@@ -234,7 +234,7 @@ const LITTERS = [
             { name: "Fiddles", gender: "Boy", status: "Found his family with Bonnie" },
             { name: "Fozzie", gender: "Boy", status: "Available" },
             { name: "Felix", gender: "Boy", status: "Available" },
-            { name: "Frisky", gender: "Boy", status: "Available" },
+            { name: "Frisky", gender: "Boy", status: "Found his forever family" },
             { name: "Frosty", gender: "Boy", status: "Found Family with Lee" },
             { name: "Fanny", gender: "Girl", status: "Available" }
 
@@ -322,7 +322,8 @@ const LITTERS = [
         updates: [
             { date: "June 10, 2026", text: "Litter Available to Reserve!" },
             { date: "July 20, 2026", text: "Frosty found his family with Lee!" },
-            { date: "July 20, 2026", text: "Fiddles found his family with Bonnie!" }
+            { date: "July 20, 2026", text: "Fiddles found his family with Bonnie!" },
+            { date: "August 2, 2026", text: "Frisky found his forever family!" }
         ]
     },
 
@@ -469,7 +470,55 @@ const LITTERS = [
             { type: "video", src: "assets/Listings/SouthBark/stan1.mp4", label: "Stan (Boy)" },
             { type: "image", src: "assets/Listings/SouthBark/stan4.png", label: "Stan (Boy)" },
             { type: "video", src: "assets/Listings/SouthBark/wendy1.mp4", label: "Wendy (Girl)" },
-            { type: "image", src: "assets/Listings/SouthBark/wendy7.png", label: "Wendy (Girl)" }
+            { type: "image", src: "assets/Listings/SouthBark/wendy7.png", label: "Wendy (Girl)" },
+            { type: "video", src: "assets/Listings/SouthBark/bebe2.mp4", label: "Bebe (Girl)" },
+            { type: "image", src: "assets/Listings/SouthBark/bebe7.png", label: "Bebe (Girl)" },
+            { type: "video", src: "assets/Listings/SouthBark/eric2.mp4", label: "Eric (Boy)" },
+            { type: "image", src: "assets/Listings/SouthBark/eric5.png", label: "Eric (Boy)" },
+            { type: "video", src: "assets/Listings/SouthBark/kenny2.mp4", label: "Kenny (Boy)" },
+            { type: "image", src: "assets/Listings/SouthBark/kenny7.png", label: "Kenny (Boy)" },
+            { type: "video", src: "assets/Listings/SouthBark/sharon2.mp4", label: "Sharon (Girl)" },
+            { type: "image", src: "assets/Listings/SouthBark/sharon7.png", label: "Sharon (Girl)" },
+            { type: "video", src: "assets/Listings/SouthBark/stan2.mp4", label: "Stan (Boy)" },
+            { type: "image", src: "assets/Listings/SouthBark/stan5.png", label: "Stan (Boy)" },
+            { type: "video", src: "assets/Listings/SouthBark/wendy2.mp4", label: "Wendy (Girl)" },
+            { type: "image", src: "assets/Listings/SouthBark/wendy8.png", label: "Wendy (Girl)" }
+        ],
+        updates: [
+            { date: "June 30, 2026", text: "Litter Available to Reserve!" }
+        ]
+    },
+
+    {
+        id: "summer-days-2026",
+        litterName: "Summer Days",
+        dob: "June 30, 2026",
+        readyToGoDate: "August 25, 2026",
+        mom: { name: "Roxie", breed: "F1B Mini Goldendoodle", weight: "14lbs" },
+        dad: { name: "Blazer", breed: "Mini Poodle", weight: "12lbs" },
+        breed: "F1BB Mini Goldendoodle",
+        description: "This beautiful litter features the sweetest, most affectionate puppies with curly, hypoallergenic coats! They are growing so fast and are available to reserve now.",
+        price: "$1700 + tax ($300 due at reservation)",
+        puppies: [
+            { name: "Strom", gender: "Boy", status: "Available" },
+            { name: "Milkshake", gender: "Boy", status: "Available" },
+            { name: "Butterfly", gender: "Girl", status: "Available" },
+            { name: "Popsicle", gender: "Girl", status: "Available" },
+            { name: "Breezy", gender: "Girl", status: "Available" }
+        ],
+        thumbnail: "assets/Listings/SummerDays/butterfly1.png",
+        media: [
+            { type: "video", src: "assets/Listings/SummerDays/breezy1.mp4", label: "Breezy (Girl)" },
+            { type: "image", src: "assets/Listings/SummerDays/breezy1.png", label: "Breezy (Girl)" },
+            { type: "video", src: "assets/Listings/SummerDays/butterfly1.mp4", label: "Butterfly (Girl)" },
+            { type: "image", src: "assets/Listings/SummerDays/butterfly1.png", label: "Butterfly (Girl)" },
+            { type: "image", src: "assets/Listings/SummerDays/butterfly2.png", label: "Butterfly (Girl)" },
+            { type: "image", src: "assets/Listings/SummerDays/milkshake1.png", label: "Milkshake (Boy)" },
+            { type: "image", src: "assets/Listings/SummerDays/milkshake2.png", label: "Milkshake (Boy)" },
+            { type: "video", src: "assets/Listings/SummerDays/popsicle1.mp4", label: "Popsicle (Girl)" },
+            { type: "image", src: "assets/Listings/SummerDays/popsicle1.png", label: "Popsicle (Girl)" },
+            { type: "image", src: "assets/Listings/SummerDays/strom1.png", label: "Strom (Boy)" },
+            { type: "image", src: "assets/Listings/SummerDays/strom2.png", label: "Strom (Boy)" }
         ],
         updates: [
             { date: "June 30, 2026", text: "Litter Available to Reserve!" }
@@ -594,5 +643,7 @@ const HAPPY_TAILS = [
         message: "My son is a diabetic. He had a severe seizure and our standard Goldendoodle Luffy...signaled. He has had no training, prior to this event...He has now had alert training and is a certified seizure alert dog...Unfortunately my son had a large seizure and Luffy alerted and we were able to get him to the hospital. Luffy stayed by his side...and alerted before the machines did...Luffy is our perfect pup , we love him so much ."
     }
 ];
+
+
 
 
