@@ -138,8 +138,8 @@ const LITTERS = [
         price: "$1800 + tax ($300 due at reservation)",
         puppies: [
             { name: "Daisy", gender: "Girl", status: "Found Forever Home" },
-            { name: "Belle", gender: "Girl", status: "Available" },
-            { name: "Willow", gender: "Girl", status: "Available" },
+            { name: "Belle", gender: "Girl", status: "Found Forever Home" },
+            { name: "Willow", gender: "Girl", status: "Found Forever Home" },
             { name: "Sam", gender: "Boy", status: "Found Forever Home" },
             { name: "Fonzie", gender: "Boy", status: "Available" },
             { name: "Georgie", gender: "Boy", status: "Available" }
@@ -215,7 +215,9 @@ const LITTERS = [
         updates: [
             { date: "May 16, 2026", text: "Litter Available to Reserve!" },
             { date: "May 23, 2026", text: "Daisy Found forever home with Jamie" },
-            { date: "June 3, 2026", text: "Sam Found forever home" }
+            { date: "June 3, 2026", text: "Sam Found forever home" },
+            { date: "August 10, 2026", text: "Belle Found forever home with Morgan" },
+            { date: "August 10, 2026", text: "Willow Found forever home with Jennifer" }
         ]
     },
 
@@ -230,10 +232,10 @@ const LITTERS = [
         description: "Are you looking for the ideal first pet? Look no further. Our Large Mini Goldendoodles are the perfect blend of intelligence, affection, and gentle energy, making them the ultimate addition to any family.<br><br><strong>Why Choose a Large Mini Goldendoodle?</strong><br>These sweet babies are known for their easy-going and happy-go-lucky temperaments. If you are looking for a companion that is just as happy curling up for a relaxing evening as they are joining you for a brisk walk or a game of fetch in the yard, these pups are for you.<br><br>� <strong>Exceptional Temperament:</strong> Bred to mirror the calm, patient nature of the Golden Retriever, these puppies are naturally mellow and well-balanced.<br>� <strong>Ideal for First-Time Owners:</strong> Their eager-to-please attitude and gentle disposition make them incredibly rewarding and manageable for first-time dog owners.<br>� <strong>Stunning Coats:</strong> Each puppy boasts a beautiful, low-maintenance loose-wavy coat that is as soft to the touch as it is charming.<br>� <strong>Perfect Size:</strong> With an estimated adult weight of 40�45 lbs, they are the perfect \"medium\" size�sturdy enough for outdoor adventures, yet perfectly suited for indoor living.<br><br><strong>Your Next Best Friend</strong><br>We aren�t just offering a puppy; we are offering a lasting companion who will be by your side for years to come. Whether it�s playing ball in the park or providing quiet companionship at home, these Goldendoodles are ready to fill your life with happy memories.<br><br><strong>Ready to meet your new best friend?</strong><br>These puppies are looking for their forever homes. Please reach out to learn more about our current litter and how you can welcome one of these sweet souls into your family today!",
         price: "$1600 + tax ($300 due at reservation)",
         puppies: [
-            { name: "Flinch", gender: "Boy", status: "Available" },
-            { name: "Fiddles", gender: "Boy", status: "Found his family with Bonnie" },
-            { name: "Fozzie", gender: "Boy", status: "Available" },
-            { name: "Felix", gender: "Boy", status: "Available" },
+            { name: "Flinch", gender: "Boy", status: "Found his forever home" },
+            { name: "Fiddles", gender: "Boy", status: "Available" },
+            { name: "Fozzie", gender: "Boy", status: "Found his forever home" },
+            { name: "Felix", gender: "Boy", status: "Found his forever home" },
             { name: "Frisky", gender: "Boy", status: "Found his forever family" },
             { name: "Frosty", gender: "Boy", status: "Found Family with Lee" },
             { name: "Fanny", gender: "Girl", status: "Available" }
@@ -317,13 +319,18 @@ const LITTERS = [
             { type: "image", src: "assets/Listings/PlayBall/frisky7.png", label: "Frisky (Boy)" },
             { type: "video", src: "assets/Listings/PlayBall/frosty2.mp4", label: "Frosty (Boy)" },
             { type: "image", src: "assets/Listings/PlayBall/frosty8.png", label: "Frosty (Boy)" },
-            { type: "image", src: "assets/Listings/PlayBall/frosty9.png", label: "Frosty (Boy)" }
+            { type: "image", src: "assets/Listings/PlayBall/frosty9.png", label: "Frosty (Boy)" },
+            { type: "image", src: "assets/Listings/PlayBall/fanny7.png", label: "Fanny (Girl)" },
+            { type: "image", src: "assets/Listings/PlayBall/fiddles9.png", label: "Fiddles (Boy)" }
         ],
         updates: [
             { date: "June 10, 2026", text: "Litter Available to Reserve!" },
             { date: "July 20, 2026", text: "Frosty found his family with Lee!" },
             { date: "July 20, 2026", text: "Fiddles found his family with Bonnie!" },
-            { date: "August 2, 2026", text: "Frisky found his forever family!" }
+            { date: "August 2, 2026", text: "Frisky found his forever family!" },
+            { date: "August 4, 2026", text: "Fozzie found his forever home!" },
+            { date: "August 6, 2026", text: "Finch found his forever home!" },
+            { date: "August 10, 2026", text: "Felix found his forever home!" }
         ]
     },
 
@@ -425,7 +432,7 @@ const LITTERS = [
             { name: "Kenny", gender: "Boy", status: "Available" },
             { name: "Eric", gender: "Boy", status: "Available" },
             { name: "Stan", gender: "Boy", status: "Available" },
-            { name: "Bebe", gender: "Girl", status: "Available" },
+            { name: "Bebe", gender: "Girl", status: "Reserved by Tim and Amber" },
             { name: "Sharon", gender: "Girl", status: "Reserved by Zachary" },
             { name: "Wendy", gender: "Girl", status: "Reserved by Kathy" }
         ],
@@ -485,7 +492,9 @@ const LITTERS = [
             { type: "image", src: "assets/Listings/SouthBark/wendy8.png", label: "Wendy (Girl)" }
         ],
         updates: [
-            { date: "June 30, 2026", text: "Litter Available to Reserve!" }
+            { date: "June 30, 2026", text: "Litter Available to Reserve!" },
+            { date: "August 3, 2026", text: "Wendy is Reserved!" },
+            { date: "August 10, 2026", text: "Bebe is Reserved!" }
         ]
     },
 
@@ -643,6 +652,7 @@ const HAPPY_TAILS = [
         message: "My son is a diabetic. He had a severe seizure and our standard Goldendoodle Luffy...signaled. He has had no training, prior to this event...He has now had alert training and is a certified seizure alert dog...Unfortunately my son had a large seizure and Luffy alerted and we were able to get him to the hospital. Luffy stayed by his side...and alerted before the machines did...Luffy is our perfect pup , we love him so much ."
     }
 ];
+
 
 
 
