@@ -238,7 +238,7 @@ const LITTERS = [
             { name: "Felix", gender: "Boy", status: "Found his forever home" },
             { name: "Frisky", gender: "Boy", status: "Found his forever family" },
             { name: "Frosty", gender: "Boy", status: "Found Family with Lee" },
-            { name: "Fanny", gender: "Girl", status: "Available" }
+            { name: "Fanny", gender: "Girl", status: "Found her forever home" }
 
         ],
         thumbnail: "assets/Listings/PlayBall/playball-thumbnail.png",
@@ -330,7 +330,8 @@ const LITTERS = [
             { date: "August 2, 2026", text: "Frisky found his forever family!" },
             { date: "August 4, 2026", text: "Fozzie found his forever home!" },
             { date: "August 6, 2026", text: "Finch found his forever home!" },
-            { date: "August 10, 2026", text: "Felix found his forever home!" }
+            { date: "August 10, 2026", text: "Felix found his forever home!" },
+            { date: "August 12, 2026", text: "Fanny found her forever home!" }
         ]
     },
 
