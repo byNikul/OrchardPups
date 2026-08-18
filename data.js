@@ -5,76 +5,6 @@
 const LITTERS = [
 
     {
-        id: "here-comes-the-sun-2026",
-        litterName: "Here Comes The Sun",
-        dob: "April 21, 2026",
-        readyToGoDate: "June 16, 2026",
-        mom: { name: "Patience", breed: "King Charles Cavalier", weight: "15lbs" },
-        dad: { name: "Max", breed: "Mini Poodle", weight: "12lbs" },
-        breed: "Cavapoos",
-        description: "Check out our Here Comes the Sun litter! We're super excited about these Cavapoos. They have amazing personalities, traditional teddy bear blocky looks. They're total Teddybear pups with wavy, hypoallergenic coats and the sweetest personalities you can imagine. Cavapoos are a mix of King Charles Cavalier and Poodle. They are known for their playful personalities and traditional teddy bear looks.",
-        price: "$1400 + tax ($300 due at reservation)",
-        puppies: [
-            { name: "George", gender: "Male", status: "Found Forever Home" },
-            { name: "Yoko", gender: "Female", status: "Available" },
-            { name: "John", gender: "Male", status: "Available" },
-            { name: "Penny", gender: "Female", status: "Found Family" },
-            { name: "Michele", gender: "Female", status: "Found Family" }
-        ],
-        thumbnail: "assets/Listings/HereComesTheSun/herecomesthesun-thumbnail.jpeg",
-        media: [
-            { type: "video", src: "assets/Listings/HereComesTheSun/herecomesthesun1.mp4", label: "Here Comes The Sun Litter" },
-            { type: "video", src: "assets/Listings/HereComesTheSun/herecomesthesun2.mp4", label: "Here Comes The Sun Litter" },
-            { type: "video", src: "assets/Listings/HereComesTheSun/herecomesthesun3.mp4", label: "Here Comes The Sun Litter" },
-            { type: "video", src: "assets/Listings/HereComesTheSun/george.mp4", label: "George (Male)" },
-            { type: "image", src: "assets/Listings/HereComesTheSun/george1.jpeg", label: "George (Male)" },
-            { type: "image", src: "assets/Listings/HereComesTheSun/george2.jpeg", label: "George (Male)" },
-            { type: "image", src: "assets/Listings/HereComesTheSun/george3.png", label: "George (Male)" },
-            { type: "image", src: "assets/Listings/HereComesTheSun/george4.png", label: "George (Male)" },
-            { type: "image", src: "assets/Listings/HereComesTheSun/george5.png", label: "George (Male)" },
-            { type: "image", src: "assets/Listings/HereComesTheSun/george6.png", label: "George (Male)" },
-            { type: "image", src: "assets/Listings/HereComesTheSun/john1.png", label: "John (Male)" },
-            { type: "image", src: "assets/Listings/HereComesTheSun/john2.png", label: "John (Male)" },
-            { type: "image", src: "assets/Listings/HereComesTheSun/john3.png", label: "John (Male)" },
-            { type: "image", src: "assets/Listings/HereComesTheSun/john4.png", label: "John (Male)" },
-            { type: "video", src: "assets/Listings/HereComesTheSun/michele.mp4", label: "Michele (Female)" },
-            { type: "image", src: "assets/Listings/HereComesTheSun/michele1.jpeg", label: "Michele (Female)" },
-            { type: "image", src: "assets/Listings/HereComesTheSun/michele2.jpeg", label: "Michele (Female)" },
-            { type: "image", src: "assets/Listings/HereComesTheSun/michele3.png", label: "Michele (Female)" },
-            { type: "image", src: "assets/Listings/HereComesTheSun/michele4.png", label: "Michele (Female)" },
-            { type: "image", src: "assets/Listings/HereComesTheSun/michele5.png", label: "Michele (Female)" },
-            { type: "video", src: "assets/Listings/HereComesTheSun/yoko1.mp4", label: "Yoko (Female)" },
-            { type: "image", src: "assets/Listings/HereComesTheSun/yoko1.jpeg", label: "Yoko (Female)" },
-            { type: "image", src: "assets/Listings/HereComesTheSun/yoko2.jpeg", label: "Yoko (Female)" },
-            { type: "image", src: "assets/Listings/HereComesTheSun/yoko3.png", label: "Yoko (Female)" },
-            { type: "image", src: "assets/Listings/HereComesTheSun/yoko4.png", label: "Yoko (Female)" },
-            { type: "image", src: "assets/Listings/HereComesTheSun/yoko5.png", label: "Yoko (Female)" },
-            { type: "image", src: "assets/Listings/HereComesTheSun/penny1.jpeg", label: "Penny (Female)" },
-            { type: "image", src: "assets/Listings/HereComesTheSun/penny2.jpeg", label: "Penny (Female)" },
-            { type: "image", src: "assets/Listings/HereComesTheSun/penny3.png", label: "Penny (Female)" },
-            { type: "image", src: "assets/Listings/HereComesTheSun/penny4.png", label: "Penny (Female)" },
-            { type: "image", src: "assets/Listings/HereComesTheSun/penny5.jpeg", label: "Penny (Female)" },
-            { type: "image", src: "assets/Listings/HereComesTheSun/herecomesthesun-thumbnail.jpeg", label: "Here Comes The Sun Litter" },
-            { type: "video", src: "assets/Listings/HereComesTheSun/george2.mp4", label: "George (Male)" },
-            { type: "image", src: "assets/Listings/HereComesTheSun/george7.png", label: "George (Male)" },
-            { type: "image", src: "assets/Listings/HereComesTheSun/george8.png", label: "George (Male)" },
-            { type: "video", src: "assets/Listings/HereComesTheSun/john1.mp4", label: "John (Male)" },
-            { type: "image", src: "assets/Listings/HereComesTheSun/john5.png", label: "John (Male)" },
-            { type: "video", src: "assets/Listings/HereComesTheSun/michele2.mp4", label: "Michele (Female)" },
-            { type: "image", src: "assets/Listings/HereComesTheSun/michele6.png", label: "Michele (Female)" },
-            { type: "video", src: "assets/Listings/HereComesTheSun/yoko2.mp4", label: "Yoko (Female)" },
-            { type: "image", src: "assets/Listings/HereComesTheSun/yoko6.png", label: "Yoko (Female)" }
-        ],
-        updates: [
-            { date: "May 6, 2026", text: "Litter Available to Reserve!" },
-            { date: "June 10, 2026", text: "Penny has a small hernia, so we reduced the price of Penny. She's still be vet checked prior to going home!" },
-            { date: "June 23, 2026", text: "Penny found her forever family!" },
-            { date: "July 10, 2026", text: "Michele found her forever family!" },
-            { date: "July 22, 2026", text: "George found his forever family!" }
-        ]
-    },
-
-    {
         id: "mammas-boys-2026",
         litterName: "Mamma's Boys",
         dob: "April 26, 2026",
@@ -123,101 +53,6 @@ const LITTERS = [
         updates: [
             { date: "May 6, 2026", text: "Litter Available to Reserve!" },
             { date: "June 29, 2026", text: "Texas found his forever home!" }
-        ]
-    },
-
-    {
-        id: "summer-brezzy-2026",
-        litterName: "Summer Brezzy",
-        dob: "May 10, 2026",
-        readyToGoDate: "July 7, 2026",
-        mom: { name: "April Showers", breed: "F1 Standard Goldendoodle", weight: "60lbs" },
-        dad: { name: "Milo", breed: "Standard Poodle", weight: "50lbs" },
-        breed: "F1B Standard Goldendoodles",
-        description: "F1B Standard Goldendoodles make absolutely phenomenal family pets, effortlessly blending the goofy, affectionate heart of a Golden Retriever with the stellar intelligence and low-shedding qualities of a Poodle. Because they are a backcross (75% Poodle and 25% Golden Retriever), they are an excellent, allergy-friendly option for households sensitive to pet dander. These puppies grow into gentle giants that are famously patient with children, eager to please, and highly trainable, making them a seamless addition to a busy household. Whether they are joining you for an outdoor weekend adventure or happily curling up for a movie night, their adaptable, loving nature ensures they will quickly become the loyal, furry centerpiece of your family.",
-        price: "$1800 + tax ($300 due at reservation)",
-        puppies: [
-            { name: "Daisy", gender: "Girl", status: "Found Forever Home" },
-            { name: "Belle", gender: "Girl", status: "Found Forever Home" },
-            { name: "Willow", gender: "Girl", status: "Found Forever Home" },
-            { name: "Sam", gender: "Boy", status: "Found Forever Home" },
-            { name: "Fonzie", gender: "Boy", status: "Available" },
-            { name: "Georgie", gender: "Boy", status: "Available" }
-
-        ],
-        thumbnail: "assets/Listings/SummerBrezzy/summerbrezzy-thumbnail.png",
-        media: [
-            { type: "image", src: "assets/Listings/SummerBrezzy/summerbrezzy1.png", label: "Girls (Daisy, Belle, Willow)" },
-            { type: "image", src: "assets/Listings/SummerBrezzy/summerbrezzy2.png", label: "Boys (Sam, Fonzie, Georgie)" },
-            { type: "video", src: "assets/Listings/SummerBrezzy/summerbrezzy1.mp4", label: "Summer Brezzy Litter Boys" },
-            { type: "video", src: "assets/Listings/SummerBrezzy/summerbrezzy2boys.mp4", label: "Summer Brezzy Litter Boys" },
-            { type: "video", src: "assets/Listings/SummerBrezzy/summerbrezzy2girls.mp4", label: "Summer Brezzy Litter Girls" },
-            { type: "image", src: "assets/Listings/SummerBrezzy/summerbrezzy3.png", label: "Summer Brezzy Litter" },
-            { type: "video", src: "assets/Listings/SummerBrezzy/belle1.mp4", label: "Belle (Girl)" },
-            { type: "image", src: "assets/Listings/SummerBrezzy/belle1.png", label: "Belle (Girl)" },
-            { type: "image", src: "assets/Listings/SummerBrezzy/belle2.png", label: "Belle (Girl)" },
-            { type: "image", src: "assets/Listings/SummerBrezzy/belle3.png", label: "Belle (Girl)" },
-            { type: "image", src: "assets/Listings/SummerBrezzy/belle4.png", label: "Belle (Girl)" },
-            { type: "video", src: "assets/Listings/SummerBrezzy/sam1.mp4", label: "Sam (Boy)" },
-            { type: "image", src: "assets/Listings/SummerBrezzy/sam1.png", label: "Sam (Boy)" },
-            { type: "image", src: "assets/Listings/SummerBrezzy/sam2.png", label: "Sam (Boy)" },
-            { type: "image", src: "assets/Listings/SummerBrezzy/sam3.png", label: "Sam (Boy)" },
-            { type: "image", src: "assets/Listings/SummerBrezzy/sam4.png", label: "Sam (Boy)" },
-            { type: "video", src: "assets/Listings/SummerBrezzy/georgie1.mp4", label: "Georgie (Boy)" },
-            { type: "image", src: "assets/Listings/SummerBrezzy/georgie1.png", label: "Georgie (Boy)" },
-            { type: "image", src: "assets/Listings/SummerBrezzy/georgie2.png", label: "Georgie (Boy)" },
-            { type: "image", src: "assets/Listings/SummerBrezzy/georgie3.png", label: "Georgie (Boy)" },
-            { type: "image", src: "assets/Listings/SummerBrezzy/georgie4.png", label: "Georgie (Boy)" },
-            { type: "image", src: "assets/Listings/SummerBrezzy/georgie5.png", label: "Georgie (Boy)" },
-            { type: "video", src: "assets/Listings/SummerBrezzy/fonzie1.mp4", label: "Fonzie (Boy)" },
-            { type: "image", src: "assets/Listings/SummerBrezzy/fonzie1.png", label: "Fonzie (Boy)" },
-            { type: "image", src: "assets/Listings/SummerBrezzy/fonzie2.png", label: "Fonzie (Boy)" },
-            { type: "image", src: "assets/Listings/SummerBrezzy/fonzie3.png", label: "Fonzie (Boy)" },
-            { type: "image", src: "assets/Listings/SummerBrezzy/fonzie4.png", label: "Fonzie (Boy)" },
-            { type: "image", src: "assets/Listings/SummerBrezzy/fonzie5.png", label: "Fonzie (Boy)" },
-            { type: "image", src: "assets/Listings/SummerBrezzy/willow1.png", label: "Willow (Girl)" },
-            { type: "image", src: "assets/Listings/SummerBrezzy/willow2.png", label: "Willow (Girl)" },
-            { type: "image", src: "assets/Listings/SummerBrezzy/willow3.png", label: "Willow (Girl)" },
-            { type: "image", src: "assets/Listings/SummerBrezzy/willow4.png", label: "Willow (Girl)" },
-            { type: "image", src: "assets/Listings/SummerBrezzy/willow5.png", label: "Willow (Girl)" },
-            { type: "video", src: "assets/Listings/SummerBrezzy/daisy1.mp4", label: "Daisy (Girl)" },
-            { type: "image", src: "assets/Listings/SummerBrezzy/daisy1.png", label: "Daisy (Girl)" },
-            { type: "image", src: "assets/Listings/SummerBrezzy/daisy2.png", label: "Daisy (Girl)" },
-            { type: "image", src: "assets/Listings/SummerBrezzy/daisy3.png", label: "Daisy (Girl)" },
-            { type: "image", src: "assets/Listings/SummerBrezzy/daisy4.png", label: "Daisy (Girl)" },
-            { type: "image", src: "assets/Listings/SummerBrezzy/belle5.png", label: "Belle (Girl)" },
-            { type: "image", src: "assets/Listings/SummerBrezzy/daisy5.png", label: "Daisy (Girl)" },
-            { type: "image", src: "assets/Listings/SummerBrezzy/fonzie6.png", label: "Fonzie (Boy)" },
-            { type: "image", src: "assets/Listings/SummerBrezzy/georgie6.png", label: "Georgie (Boy)" },
-            { type: "image", src: "assets/Listings/SummerBrezzy/sam5.png", label: "Sam (Boy)" },
-            { type: "image", src: "assets/Listings/SummerBrezzy/summerbrezzy-thumbnail.png", label: "Summer Brezzy Litter" },
-            { type: "image", src: "assets/Listings/SummerBrezzy/willow6.png", label: "Willow (Girl)" },
-            { type: "video", src: "assets/Listings/SummerBrezzy/belle2.mp4", label: "Belle (Girl)" },
-            { type: "image", src: "assets/Listings/SummerBrezzy/belle6.png", label: "Belle (Girl)" },
-            { type: "image", src: "assets/Listings/SummerBrezzy/belle7.png", label: "Belle (Girl)" },
-            { type: "video", src: "assets/Listings/SummerBrezzy/daisy2.mp4", label: "Daisy (Girl)" },
-            { type: "image", src: "assets/Listings/SummerBrezzy/daisy6.png", label: "Daisy (Girl)" },
-            { type: "video", src: "assets/Listings/SummerBrezzy/fonzie2.mp4", label: "Fonzie (Boy)" },
-            { type: "image", src: "assets/Listings/SummerBrezzy/fonzie7.png", label: "Fonzie (Boy)" },
-            { type: "video", src: "assets/Listings/SummerBrezzy/georgie2.mp4", label: "Georgie (Boy)" },
-            { type: "image", src: "assets/Listings/SummerBrezzy/georgie7.png", label: "Georgie (Boy)" },
-            { type: "video", src: "assets/Listings/SummerBrezzy/sam2.mp4", label: "Sam (Boy)" },
-            { type: "image", src: "assets/Listings/SummerBrezzy/sam6.png", label: "Sam (Boy)" },
-            { type: "video", src: "assets/Listings/SummerBrezzy/willow1.mp4", label: "Willow (Girl)" },
-            { type: "image", src: "assets/Listings/SummerBrezzy/willow7.png", label: "Willow (Girl)" },
-            { type: "image", src: "assets/Listings/SummerBrezzy/georgie8.png", label: "Georgie (Boy)" },
-            { type: "image", src: "assets/Listings/SummerBrezzy/belle8.png", label: "Belle (Girl)" },
-            { type: "image", src: "assets/Listings/SummerBrezzy/fonzie8.png", label: "Fonzie (Boy)" },
-            { type: "image", src: "assets/Listings/SummerBrezzy/georgie9.png", label: "Georgie (Boy)" },
-            { type: "video", src: "assets/Listings/SummerBrezzy/summerbrezzy4.mp4", label: "Summer Brezzy Litter" },
-            { type: "image", src: "assets/Listings/SummerBrezzy/willow8.png", label: "Willow (Girl)" }
-        ],
-        updates: [
-            { date: "May 16, 2026", text: "Litter Available to Reserve!" },
-            { date: "May 23, 2026", text: "Daisy Found forever home with Jamie" },
-            { date: "June 3, 2026", text: "Sam Found forever home" },
-            { date: "August 10, 2026", text: "Belle Found forever home with Morgan" },
-            { date: "August 10, 2026", text: "Willow Found forever home with Jennifer" }
         ]
     },
 
@@ -366,60 +201,6 @@ const LITTERS = [
     },
 
     {
-        id: "the-black-pearl-2026",
-        litterName: "The Black Pearl",
-        dob: "June 11, 2026",
-        readyToGoDate: "August 6, 2026",
-        mom: { name: "Candice", breed: "Pomsky F1", weight: "27lbs" },
-        dad: { name: "Rambo", breed: "Pomsky F1", weight: "18lbs" },
-        breed: "F2 Pomsky",
-        description: "The sweet, little wolf-like Pomsky is one of the most loyal companions you can find! They love to 'talk' and sing to you, boast huge personalities, and are extremely intelligent.<br><br><strong>Why You�ll Love a Pomsky:</strong><br>� <strong>Incredibly Friendly:</strong> They generally love meeting new people, kids, and other dogs, making them fantastic icebreakers in the neighborhood.<br>� <strong>Striking Coat:</strong> The Pomsky has a beautiful coat that typically sheds twice a year. (Remember not to over-comb the undercoat!)<br>� <strong>Perfect Size:</strong> The estimated adult weight for this litter is 18�25 lbs.<br><br>Your new Pomsky will quickly steal your heart! You will enjoy many sweet updates as they grow until go-home day.",
-        price: "$2500 + tax ($300 due at reservation)",
-        puppies: [
-            { name: "Jack", gender: "Boy", status: "Available" },
-            { name: "Will", gender: "Boy", status: "Available" },
-            { name: "Elizabeth", gender: "Girl", status: "Available" }
-
-        ],
-        thumbnail: "assets/Listings/TheBlackPearl/theblackpearl-thumbnail.png",
-        media: [
-            { type: "video", src: "assets/Listings/TheBlackPearl/jack1.mp4", label: "Jack (Boy)" },
-            { type: "image", src: "assets/Listings/TheBlackPearl/jack1.png", label: "Jack (Boy)" },
-            { type: "image", src: "assets/Listings/TheBlackPearl/jack2.png", label: "Jack (Boy)" },
-            { type: "image", src: "assets/Listings/TheBlackPearl/jack3.png", label: "Jack (Boy)" },
-            { type: "image", src: "assets/Listings/TheBlackPearl/jack4.png", label: "Jack (Boy)" },
-            { type: "video", src: "assets/Listings/TheBlackPearl/will1.mp4", label: "Will (Boy)" },
-            { type: "image", src: "assets/Listings/TheBlackPearl/will1.png", label: "Will (Boy)" },
-            { type: "image", src: "assets/Listings/TheBlackPearl/will2.png", label: "Will (Boy)" },
-            { type: "image", src: "assets/Listings/TheBlackPearl/will3.png", label: "Will (Boy)" },
-            { type: "image", src: "assets/Listings/TheBlackPearl/will4.png", label: "Will (Boy)" },
-            { type: "video", src: "assets/Listings/TheBlackPearl/elizabeth1.mp4", label: "Elizabeth (Girl)" },
-            { type: "image", src: "assets/Listings/TheBlackPearl/elizabeth1.png", label: "Elizabeth (Girl)" },
-            { type: "image", src: "assets/Listings/TheBlackPearl/elizabeth2.png", label: "Elizabeth (Girl)" },
-            { type: "image", src: "assets/Listings/TheBlackPearl/elizabeth3.png", label: "Elizabeth (Girl)" },
-            { type: "image", src: "assets/Listings/TheBlackPearl/theblackpearl-thumbnail.png", label: "The Black Pearl Litter" },
-            { type: "image", src: "assets/Listings/TheBlackPearl/elizabeth4.png", label: "Elizabeth (Girl)" },
-            { type: "image", src: "assets/Listings/TheBlackPearl/elizabeth5.png", label: "Elizabeth (Girl)" },
-            { type: "image", src: "assets/Listings/TheBlackPearl/elizabeth6.png", label: "Elizabeth (Girl)" },
-            { type: "image", src: "assets/Listings/TheBlackPearl/jack5.png", label: "Jack (Boy)" },
-            { type: "image", src: "assets/Listings/TheBlackPearl/jack6.png", label: "Jack (Boy)" },
-            { type: "video", src: "assets/Listings/TheBlackPearl/theblackpearl.mp4", label: "The Black Pearl Litter" },
-            { type: "image", src: "assets/Listings/TheBlackPearl/will5.png", label: "Will (Boy)" },
-            { type: "image", src: "assets/Listings/TheBlackPearl/will6.png", label: "Will (Boy)" },
-            { type: "image", src: "assets/Listings/TheBlackPearl/will7.png", label: "Will (Boy)" },
-            { type: "image", src: "assets/Listings/TheBlackPearl/elizabeth7.png", label: "Elizabeth (Girl)" },
-            { type: "image", src: "assets/Listings/TheBlackPearl/elizabeth8.png", label: "Elizabeth (Girl)" },
-            { type: "image", src: "assets/Listings/TheBlackPearl/jack7.png", label: "Jack (Boy)" },
-            { type: "image", src: "assets/Listings/TheBlackPearl/jack8.png", label: "Jack (Boy)" },
-            { type: "image", src: "assets/Listings/TheBlackPearl/will8.png", label: "Will (Boy)" },
-            { type: "image", src: "assets/Listings/TheBlackPearl/will9.png", label: "Will (Boy)" }
-        ],
-        updates: [
-            { date: "June 23, 2026", text: "Litter Available to Reserve!" }
-        ]
-    },
-
-    {
         id: "south-bark-2026",
         litterName: "South Bark",
         dob: "June 22, 2026",
@@ -512,7 +293,7 @@ const LITTERS = [
         puppies: [
             { name: "Strom", gender: "Boy", status: "Available" },
             { name: "Milkshake", gender: "Boy", status: "Available" },
-            { name: "Butterfly", gender: "Girl", status: "Available" },
+            { name: "Butterfly", gender: "Girl", status: "Reserved by Shannon" },
             { name: "Popsicle", gender: "Girl", status: "Available" },
             { name: "Breezy", gender: "Girl", status: "Available" }
         ],
@@ -531,7 +312,8 @@ const LITTERS = [
             { type: "image", src: "assets/Listings/SummerDays/strom2.png", label: "Strom (Boy)" }
         ],
         updates: [
-            { date: "June 30, 2026", text: "Litter Available to Reserve!" }
+            { date: "June 30, 2026", text: "Litter Available to Reserve!" },
+            { date: "August 18, 2026", text: "Butterfly is Reserved!" }
         ]
     }
 ];
@@ -653,8 +435,4 @@ const HAPPY_TAILS = [
         message: "My son is a diabetic. He had a severe seizure and our standard Goldendoodle Luffy...signaled. He has had no training, prior to this event...He has now had alert training and is a certified seizure alert dog...Unfortunately my son had a large seizure and Luffy alerted and we were able to get him to the hospital. Luffy stayed by his side...and alerted before the machines did...Luffy is our perfect pup , we love him so much ."
     }
 ];
-
-
-
-
 
