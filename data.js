@@ -219,10 +219,10 @@ const LITTERS = [
         price: "$1500 + tax ($300 due at reservation)",
         puppies: [
             { name: "Buster", gender: "Boy", status: "Available" },
-            { name: "CeeCee", gender: "Girl", status: "Available" },
-            { name: "Charlie", gender: "Boy", status: "Available" },
+            { name: "CeeCee", gender: "Girl", status: "Reserved by Theresa" },
+            { name: "Charlie", gender: "Boy", status: "Reserved by Char" },
             { name: "Tucker", gender: "Boy", status: "Available" },
-            { name: "Clara", gender: "Girl", status: "reserved by Katie" },
+            { name: "Clara", gender: "Girl", status: "Reserved by Katie" },
             { name: "Cora", gender: "Girl", status: "Available" },
             { name: "Noah", gender: "Boy", status: "reserved by Dylan" },
             { name: "Clifford", gender: "Boy", status: "Available" }
