@@ -5,59 +5,6 @@
 const LITTERS = [
 
     {
-        id: "mammas-boys-2026",
-        litterName: "Mamma's Boys",
-        dob: "April 26, 2026",
-        readyToGoDate: "June 22, 2026",
-        mom: { name: "Jenny", breed: "F1 Mini Goldendoodle", weight: "17lbs" },
-        dad: { name: "Willie", breed: "Mini Poodle", weight: "14lbs" },
-        breed: "F1B Mini Goldendoodle",
-        description: "Sweet babies just born. They are thriving, gaining weight and have a peaceful nature. The boys are showing a loose wavy coat and in time will develop into a Teddybear look.",
-        price: "$950 + tax ($300 due at reservation)",
-        puppies: [
-            { name: "Texas", gender: "Male", status: "Found Family" },
-            { name: "Tucker", gender: "Male", status: "Available" }
-
-        ],
-        thumbnail: "assets/Listings/MammasBoys/mammas-boys-thumbnail.jpeg",
-        media: [
-            { type: "video", src: "assets/Listings/MammasBoys/mammas-boys1.mp4", label: "Litter Video" },
-            { type: "video", src: "assets/Listings/MammasBoys/mammas-boys2.mp4", label: "Litter Video" },
-            { type: "video", src: "assets/Listings/MammasBoys/mammas-boys3.mp4", label: "Litter Video" },
-            { type: "video", src: "assets/Listings/MammasBoys/mammas-boys4.mp4", label: "Litter Video" },
-            { type: "video", src: "assets/Listings/MammasBoys/texas1.mp4", label: "Texas (Male)" },
-            { type: "video", src: "assets/Listings/MammasBoys/texas2.mp4", label: "Texas (Male)" },
-            { type: "image", src: "assets/Listings/MammasBoys/texas1.jpeg", label: "Texas (Male)" },
-            { type: "image", src: "assets/Listings/MammasBoys/texas2.png", label: "Texas (Male)" },
-            { type: "image", src: "assets/Listings/MammasBoys/texas3.png", label: "Texas (Male)" },
-            { type: "image", src: "assets/Listings/MammasBoys/texas4.jpeg", label: "Texas (Male)" },
-            { type: "image", src: "assets/Listings/MammasBoys/texas5.jpeg", label: "Texas (Male)" },
-            { type: "image", src: "assets/Listings/MammasBoys/texas6.png", label: "Texas (Male)" },
-            { type: "image", src: "assets/Listings/MammasBoys/texas7.png", label: "Texas (Male)" },
-            { type: "video", src: "assets/Listings/MammasBoys/tucker1.mp4", label: "Tucker (Male)" },
-            { type: "image", src: "assets/Listings/MammasBoys/tucker1.jpeg", label: "Tucker (Male)" },
-            { type: "image", src: "assets/Listings/MammasBoys/tucker2.jpeg", label: "Tucker (Male)" },
-            { type: "image", src: "assets/Listings/MammasBoys/tucker3.jpeg", label: "Tucker (Male)" },
-            { type: "image", src: "assets/Listings/MammasBoys/tucker4.jpeg", label: "Tucker (Male)" },
-            { type: "image", src: "assets/Listings/MammasBoys/tucker5.png", label: "Tucker (Male)" },
-            { type: "image", src: "assets/Listings/MammasBoys/tucker6.png", label: "Tucker (Male)" },
-            { type: "image", src: "assets/Listings/MammasBoys/tucker7.jpeg", label: "Tucker (Male)" },
-            { type: "image", src: "assets/Listings/MammasBoys/tucker8.jpeg", label: "Tucker (Male)" },
-            { type: "image", src: "assets/Listings/MammasBoys/tucker9.png", label: "Tucker (Male)" },
-            { type: "image", src: "assets/Listings/MammasBoys/tucker10.png", label: "Tucker (Male)" },
-            { type: "image", src: "assets/Listings/MammasBoys/mammas-boys-thumbnail.jpeg", label: "Mamma's Boys Litter" },
-            { type: "image", src: "assets/Listings/MammasBoys/tucker11.png", label: "Tucker (Male)" },
-            { type: "image", src: "assets/Listings/MammasBoys/tucker12.png", label: "Tucker (Male)" },
-            { type: "video", src: "assets/Listings/MammasBoys/tucker2.mp4", label: "Tucker (Male)" },
-            { type: "video", src: "assets/Listings/MammasBoys/tucker3.mp4", label: "Tucker (Male)" }
-        ],
-        updates: [
-            { date: "May 6, 2026", text: "Litter Available to Reserve!" },
-            { date: "June 29, 2026", text: "Texas found his forever home!" }
-        ]
-    },
-
-    {
         id: "south-bark-2026",
         litterName: "South Bark",
         dob: "June 22, 2026",
@@ -577,9 +524,4 @@ const HAPPY_TAILS = [
         message: "My son is a diabetic. He had a severe seizure and our standard Goldendoodle Luffy...signaled. He has had no training, prior to this event...He has now had alert training and is a certified seizure alert dog...Unfortunately my son had a large seizure and Luffy alerted and we were able to get him to the hospital. Luffy stayed by his side...and alerted before the machines did...Luffy is our perfect pup , we love him so much ."
     }
 ];
-
-
-
-
-
 
