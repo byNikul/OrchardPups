@@ -307,57 +307,6 @@ const LITTERS = [
     },
 
     {
-        id: "harvest-moon-sweeties-2026",
-        litterName: "Harvest Moon Sweeties",
-        dob: "August 17, 2026",
-        readyToGoDate: "October 12, 2026",
-        mom: { name: "Jingles", breed: "F1B Goldendoodle", weight: "15lbs" },
-        dad: { name: "Blazer", breed: "Mini Poodle", weight: "12lbs" },
-        breed: "F1BB Mini Goldendoodle",
-        description: "As the golden autumn moon rises over the whispering fields, a new litter of F1BB Mini Goldendoodle puppies arrives in a wash of warm amber light. These tiny, curly-coated sweethearts are practically made for the harvest season, boasting coats the color of toasted wheat, sweet corn, and rich spun caramel.<br><br>With their exceptionally high Poodle lineage, they shimmer like autumn stars while promising hypoallergenic, non-shedding snuggles as the weather turns crisp.<br><br><strong>Why Choose an F1BB Goldendoodle?</strong><br>As a cross between an F1B Goldendoodle and a Mini Poodle, these puppies carry a higher percentage of Poodle genetics — resulting in the most allergy-friendly and lowest-shedding coats of any Goldendoodle generation.<br><br>🐾 <strong>Harvest-Gold Coats:</strong> Beautifully textured, curly coats in warm shades of toasted wheat, sweet corn, and spun caramel — hypoallergenic and non-shedding.<br>🐾 <strong>Compact & Perfect Size:</strong> With mom at 15 lbs and dad at 12 lbs, expect these pups to stay in that perfect, portable mini size.<br>🐾 <strong>Smart & Eager to Please:</strong> Inheriting the sharp intelligence of the Poodle, these puppies are a joy to train and quick to learn.<br>🐾 <strong>Joyful & Playful Temperament:</strong> Just like a bountiful harvest, these little bundles bring an abundance of joy, playful energy, and heartwarming companionship to your home.<br><br><strong>Cuddle Up This Autumn</strong><br>As they tumble playfully through the fallen leaves, their bright button eyes sparkle with the magic of crisp October air. Cuddle up by the hearth with your very own harvest-moon pup, and let the cozy magic of autumn fill your home with unconditional love all season long!",
-        price: "$2100 + tax ($300 due at reservation)",
-        puppies: [
-            { name: "Bunny", gender: "Girl", status: "Available" },
-            { name: "Mittens", gender: "Girl", status: "Julia reserved Mittens" },
-            { name: "Bugs", gender: "Boy", status: "Reserved by Madeline" }
-        ],
-        thumbnail: "assets/Listings/HarvestMoonSweeties/harvestmoonsweeties1.png",
-        media: [
-            { type: "image", src: "assets/Listings/HarvestMoonSweeties/bugs1.png", label: "Bugs (Boy)" },
-            { type: "image", src: "assets/Listings/HarvestMoonSweeties/bugs2.png", label: "Bugs (Boy)" },
-            { type: "image", src: "assets/Listings/HarvestMoonSweeties/bugs3.png", label: "Bugs (Boy)" },
-            { type: "image", src: "assets/Listings/HarvestMoonSweeties/bunny1.png", label: "Bunny (Girl)" },
-            { type: "image", src: "assets/Listings/HarvestMoonSweeties/bunny2.png", label: "Bunny (Girl)" },
-            { type: "image", src: "assets/Listings/HarvestMoonSweeties/bunny3.png", label: "Bunny (Girl)" },
-            { type: "image", src: "assets/Listings/HarvestMoonSweeties/harvestmoodsweeties1.png", label: "Harvest Moon Sweeties Litter" },
-            { type: "image", src: "assets/Listings/HarvestMoonSweeties/mittens1.png", label: "Mittens (Girl)" },
-            { type: "image", src: "assets/Listings/HarvestMoonSweeties/mittens2.png", label: "Mittens (Girl)" },
-            { type: "image", src: "assets/Listings/HarvestMoonSweeties/mittens3.png", label: "Mittens (Girl)" },
-            { type: "image", src: "assets/Listings/HarvestMoonSweeties/bugs4.png", label: "Bugs (Boy)" },
-            { type: "image", src: "assets/Listings/HarvestMoonSweeties/bunny4.png", label: "Bunny (Girl)" },
-            { type: "image", src: "assets/Listings/HarvestMoonSweeties/harvestmoodsweeties2.png", label: "Harvest Moon Sweeties Litter" },
-            { type: "image", src: "assets/Listings/HarvestMoonSweeties/harvestmoonsweeties1.png", label: "Harvest Moon Sweeties Litter" },
-            { type: "image", src: "assets/Listings/HarvestMoonSweeties/mittens4.png", label: "Mittens (Girl)" },
-            { type: "image", src: "assets/Listings/HarvestMoonSweeties/bugs5.png", label: "Bugs (Boy)" },
-            { type: "image", src: "assets/Listings/HarvestMoonSweeties/bugs6.png", label: "Bugs (Boy)" },
-            { type: "image", src: "assets/Listings/HarvestMoonSweeties/bugs7.png", label: "Bugs (Boy)" },
-            { type: "image", src: "assets/Listings/HarvestMoonSweeties/bunnies7.png", label: "Harvest Moon Sweeties Litter" },
-            { type: "image", src: "assets/Listings/HarvestMoonSweeties/bunny5.png", label: "Bunny (Girl)" },
-            { type: "image", src: "assets/Listings/HarvestMoonSweeties/bunny6.png", label: "Bunny (Girl)" },
-            { type: "video", src: "assets/Listings/HarvestMoonSweeties/harvestmoonsweeties1.mp4", label: "Harvest Moon Sweeties Litter" },
-            { type: "video", src: "assets/Listings/HarvestMoonSweeties/harvestmoonsweeties2.mp4", label: "Harvest Moon Sweeties Litter" },
-            { type: "image", src: "assets/Listings/HarvestMoonSweeties/harvestmoonsweeties2.png", label: "Harvest Moon Sweeties Litter" },
-            { type: "image", src: "assets/Listings/HarvestMoonSweeties/harvestmoonsweeties3.png", label: "Harvest Moon Sweeties Litter" },
-            { type: "image", src: "assets/Listings/HarvestMoonSweeties/mittens5.png", label: "Mittens (Girl)" },
-            { type: "image", src: "assets/Listings/HarvestMoonSweeties/mittens6.png", label: "Mittens (Girl)" },
-            { type: "image", src: "assets/Listings/HarvestMoonSweeties/mittens7.png", label: "Mittens (Girl)" }
-        ],
-        updates: [
-            { date: "August 28, 2026", text: "Litter Available to Reserve!" }
-        ]
-    },
-
-    {
         id: "spooky-nights-2026",
         litterName: "Spooky Nights",
         dob: "August 28, 2026",
