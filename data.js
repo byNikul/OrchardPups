@@ -12,10 +12,10 @@ const LITTERS = [
         mom: { name: "Aster", breed: "F1 Mini Goldendoodle", weight: "18lbs" },
         dad: { name: "Blazer", breed: "Mini Poodle", weight: "14lbs" },
         breed: "F1BB Mini Goldendoodle",
-        description: "Are you ready to find your new best friend? Our adorable F1BB mini goldendoodle puppies from the \"South Bark\" litter are officially looking for their forever homes!<br><br>These little bundles of joy are the perfect mix of sweet and playful.<br><br><strong>Why Choose an F1BB Goldendoodle?</strong><br>Because they are a backcross (a Goldendoodle bred back to a Poodle), they are known for having a higher percentage of Poodle genetics. This typically results in:<br>� <strong>Hypoallergenic Qualities:</strong> They are often the most allergy-friendly of the Goldendoodle generations.<br>� <strong>Low-Shedding Coats:</strong> Their curly or wavy coats are wonderful for keeping fur off your furniture.<br>� <strong>Intelligence & Trainability:</strong> They inherit the sharp, eager-to-please nature of the Poodle, making them a joy to train.<br><br>These precious pups are going to bring so much love to their new families. If you are interested in welcoming one of these sweet babies into your home, please contact us today to reserve yours!",
+        description: "Are you ready to find your new best friend? Our adorable F1BB mini goldendoodle puppies from the \"South Bark\" litter are officially looking for their forever homes!<br><br>These little bundles of joy are the perfect mix of sweet and playful.<br><br><strong>Why Choose an F1BB Goldendoodle?</strong><br>Because they are a backcross (a Goldendoodle bred back to a Poodle), they are known for having a higher percentage of Poodle genetics. This typically results in:<br> <strong>Hypoallergenic Qualities:</strong> They are often the most allergy-friendly of the Goldendoodle generations.<br> <strong>Low-Shedding Coats:</strong> Their curly or wavy coats are wonderful for keeping fur off your furniture.<br> <strong>Intelligence & Trainability:</strong> They inherit the sharp, eager-to-please nature of the Poodle, making them a joy to train.<br><br>These precious pups are going to bring so much love to their new families. If you are interested in welcoming one of these sweet babies into your home, please contact us today to reserve yours!",
         price: "$1600 + tax ($300 due at reservation)",
         puppies: [
-            { name: "Kenny", gender: "Boy", status: "Available" },
+            { name: "Kenny", gender: "Boy", status: "Found a home" },
             { name: "Eric", gender: "Boy", status: "Available" },
             { name: "Stan", gender: "Boy", status: "Available" },
             { name: "Bebe", gender: "Girl", status: "Reserved by Tim and Amber" },
@@ -172,93 +172,6 @@ const LITTERS = [
     },
 
     {
-        id: "teddy-bear-babies-2026",
-        litterName: "Teddy Bear Babies",
-        dob: "July 20, 2026",
-        readyToGoDate: "September 14, 2026",
-        mom: { name: "Maris", breed: "Cavapoo", weight: "23lbs" },
-        dad: { name: "Max", breed: "Mini Poodle", weight: "8lbs" },
-        breed: "F1B Cavapoo",
-        description: "Meet our Teddy Bear Babies — an adorable litter of F1B Cavapoos, the delightful cross between a Cavapoo and a Mini Poodle! These pint-sized pups are widely celebrated as one of the most affectionate and charming companion dogs you can find. Their teddy-bear coats are already starting to develop beautifully!<br><br><strong>Why Choose an F1B Cavapoo?</strong><br>Inheriting the intelligence of the Poodle and the sweet, gentle nature of the Cavalier King Charles Spaniel, these babies are remarkably easy to train and eager to please.<br><br>🐾 <strong>Irresistible Teddy-Bear Looks:</strong> Soft, wavy coats that beg to be cuddled — in a rainbow of warm, caramel, and parti-color shades with soulful eyes and button noses.<br>🐾 <strong>Gentle & Joyful Temperament:</strong> True cuddle bugs who thrive on human companionship and love nothing more than curling up next to their favorite people.<br>🐾 <strong>Allergy-Friendly Coats:</strong> Their lower-shedding coats are a wonderful bonus for many allergy sufferers.<br>🐾 <strong>Perfect for Any Home:</strong> Whether you are a bustling family with children, an active couple, or a quiet retiree looking for a loyal best friend, these pups fit seamlessly into any household.<br><br><strong>Your Next Best Friend</strong><br>Intelligent, endlessly playful, and deeply loving, these Cavapoo babies bring an immense amount of sunshine, laughter, and unconditional love into every home they enter. Don't miss your chance to welcome one of these teddy bears into your family!",
-        price: "$1500 + tax ($300 due at reservation)",
-        puppies: [
-            { name: "Buster", gender: "Boy", status: "Found Forever Family" },
-            { name: "CeeCee", gender: "Girl", status: "Reserved by Theresa" },
-            { name: "Charlie", gender: "Boy", status: "Pending pickup by Kelly" },
-            { name: "Tucker", gender: "Boy", status: "Available" },
-            { name: "Clara", gender: "Girl", status: "Reserved by Katie" },
-            { name: "Cora", gender: "Girl", status: "Reserved" },
-            { name: "Noah", gender: "Boy", status: "reserved by Dylan" },
-            { name: "Clifford", gender: "Boy", status: "Available" }
-        ],
-        thumbnail: "assets/Listings/TeddyBearBabies/buster1.png",
-        media: [
-            { type: "video", src: "assets/Listings/TeddyBearBabies/teddyBearBabies1.mp4", label: "Teddy Bear Babies" },
-            { type: "image", src: "assets/Listings/TeddyBearBabies/buster1.png", label: "Buster (Boy)" },
-            { type: "image", src: "assets/Listings/TeddyBearBabies/buster2.png", label: "Buster (Boy)" },
-            { type: "image", src: "assets/Listings/TeddyBearBabies/buster3.png", label: "Buster (Boy)" },
-            { type: "image", src: "assets/Listings/TeddyBearBabies/buster4.png", label: "Buster (Boy)" },
-            { type: "image", src: "assets/Listings/TeddyBearBabies/buster5.png", label: "Buster (Boy)" },
-            { type: "image", src: "assets/Listings/TeddyBearBabies/buster6.png", label: "Buster (Boy)" },
-            { type: "image", src: "assets/Listings/TeddyBearBabies/ceecee1.png", label: "CeeCee (Girl)" },
-            { type: "image", src: "assets/Listings/TeddyBearBabies/ceecee2.png", label: "CeeCee (Girl)" },
-            { type: "image", src: "assets/Listings/TeddyBearBabies/ceecee3.png", label: "CeeCee (Girl)" },
-            { type: "image", src: "assets/Listings/TeddyBearBabies/charlie1.png", label: "Charlie (Boy)" },
-            { type: "image", src: "assets/Listings/TeddyBearBabies/charlie2.png", label: "Charlie (Boy)" },
-            { type: "image", src: "assets/Listings/TeddyBearBabies/charlie3.png", label: "Charlie (Boy)" },
-            { type: "image", src: "assets/Listings/TeddyBearBabies/charlie4.png", label: "Charlie (Boy)" },
-            { type: "image", src: "assets/Listings/TeddyBearBabies/clara1.png", label: "Clara (Girl)" },
-            { type: "image", src: "assets/Listings/TeddyBearBabies/clara2.png", label: "Clara (Girl)" },
-            { type: "image", src: "assets/Listings/TeddyBearBabies/clara3.png", label: "Clara (Girl)" },
-            { type: "image", src: "assets/Listings/TeddyBearBabies/clara4.png", label: "Clara (Girl)" },
-            { type: "image", src: "assets/Listings/TeddyBearBabies/clifford1.png", label: "Clifford (Boy)" },
-            { type: "image", src: "assets/Listings/TeddyBearBabies/clifford2.png", label: "Clifford (Boy)" },
-            { type: "image", src: "assets/Listings/TeddyBearBabies/clifford3.png", label: "Clifford (Boy)" },
-            { type: "image", src: "assets/Listings/TeddyBearBabies/cora1.png", label: "Cora (Girl)" },
-            { type: "image", src: "assets/Listings/TeddyBearBabies/cora2.png", label: "Cora (Girl)" },
-            { type: "image", src: "assets/Listings/TeddyBearBabies/cora3.png", label: "Cora (Girl)" },
-            { type: "image", src: "assets/Listings/TeddyBearBabies/cora4.png", label: "Cora (Girl)" },
-            { type: "image", src: "assets/Listings/TeddyBearBabies/noah1.png", label: "Noah (Boy)" },
-            { type: "image", src: "assets/Listings/TeddyBearBabies/noah2.png", label: "Noah (Boy)" },
-            { type: "image", src: "assets/Listings/TeddyBearBabies/noah3.png", label: "Noah (Boy)" },
-            { type: "image", src: "assets/Listings/TeddyBearBabies/noah4.png", label: "Noah (Boy)" },
-            { type: "video", src: "assets/Listings/TeddyBearBabies/teddybearbabies2.mp4", label: "Teddy Bear Babies Litter" },
-            { type: "video", src: "assets/Listings/TeddyBearBabies/teddybearbabies3.mp4", label: "Teddy Bear Babies Litter" },
-            { type: "image", src: "assets/Listings/TeddyBearBabies/tucker1.png", label: "Tucker (Boy)" },
-            { type: "image", src: "assets/Listings/TeddyBearBabies/tucker2.png", label: "Tucker (Boy)" },
-            { type: "image", src: "assets/Listings/TeddyBearBabies/tucker3.png", label: "Tucker (Boy)" },
-            { type: "image", src: "assets/Listings/TeddyBearBabies/tucker4.png", label: "Tucker (Boy)" },
-            { type: "video", src: "assets/Listings/TeddyBearBabies/ceecee1.mp4", label: "CeeCee (Girl)" },
-            { type: "video", src: "assets/Listings/TeddyBearBabies/clara1.mp4", label: "Clara (Girl)" },
-            { type: "video", src: "assets/Listings/TeddyBearBabies/noah1.mp4", label: "Noah (Boy)" },
-            { type: "video", src: "assets/Listings/TeddyBearBabies/teddybearbabies4.mp4", label: "Teddy Bear Babies Litter" },
-            { type: "video", src: "assets/Listings/TeddyBearBabies/teddybearbabies5.mp4", label: "Teddy Bear Babies Litter" },
-            { type: "video", src: "assets/Listings/TeddyBearBabies/tucker1.mp4", label: "Tucker (Boy)" },
-            { type: "image", src: "assets/Listings/TeddyBearBabies/buster7.png", label: "Buster (Boy)" },
-            { type: "image", src: "assets/Listings/TeddyBearBabies/ceecee4.png", label: "CeeCee (Girl)" },
-            { type: "image", src: "assets/Listings/TeddyBearBabies/ceecee5.png", label: "CeeCee (Girl)" },
-            { type: "image", src: "assets/Listings/TeddyBearBabies/charlie5.png", label: "Charlie (Boy)" },
-            { type: "image", src: "assets/Listings/TeddyBearBabies/clara5.png", label: "Clara (Girl)" },
-            { type: "image", src: "assets/Listings/TeddyBearBabies/clara6.png", label: "Clara (Girl)" },
-            { type: "image", src: "assets/Listings/TeddyBearBabies/claraceeceecora.png", label: "CeeCee (Girl)" },
-            { type: "image", src: "assets/Listings/TeddyBearBabies/clifford4.png", label: "Clifford (Boy)" },
-            { type: "image", src: "assets/Listings/TeddyBearBabies/cora5.png", label: "Cora (Girl)" },
-            { type: "image", src: "assets/Listings/TeddyBearBabies/noah5.png", label: "Noah (Boy)" },
-            { type: "image", src: "assets/Listings/TeddyBearBabies/tucker5.png", label: "Tucker (Boy)" },
-            { type: "image", src: "assets/Listings/TeddyBearBabies/buster8.png", label: "Buster (Boy)" },
-            { type: "video", src: "assets/Listings/TeddyBearBabies/clifford1.mp4", label: "Clifford (Boy)" },
-            { type: "image", src: "assets/Listings/TeddyBearBabies/clifford5.png", label: "Clifford (Boy)" },
-            { type: "video", src: "assets/Listings/TeddyBearBabies/tucker3.mp4", label: "Tucker (Boy)" },
-            { type: "image", src: "assets/Listings/TeddyBearBabies/tucker6.png", label: "Tucker (Boy)" }
-        ],
-        updates: [
-            { date: "August 28, 2026", text: "Litter Available to Reserve!" },
-            { date: "September 15, 2026", text: "Clara Found her Forever Home!" },
-            { date: "September 15, 2026", text: "Tucker Found his Forever Home!" }
-        ]
-    },
-
-    {
         id: "salt-water-cowboys-2026",
         litterName: "Salt Water Cowboys",
         dob: "July 22, 2026",
@@ -269,8 +182,8 @@ const LITTERS = [
         description: "Saddle up and meet the Salt Water Cowboys — a stunning litter of F1BB Mini Goldendoodles! With one handsome cowboy and three beautiful cowgirls, this litter is brimming with charm, personality, and irresistibly soft coats.<br><br><strong>Why Choose a F1BB Goldendoodle?</strong><br>As a cross between an F1BB Mini Goldendoodle and a Mini Poodle, these puppies carry a higher percentage of Poodle genetics, which typically results in the most allergy-friendly and low-shedding coats of any Goldendoodle generation.<br><br>🐾 <strong>Ultra Low-Shedding Coats:</strong> Their beautifully textured, curly coats are ideal for families who want a fur-free home without sacrificing cuddle time.<br>🐾 <strong>Compact & Perfect Size:</strong> With mom at 14 lbs and dad at 12 lbs, expect these pups to stay in that perfect, portable mini size.<br>🐾 <strong>Smart & Eager to Please:</strong> Inheriting the sharp intelligence of the Poodle, these puppies are a joy to train and quick to learn.<br>🐾 <strong>Sweet & Social Temperament:</strong> Gentle, playful, and endlessly loving — they thrive on companionship and fit beautifully into any family.<br><br><strong>Ready to Ride Off Into the Sunset?</strong><br>These adorable pups will be ready for their forever homes on September 9, 2026. Whether you are looking for a loyal adventure buddy or the sweetest lap dog, a Salt Water Cowboy is ready to lasso your heart!",
         price: "$1700 + tax ($300 due at reservation)",
         puppies: [
-            { name: "Cowboy", gender: "Boy", status: "Available" },
-            { name: "Sea Star", gender: "Girl", status: "Available" },
+            { name: "Cowboy", gender: "Boy", status: "Found Family" },
+            { name: "Sea Star", gender: "Girl", status: "Found Family" },
             { name: "Misty", gender: "Girl", status: "Available" },
             { name: "Jessie", gender: "Girl", status: "Available" }
         ],
@@ -318,8 +231,9 @@ const LITTERS = [
         price: "$2100 + tax ($300 due at reservation)",
         puppies: [
             { name: "Boo", gender: "Boy", status: "Available" },
+            { name: "Bunny", gender: "Boy", status: "Available" },
             { name: "Frankie", gender: "Boy", status: "Available" },
-            { name: "Coraline", gender: "Girl", status: "Reserved by Coraline" },
+            { name: "Coraline", gender: "Girl", status: "Reserved" },
             { name: "Lucy", gender: "Girl", status: "Available" },
             { name: "Wednesday", gender: "Girl", status: "Available" },
             { name: "Mortishia", gender: "Girl", status: "Available" }
@@ -350,7 +264,18 @@ const LITTERS = [
             { type: "image", src: "assets/Listings/SpookyNights/mortishia2.png", label: "Mortishia (Girl)" },
             { type: "video", src: "assets/Listings/SpookyNights/mortishia3.mp4", label: "Mortishia (Girl)" },
             { type: "video", src: "assets/Listings/SpookyNights/wednesday1.mp4", label: "Wednesday (Girl)" },
-            { type: "image", src: "assets/Listings/SpookyNights/wednesday2.png", label: "Wednesday (Girl)" }
+            { type: "image", src: "assets/Listings/SpookyNights/wednesday2.png", label: "Wednesday (Girl)" },
+            { type: "image", src: "assets/Listings/SpookyNights/boo3.png", label: "Boo (Boy)" },
+            { type: "image", src: "assets/Listings/SpookyNights/coraline3.png", label: "Coraline (Girl)" },
+            { type: "image", src: "assets/Listings/SpookyNights/frankie3.png", label: "Frankie (Boy)" },
+            { type: "image", src: "assets/Listings/SpookyNights/jack2.png", label: "Spooky Nights Litter" },
+            { type: "image", src: "assets/Listings/SpookyNights/jack3.png", label: "Spooky Nights Litter" },
+            { type: "image", src: "assets/Listings/SpookyNights/lucy3.png", label: "Lucy (Girl)" },
+            { type: "image", src: "assets/Listings/SpookyNights/mortishia4.png", label: "Mortishia (Girl)" },
+            { type: "video", src: "assets/Listings/SpookyNights/theboys1.mp4", label: "Spooky Nights Litter" },
+            { type: "image", src: "assets/Listings/SpookyNights/theboys2.png", label: "Spooky Nights Litter" },
+            { type: "video", src: "assets/Listings/SpookyNights/thegirls1.mp4", label: "Spooky Nights Litter" },
+            { type: "image", src: "assets/Listings/SpookyNights/wednesday3.png", label: "Wednesday (Girl)" }
         ],
         updates: []
     }
@@ -473,4 +398,5 @@ const HAPPY_TAILS = [
         message: "My son is a diabetic. He had a severe seizure and our standard Goldendoodle Luffy...signaled. He has had no training, prior to this event...He has now had alert training and is a certified seizure alert dog...Unfortunately my son had a large seizure and Luffy alerted and we were able to get him to the hospital. Luffy stayed by his side...and alerted before the machines did...Luffy is our perfect pup , we love him so much ."
     }
 ];
+
 
