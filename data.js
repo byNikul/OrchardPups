@@ -116,7 +116,7 @@ const LITTERS = [
         puppies: [
             { name: "Storm", gender: "Boy", status: "Available" },
             { name: "Milkshake", gender: "Boy", status: "Available" },
-            { name: "Butterfly", gender: "Girl", status: "Available" },
+            { name: "Butterfly", gender: "Girl", status: "Found a forever home" },
             { name: "Popsicle", gender: "Girl", status: "Found a forever home" },
             { name: "Breezy", gender: "Girl", status: "Found a forever home" }
         ],
@@ -185,7 +185,7 @@ const LITTERS = [
             { name: "Cowboy", gender: "Boy", status: "Found Family" },
             { name: "Sea Star", gender: "Girl", status: "Found Family" },
             { name: "Misty", gender: "Girl", status: "Available" },
-            { name: "Jessie", gender: "Girl", status: "Available" }
+            { name: "Jessie", gender: "Girl", status: "Found Family" }
         ],
         thumbnail: "assets/Listings/SaltWaterCowboys/cowboy1.png",
         media: [
@@ -276,6 +276,86 @@ const LITTERS = [
             { type: "image", src: "assets/Listings/SpookyNights/theboys2.png", label: "Spooky Nights Litter" },
             { type: "video", src: "assets/Listings/SpookyNights/thegirls1.mp4", label: "Spooky Nights Litter" },
             { type: "image", src: "assets/Listings/SpookyNights/wednesday3.png", label: "Wednesday (Girl)" }
+        ],
+        updates: []
+    },
+
+    {
+        id: "festival-of-lights-2026",
+        litterName: "Festival of Lights",
+        dob: "October 5, 2026",
+        readyToGoDate: "December 5, 2026",
+        mom: { name: "Jellybean", breed: "F1B Mini Goldendoodle", weight: "20lbs" },
+        dad: { name: "Sparky", breed: "Mini Poodle", weight: "14lbs" },
+        breed: "F1BB Mini Goldendoodle",
+        description: "<strong>The Gentle Giant in a Smaller Package</strong><br><br>The Mini Goldendoodle is a remarkable breed, perfectly blending the friendly, intelligent nature of the Golden Retriever with the hypoallergenic, curly coat of the Poodle. Possessing a gentle, affectionate temperament, they are quick to learn and eager to please, making them an ideal companion for families, seniors, and first-time dog owners alike. While they require regular grooming to maintain their beautiful coats, their low-shedding qualities are a significant benefit for those with allergies. They have an inherent need for companionship and thrive on human interaction, making them truly devoted and loving family members.<br><br>Beyond their intelligence and sociability, Mini Goldendoodles possess an intuitive and sensitive nature, often attuning themselves to the emotions of their owners. This emotional intelligence, combined with their playful spirit and soft, cuddly appearance, makes them exceptional snuggle partners. Their moderate energy levels mean they are just as content enjoying a calm afternoon indoors as they are going for a brisk walk or playing a game of fetch in the park. They are adaptable to various living environments, from cozy apartments to spacious homes with yards.<br><br>We can arrange Delay pick up until 12/15/26",
+        price: "$2200 + tax ($300 due at reservation)",
+        puppies: [
+            { name: "Holly", gender: "Girl", status: "Available" },
+            { name: "Bella", gender: "Girl", status: "Available" },
+            { name: "Clara", gender: "Girl", status: "Available" },
+            { name: "Dolly", gender: "Girl", status: "Available" },
+            { name: "Jack", gender: "Boy", status: "Available" },
+            { name: "Gram", gender: "Boy", status: "Available" },
+            { name: "Felix", gender: "Boy", status: "Available" }
+        ],
+        thumbnail: "assets/Listings/FestivalOfLights/jack1.png",
+        media: [
+            { type: "image", src: "assets/Listings/FestivalOfLights/bella1.png", label: "Bella (Girl)" },
+            { type: "image", src: "assets/Listings/FestivalOfLights/bella2.png", label: "Bella (Girl)" },
+            { type: "image", src: "assets/Listings/FestivalOfLights/clara1.png", label: "Clara (Girl)" },
+            { type: "image", src: "assets/Listings/FestivalOfLights/clara2.png", label: "Clara (Girl)" },
+            { type: "image", src: "assets/Listings/FestivalOfLights/dolly1.png", label: "Dolly (Girl)" },
+            { type: "image", src: "assets/Listings/FestivalOfLights/dolly2.png", label: "Dolly (Girl)" },
+            { type: "image", src: "assets/Listings/FestivalOfLights/felix1.png", label: "Felix (Boy)" },
+            { type: "image", src: "assets/Listings/FestivalOfLights/felix2.png", label: "Felix (Boy)" },
+            { type: "image", src: "assets/Listings/FestivalOfLights/gram1.png", label: "Gram (Boy)" },
+            { type: "image", src: "assets/Listings/FestivalOfLights/gram2.png", label: "Gram (Boy)" },
+            { type: "image", src: "assets/Listings/FestivalOfLights/holly1.png", label: "Holly (Girl)" },
+            { type: "image", src: "assets/Listings/FestivalOfLights/holly2.png", label: "Holly (Girl)" },
+            { type: "image", src: "assets/Listings/FestivalOfLights/jack1.png", label: "Jack (Boy)" },
+            { type: "image", src: "assets/Listings/FestivalOfLights/jack2.png", label: "Jack (Boy)" }
+        ],
+        updates: []
+    },
+
+    {
+        id: "best-friends-2026",
+        litterName: "Best Friends",
+        dob: "September 26, 2026",
+        readyToGoDate: "November 21, 2026",
+        mom: { name: "Flossie", breed: "Golden Retriever", weight: "48lbs" },
+        dad: { name: "Sport", breed: "Mini Poodle", weight: "17lbs" },
+        breed: "F1 Smaller Standard Goldendoodle",
+        description: "<strong>🐾 The Best of Both Worlds: The \"Smaller Standard\" Goldendoodle</strong><br><br>Whether you call them Smaller Standards or Larger Minis, this newly popular size offers the ideal middle ground! You can look forward to the iconic Golden Retriever personality—sweet, laid-back, goofy, and endlessly lovable.<br><br><strong>What to Expect:</strong><br>🐾 <strong>Estimated Adult Weight:</strong> 32 to 38 lbs—a perfect, versatile size for any home.<br>🐾 <strong>Build & Coat:</strong> These puppies will feature adorable, fat and blocky builds paired with soft wavy-to-smooth coats.<br>🐾 <strong>Personality & Temperament:</strong> Goldendoodles are widely celebrated for their friendly, engaging personalities, beautifully blending the best traits of both parent breeds:<br>🐾 <strong>Affectionate & Social:</strong> Highly loving, loyal, and eager to thrive on human companionship. They get along wonderfully with children, strangers, and other pets.<br>🐾 <strong>Intelligent & Trainable:</strong> Combining two of the smartest dog breeds, these puppies learn quickly and are always eager to please during training.",
+        price: "$1600 + tax ($300 due at reservation)",
+        puppies: [
+            { name: "Gracie", gender: "Girl", status: "Available" },
+            { name: "Jenny", gender: "Girl", status: "Available" },
+            { name: "Darla", gender: "Girl", status: "Available" },
+            { name: "Pebbles", gender: "Girl", status: "Available" },
+            { name: "Peaches", gender: "Girl", status: "Available" },
+            { name: "Alvin", gender: "Boy", status: "Available" },
+            { name: "Sammy", gender: "Boy", status: "Available" }
+        ],
+        thumbnail: "",
+        media: [
+            { type: "image", src: "assets/Listings/BestFriends/alvin1.png", label: "Alvin (Boy)" },
+            { type: "image", src: "assets/Listings/BestFriends/alvin2.png", label: "Alvin (Boy)" },
+            { type: "image", src: "assets/Listings/BestFriends/bestfriends_boys.png", label: "Best Friends Litter" },
+            { type: "image", src: "assets/Listings/BestFriends/darla1.png", label: "Darla (Girl)" },
+            { type: "image", src: "assets/Listings/BestFriends/darla2.png", label: "Darla (Girl)" },
+            { type: "image", src: "assets/Listings/BestFriends/gracie1.png", label: "Gracie (Girl)" },
+            { type: "image", src: "assets/Listings/BestFriends/gracie2.png", label: "Gracie (Girl)" },
+            { type: "image", src: "assets/Listings/BestFriends/jenny1.png", label: "Jenny (Girl)" },
+            { type: "image", src: "assets/Listings/BestFriends/jenny2.png", label: "Jenny (Girl)" },
+            { type: "image", src: "assets/Listings/BestFriends/peaches1.png", label: "Peaches (Girl)" },
+            { type: "image", src: "assets/Listings/BestFriends/peaches2.png", label: "Peaches (Girl)" },
+            { type: "image", src: "assets/Listings/BestFriends/pebbles1.png", label: "Pebbles (Girl)" },
+            { type: "image", src: "assets/Listings/BestFriends/pebbles2.png", label: "Pebbles (Girl)" },
+            { type: "image", src: "assets/Listings/BestFriends/sammy1.png", label: "Sammy (Boy)" },
+            { type: "image", src: "assets/Listings/BestFriends/sammy2.png", label: "Sammy (Boy)" },
+            { type: "image", src: "assets/Listings/BestFriends/thumbnail.png", label: "Best Friends Litter" }
         ],
         updates: []
     }
@@ -398,5 +478,6 @@ const HAPPY_TAILS = [
         message: "My son is a diabetic. He had a severe seizure and our standard Goldendoodle Luffy...signaled. He has had no training, prior to this event...He has now had alert training and is a certified seizure alert dog...Unfortunately my son had a large seizure and Luffy alerted and we were able to get him to the hospital. Luffy stayed by his side...and alerted before the machines did...Luffy is our perfect pup , we love him so much ."
     }
 ];
+
 
 
