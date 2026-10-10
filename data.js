@@ -338,7 +338,7 @@ const LITTERS = [
             { name: "Alvin", gender: "Boy", status: "Available" },
             { name: "Sammy", gender: "Boy", status: "Available" }
         ],
-        thumbnail: "",
+        thumbnail: "assets/Listings/BestFriends/thumbnail.png",
         media: [
             { type: "image", src: "assets/Listings/BestFriends/alvin1.png", label: "Alvin (Boy)" },
             { type: "image", src: "assets/Listings/BestFriends/alvin2.png", label: "Alvin (Boy)" },
