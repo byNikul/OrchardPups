@@ -213,7 +213,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function renderLitterCard(litter) {
-        const availableCount = litter.puppies ? litter.puppies.filter(p => p.status.toLowerCase() === 'available').length : 0;
+        const availableCount = litter.puppies ? litter.puppies.filter(p => p.status.toLowerCase().includes('available')).length : 0;
         const totalCount = litter.puppies ? litter.puppies.length : 0;
         const availability = `${availableCount}/${totalCount}`;
 
@@ -273,7 +273,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // 1. Check if all puppies are sold out
             const allSold = litter.puppies && litter.puppies.length > 0 &&
-                litter.puppies.every(p => p.status.toLowerCase() !== 'available');
+                litter.puppies.every(p => !p.status.toLowerCase().includes('available'));
 
             if (allSold) {
                 status = "Found Families";

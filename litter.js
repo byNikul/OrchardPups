@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
         today.setHours(0, 0, 0, 0);
 
         const allSold = l.puppies && l.puppies.length > 0 && 
-                        l.puppies.every(p => p.status.toLowerCase() !== 'available');
+                        l.puppies.every(p => !p.status.toLowerCase().includes('available'));
         
         if (allSold) return "Found Families";
         if (!l.readyToGoDate || l.readyToGoDate === "Now") return "Ready to go Home";

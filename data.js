@@ -13,11 +13,11 @@ const LITTERS = [
         dad: { name: "Blazer", breed: "Mini Poodle", weight: "14lbs" },
         breed: "F1BB Mini Goldendoodle",
         description: "Are you ready to find your new best friend? Our adorable F1BB mini goldendoodle puppies from the \"South Bark\" litter are officially looking for their forever homes!<br><br>These little bundles of joy are the perfect mix of sweet and playful.<br><br><strong>Why Choose an F1BB Goldendoodle?</strong><br>Because they are a backcross (a Goldendoodle bred back to a Poodle), they are known for having a higher percentage of Poodle genetics. This typically results in:<br> <strong>Hypoallergenic Qualities:</strong> They are often the most allergy-friendly of the Goldendoodle generations.<br> <strong>Low-Shedding Coats:</strong> Their curly or wavy coats are wonderful for keeping fur off your furniture.<br> <strong>Intelligence & Trainability:</strong> They inherit the sharp, eager-to-please nature of the Poodle, making them a joy to train.<br><br>These precious pups are going to bring so much love to their new families. If you are interested in welcoming one of these sweet babies into your home, please contact us today to reserve yours!",
-        price: "$1600 + tax ($300 due at reservation)",
+        price: "$950 discounted price + tax ($300 due at reservation)",
         puppies: [
             { name: "Kenny", gender: "Boy", status: "Found a home" },
             { name: "Eric", gender: "Boy", status: "Found a home" },
-            { name: "Stan", gender: "Boy", status: "Available" },
+            { name: "Stan", gender: "Boy", status: "Available ($950 discounted price)" },
             { name: "Bebe", gender: "Girl", status: "Reserved by Tim and Amber" },
             { name: "Sharon", gender: "Girl", status: "Reserved by Zachary" },
             { name: "Wendy", gender: "Girl", status: "Reserved by Kathy" }
@@ -103,7 +103,8 @@ const LITTERS = [
         updates: [
             { date: "June 30, 2026", text: "Litter Available to Reserve!" },
             { date: "August 3, 2026", text: "Wendy is Reserved!" },
-            { date: "August 10, 2026", text: "Bebe is Reserved!" }
+            { date: "August 10, 2026", text: "Bebe is Reserved!" },
+            { date: "October 24, 2026", text: "Rabies shot done! Stan is available for a discounted price of $950." }
         ]
     },
 
