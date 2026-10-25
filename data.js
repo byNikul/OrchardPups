@@ -16,7 +16,7 @@ const LITTERS = [
         price: "$1600 + tax ($300 due at reservation)",
         puppies: [
             { name: "Kenny", gender: "Boy", status: "Found a home" },
-            { name: "Eric", gender: "Boy", status: "Available" },
+            { name: "Eric", gender: "Boy", status: "Found a home" },
             { name: "Stan", gender: "Boy", status: "Available" },
             { name: "Bebe", gender: "Girl", status: "Reserved by Tim and Amber" },
             { name: "Sharon", gender: "Girl", status: "Reserved by Zachary" },
@@ -94,128 +94,16 @@ const LITTERS = [
             { type: "video", src: "assets/Listings/SouthBark/southbark5.mp4", label: "South Bark Litter" },
             { type: "video", src: "assets/Listings/SouthBark/southbark6.mp4", label: "South Bark Litter" },
             { type: "image", src: "assets/Listings/SouthBark/eric9.jpeg", label: "Eric (Boy)" },
-            { type: "image", src: "assets/Listings/SouthBark/stan9.jpeg", label: "Stan (Boy)" }
+            { type: "image", src: "assets/Listings/SouthBark/stan9.jpeg", label: "Stan (Boy)" },
+            { type: "image", src: "assets/Listings/SouthBark/eric10.png", label: "Eric (Boy)" },
+            { type: "image", src: "assets/Listings/SouthBark/stan10.png", label: "Stan (Boy)" },
+            { type: "video", src: "assets/Listings/SouthBark/stan3.mp4", label: "Stan (Boy)" },
+            { type: "video", src: "assets/Listings/SouthBark/stan4.mp4", label: "Stan (Boy)" }
         ],
         updates: [
             { date: "June 30, 2026", text: "Litter Available to Reserve!" },
             { date: "August 3, 2026", text: "Wendy is Reserved!" },
             { date: "August 10, 2026", text: "Bebe is Reserved!" }
-        ]
-    },
-
-    {
-        id: "summer-days-2026",
-        litterName: "Summer Days",
-        dob: "June 30, 2026",
-        readyToGoDate: "August 25, 2026",
-        mom: { name: "Roxie", breed: "F1B Mini Goldendoodle", weight: "14lbs" },
-        dad: { name: "Blazer", breed: "Mini Poodle", weight: "12lbs" },
-        breed: "F1BB Mini Goldendoodle",
-        description: "This beautiful litter features the sweetest, most affectionate puppies with curly, hypoallergenic coats! They are growing so fast and are available to reserve now.",
-        price: "$1700 + tax ($300 due at reservation)",
-        puppies: [
-            { name: "Storm", gender: "Boy", status: "Available" },
-            { name: "Milkshake", gender: "Boy", status: "Available" },
-            { name: "Butterfly", gender: "Girl", status: "Found a forever home" },
-            { name: "Popsicle", gender: "Girl", status: "Found a forever home" },
-            { name: "Breezy", gender: "Girl", status: "Found a forever home" }
-        ],
-        thumbnail: "assets/Listings/SummerDays/butterfly1.png",
-        media: [
-            { type: "video", src: "assets/Listings/SummerDays/breezy1.mp4", label: "Breezy (Girl)" },
-            { type: "image", src: "assets/Listings/SummerDays/breezy1.png", label: "Breezy (Girl)" },
-            { type: "video", src: "assets/Listings/SummerDays/butterfly1.mp4", label: "Butterfly (Girl)" },
-            { type: "image", src: "assets/Listings/SummerDays/butterfly1.png", label: "Butterfly (Girl)" },
-            { type: "image", src: "assets/Listings/SummerDays/butterfly2.png", label: "Butterfly (Girl)" },
-            { type: "image", src: "assets/Listings/SummerDays/milkshake1.png", label: "Milkshake (Boy)" },
-            { type: "image", src: "assets/Listings/SummerDays/milkshake2.png", label: "Milkshake (Boy)" },
-            { type: "video", src: "assets/Listings/SummerDays/popsicle1.mp4", label: "Popsicle (Girl)" },
-            { type: "image", src: "assets/Listings/SummerDays/popsicle1.png", label: "Popsicle (Girl)" },
-            { type: "image", src: "assets/Listings/SummerDays/storm1.png", label: "Storm (Boy)" },
-            { type: "image", src: "assets/Listings/SummerDays/storm2.png", label: "Storm (Boy)" },
-            { type: "image", src: "assets/Listings/SummerDays/breezy2.png", label: "Breezy (Girl)" },
-            { type: "image", src: "assets/Listings/SummerDays/butterfly3.png", label: "Butterfly (Girl)" },
-            { type: "image", src: "assets/Listings/SummerDays/milkshake3.png", label: "Milkshake (Boy)" },
-            { type: "image", src: "assets/Listings/SummerDays/popsicle2.png", label: "Popsicle (Girl)" },
-            { type: "image", src: "assets/Listings/SummerDays/strom3.png", label: "Strom (Boy)" },
-            { type: "video", src: "assets/Listings/SummerDays/summerdays1.mp4", label: "Summer Days Litter" },
-            { type: "video", src: "assets/Listings/SummerDays/summerdays2.mp4", label: "Summer Days Litter" },
-            { type: "video", src: "assets/Listings/SummerDays/summerdays3.mp4", label: "Summer Days Litter" },
-            { type: "video", src: "assets/Listings/SummerDays/breezy2.mp4", label: "Breezy (Girl)" },
-            { type: "image", src: "assets/Listings/SummerDays/breezy3.png", label: "Breezy (Girl)" },
-            { type: "video", src: "assets/Listings/SummerDays/butterfly2.mp4", label: "Butterfly (Girl)" },
-            { type: "image", src: "assets/Listings/SummerDays/butterfly4.png", label: "Butterfly (Girl)" },
-            { type: "video", src: "assets/Listings/SummerDays/milkshake1.mp4", label: "Milkshake (Boy)" },
-            { type: "image", src: "assets/Listings/SummerDays/milkshake4.png", label: "Milkshake (Boy)" },
-            { type: "image", src: "assets/Listings/SummerDays/strom4.png", label: "Strom (Boy)" },
-            { type: "image", src: "assets/Listings/SummerDays/strom5.png", label: "Strom (Boy)" },
-            { type: "video", src: "assets/Listings/SummerDays/butterfly3.mp4", label: "Butterfly (Girl)" },
-            { type: "image", src: "assets/Listings/SummerDays/butterfly5.png", label: "Butterfly (Girl)" },
-            { type: "image", src: "assets/Listings/SummerDays/butterfly6.png", label: "Butterfly (Girl)" },
-            { type: "image", src: "assets/Listings/SummerDays/milkshake5.png", label: "Milkshake (Boy)" },
-            { type: "image", src: "assets/Listings/SummerDays/milkshake6.png", label: "Milkshake (Boy)" },
-            { type: "image", src: "assets/Listings/SummerDays/storm10.png", label: "Storm (Boy)" },
-            { type: "image", src: "assets/Listings/SummerDays/storm11.png", label: "Storm (Boy)" },
-            { type: "image", src: "assets/Listings/SummerDays/storm3.png", label: "Storm (Boy)" },
-            { type: "image", src: "assets/Listings/SummerDays/storm4.png", label: "Storm (Boy)" },
-            { type: "image", src: "assets/Listings/SummerDays/storm5.png", label: "Storm (Boy)" },
-            { type: "image", src: "assets/Listings/SummerDays/storm6.png", label: "Storm (Boy)" },
-            { type: "image", src: "assets/Listings/SummerDays/storm7.png", label: "Storm (Boy)" },
-            { type: "image", src: "assets/Listings/SummerDays/storm8.png", label: "Storm (Boy)" },
-            { type: "image", src: "assets/Listings/SummerDays/storm9.png", label: "Storm (Boy)" }
-        ],
-        updates: [
-            { date: "June 30, 2026", text: "Litter Available to Reserve!" },
-            { date: "August 18, 2026", text: "Butterfly is Reserved!" },
-            { date: "September 4, 2026", text: "Popsicle has found her forever home!" }
-        ]
-    },
-
-    {
-        id: "salt-water-cowboys-2026",
-        litterName: "Salt Water Cowboys",
-        dob: "July 22, 2026",
-        readyToGoDate: "September 9, 2026",
-        mom: { name: "Marble", breed: "F1BB Mini Goldendoodle", weight: "14lbs" },
-        dad: { name: "Blazer", breed: "Mini Poodle", weight: "12lbs" },
-        breed: "F1BB Mini Goldendoodle",
-        description: "Saddle up and meet the Salt Water Cowboys — a stunning litter of F1BB Mini Goldendoodles! With one handsome cowboy and three beautiful cowgirls, this litter is brimming with charm, personality, and irresistibly soft coats.<br><br><strong>Why Choose a F1BB Goldendoodle?</strong><br>As a cross between an F1BB Mini Goldendoodle and a Mini Poodle, these puppies carry a higher percentage of Poodle genetics, which typically results in the most allergy-friendly and low-shedding coats of any Goldendoodle generation.<br><br>🐾 <strong>Ultra Low-Shedding Coats:</strong> Their beautifully textured, curly coats are ideal for families who want a fur-free home without sacrificing cuddle time.<br>🐾 <strong>Compact & Perfect Size:</strong> With mom at 14 lbs and dad at 12 lbs, expect these pups to stay in that perfect, portable mini size.<br>🐾 <strong>Smart & Eager to Please:</strong> Inheriting the sharp intelligence of the Poodle, these puppies are a joy to train and quick to learn.<br>🐾 <strong>Sweet & Social Temperament:</strong> Gentle, playful, and endlessly loving — they thrive on companionship and fit beautifully into any family.<br><br><strong>Ready to Ride Off Into the Sunset?</strong><br>These adorable pups will be ready for their forever homes on September 9, 2026. Whether you are looking for a loyal adventure buddy or the sweetest lap dog, a Salt Water Cowboy is ready to lasso your heart!",
-        price: "$1700 + tax ($300 due at reservation)",
-        puppies: [
-            { name: "Cowboy", gender: "Boy", status: "Found Family" },
-            { name: "Sea Star", gender: "Girl", status: "Found Family" },
-            { name: "Misty", gender: "Girl", status: "Available" },
-            { name: "Jessie", gender: "Girl", status: "Found Family" }
-        ],
-        thumbnail: "assets/Listings/SaltWaterCowboys/cowboy1.png",
-        media: [
-            { type: "video", src: "assets/Listings/SaltWaterCowboys/saltwatercowboys1.mp4", label: "Salt Water Cowboys" },
-            { type: "image", src: "assets/Listings/SaltWaterCowboys/cowboy1.png", label: "Cowboy (Boy)" },
-            { type: "image", src: "assets/Listings/SaltWaterCowboys/cowboy2.png", label: "Cowboy (Boy)" },
-            { type: "image", src: "assets/Listings/SaltWaterCowboys/jessie1.png", label: "Jessie (Girl)" },
-            { type: "image", src: "assets/Listings/SaltWaterCowboys/jessie2.png", label: "Jessie (Girl)" },
-            { type: "image", src: "assets/Listings/SaltWaterCowboys/jessie3.png", label: "Jessie (Girl)" },
-            { type: "image", src: "assets/Listings/SaltWaterCowboys/misty1.png", label: "Misty (Girl)" },
-            { type: "image", src: "assets/Listings/SaltWaterCowboys/misty2.png", label: "Misty (Girl)" },
-            { type: "video", src: "assets/Listings/SaltWaterCowboys/saltwatercowboys2.mp4", label: "Cowboy (Boy)" },
-            { type: "video", src: "assets/Listings/SaltWaterCowboys/saltwatercowboys3.mp4", label: "Cowboy (Boy)" },
-            { type: "video", src: "assets/Listings/SaltWaterCowboys/saltwatercowboys4.mp4", label: "Cowboy (Boy)" },
-            { type: "image", src: "assets/Listings/SaltWaterCowboys/seastar1.png", label: "Salt Water Cowboys Litter" },
-            { type: "image", src: "assets/Listings/SaltWaterCowboys/seastar2.png", label: "Salt Water Cowboys Litter" },
-            { type: "image", src: "assets/Listings/SaltWaterCowboys/cowboy3.png", label: "Cowboy (Boy)" },
-            { type: "image", src: "assets/Listings/SaltWaterCowboys/jessie4.png", label: "Jessie (Girl)" },
-            { type: "image", src: "assets/Listings/SaltWaterCowboys/misty3.png", label: "Misty (Girl)" },
-            { type: "video", src: "assets/Listings/SaltWaterCowboys/saltwatercowboys5.mp4", label: "Cowboy (Boy)" },
-            { type: "image", src: "assets/Listings/SaltWaterCowboys/seastar3.png", label: "Salt Water Cowboys Litter" },
-            { type: "image", src: "assets/Listings/SaltWaterCowboys/cowboy4.png", label: "Cowboy (Boy)" },
-            { type: "image", src: "assets/Listings/SaltWaterCowboys/cowboy5.png", label: "Cowboy (Boy)" },
-            { type: "image", src: "assets/Listings/SaltWaterCowboys/jessie5.png", label: "Jessie (Girl)" },
-            { type: "image", src: "assets/Listings/SaltWaterCowboys/misty4.png", label: "Misty (Girl)" },
-            { type: "video", src: "assets/Listings/SaltWaterCowboys/saltwatercowboys6.mp4", label: "Cowboy (Boy)" },
-            { type: "image", src: "assets/Listings/SaltWaterCowboys/seastar4.png", label: "Salt Water Cowboys Litter" }
-        ],
-        updates: [
-            { date: "August 28, 2026", text: "Litter Available to Reserve!" }
         ]
     },
 
@@ -230,13 +118,13 @@ const LITTERS = [
         description: "Meet the adorable Spooky Nights litter from Orchard Pups, born on August 28, 2026! These precious F1BB mini Goldendoodles are ready to steal your heart just in time for autumn.<br><br>With mom Tulip (an F1B mini Goldendoodle weighing 20 lbs) and dad Blaze (a mini poodle weighing 12 lbs), this carefully planned cross brings incredible generational health, predictable coats, and wonderful temperament benefits. F1BB backcrossing ensures these pups boast exceptionally allergy-friendly, low-shedding curly or wavy coats that are a dream to maintain.<br><br>Known for being fantastic family companions, these puppies blend the intelligence and eager-to-please nature of poodles with the supreme affection of Goldendoodles, making training an absolute breeze for owners of all experience levels.",
         price: "$2100 + tax ($300 due at reservation)",
         puppies: [
-            { name: "Boo", gender: "Boy", status: "Available" },
-            { name: "Bunny", gender: "Boy", status: "Available" },
+            { name: "Boo", gender: "Boy", status: "Reserved by Kristy" },
             { name: "Frankie", gender: "Boy", status: "Available" },
-            { name: "Coraline", gender: "Girl", status: "Reserved" },
+            { name: "Coraline", gender: "Girl", status: "Reserved by Christine" },
             { name: "Lucy", gender: "Girl", status: "Available" },
             { name: "Wednesday", gender: "Girl", status: "Available" },
-            { name: "Mortishia", gender: "Girl", status: "Available" }
+            { name: "Mortishia", gender: "Girl", status: "Available" },
+            { name: "Jack", gender: "Boy", status: "Found Family" }
         ],
         thumbnail: "assets/Listings/SpookyNights/theboys1.png",
         media: [
@@ -275,7 +163,29 @@ const LITTERS = [
             { type: "video", src: "assets/Listings/SpookyNights/theboys1.mp4", label: "Spooky Nights Litter" },
             { type: "image", src: "assets/Listings/SpookyNights/theboys2.png", label: "Spooky Nights Litter" },
             { type: "video", src: "assets/Listings/SpookyNights/thegirls1.mp4", label: "Spooky Nights Litter" },
-            { type: "image", src: "assets/Listings/SpookyNights/wednesday3.png", label: "Wednesday (Girl)" }
+            { type: "image", src: "assets/Listings/SpookyNights/wednesday3.png", label: "Wednesday (Girl)" },
+            { type: "video", src: "assets/Listings/SpookyNights/boo2.mp4", label: "Boo (Boy)" },
+            { type: "image", src: "assets/Listings/SpookyNights/boo4.png", label: "Boo (Boy)" },
+            { type: "image", src: "assets/Listings/SpookyNights/boo5.png", label: "Boo (Boy)" },
+            { type: "image", src: "assets/Listings/SpookyNights/boo6.png", label: "Boo (Boy)" },
+            { type: "video", src: "assets/Listings/SpookyNights/coraline2.mp4", label: "Coraline (Girl)" },
+            { type: "image", src: "assets/Listings/SpookyNights/coraline4.png", label: "Coraline (Girl)" },
+            { type: "image", src: "assets/Listings/SpookyNights/coraline5.png", label: "Coraline (Girl)" },
+            { type: "video", src: "assets/Listings/SpookyNights/frankie2.mp4", label: "Frankie (Boy)" },
+            { type: "image", src: "assets/Listings/SpookyNights/frankie4.png", label: "Frankie (Boy)" },
+            { type: "image", src: "assets/Listings/SpookyNights/frankie5.png", label: "Frankie (Boy)" },
+            { type: "video", src: "assets/Listings/SpookyNights/jack2.mp4", label: "Jack (Boy)" },
+            { type: "image", src: "assets/Listings/SpookyNights/jack4.png", label: "Jack (Boy)" },
+            { type: "image", src: "assets/Listings/SpookyNights/jack5.png", label: "Jack (Boy)" },
+            { type: "video", src: "assets/Listings/SpookyNights/lucy2.mp4", label: "Lucy (Girl)" },
+            { type: "image", src: "assets/Listings/SpookyNights/lucy4.png", label: "Lucy (Girl)" },
+            { type: "image", src: "assets/Listings/SpookyNights/lucy5.png", label: "Lucy (Girl)" },
+            { type: "video", src: "assets/Listings/SpookyNights/mortishia1.mp4", label: "Mortishia (Girl)" },
+            { type: "image", src: "assets/Listings/SpookyNights/mortishia5.png", label: "Mortishia (Girl)" },
+            { type: "image", src: "assets/Listings/SpookyNights/mortishia6.png", label: "Mortishia (Girl)" },
+            { type: "video", src: "assets/Listings/SpookyNights/wednesday2.mp4", label: "Wednesday (Girl)" },
+            { type: "image", src: "assets/Listings/SpookyNights/wednesday4.png", label: "Wednesday (Girl)" },
+            { type: "image", src: "assets/Listings/SpookyNights/wednesday5.png", label: "Wednesday (Girl)" }
         ],
         updates: []
     },
@@ -314,7 +224,21 @@ const LITTERS = [
             { type: "image", src: "assets/Listings/FestivalOfLights/holly1.png", label: "Holly (Girl)" },
             { type: "image", src: "assets/Listings/FestivalOfLights/holly2.png", label: "Holly (Girl)" },
             { type: "image", src: "assets/Listings/FestivalOfLights/jack1.png", label: "Jack (Boy)" },
-            { type: "image", src: "assets/Listings/FestivalOfLights/jack2.png", label: "Jack (Boy)" }
+            { type: "image", src: "assets/Listings/FestivalOfLights/jack2.png", label: "Jack (Boy)" },
+            { type: "image", src: "assets/Listings/FestivalOfLights/bella3.png", label: "Bella (Girl)" },
+            { type: "image", src: "assets/Listings/FestivalOfLights/bella4.png", label: "Bella (Girl)" },
+            { type: "image", src: "assets/Listings/FestivalOfLights/clara3.png", label: "Clara (Girl)" },
+            { type: "image", src: "assets/Listings/FestivalOfLights/clara4.png", label: "Clara (Girl)" },
+            { type: "image", src: "assets/Listings/FestivalOfLights/dolly3.png", label: "Dolly (Girl)" },
+            { type: "image", src: "assets/Listings/FestivalOfLights/dolly4.png", label: "Dolly (Girl)" },
+            { type: "image", src: "assets/Listings/FestivalOfLights/felix3.png", label: "Felix (Boy)" },
+            { type: "image", src: "assets/Listings/FestivalOfLights/felix4.png", label: "Felix (Boy)" },
+            { type: "image", src: "assets/Listings/FestivalOfLights/gram3.png", label: "Gram (Boy)" },
+            { type: "image", src: "assets/Listings/FestivalOfLights/gram4.png", label: "Gram (Boy)" },
+            { type: "image", src: "assets/Listings/FestivalOfLights/holly3.png", label: "Holly (Girl)" },
+            { type: "image", src: "assets/Listings/FestivalOfLights/holly4.png", label: "Holly (Girl)" },
+            { type: "image", src: "assets/Listings/FestivalOfLights/jack3.png", label: "Jack (Boy)" },
+            { type: "image", src: "assets/Listings/FestivalOfLights/jack4.png", label: "Jack (Boy)" }
         ],
         updates: []
     },
@@ -331,11 +255,11 @@ const LITTERS = [
         price: "$1600 + tax ($300 due at reservation)",
         puppies: [
             { name: "Gracie", gender: "Girl", status: "Available" },
-            { name: "Jenny", gender: "Girl", status: "Available" },
+            { name: "Jenny", gender: "Girl", status: "Reserved by Hunter" },
             { name: "Darla", gender: "Girl", status: "Available" },
             { name: "Pebbles", gender: "Girl", status: "Available" },
             { name: "Peaches", gender: "Girl", status: "Available" },
-            { name: "Alvin", gender: "Boy", status: "Available" },
+            { name: "Alvin", gender: "Boy", status: "Found Forever Family" },
             { name: "Sammy", gender: "Boy", status: "Available" }
         ],
         thumbnail: "assets/Listings/BestFriends/thumbnail.png",
@@ -355,9 +279,76 @@ const LITTERS = [
             { type: "image", src: "assets/Listings/BestFriends/pebbles2.png", label: "Pebbles (Girl)" },
             { type: "image", src: "assets/Listings/BestFriends/sammy1.png", label: "Sammy (Boy)" },
             { type: "image", src: "assets/Listings/BestFriends/sammy2.png", label: "Sammy (Boy)" },
-            { type: "image", src: "assets/Listings/BestFriends/thumbnail.png", label: "Best Friends Litter" }
+            { type: "image", src: "assets/Listings/BestFriends/thumbnail.png", label: "Best Friends Litter" },
+            { type: "video", src: "assets/Listings/BestFriends/alvin1.mp4", label: "Alvin (Boy)" },
+            { type: "image", src: "assets/Listings/BestFriends/alvin3.png", label: "Alvin (Boy)" },
+            { type: "image", src: "assets/Listings/BestFriends/alvin4.png", label: "Alvin (Boy)" },
+            { type: "image", src: "assets/Listings/BestFriends/alvin5.png", label: "Alvin (Boy)" },
+            { type: "image", src: "assets/Listings/BestFriends/bestfriends1.png", label: "Best Friends Litter" },
+            { type: "image", src: "assets/Listings/BestFriends/bestfriends2.png", label: "Best Friends Litter" },
+            { type: "video", src: "assets/Listings/BestFriends/darla1.mp4", label: "Darla (Girl)" },
+            { type: "image", src: "assets/Listings/BestFriends/darla3.png", label: "Darla (Girl)" },
+            { type: "video", src: "assets/Listings/BestFriends/gracie1.mp4", label: "Gracie (Girl)" },
+            { type: "image", src: "assets/Listings/BestFriends/gracie3.png", label: "Gracie (Girl)" },
+            { type: "video", src: "assets/Listings/BestFriends/jenny1.mp4", label: "Jenny (Girl)" },
+            { type: "image", src: "assets/Listings/BestFriends/jenny3.png", label: "Jenny (Girl)" },
+            { type: "video", src: "assets/Listings/BestFriends/peaches1.mp4", label: "Peaches (Girl)" },
+            { type: "image", src: "assets/Listings/BestFriends/peaches3.png", label: "Peaches (Girl)" },
+            { type: "image", src: "assets/Listings/BestFriends/peaches4.png", label: "Peaches (Girl)" },
+            { type: "video", src: "assets/Listings/BestFriends/pebbles1.mp4", label: "Pebbles (Girl)" },
+            { type: "image", src: "assets/Listings/BestFriends/pebbles3.png", label: "Pebbles (Girl)" },
+            { type: "video", src: "assets/Listings/BestFriends/sammy1.mp4", label: "Sammy (Boy)" },
+            { type: "image", src: "assets/Listings/BestFriends/sammy3.png", label: "Sammy (Boy)" },
+            { type: "image", src: "assets/Listings/BestFriends/sammyandalvin.png", label: "Alvin (Boy)" }
         ],
         updates: []
+    },
+
+    {
+        id: "silent-night-2026",
+        litterName: "Silent Night",
+        dob: "October 17, 2026",
+        readyToGoDate: "December 12, 2026",
+        mom: { name: "Cinnamon", breed: "F1B Mini Goldendoodle", weight: "18lbs" },
+        dad: { name: "Blazer", breed: "Mini Poodle", weight: "12lbs" },
+        breed: "F1BB Mini Goldendoodle",
+        description: "We are overjoyed to introduce our long-awaited Silent Night litter! Born on October 17, 2026, these precious little ones are already stealing our hearts. Raised with endless love, sweet cuddles, and hands-on attention, this litter is being nurtured to have the wonderful temperament, intelligence, and affectionate nature Goldendoodles are famous for.<br><br>Whether you are looking for a playful adventure buddy or a gentle lap snuggler, these smart and sweet puppies are sure to bring boundless joy into your home.<br><br>🐶 <strong>Parents & Genetics:</strong><br>• <strong>Mom:</strong> Cinnamon — F1B Mini Goldendoodle (18 lbs)<br>• <strong>Dad:</strong> Blazer — Mini Poodle (12 lbs)<br>• <strong>Generation:</strong> F1BB Mini Goldendoodles<br>• <strong>Estimated Adult Weight:</strong> Under 18 lbs — the perfect compact size!<br><br>✨ <strong>Coat & Look Highlights:</strong><br>• <strong>Coat Types:</strong> Beautiful wavy to curly coats that are super soft to the touch.<br>• <strong>Teddy Bear Look:</strong> Genetics show these puppies are positive for facial furnishings, meaning they are highly likely to display that irresistible, classic \"Teddy Bear\" coat with cute fluffy beards and eyebrows!<br>• <strong>Low-to-No Shedding:</strong> As F1BB Mini Goldendoodles, they inherit a higher percentage of Poodle traits, making their coats ideal for those looking for low-allergen and low-shedding companions.<br><br>📅 <strong>Important Dates:</strong><br>• <strong>Birth Date:</strong> October 17, 2026<br>• <strong>Ready for Forever Homes:</strong> ~December 12, 2026 (Just in time to celebrate the holiday season!)<br><br>💕 <strong>What to Expect:</strong><br>We love sharing the journey with our adoptive families! You can look forward to frequent updates, photos, and videos as they grow, open their eyes, take their first steps, and show off their unique little personalities.",
+        price: "$2200 + tax ($300 due at reservation)",
+        puppies: [
+            { name: "Frosty", gender: "Boy", status: "reserved by Vanessa" },
+            { name: "Holly", gender: "Girl", status: "Available" },
+            { name: "Noel", gender: "Girl", status: "Available" },
+            { name: "Star", gender: "Girl", status: "Available" },
+            { name: "Virginia", gender: "Girl", status: "Available" },
+            { name: "Elsa", gender: "Girl", status: "Available" }
+        ],
+        thumbnail: "assets/Listings/SilentNight/star1.png",
+        media: [
+            { type: "image", src: "assets/Listings/SilentNight/thumbnail.png", label: "Silent Night Litter" },
+            { type: "image", src: "assets/Listings/SilentNight/frosty1.png", label: "Frosty (Boy)" },
+            { type: "image", src: "assets/Listings/SilentNight/holly1.png", label: "Holly (Girl)" },
+            { type: "image", src: "assets/Listings/SilentNight/holly2.png", label: "Holly (Girl)" },
+            { type: "image", src: "assets/Listings/SilentNight/holly3.png", label: "Holly (Girl)" },
+            { type: "image", src: "assets/Listings/SilentNight/noel1.png", label: "Noel (Girl)" },
+            { type: "image", src: "assets/Listings/SilentNight/noel2.png", label: "Noel (Girl)" },
+            { type: "image", src: "assets/Listings/SilentNight/star1.png", label: "Star (Girl)" },
+            { type: "image", src: "assets/Listings/SilentNight/virginia1.png", label: "Virginia (Girl)" },
+            { type: "image", src: "assets/Listings/SilentNight/virginia2.png", label: "Virginia (Girl)" },
+            { type: "image", src: "assets/Listings/SilentNight/elsa1.png", label: "Elsa (Girl)" },
+            { type: "image", src: "assets/Listings/SilentNight/elsa2.png", label: "Elsa (Girl)" },
+            { type: "image", src: "assets/Listings/SilentNight/bella1.png", label: "Silent Night Litter" },
+            { type: "image", src: "assets/Listings/SilentNight/bella2.png", label: "Silent Night Litter" },
+            { type: "video", src: "assets/Listings/SilentNight/elsa1.mp4", label: "Elsa (Girl)" },
+            { type: "video", src: "assets/Listings/SilentNight/frosty1.mp4", label: "Frosty (Boy)" },
+            { type: "video", src: "assets/Listings/SilentNight/holly1.mp4", label: "Holly (Girl)" },
+            { type: "video", src: "assets/Listings/SilentNight/noel1.mp4", label: "Noel (Girl)" },
+            { type: "video", src: "assets/Listings/SilentNight/star1.mp4", label: "Star (Girl)" },
+            { type: "video", src: "assets/Listings/SilentNight/virginia1.mp4", label: "Virginia (Girl)" }
+        ],
+        updates: [
+            { date: "October 17, 2026", text: "Silent Night Litter has arrived!" },
+            { date: "October 23, 2026", text: "Litter Available to Reserve!" }
+        ]
     }
 ];
 
@@ -478,6 +469,5 @@ const HAPPY_TAILS = [
         message: "My son is a diabetic. He had a severe seizure and our standard Goldendoodle Luffy...signaled. He has had no training, prior to this event...He has now had alert training and is a certified seizure alert dog...Unfortunately my son had a large seizure and Luffy alerted and we were able to get him to the hospital. Luffy stayed by his side...and alerted before the machines did...Luffy is our perfect pup , we love him so much ."
     }
 ];
-
 
 
