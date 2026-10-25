@@ -260,7 +260,7 @@ const LITTERS = [
             { name: "Darla", gender: "Girl", status: "Available" },
             { name: "Pebbles", gender: "Girl", status: "Available" },
             { name: "Peaches", gender: "Girl", status: "Available" },
-            { name: "Alvin", gender: "Boy", status: "Found Forever Family" },
+            { name: "Alvin", gender: "Boy", status: "Reserved by Anwar" },
             { name: "Sammy", gender: "Boy", status: "Available" }
         ],
         thumbnail: "assets/Listings/BestFriends/thumbnail.png",
